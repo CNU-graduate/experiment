@@ -1,0 +1,221 @@
+﻿id,year,substance,purpose,commodity,JMPR,EU,source_url,source_section,source_table,source_table_url
+2023-02-01,2023,Diazinon,Enforcement,Plant products,Diazinon,"Reg. 396/2005: Diazinon
+Peer review (EFSA, 2006): Diazinon",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.2.3,10,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0010
+2023-03-01,2023,Dimethoate,Enforcement,Plant products,Dimethoate and omethoate (measured and reported separately),"Reg. 396/2005:
+RD 1: Dimethoate,
+RD 2: Omethoate
+Peer review (EFSA, 2018h): dimethoate and omethoate, to be considered separately (provisional)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.3.3,16,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0016
+2023-03-02,2023,Dimethoate,Enforcement,Animal products,"Dimethoate and omethoate (measured and reported separately)
+The residue is not fat soluble","Reg. 396/2005:
+RD 1: Dimethoate,
+RD 2: Omethoate
+Peer review (EFSA, 2018h): dimethoate and omethoate, to be considered separately (provisional)
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.3.3,16,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0016
+2023-03-03,2023,Dimethoate,Risk assessment,Plant products,"Sum of dimethoate plus 2.5 × omethoate for long‐term dietary exposure;
+Sum of dimethoate plus 10 × omethoate for acute dietary exposure","Peer review (EFSA, 2018h): dimethoate and omethoate (provisional)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.3.3,16,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0016
+2023-04-01,2023,Mancozeb (dithiocarbamates),Enforcement,Plant products,"Total dithiocarbamates, determined as CS2, evolved during acid digestion and expressed as mg CS2/kg","Reg. 396/2005: Dithiocarbamates expressed as CS2, including maneb, mancozeb, metiram, propineb, thiram and ziram
+Peer review (EFSA, 2020a): Dithiocarbamates (mancozeb) determined and expressed as CS2",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.4.3,23,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0023
+2023-04-02,2023,Mancozeb (dithiocarbamates),Enforcement,Animal products,"Total dithiocarbamates, determined as CS2, evolved during acid digestion and expressed as mg CS2/kg
+The residue is not fat soluble","Reg. 396/2005: Dithiocarbamates expressed as CS2, including maneb, mancozeb, metiram, propineb, thiram and ziram
+Peer review (EFSA, 2020a): Dithiocarbamates (mancozeb) determined and expressed as CS2
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.4.3,23,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0023
+2023-04-03,2023,Mancozeb (dithiocarbamates),Risk assessment,Plant products,Mancozeb plus ethylenethiourea (ETU),"Peer review (EFSA, 2020a):
+(1) Mancozeb and
+(2) ethylenethiourea (ETU)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.4.3,23,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0023
+2023-04-04,2023,Mancozeb (dithiocarbamates),Risk assessment,Animal products,Mancozeb plus ethylenethiourea (ETU),"Peer review (EFSA, 2020a):
+(1) Mancozeb and
+(2) ethylenethiourea (ETU)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.4.3,23,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0023
+2023-05-01,2023,Methidathion,Enforcement,Plant products,Methidathion,"Reg. 396/2005: Methidathion
+No EU peer review and no MRL review",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.5.3,30,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0030
+2023-06-01,2023,Quintozene,Enforcement,Plant products,Quintozene,"Reg. 396/2005: Quintozene (sum of quintozene and pentachloro‐aniline expressed as quintozene)
+No EU peer review and no MRL review",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.7.3,36,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0036
+2023-07-01,2023,Metalaxyl,Enforcement,Plant products,Metalaxyl (sum of enantiomers),Reg. 396/2005 (implementing MRL review): Metalaxyl and metalaxyl‐M (metalaxyl including other mixtures of constituent isomers including metalaxyl‐M (sum of isomers)),https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.8.3,42,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0042
+2023-07-02,2023,Metalaxyl,Enforcement,Animal products,"Sum of metalaxyl (sum of enantiomers) and metabolites (free + conjugated) M3 (N‐(2,6‐dimethylphenyl)‐N‐(hydroxyacetyl) alanine methyl ester) and M8 (N‐(2‐hydroxymethyl‐6‐methylphenyl)‐N‐(methoxyacetyl)alanine methyl ester) (sum of enantiomers), expressed as metalaxyl
+The residue is not fat soluble","Reg. 396/2005 (implementing MRL review): Sum of metalaxyl (sum of isomers) and its metabolites containing the 2,6‐dimethylaniline moiety, expressed as metalaxyl
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.8.3,42,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0042
+2023-07-03,2023,Metalaxyl,Risk assessment,Plant products,"Metalaxyl (sum of enantiomers) and N‐(2‐hydroxymethyl‐6‐methylphenyl)‐N‐(methoxyacetyl) alanine methyl ester (M8; free and conjugated; sum of enantiomers), expressed as metalaxyl","Art.43 assessment (EFSA, 2015d): Metalaxyl including other mixtures of constituent isomers including metalaxyl‐M (sum of isomers)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.8.3,42,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0042
+2023-07-04,2023,Metalaxyl,Risk assessment,Animal products,"Sum of metalaxyl (sum of enantiomers) and metabolites (free + conjugated) M1 (N‐(2,6‐dimethylphenyl)‐N‐(methoxyacetyl) alanine), M3 (N‐(2,6‐dimethylphenyl)‐N‐(hydroxyacetyl)alanine methyl ester), M6 (N‐(2,6‐dimethylphenyl)‐N‐(hydroxyacetyl)alanine)), M7 (N‐(2,6‐dimethyl‐5‐hydroxyphenyl)‐N‐(methoxyacetyl)alanine methyl ester) and M8 (N‐(2‐hydroxymethyl‐6‐methylphenyl)‐N‐(methoxyacetyl)alanine methyl ester (sum of enantiomers), expressed as metalaxyl","Art.43 assessment (EFSA, 2015d): Sum of metalaxyl (sum of isomers) and its metabolites containing the 2,6‐dimethylaniline moiety, expressed as metalaxyl",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.8.3,42,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0042
+2023-09-01,2023,Famoxadone,Enforcement,Plant products,Famoxadone,"Reg. 396/2005: Famoxadone
+Peer review (EFSA, 2015f) and MRL review (EFSA, 2012c): Famoxadone",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.10.3,56,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0056
+2023-09-03,2023,Famoxadone,Risk assessment,Plant products,Famoxadone,"Peer review (EFSA, 2015f) and MRL review (EFSA, 2012c): Famoxadone",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.10.3,56,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0056
+2023-09-04,2023,Famoxadone,Risk assessment,Animal products,Famoxadone,"Peer review (EFSA, 2015f):
+For ruminants: famoxadone (provisional)
+(a)
+For poultry: not proposed
+MRL review (EFSA, 2012c): Famoxadone",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.10.3,56,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0056
+2023-10-01,2023,Fludioxonil,Enforcement,Plant products,Fludioxonil,"Reg. 396/2005 (implementing MRL review): Fludioxonil
+Peer review (EFSA, 2007): Fludioxonil",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.11.3,63,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0063
+2023-10-03,2023,Fludioxonil,Risk assessment,Plant products,Fludioxonil,"MRL review (EFSA, 2011f) and peer review (EFSA, 2007):
+Sum of fludioxonil and its metabolites oxidised to metabolite 2,2‐difluoro‐benzo[1,3]dioxole‐4 carboxylic acid, expressed as fludioxonil",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.11.3,63,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0063
+2023-10-04,2023,Fludioxonil,Risk assessment,Animal products,"Sum of fludioxonil and its benzopyrrole metabolites, determined as 2,2‐difluoro‐benzo[1,3]dioxole‐4‐carboxylic acid and expressed as fludioxonil","MRL review (EFSA, 2011f) and peer review (EFSA, 2007): Sum of fludioxonil and all metabolites containing the 2,2‐difluoro‐benzo[1,3]dioxole‐4‐carboxylic moiety, expressed as fludioxonil",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.11.3,63,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0063
+2023-11-01,2023,Indoxacarb,Enforcement,Plant products,Sum of indoxacarb and its R‐enantiomer,"Reg. 396/2005 (implementing MRL review): Indoxacarb (sum of indoxacarb and its R‐enantiomer)
+Peer review (EFSA, 2018a): Indoxacarb and its R‐enantiomer",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.12.3,70,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0070
+2023-11-02,2023,Indoxacarb,Enforcement,Animal products,"Sum of indoxacarb and its R‐enantiomer
+The residue is fat soluble","Reg. 396/2005 (implementing MRL review): Indoxacarb (sum of indoxacarb and its R‐enantiomer)
+Peer review (EFSA, 2018a): Indoxacarb and its R‐enantiomer and IN‐JT333
+The residue is fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.12.3,70,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0070
+2023-11-04,2023,Indoxacarb,Risk assessment,Animal products,"Sum of indoxacarb, its R‐enantiomer and methyl 7‐chloro‐2,5‐dihydro‐2‐[[[4‐(trifluoromethoxy)phenyl]amino]carbonyl]indeno[1,2‐e][1,3,4]oxadiazine‐4a(3H)‐carboxylate (IN‐JT333), expressed as indoxacarb","Peer review (EFSA, 2018a):
+1) Poultry: Indoxacarb and its R‐enantiomer), metabolites IN‐JT333, metabolite ‘F' (tentatively identified as compound IN‐VRN79), IN‐KG433 and 5‐OH‐IN‐JT333 (provisional)
+2) Ruminants: Indoxacarb and its R‐enantiomer
+3) Milk: Indoxacarb and its R‐enantiomer and IN‐MP819 (provisional)
+MRL review (EFSA, 2011g):
+Ruminants and pigs: Sum of indoxacarb and its R enantiomer
+2) Poultry: Sum of indoxacarb, its R enantiomer and its N‐decarboxylated metabolite (IN‐JT333), expressed as indoxacarb, (tentative)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.12.3,70,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0070
+2023-12-01,2023,Difenoconazole,Enforcement,Plant products,Difenoconazole,"Reg. 396/2005: Difenoconazole
+Peer review (EFSA, 2011b): Difenoconazole",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.13.3,77,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0077
+2023-12-02,2023,Difenoconazole,Enforcement,Animal products,"Sum of difenoconazole and 1‐[2‐chloro‐4‐(4‐chloro‐phenoxy)‐phenyl]‐2‐(1,2,4‐triazol)‐1‐yl‐ethanol, expressed as difenoconazole.
+The residue is fat soluble","Reg. 396/2005: Difenoconazole
+Peer review (EFSA, 2011b): Difenoconazole alcohol (CGA 205375) expressed as difenoconazole
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.13.3,77,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0077
+2023-12-03,2023,Difenoconazole,Risk assessment,Plant products,Difenoconazole,"Peer review (EFSA, 2011b): (1) Difenoconazole
+(2) TA and TLA, TAA and 1,2,4‐triazole (based on conclusion confirmatory data on TDMs (EFSA, 2018f))",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.13.3,77,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0077
+2023-13-02,2023,Azoxystrobin,Enforcement,Animal products,"Azoxystrobin
+The residue is fat soluble","Reg. 396/2005 (implementing MRL review): Azoxystrobin
+Peer review (EFSA, 2010c): Azoxystrobin
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.14.3,84,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0084
+2023-13-03,2023,Azoxystrobin,Risk assessment,Plant products,Azoxystrobin,"MRL review (EFSA, 2013g) and peer review (EFSA, 2010c): Azoxystrobin",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.14.3,84,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0084
+2023-13-04,2023,Azoxystrobin,Risk assessment,Animal products,Azoxystrobin,"MRL review (EFSA, 2013g) and peer review (EFSA, 2010c): Azoxystrobin (provisional)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.14.3,84,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0084
+2023-14-01,2023,Chlorantraniliprole,Enforcement,Plant products,Chlorantraniliprole,"Reg. 396/2005 (implementing MRL review): Chlorantraniliprole
+Peer review (EFSA, 2013b):
+Chlorantraniliprole",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.15.3,91,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0091
+2023-14-02,2023,Chlorantraniliprole,Enforcement,Animal products,"Chlorantraniliprole
+The residue is fat soluble","Reg. 396/2005 (implementing MRL review): Chlorantraniliprole
+Peer review (EFSA, 2013b): Chlorantraniliprole
+The residue is fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.15.3,91,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0091
+2023-14-03,2023,Chlorantraniliprole,Risk assessment,Plant products,Chlorantraniliprole,"MRL review (EFSA, 2020l) and Peer review (EFSA, 2013b):
+Chlorantraniliprole",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.15.3,91,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0091
+2023-15-01,2023,Mandipropamid,Enforcement,Plant products,Mandipropamid,"Reg. 396/2005 (implementing MRL review): Mandipropamid (any ratio of constituent isomers)
+Peer review (EFSA, 2012h): Mandipropamid (sum of isomers)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.16.3,98,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0098
+2023-15-04,2023,Mandipropamid,Risk assessment,Animal products,Mandipropamid,"MRL review (EFSA, 2018d): not required
+Peer review (EFSA, 2012h): Mandipropamid",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.16.3,98,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0098
+2023-16-01,2023,Emamectin benzoate,Enforcement,Plant products,Emamectin B1a benzoate,"Reg. 396/2005: Emamectin B1a and its salts, expressed as emamectin B1a (free base)
+MRL review (EFSA, 2019g):
+Emamectin B1a and its salts, expressed as emamectin B1a (free base)
+Peer review (EFSA, 2012i): Emamectin B1a and its salts, expressed as emamectin B1a benzoate",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.17.3,105,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0105
+2023-16-03,2023,Emamectin benzoate,Risk assessment,Plant products,Emamectin B1a benzoate,"MRL review (EFSA, 2019g):
+Sum of emamectin B1a, emamectin B1b, 8,9‐Z‐MAB1a, plus 3 times AB1a, plus 3 times MFB1a and 3 times FAB1a, expressed as emamectin B1a (free base)
+Peer review (EFSA, 2012i):
+Emamectin B1a and emamectin B1b and photo
+metabolites 8,9‐Z‐MBA1a, AB1a, MFB1a and FaB1a
+(provisionally, pending information on the toxicity of the photo‐metabolites)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.17.3,105,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0105
+2023-16-04,2023,Emamectin benzoate,Risk assessment,Animal products,Emamectin B1a benzoate,"MRL review (EFSA, 2019 g): Ruminants and swine:
+Emamectin B1a and its salts, expressed as emamectin B1a (free base)
+Peer review: not required",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.17.3,105,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0105
+2023-17-01,2023,Flutriafol,Enforcement,Plant products,Flutriafol,"Reg. 396/2005 (implementing MRL review): Flutriafol
+Peer review (EFSA, 2010f): Flutriafol",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.18.3,112,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0112
+2023-17-02,2023,Flutriafol,Enforcement,Animal products,"Flutriafol
+The residue is fat soluble","Reg. 396/2005: Flutriafol
+MRL review (EFSA, 2014c): Ruminant and pigs: flutriafol (tentative)
+Peer review (EFSA, 2010f): open (residue definition required for ruminant product only, pending submission of a new metabolism study)
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.18.3,112,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0112
+2023-17-03,2023,Flutriafol,Risk assessment,Plant products,Flutriafol,"MRL review (EFSA, 2014c): Flutriafol
+Peer review (EFSA, 2010f):
+1) Flutriafol
+2) TDMs",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.18.3,112,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0112
+2023-18-02,2023,Sulfoxaflor,Enforcement,Animal products,"Sulfoxaflor
+The residue is not fat soluble","Reg. 396/2005: Sulfoxaflor (sum of isomers)
+Peer review (EFSA, 2014d):
+Sulfoxaflor
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.19.3,119,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0119
+2023-18-03,2023,Sulfoxaflor,Risk assessment,Plant products,Sulfoxaflor,"Peer review (EFSA, 2014d):
+Sum of sulfoxaflor and metabolite X11719474, expressed as sulfoxaflor
+If metabolite X11719474 is shown to be significantly less toxic than sulfoxaflor, then the residue definition for risk assessment will become patent sulfoxaflor only.",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.19.3,119,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0119
+2023-18-04,2023,Sulfoxaflor,Risk assessment,Animal products,Sulfoxaflor,"Peer review (EFSA, 2014d):
+Sum of parent sulfoxaflor and metabolite X11719474, expressed as sulfoxaflor
+If metabolite X11719474 is shown to be significantly less toxic than sulfoxaflor, the residue definition for risk assessment will become parent sulfoxaflor only.",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.19.3,119,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0119
+2023-19-01,2023,Benzovindiflupyr,Enforcement,Plant products,Benzovindiflupyr,"Reg. 396/2005: Benzovindiflupyr
+Peer review (EFSA, 2015c): Benzovindiflupyr",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.20.3,126,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0126
+2023-19-02,2023,Benzovindiflupyr,Enforcement,Animal products,"Benzovindiflupyr
+The residue is fat soluble","Reg. 396/2005: Benzovindiflupyr
+Peer review (EFSA, 2015c): Benzovindiflupyr
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.20.3,126,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0126
+2023-19-03,2023,Benzovindiflupyr,Risk assessment,Plant products,Benzovindiflupyr,"Peer review (EFSA, 2015c): Benzovindiflupyr",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.20.3,126,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0126
+2023-19-04,2023,Benzovindiflupyr,Risk assessment,Animal products,Benzovindiflupyr,"Peer review (EFSA, 2015c): Benzovindiflupyr and mono‐hydroxylated benzovindiflupyr, free and conjugated (SYN546039), expressed as benzovindiflupyr",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.20.3,126,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0126
+2023-20-01,2023,Flupyradifurone,Enforcement,Plant products,Flupyradifurone,"Reg. 396/2005:
+1) Flupyradifurone
+2) Difluoroacetic acid (DFA)
+Peer review (EFSA, 2015b):
+1) Flupyradifurone
+2) Difluoroacetic acid (DFA) (expressed as DFA)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.21.3,133,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0133
+2023-20-03,2023,Flupyradifurone,Risk assessment,Plant products,"Sum of flupyradifurone, difluoroacetic acid (DFA) and 6‐chloronicotinic acid (6‐CNA), expressed as parent equivalents","Peer review (EFSA, 2015b):
+Sum of flupyradifurone and DFA, expressed as flupyradifurone",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.21.3,133,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0133
+2023-20-04,2023,Flupyradifurone,Risk assessment,Animal products,"Sum of flupyradifurone and difluoroacetic acid, expressed as parent equivalents","Peer review (EFSA, 2015b):
+Sum flupyradifurone and DFA, expressed as flupyradifurone",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.21.3,133,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0133
+2023-21-01,2023,Quinclorac,Enforcement,Plant products,Quinclorac plus quinclorac conjugates,Reg. 396/2005: Quinclorac,https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.22.3,140,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0140
+2023-22-02,2023,Spiromesifen,Enforcement,Animal products,"Sum of spiromesifen and spiromesifen‐enol, expressed as spiromesifen
+The residue is fat soluble","Reg. 396/2005: Spiromesifen
+MRL review (EFSA, 2019a): Inconclusive (No residue definition proposed in the absence of appropriate metabolism studies)
+Peer review (EFSA, 2012f): Not proposed
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.23.3,147,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0147
+2023-22-03,2023,Spiromesifen,Risk assessment,Plant products,"Sum of spiromesifen, spiromesifen‐enol and 4‐hydroxymethyl‐spiromesifen‐enol (free and conjugated), expressed as spiromesifen","MRL review (EFSA, 2019a):
+Primary crops, except leafy crops:
+Sum of spiromesifen and spiromesifen‐enol (M01), expressed as spiromesifen
+2) Leafy and rotational crops: Sum of spiromesifen, spiromesifen‐enol (M01), spiromesifen‐4‐hydroxymethyl (M02) and its conjugate M03, expressed as spiromesifen
+Peer review (EFSA, 2012f):
+Sum of spiromesifen and spiromesifen‐enol (M01), expressed as spiromesifen equivalents",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.23.3,147,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0147
+2023-23-02,2023,Fenazaquin,Enforcement,Animal products,"Sum of fenazaquin and 2‐hydroxy‐fenazaquin acid, expressed as fenazaquin equivalents
+The residue is fat soluble","Reg. 396/2005: Fenazaquin
+MRL review (EFSA, 2020b) and peer review (EFSA, 2013d): Ruminants: Fenazaquin
+The residue is fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.24.3,154,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0154
+2023-23-03,2023,Fenazaquin,Risk assessment,Plant products,Fenazaquin (RD was derived from metabolism studies in fruit and cereals) it was therefore not used for pulses and leafy crops).,"MRL review (EFSA, 2020b):
+Fruits crops:
+(1) Fenazaquin
+(2) TBPE (2‐(4‐tert‐butylphenyl)ethanol)
+Leafy vegetables (tentative):
+(1) Fenazaquin
+(2) TBPE
+Peer review (EFSA, 2013d):
+Fruit RAC and their processed products:
+(1) Fenazaquin
+(2) TBPE",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.24.3,154,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0154
+2023-24-01,2023,Afidopyropen,Enforcement,Plant products,Afidopyropen,"Reg. 396/2005: Afidopyropen (default MRLs/RD according to Art. 18(1)(b))
+No EU peer review and no MRL review",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.25.3,161,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0161
+2023-24-02,2023,Afidopyropen,Enforcement,Animal products,"Afidopyropen
+The residue is not fat soluble","Reg. 396/2005: Afidopyropen (default MRLs/RD according to Art. 18(1)(b))
+No EU peer review and no MRL review
+Fat solubility not specified",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.25.3,161,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0161
+2023-25-01,2023,Pyridate,Enforcement,Plant products,"Sum of pyridate and 6‐chloro‐4‐hydroxy‐3‐phenylpridazine (pyridafol) (incl. conjugates), expressed as pyridate","Reg. 396/2005 (implementing MRL review): Pyridate (sum of pyridate, its hydrolysis product CL 9673 (6‐chloro‐4‐hydroxy‐3‐phenylpyridazin) and hydrolysable conjugates of CL 9673, expressed as pyridate)
+Peer review (EFSA, 2014e): Pyridate (sum of pyridate, its hydrolysis product CL 9673(6‐chloro‐4‐hydroxy‐3‐phenylpyridazin)) and hydrolysable conjugates of CL 9673, expressed as pyridate",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.26.3,168,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0168
+2023-25-02,2023,Pyridate,Enforcement,Animal products,"Sum of pyridate and 6‐chloro‐4‐hydroxy‐3‐phenylpridazine (pyridafol) (incl. conjugates), expressed as pyridate
+The residue is not fat soluble","Reg. 396/2005 (implementing MRL review): Pyridate (sum of pyridate, its hydrolysis product CL 9673 (6‐chloro‐4‐hydroxy‐3‐phenylpyridazin) and hydrolysable conjugates of CL 9673, expressed as pyridate)
+Peer review (EFSA, 2014e):
+CL 9673 (pyridafol), expressed as pyridate
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.26.3,168,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0168
+2023-26-02,2023,Triflumuron,Enforcement,Animal products,"Triflumuron
+The residue is fat soluble","Reg. 396/2005 (implementing MRL review): Triflumuron
+Peer review (EFSA, 2011a): Triflumuron
+The residue is fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.27.3,173,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0173
+2023-26-03,2023,Triflumuron,Risk assessment,Plant products,"Sum of triflumuron and 2‐chlorobenzoic acid (M02), expressed as triflumuron and
+4‐trifluoromethoxyaniline (M07) assessed separately","MRL review (EFSA, 2017a): Triflumuron (for fruit crops only)
+Peer review (EFSA, 2011a):
+Fruit crops:
+Triflumuron
+Oilseeds/pulses and tuber crops: Sum triflumuron, M07 and M08 expressed as triflumuron (provisional) (see comments below)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.27.3,173,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0173
+2023-27-01,2023,Mefentrifluconazole,Enforcement,Plant products,Mefentrifluconazole,"Reg. 396/2005: Mefentrifluconazole
+Peer review (EFSA, 2018g): Mefentrifluconazole (BAS 750 F)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.28.3,180,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0180
+2023-27-02,2023,Mefentrifluconazole,Enforcement,Animal products,"Mefentrifluconazole (free and conjugated)
+The residue is fat soluble","Reg. 396/2005: Mefentrifluconazole
+Peer review (EFSA, 2018g): Mefentrifluconazole (BAS 750 F)
+The residue is not fat soluble",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.28.3,180,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0180
+2023-27-03,2023,Mefentrifluconazole,Risk assessment,Plant products,Mefentrifluconazole,"Peer review (EFSA, 2018g):
+1) Mefentrifluconazole
+2) TDMs, with a separate assessment of TA, TLA, TAA and 1,2,4‐Triazole",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.28.3,180,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0180
+2023-27-04,2023,Mefentrifluconazole,Risk assessment,Animal products,"Sum of mefentrifluconazole (free and conjugated) + 2‐[4‐(4‐chlorophenoxy)‐2‐(trifluoromethyl)phenyl]propane‐1,2‐diol (M750F022), free and conjugated, expressed as mefentrifluconazole equivalents","Peer review (EFSA, 2018g):
+Ruminants:
+1) Mefentrifluconazole
+2) TDMs, with a separate assessment of TA and TLA TAA1,2,4‐Triazole
+Poultry:
+1) Mefentriconazole and metabolite M750F022 and fatty acid conjugates of M750F022, expressed as parent.
+2) TDMs, with a separate assessment of TA and TLA TAA 1,2,4‐Triazole",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.28.3,180,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0180
+2023-28-01,2023,Tetraniliprole,Enforcement,Plant products,Tetraniliprole,Reg. 396/2005: Tetraniliprole (default MRLs/RD according to Art. 18(1)(b)),https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.29.3,187,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0187
+2023-33-01,2023,Inpyrfluxam,Enforcement,Plant products,Inpyrfluxam,Reg. 396/2005: Inpyrfluxam (S‐2399) (default MRLs/RD according to Art. 18(1)(b)),https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.34.3,220,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0220
+2023-33-02,2023,Inpyrfluxam,Enforcement,Animal products,"Inpyrfluxam and 1′‐CH2OH‐S‐2840 (free or conjugated) expressed as inpyrfluxam
+The residue is not fat soluble","Reg. 396/2005: Inpyrfluxam (S‐2399) (default MRLs/RD according to Art. 18(1)(b))
+Fat solubility not specified",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.34.3,220,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0220
+2023-34-01,2023,Isoflucypram,Enforcement,Plant products,Isoflucypram,"Reg. 396/2005: Isoflucypram (default MRLs/RD according to Art. 18(1)(b))
+Peer review (EFSA, 2022d): Isoflucypram (for all crop groups following foliar application)",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.35.3,227,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0227
+2023-34-02,2023,Isoflucypram,Enforcement,Animal products,"Isoflucypram
+The residue is fat soluble","Reg. 396/2005: Isoflucypram
+(default MRLs/RD according to Art. 18(1)(b))
+Peer review (EFSA, 2022d): Isoflucypram
+Fat solubility not specified",https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.8111,5.35.3,227,https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0227
