@@ -9,11 +9,19 @@ KEYS = {'openai': 'OPENAI_API_KEY', 'anthropic': 'ANTHROPIC_API_KEY', 'gemini': 
 class Provider:
     def __init__(self, provider, model, config):
         self.provider, self.model, self.config = provider, model, config
-        key = os.environ.get(KEYS[provider])
+        self.backend = config.get('api_backend', 'official')
+        if self.backend not in ('official', 'openrouter'):
+            raise ValueError('api_backend must be official or openrouter')
+        key_name = 'OPENROUTER_API_KEY' if self.backend == 'openrouter' else KEYS[provider]
+        key = os.environ.get(key_name)
         if not key or not model:
             raise ValueError(f'{provider}: API key and explicit model ID required')
         timeout = config['timeout_seconds']
-        if provider == 'openai':
+        if self.backend == 'openrouter':
+            from openai import OpenAI
+            self.client = OpenAI(api_key=key, base_url='https://openrouter.ai/api/v1',
+                                 timeout=timeout, max_retries=0)
+        elif provider == 'openai':
             from openai import OpenAI
             self.client = OpenAI(api_key=key, timeout=timeout, max_retries=0)
         elif provider == 'anthropic':
@@ -27,6 +35,14 @@ class Provider:
 
     def call(self, prompt):
         tokens = self.config['max_output_tokens']
+        if self.backend == 'openrouter':
+            r = self.client.chat.completions.create(
+                model=self.model, messages=[{'role': 'system', 'content': SYSTEM},
+                                           {'role': 'user', 'content': prompt}],
+                max_tokens=tokens)
+            if not r.choices:
+                raise ValueError('OpenRouter returned no choices')
+            return r.choices[0].message.content or '', r.usage.model_dump() if r.usage else {}, r.id
         if self.provider == 'openai':
             r = self.client.responses.create(model=self.model, instructions=SYSTEM,
                                               input=prompt, max_output_tokens=tokens)

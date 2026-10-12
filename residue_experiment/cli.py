@@ -1,5 +1,7 @@
 import argparse
 import json
+import os
+from dotenv import load_dotenv
 from pathlib import Path
 from .runner import run
 from .selection import CONDITIONS
@@ -8,6 +10,13 @@ from .evaluation import write_csv
 
 
 def validate_config(config):
+    if config.get('api_backend', 'official') not in ('official', 'openrouter'):
+        raise ValueError('api_backend must be official or openrouter')
+    model_env = config.get('model_env', {})
+    if not isinstance(model_env, dict) or not set(model_env) <= set(config['models']):
+        raise ValueError('model_env keys must be configured providers')
+    if any(not isinstance(v, str) or not v.strip() for v in model_env.values()):
+        raise ValueError('model_env values must be environment variable names')
     if not config['years'] or any(type(y) is not int for y in config['years']) or len(set(config['years'])) != len(config['years']):
         raise ValueError('years must be nonempty and unique')
     if not config['seeds'] or any(type(s) is not int for s in config['seeds']) or len(set(config['seeds'])) != len(config['seeds']):
@@ -38,6 +47,9 @@ def main():
         config = json.loads(config_path.read_text(encoding='utf-8'))
         config['data_dir'] = str((config_path.parent / config['data_dir']).resolve())
         validate_config(config)
+        load_dotenv(config_path.parent / '.env', override=False)
+        for provider, env_name in config.get('model_env', {}).items():
+            config['models'][provider] = os.getenv(env_name) or config['models'][provider]
         print(json.dumps(run(config, args.output, args.mode, args.approve_paid_api)))
     except (ValueError, KeyError, ImportError) as exc:
         output = Path(args.output)

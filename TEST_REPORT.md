@@ -50,3 +50,9 @@ OpenAI SDK 2.54.0, Anthropic SDK 0.125.0, Google Gen AI SDK 1.75.0.
 
 사용자 요청에 따라 검증된 구현 파일을 GitHub 저장소에 반영합니다. 원본 CSV, .env,
 가상환경 및 결과 체크포인트는 업로드 대상에서 제외합니다. 유료 API 호출은 실행하지 않았습니다.
+
+## 2026-10-12 OpenRouter 추가 검증
+
+OpenRouter 백엔드, 단일 API 키, .env 모델 ID 연결을 추가했습니다.
+공식 API 회귀 테스트와 세 OpenRouter 모델 경로의 Mock 요청, CLI 환경값 반영을 검증했습니다.
+실제 유료 API 호출 없이 36개 테스트 통과. 원본 CSV 변경 없음.

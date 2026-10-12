@@ -103,6 +103,41 @@ SDK 자체 재시도는 끄고 실행기에서 `max_attempts`, 지수 backoff로
 모델별 기본 생성 설정을 사용하므로 서비스측 완전 결정성은 보장하지 않습니다.
 현재 개발 환경의 네트워크 허용 목록에 모델 API가 없다면 승인 후 환경 설정도 필요합니다.
 
+## OpenRouter로 실행하기
+
+기존 공식 API 모드는 그대로 지원하며, OpenRouter는 `config.openrouter.json`을 사용합니다.
+설정 파일과 같은 폴더의 `.env`에서 아래 값을 읽습니다. 이미 설정한 환경변수가 있으면 우선합니다.
+
+```dotenv
+OPENROUTER_API_KEY=발급받은_키
+GPT_MODEL=openai/정확한_모델_ID
+CLAUDE_MODEL=anthropic/정확한_모델_ID
+GEMINI_MODEL=google/정확한_모델_ID
+```
+
+모델 ID는 OpenRouter 카탈로그의 정확한 값을 입력하세요. 위 값은 자리표시자입니다.
+세 회사 개별 키 대신 OpenRouter 키 하나를 사용합니다. `.env`를 덮어쓰거나 GitHub에 올리지 마세요.
+모델 ID를 설정 JSON의 `models`에 직접 입력해도 됩니다. 해당 `model_env` 환경값이 있으면 우선합니다.
+GPT만 실행하려면 `models`와 `model_env`에서 `anthropic`, `gemini` 항목을 모두 제거하세요.
+
+```bash
+git pull origin main
+python -m pip install -e '.[api,test]'
+python -m residue_experiment.cli --config config.openrouter.json --mode dry-run --output results/router-plan
+python -m residue_experiment.cli --config config.openrouter.json --mode mock --output results/router-mock
+# 실제 과금되는 실행: 사용자 승인 후 직접 실행
+python -m residue_experiment.cli --config config.openrouter.json --mode live --approve-paid-api --output results/router-live-v1
+```
+
+OpenRouter 설정의 기본 테스트 연도는 E0~E5를 모두 실행할 수 있는 2023~2025입니다.
+기본값은 3개 모델 × 3개 연도 × 70개 테스트 × (E0/E5 각각 1회 + E1~E4 각각 3 seed)
+= **8,820개 요청**입니다(재시도 제외). GPT만 선택하면 2,940개입니다.
+처음에는 `years: [2025]`, `conditions: ["E0"]`, GPT 하나로 70개 요청을 실행할 수 있습니다.
+OpenRouter 호출은 Chat Completions API, `max_tokens`, 기존 시스템/사용자 프롬프트를 사용합니다.
+실제 연결·과금 테스트는 자동 검증에 포함하지 않습니다. 이전 결과와 다른 새 결과 폴더를 사용하세요.
+OpenRouter와 회사 공식 API는 제공 경로와 생성 기본 설정이 다를 수 있으므로 같은 실험으로 합치지 마세요.
+백엔드는 manifest 설정과 체크포인트 지문에 저장됩니다.
+
 ## 중단과 재개
 
 동일한 config·mode·output으로 같은 명령을 다시 실행하면 SQLite 체크포인트를 사용합니다.

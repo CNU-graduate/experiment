@@ -41,8 +41,6 @@ def run(config, output, mode='dry-run', approved=False):
         selector = Selector(data.pools)
         clients = {}
         if mode == 'live':
-            from dotenv import load_dotenv
-            load_dotenv(override=False)
             clients = {p: Provider(p, m, config) for p, m in config['models'].items()}
         # Persist the entire plan before any calls, so interruptions retain denominator.
         for year in config['years']:

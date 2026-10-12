@@ -260,3 +260,50 @@ def test_missing_keys_fail_without_calls(config,tmp_path,monkeypatch):
     with pytest.raises(ValueError,match='API key'):run(config,tmp_path,'live',approved=True)
     with sqlite3.connect(tmp_path/'checkpoint.sqlite') as db:
         assert db.execute('SELECT COUNT(*) FROM calls').fetchone()[0]==0
+
+
+@pytest.mark.parametrize('provider', ['openai', 'anthropic', 'gemini'])
+def test_openrouter_adapter(provider, monkeypatch):
+    import openai
+    config = json.loads((ROOT/'config.openrouter.json').read_text())
+    monkeypatch.setenv('OPENROUTER_API_KEY', 'dummy-unit-test')
+    factory = MagicMock()
+    monkeypatch.setattr(openai, 'OpenAI', factory)
+    factory.return_value.chat.completions.create.return_value = SimpleNamespace(
+        choices=[SimpleNamespace(message=SimpleNamespace(content='Yes'))],
+        usage=SimpleNamespace(model_dump=lambda: {'prompt_tokens': 10, 'completion_tokens': 1}),
+        id='router-test')
+    client = Provider(provider, 'vendor/model', config)
+    assert client.call('input') == ('Yes', {'prompt_tokens': 10, 'completion_tokens': 1}, 'router-test')
+    assert factory.call_args.kwargs['base_url'] == 'https://openrouter.ai/api/v1'
+    assert factory.call_args.kwargs['max_retries'] == 0
+    request = factory.return_value.chat.completions.create.call_args.kwargs
+    assert request['model'] == 'vendor/model'
+    assert request['messages'][0]['role'] == 'system'
+    assert request['messages'][1]['content'] == 'input'
+    assert request['max_tokens'] == 1000
+
+
+def test_invalid_backend(config):
+    from residue_experiment.cli import validate_config
+    with pytest.raises(ValueError, match='api_backend'):
+        validate_config(dict(config, api_backend='invalid'))
+
+
+def test_cli_openrouter_env_resolution(tmp_path, monkeypatch):
+    from residue_experiment import cli
+    config = json.loads((ROOT/'config.openrouter.json').read_text())
+    config['data_dir'] = str(ROOT)
+    path = tmp_path/'config.json'
+    path.write_text(json.dumps(config))
+    (tmp_path/'.env').write_text('GPT_MODEL=openai/test\nCLAUDE_MODEL=anthropic/test\nGEMINI_MODEL=google/test\n')
+    for name in ('GPT_MODEL','CLAUDE_MODEL','GEMINI_MODEL'):
+        monkeypatch.delenv(name, raising=False)
+    monkeypatch.setattr('sys.argv', ['residue-experiment','--config',str(path)])
+    captured = {}
+    def fake_run(c, *args):
+        captured.update(c)
+        return {'calls': 0}
+    monkeypatch.setattr(cli, 'run', fake_run)
+    cli.main()
+    assert captured['models'] == {'openai':'openai/test','anthropic':'anthropic/test','gemini':'google/test'}
