@@ -40,6 +40,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', default='config.json')
     parser.add_argument('--mode', choices=['dry-run', 'mock', 'live'], default='dry-run')
+    parser.add_argument('--provider', choices=list(KEYS), help='Run one provider only, for splitting models across teammates')
     parser.add_argument('--year', type=int, help='Run only this test year; candidates use calendar year minus one')
     parser.add_argument('--seed', type=int, help='Use one random-example seed; same seed reproduces the selection')
     parser.add_argument('--output', help='Explicit result directory; reuse only to resume the same run')
@@ -55,10 +56,17 @@ def main():
     try:
         config = json.loads(config_path.read_text(encoding='utf-8'))
         config['data_dir'] = str((config_path.parent / config['data_dir']).resolve())
+        if config.get('priority_annotations'):
+            config['priority_annotations'] = str((config_path.parent / config['priority_annotations']).resolve())
         if args.year is not None:
             config['years'] = [args.year]
         if args.seed is not None:
             config['seeds'] = [args.seed]
+        if args.provider is not None:
+            if args.provider not in config['models']:
+                raise ValueError(f'Provider not configured: {args.provider}')
+            config['models'] = {args.provider: config['models'][args.provider]}
+            config['model_env'] = {k: v for k, v in config.get('model_env', {}).items() if k == args.provider}
         validate_config(config)
         load_dotenv(config_path.parent / '.env', override=False)
         for provider, env_name in config.get('model_env', {}).items():

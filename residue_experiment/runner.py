@@ -19,12 +19,21 @@ def run(config, output, mode='dry-run', approved=False):
     if mode == 'live' and not approved:
         raise ValueError('Live calls require separate user approval and --approve-paid-api')
     data = Dataset(config['data_dir'])
+    annotations = {}
+    annotation_files = []
+    if 'E6' in config['conditions'] and config.get('priority_annotations'):
+        annotation_path = Path(config['priority_annotations'])
+        if not annotation_path.is_absolute():
+            annotation_path = Path(config['data_dir']) / annotation_path
+        raw = annotation_path.read_bytes()
+        annotations = json.loads(raw)['annotations']
+        annotation_files = [{'file': annotation_path.name, 'sha256': hashlib.sha256(raw).hexdigest()}]
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     write_csv(output/'validation.csv', data.files)
     write_csv(output/'data_issues.csv', data.issues, ['year', 'type', 'detail'])
     fingerprint = hashlib.sha256(canonical({'config': config, 'files': data.files, 'mode': mode,
-                                            'system': SYSTEM, 'version': 1,
+                                            'system': SYSTEM, 'version': 2, 'annotation_files': annotation_files,
                                             'implementation': {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
                                                 for p in sorted(Path(__file__).parent.glob('*.py'))}}).encode()).hexdigest()
     db = sqlite3.connect(output/'checkpoint.sqlite')
@@ -38,7 +47,7 @@ def run(config, output, mode='dry-run', approved=False):
         db.execute('CREATE TABLE IF NOT EXISTS cases (key TEXT PRIMARY KEY, payload TEXT)')
         db.execute('CREATE TABLE IF NOT EXISTS calls (id INTEGER PRIMARY KEY, payload TEXT)')
         db.commit()
-        selector = Selector(data.pools)
+        selector = Selector(data.pools, {y: [inputs(r) for r in rows] for y, rows in data.tests.items()}, annotations)
         clients = {}
         if mode == 'live':
             clients = {p: Provider(p, m, config) for p, m in config['models'].items()}
@@ -68,7 +77,8 @@ def run(config, output, mode='dry-run', approved=False):
                                        'prompt': prompt}
                             db.execute('INSERT OR IGNORE INTO cases VALUES (?, ?)', (key, canonical(payload)))
         db.commit()
-        manifest = {'fingerprint': fingerprint, 'mode': mode, 'config': config,
+        (output/'selection_audit.json').write_text(json.dumps(selector.audit, ensure_ascii=False, indent=2), encoding='utf-8')
+        manifest = {'annotation_files': annotation_files, 'fingerprint': fingerprint, 'mode': mode, 'config': config,
                     'data_files': data.files, 'system_prompt': SYSTEM,
                     'created_utc': datetime.now(timezone.utc).isoformat()}
         if not (output/'manifest.json').exists():

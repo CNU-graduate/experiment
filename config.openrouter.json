@@ -8,7 +8,8 @@
   "conditions": [
     "E0",
     "E1",
-    "E5"
+    "E5",
+    "E6"
   ],
   "seeds": [
     42
@@ -27,5 +28,6 @@
     "openai": "GPT_MODEL",
     "anthropic": "CLAUDE_MODEL",
     "gemini": "GEMINI_MODEL"
-  }
+  },
+  "priority_annotations": "priority_annotations.json"
 }
