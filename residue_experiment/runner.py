@@ -4,7 +4,7 @@ import sqlite3
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from .data import Dataset
+from .data import Dataset, inputs
 from .selection import Selector, RANDOM
 from .prompt import build_prompt, parse_label, SYSTEM
 from .providers import Provider, mock_call, KEYS
@@ -52,7 +52,7 @@ def run(config, output, mode='dry-run', approved=False):
                     for test in data.tests[year]:
                         examples, error = [], ''
                         try:
-                            examples = selector.choose(condition, year, seed, test)
+                            examples = selector.choose(condition, year, seed, inputs(test))
                         except ValueError as exc:
                             error = str(exc)
                         prompt = build_prompt(test, examples)
@@ -126,6 +126,9 @@ def export(db, output):
             example_rows.append({k: row[k] for k in ('mode', 'provider', 'model', 'year', 'condition', 'seed', 'id')} |
                                 {'rank': rank, 'example_id': e['id'], 'example_year': e['year'],
                                  'example_label': e['label'], 'similarity': e['similarity']})
+    with (output/'prompts.jsonl').open('w', encoding='utf-8') as handle:
+        for row in rows:
+            handle.write(canonical({k: row[k] for k in ('provider', 'model', 'year', 'condition', 'seed', 'id', 'prompt')}) + '\n')
     write_csv(output/'examples.csv', example_rows, ['mode','provider','model','year','condition','seed','id','rank','example_id','example_year','example_label','similarity'])
     public = [{k: v for k, v in r.items() if k not in ('examples', 'prompt')} for r in rows]
     write_csv(output/'predictions.csv', public)

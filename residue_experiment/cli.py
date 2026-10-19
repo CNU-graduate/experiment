@@ -3,6 +3,7 @@ import json
 import os
 from dotenv import load_dotenv
 from pathlib import Path
+from datetime import datetime, timezone
 from .runner import run
 from .selection import CONDITIONS
 from .providers import KEYS
@@ -39,20 +40,32 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', default='config.json')
     parser.add_argument('--mode', choices=['dry-run', 'mock', 'live'], default='dry-run')
-    parser.add_argument('--output', default='results/dry-run')
+    parser.add_argument('--year', type=int, help='Run only this test year; candidates use calendar year minus one')
+    parser.add_argument('--seed', type=int, help='Use one random-example seed; same seed reproduces the selection')
+    parser.add_argument('--output', help='Explicit result directory; reuse only to resume the same run')
+    parser.add_argument('--fresh', action='store_true', help='Start a new timestamped run, including under an explicit output directory')
     parser.add_argument('--approve-paid-api', action='store_true', help='Use only after separate user approval')
     args = parser.parse_args()
     config_path = Path(args.config).resolve()
+    stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
+    scope = str(args.year) if args.year is not None else 'configured-years'
+    output = Path(args.output) if args.output else Path('results') / args.mode / scope / stamp
+    if args.fresh and args.output:
+        output = output / stamp
     try:
         config = json.loads(config_path.read_text(encoding='utf-8'))
         config['data_dir'] = str((config_path.parent / config['data_dir']).resolve())
+        if args.year is not None:
+            config['years'] = [args.year]
+        if args.seed is not None:
+            config['seeds'] = [args.seed]
         validate_config(config)
         load_dotenv(config_path.parent / '.env', override=False)
         for provider, env_name in config.get('model_env', {}).items():
             config['models'][provider] = os.getenv(env_name) or config['models'][provider]
-        print(json.dumps(run(config, args.output, args.mode, args.approve_paid_api)))
+        result = run(config, output, args.mode, args.approve_paid_api)
+        print(json.dumps(dict(result, output=str(output.resolve()))))
     except (ValueError, KeyError, ImportError) as exc:
-        output = Path(args.output)
         output.mkdir(parents=True, exist_ok=True)
         write_csv(output/'validation_errors.csv', [{'type': type(exc).__name__, 'reason': str(exc)}])
         parser.exit(2, f'{type(exc).__name__}: {exc}\n')

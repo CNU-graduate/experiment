@@ -31,7 +31,7 @@ def test_real_csv_integrity(data):
     assert len(data.files) == 21
     assert sum(len(t) for t in data.tests.values()) == 490
     assert data.issues == []
-    assert {y: len(p) for y,p in data.pools.items()} == {2018:109,2019:107,2021:141,2022:114,2023:90,2024:86,2025:82}
+    assert {y: len(p) for y,p in data.pools.items()} == {2018:39,2019:37,2021:71,2022:44,2023:20,2024:16,2025:12}
 
 
 @pytest.mark.parametrize('condition', ['E0','E1','E2','E3','E4','E5'])
@@ -44,6 +44,8 @@ def test_selection_constraints(data, condition):
     assert len({r['id'] for r in rows}) == len(rows)
     assert all(int(r['year']) < 2025 for r in rows)
     assert all(r['EFSA'] in ('Yes','No') for r in rows)
+    held_out = {r['id'] for test_rows in data.tests.values() for r in test_rows}
+    assert not held_out.intersection(r['id'] for r in rows)
     if condition in ('E2','E3','E4'):
         assert sum(r['EFSA']=='Yes' for r in rows) == 2
     if condition == 'E3':
@@ -212,7 +214,7 @@ def test_official_adapter_requests(provider,monkeypatch):
         assert factory.return_value.models.generate_content.call_args.kwargs['contents']=='safe-input'
 
 
-def test_pool_overlap_dedup_and_conflict(tmp_path):
+def test_pool_rejects_held_out_overlap(tmp_path):
     for name in ('ESFA_202570.csv','ESFA_202570answerkey.csv','ESFA_2025_remain.csv'):
         (tmp_path/name).write_bytes((ROOT/name).read_bytes())
     key=tmp_path/'ESFA_202570answerkey.csv'
@@ -222,9 +224,8 @@ def test_pool_overlap_dedup_and_conflict(tmp_path):
     remain=tmp_path/'ESFA_2025_remain.csv'
     with remain.open('a',encoding='utf-8',newline='') as f:
         csv.DictWriter(f,fieldnames=fields).writerow(rows[0])
-    d=Dataset(tmp_path)
-    assert len(d.pools[2025])==82
-    assert d.issues[0]['type']=='pool_overlap_removed'
+    with pytest.raises(ValueError,match='remain overlaps held-out'):
+        Dataset(tmp_path)
     rows[0]['EFSA']='No' if rows[0]['EFSA']=='Yes' else 'Yes'
     with remain.open('a',encoding='utf-8',newline='') as f:
         csv.DictWriter(f,fieldnames=fields).writerow(rows[0])
@@ -307,3 +308,89 @@ def test_cli_openrouter_env_resolution(tmp_path, monkeypatch):
     monkeypatch.setattr(cli, 'run', fake_run)
     cli.main()
     assert captured['models'] == {'openai':'openai/test','anthropic':'anthropic/test','gemini':'google/test'}
+
+
+def test_remain_pool_without_answerkey(tmp_path):
+    name = 'ESFA_2024_remain.csv'
+    (tmp_path/name).write_bytes((ROOT/name).read_bytes())
+    data = Dataset(tmp_path)
+    assert len(data.pools[2024]) == 16
+    assert data.tests == {}
+
+
+def test_default_three_conditions():
+    for name in ('config.json', 'config.openrouter.json'):
+        c = json.loads((ROOT/name).read_text())
+        assert c['conditions'] == ['E0', 'E1', 'E5']
+        assert c['seeds'] == [42]
+
+
+def test_runner_selection_and_prompt_answer_isolation(config, tmp_path, monkeypatch):
+    config.update(conditions=['E0', 'E1', 'E5'], seeds=[42], models={'openai': ''})
+    choose = Selector.choose
+    def guarded(self, condition, year, seed, test):
+        assert set(test) == set(FIELDS)
+        return choose(self, condition, year, seed, test)
+    monkeypatch.setattr(Selector, 'choose', guarded)
+    assert run(config, tmp_path, 'dry-run') == {'cases': 210, 'calls': 0}
+    data = Dataset(ROOT)
+    held_out = {r['id'] for rows in data.tests.values() for r in rows}
+    examples = list(csv.DictReader((tmp_path/'examples.csv').open(encoding='utf-8-sig')))
+    assert not held_out.intersection(r['example_id'] for r in examples)
+    assert {r['example_year'] for r in examples} == {'2024'}
+    for line in (tmp_path/'prompts.jsonl').read_text().splitlines():
+        payload = json.loads(json.loads(line)['prompt'])
+        assert set(payload['test']) == set(FIELDS)
+        assert all(set(r) == set(FIELDS) | {'EFSA'} for r in payload['examples'])
+
+
+def test_changing_test_answers_does_not_change_prompts(config, tmp_path):
+    folder = tmp_path/'data'
+    folder.mkdir()
+    for path in ROOT.glob('ESFA_*.csv'):
+        (folder/path.name).write_bytes(path.read_bytes())
+    config.update(data_dir=str(folder), conditions=['E0', 'E1', 'E5'],
+                  seeds=[42], models={'openai': ''})
+    first, second = tmp_path/'first', tmp_path/'second'
+    run(config, first)
+    p = folder/'ESFA_202570answerkey.csv'
+    with p.open(encoding='utf-8-sig', newline='') as f:
+        reader = csv.DictReader(f)
+        fields, rows = reader.fieldnames, list(reader)
+    for row in rows:
+        row['EFSA'] = 'No' if row['EFSA'] == 'Yes' else 'Yes'
+        row['efsa_comments'] = 'TEST_ANSWER_MUST_NEVER_BE_SENT'
+    with p.open('w', encoding='utf-8-sig', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+    run(config, second)
+    assert (first/'prompts.jsonl').read_bytes() == (second/'prompts.jsonl').read_bytes()
+
+
+def test_cli_year_seed_and_fresh_outputs(tmp_path, monkeypatch, capsys):
+    from residue_experiment import cli
+    c = json.loads((ROOT/'config.json').read_text())
+    c['data_dir'] = str(ROOT)
+    path = tmp_path/'config.json'
+    path.write_text(json.dumps(c))
+    captured = []
+    def fake_run(config, output, *args):
+        captured.append((config, Path(output)))
+        return {'cases': 210, 'calls': 0}
+    monkeypatch.setattr(cli, 'run', fake_run)
+    argv = ['residue-experiment', '--config', str(path), '--year', '2024', '--seed', '123']
+    monkeypatch.setattr('sys.argv', argv)
+    cli.main()
+    cli.main()
+    assert captured[0][0]['years'] == [2024]
+    assert captured[0][0]['seeds'] == [123]
+    assert captured[0][1] != captured[1][1]
+    output = tmp_path/'resume'
+    monkeypatch.setattr('sys.argv', argv + ['--output', str(output)])
+    cli.main()
+    assert captured[-1][1] == output
+    monkeypatch.setattr('sys.argv', argv + ['--output', str(output), '--fresh'])
+    cli.main()
+    assert captured[-1][1].parent == output
+    assert captured[-1][1] != output

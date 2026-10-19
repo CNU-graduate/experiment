@@ -1,9 +1,27 @@
 {
   "data_dir": ".",
-  "years": [2018, 2019, 2021, 2022, 2023, 2024, 2025],
-  "conditions": ["E0", "E1", "E2", "E3", "E4", "E5"],
-  "seeds": [42, 123, 2026],
-  "models": {"openai": "", "anthropic": "", "gemini": ""},
+  "years": [
+    2018,
+    2019,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "conditions": [
+    "E0",
+    "E1",
+    "E5"
+  ],
+  "seeds": [
+    42
+  ],
+  "models": {
+    "openai": "",
+    "anthropic": "",
+    "gemini": ""
+  },
   "max_output_tokens": 256,
   "timeout_seconds": 60,
   "max_attempts": 3,
