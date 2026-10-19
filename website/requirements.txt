@@ -1,0 +1,4 @@
+# E0, CSV loading, review storage and preview UI need only Python 3.11+.
+# E1–E5 reuse the experiment's validated example selector.
+scikit-learn>=1.5,<2
+python-dotenv>=1,<2

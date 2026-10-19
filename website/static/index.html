@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="JMPR–EU 농약 잔류정의 전문가 검토 워크스페이스">
+  <title>Residue / 잔류정의 검토</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231d5b4e'/%3E%3Ctext x='10' y='29' fill='white' font-family='serif' font-size='30'%3Er%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <aside class="sidebar">
+    <a href="#queue" class="brand">잔류정의 검토<span>JMPR / EU</span></a>
+    <nav aria-label="주 메뉴">
+      <a href="#queue" data-nav="queue">검토 목록 <span class="nav-count" id="nav-count">—</span></a>
+      <a href="#completed" data-nav="completed">검증 완료</a>
+      <a href="#history" data-nav="history">판정 이력</a>
+    </nav>
+    <div class="sidebar-bottom"><button class="help-link" id="guide-button">사용 안내</button></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><strong id="breadcrumb">검토 목록</strong><span class="connection" id="connection">연결 확인 중</span></header>
+    <main id="main" tabindex="-1"><div class="loading">사례를 불러오는 중…</div></main>
+
+  </div>
+  <dialog id="modal"><div id="modal-content"></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
