@@ -15,6 +15,31 @@ from residue_experiment.providers import Provider
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@pytest.mark.parametrize('status,fatal', [(400,True),(401,True),(402,True),(403,True),(404,True),(408,False),(409,False),(429,False),(500,False),(503,False)])
+def test_http_error_policy(status, fatal):
+    from residue_experiment.runner import error_policy
+    exc = RuntimeError('SECRET_DO_NOT_LOG')
+    exc.status_code = status
+    assert error_policy(exc) == (status, fatal)
+
+
+def test_credit_error_stops_and_exports(config, tmp_path, monkeypatch):
+    config.update(conditions=['E0'], models={'openai':'test'})
+    exc = RuntimeError('SECRET_DO_NOT_LOG')
+    exc.status_code = 402
+    client = MagicMock()
+    client.call.side_effect = exc
+    monkeypatch.setattr('residue_experiment.runner.Provider', lambda *args: client)
+    with pytest.raises(ValueError, match='HTTP 402'):
+        run(config, tmp_path, 'live', approved=True)
+    assert client.call.call_count == 1
+    rows = list(csv.DictReader((tmp_path/'predictions.csv').open(encoding='utf-8-sig')))
+    assert len(rows) == 70
+    assert sum(r['status'] == 'pending' for r in rows) == 69
+    errors = (tmp_path/'api_errors.csv').read_text(encoding='utf-8-sig')
+    assert '402' in errors and 'SECRET_DO_NOT_LOG' not in errors
+
+
 @pytest.fixture
 def data():
     return Dataset(ROOT)

@@ -1,0 +1,138 @@
+[
+  {
+    "id": "2022-17-01",
+    "type": "Y2",
+    "status": "명확",
+    "label": "Yes",
+    "model_visible_example": {
+      "substance": "Mandipropamid",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Mandipropamid",
+      "EU": "Reg. 396/2005 (implementing MRL review): Mandipropamid (any ratio of constituent isomers) Peer review (EFSA, 2012k): Mandipropamid (sum of isomers)",
+      "EFSA": "Yes"
+    },
+    "annotation_basis_not_sent": "EU에 병기된 정의들이 모두 JMPR과 표기 정리 후 대응한다. 출처 이름만으로 성분 차이를 추정하지 않았다.",
+    "review_reason_not_sent": "",
+    "pair_interpretation": "조건부 Metalaxyl도 양쪽 이성질체 범위의 문구가 입력에 들어 있다. 코드/이성질체 대응의 확인 대기라는 검토 상태만으로 입력 부족이나 잘못된 예시라고 단정할 수 없다."
+  },
+  {
+    "id": "2022-03-01",
+    "type": "Y2",
+    "status": "조건부",
+    "label": "Yes",
+    "model_visible_example": {
+      "substance": "Metalaxyl",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Metalaxyl (sum of enantiomers)",
+      "EU": "Reg. 396/2005 (implementing MRL review): Metalaxyl and metalaxyl-M (metalaxyl including other mixtures of constituent isomers including metalaxyl-M (sum of isomers))",
+      "EFSA": "Yes"
+    },
+    "annotation_basis_not_sent": "양쪽이 cypermethrin 또는 metalaxyl의 이성질체 혼합물을 기술하며 EU는 다른 혼합물/metalaxyl-M을 부가 설명한다. 단순 문자열 제거보다 구체적 이성질체 범위 확인이 필요하여 조건부로 표시한다.",
+    "review_reason_not_sent": "양쪽이 cypermethrin 또는 metalaxyl의 이성질체 혼합물을 기술하며 EU는 다른 혼합물/metalaxyl-M을 부가 설명한다. 단순 문자열 제거보다 구체적 이성질체 범위 확인이 필요하여 조건부로 표시한다.",
+    "pair_interpretation": "조건부 Metalaxyl도 양쪽 이성질체 범위의 문구가 입력에 들어 있다. 코드/이성질체 대응의 확인 대기라는 검토 상태만으로 입력 부족이나 잘못된 예시라고 단정할 수 없다."
+  },
+  {
+    "id": "2024-25-01",
+    "type": "Y4",
+    "status": "명확",
+    "label": "Yes",
+    "model_visible_example": {
+      "substance": "Tetraniliprole",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Tetraniliprole",
+      "EU": "Reg. 396/2005: Tetraniliprole (default MRLs/RD according to Art. 18(1)(b))",
+      "EFSA": "Yes"
+    },
+    "annotation_basis_not_sent": "해당 Enforcement 행에서 EU 기본 정의가 모물질 기준임을 정의 칸 또는 해설이 특정한다. 모물질 대응을 설명하는 Y4 유형은 확정 가능하다. 기본 정의 적용 및 지용성 정보 공백은 별도 보존하며 RA까지 확장하지 않는다.",
+    "review_reason_not_sent": "",
+    "pair_interpretation": "명확 Tetraniliprole은 기본 정의가 모물질로 명시된다. 조건부 Propiconazole은 법규 모물질과 peer review CGA91305가 둘 다 입력에 있다. 이는 정보 누락보다는 출처 선택 쟁점이며 시스템 지시도 출처를 구분하라고 한다."
+  },
+  {
+    "id": "2024-12-02",
+    "type": "Y4",
+    "status": "조건부",
+    "label": "Yes",
+    "model_visible_example": {
+      "substance": "Propiconazole",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Propiconazole\r\nThe residue is fat soluble",
+      "EU": "Reg. 396/2005 (implementing MRL review): Propiconazole (sum of isomers)\r\nPeer review (EFSA, 2017b): CGA91305 (free and conjugated)\r\nThe residue is fat soluble",
+      "EFSA": "Yes"
+    },
+    "annotation_basis_not_sent": "EU 법규의 propiconazole는 JMPR과 대응하나 peer review는 CGA91305/포합체이다.",
+    "review_reason_not_sent": "현행 법규 Enforcement를 기준으로 한 Yes이다.",
+    "pair_interpretation": "명확 Tetraniliprole은 기본 정의가 모물질로 명시된다. 조건부 Propiconazole은 법규 모물질과 peer review CGA91305가 둘 다 입력에 있다. 이는 정보 누락보다는 출처 선택 쟁점이며 시스템 지시도 출처를 구분하라고 한다."
+  },
+  {
+    "id": "2024-26-04",
+    "type": "N1",
+    "status": "명확",
+    "label": "No",
+    "model_visible_example": {
+      "substance": "Isoflucypram",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Sum of isoflucypram, isoflucypram‐propanol (M01) (free and conjugated), isoflucypram‐carboxylic acid (M12), isoflucypram‐desmethyl‐carboxylic acid (M11) and isoflucypram‐2‐propanol (M02) (free and conjugated), expressed as isoflucypram",
+      "EU": "Peer review (EFSA, 2022e):\r\nSum of isoflucypyram, M01 and its conjugates M19, M02 and its conjugates M20 and M11 expressed as isoflucypyram\r\nThe residue definition for animal products is provisional, pending toxicological data on M50 (metabolite in ruminant kidney observed at a level of 0.011 mg/kg). No conclusion could be drawn on its genotoxic potential\r\nHoney: Sum of isoflucypram, M01 and its conjugates, M06 and its conjugates, expressed as isoflucypram (see RD‐RA for plants)",
+      "EFSA": "No"
+    },
+    "annotation_basis_not_sent": "JMPR에 명시된 M12는 EU 동물 정의의 성분 목록에 없다. M19/M20은 포합체 코드라는 점과 꿀의 별도 정의를 구분하여 M12 차이를 근거로 삼았다.",
+    "review_reason_not_sent": "",
+    "pair_interpretation": "명확 Isoflucypram도 잠정 정의와 꿀 예외가 있는 복잡한 입력이다. 조건부 Clofentezine은 EU 2-CBN 추가와 과실류 엽면처리 제한이 입력에 직접 적힌다. 조건부라고 해서 성분 차이를 볼 수 없는 것은 아니다."
+  },
+  {
+    "id": "2022-05-03",
+    "type": "N1",
+    "status": "조건부",
+    "label": "No",
+    "model_visible_example": {
+      "substance": "Clofentezine",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Clofentezine",
+      "EU": "Peer review (EFSA, 2021e): Clofentezine and 2-CBN. Applicable only to fruit crops following foliar treatment. The residue definition for risk assessment for other crop groups and for processed commodities remains open.",
+      "EFSA": "No"
+    },
+    "annotation_basis_not_sent": "JMPR은 clofentezine이고 EU는 2-CBN도 포함한다. EU는 과실류 엽면처리로 범위를 한정하고 다른 작물/가공품 정의는 미정이라고 하므로 조건부로 표시한다.",
+    "review_reason_not_sent": "JMPR은 clofentezine이고 EU는 2-CBN도 포함한다. EU는 과실류 엽면처리로 범위를 한정하고 다른 작물/가공품 정의는 미정이라고 하므로 조건부로 표시한다.",
+    "pair_interpretation": "명확 Isoflucypram도 잠정 정의와 꿀 예외가 있는 복잡한 입력이다. 조건부 Clofentezine은 EU 2-CBN 추가와 과실류 엽면처리 제한이 입력에 직접 적힌다. 조건부라고 해서 성분 차이를 볼 수 없는 것은 아니다."
+  },
+  {
+    "id": "2024-32-04",
+    "type": "N3",
+    "status": "명확",
+    "label": "No",
+    "model_visible_example": {
+      "substance": "Mepiquat‐chloride",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Mepiquat cation and 4‐hydroxy‐1,1‐dimethylpiperidinium cation (4‐hydroxymepiquat cation, free and conjugated), expressed as mepiquat cation",
+      "EU": "MRL review (EFSA, 2015d) and Peer review (EFSA, 2008b):\r\nSum of mepiquat, 4‐hydroxy mepiquat and their salts, expressed as mepiquat chloride",
+      "EFSA": "No"
+    },
+    "annotation_basis_not_sent": "JMPR은 mepiquat cation, EU는 mepiquat chloride 표현이다. 원문 해설의 재계산 설명과 대응하여 표현 기준 차이 유형을 확정한다.",
+    "review_reason_not_sent": "",
+    "pair_interpretation": "명확 Mepiquat은 cation/chloride 표현 차이가 보인다. 조건부 Emamectin도 법규 free base와 peer review benzoate 표현이 입력에 보인다. 상태 차이에는 출처 복수성 등이 섞여 있으며 단순 입력 난이도 기준이 아니다."
+  },
+  {
+    "id": "2023-16-01",
+    "type": "N3",
+    "status": "조건부",
+    "label": "No",
+    "model_visible_example": {
+      "substance": "Emamectin benzoate",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Emamectin B1a benzoate",
+      "EU": "Reg. 396/2005: Emamectin B1a and its salts, expressed as emamectin B1a (free base)\r\nMRL review (EFSA, 2019g):\r\nEmamectin B1a and its salts, expressed as emamectin B1a (free base)\r\nPeer review (EFSA, 2012i): Emamectin B1a and its salts, expressed as emamectin B1a benzoate",
+      "EFSA": "No"
+    },
+    "annotation_basis_not_sent": "JMPR의 B1a benzoate와 EU 현행 free base 표현이 다르다. peer review에는 benzoate 표현도 병기되어 비교 기준 출처 확인이 필요하다.",
+    "review_reason_not_sent": "JMPR의 B1a benzoate와 EU 현행 free base 표현이 다르다. peer review에는 benzoate 표현도 병기되어 비교 기준 출처 확인이 필요하다.",
+    "pair_interpretation": "명확 Mepiquat은 cation/chloride 표현 차이가 보인다. 조건부 Emamectin도 법규 free base와 peer review benzoate 표현이 입력에 보인다. 상태 차이에는 출처 복수성 등이 섞여 있으며 단순 입력 난이도 기준이 아니다."
+  }
+]

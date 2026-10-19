@@ -15,6 +15,18 @@ def canonical(value):
     return json.dumps(value, sort_keys=True, ensure_ascii=False)
 
 
+def error_policy(exc):
+    """Return a safe HTTP status and whether the entire run must stop."""
+    status = getattr(exc, 'status_code', None)
+    if status is None:
+        status = getattr(exc, 'code', None)
+    if not isinstance(status, int):
+        status = None
+    # Authentication, credit, request and model errors need operator action.
+    fatal = status is not None and 400 <= status < 500 and status not in (408, 409, 429)
+    return status, fatal
+
+
 def run(config, output, mode='dry-run', approved=False):
     if mode == 'live' and not approved:
         raise ValueError('Live calls require separate user approval and --approve-paid-api')
@@ -23,15 +35,21 @@ def run(config, output, mode='dry-run', approved=False):
     output.mkdir(parents=True, exist_ok=True)
     write_csv(output/'validation.csv', data.files)
     write_csv(output/'data_issues.csv', data.issues, ['year', 'type', 'detail'])
-    fingerprint = hashlib.sha256(canonical({'config': config, 'files': data.files, 'mode': mode,
+    identity = {'config': config, 'files': data.files, 'mode': mode,
                                             'system': SYSTEM, 'version': 1,
                                             'implementation': {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
-                                                for p in sorted(Path(__file__).parent.glob('*.py'))}}).encode()).hexdigest()
+                                                for p in sorted(Path(__file__).parent.glob('*.py'))}}
+    fingerprint = hashlib.sha256(canonical(identity).encode()).hexdigest()
+    # Only the retry/logging implementation changed; allow the exact previous
+    # implementation with identical data, config, prompt and other source files.
+    legacy = dict(identity, implementation=dict(identity['implementation']))
+    legacy['implementation']['runner.py'] = '5b2c7ff7d36581b06d80967f261afa15cac9a8d542beefa56352e37fd0af3d8a'
+    legacy_fingerprint = hashlib.sha256(canonical(legacy).encode()).hexdigest()
     db = sqlite3.connect(output/'checkpoint.sqlite')
     try:
         db.execute('CREATE TABLE IF NOT EXISTS metadata (fingerprint TEXT)')
         old = db.execute('SELECT fingerprint FROM metadata').fetchone()
-        if old and old[0] != fingerprint:
+        if old and old[0] not in (fingerprint, legacy_fingerprint):
             raise ValueError('Output belongs to different config/data/mode; use a new directory')
         if not old:
             db.execute('INSERT INTO metadata VALUES (?)', (fingerprint,))
@@ -82,12 +100,13 @@ def run(config, output, mode='dry-run', approved=False):
                     row['status'] = 'planned'
                 else:
                     for attempt in range(1, config['max_attempts']+1):
+                        stop_run = False
                         started = time.monotonic()
                         call = {'case_key': key, 'mode': mode, 'provider': row['provider'],
                                 'model': row['model'], 'attempt': attempt,
                                 'started_utc': datetime.now(timezone.utc).isoformat(),
                                 'status': 'started', 'error_type': '', 'response': '',
-                                'usage': '', 'response_id': '', 'seconds': ''}
+                                'usage': '', 'response_id': '', 'seconds': '', 'http_status': ''}
                         cursor = db.execute('INSERT INTO calls(payload) VALUES (?)', (canonical(call),))
                         db.commit()
                         try:
@@ -100,14 +119,20 @@ def run(config, output, mode='dry-run', approved=False):
                             # Do not persist SDK exception messages: they may contain request secrets.
                             row.update(prediction='', status='error', error=type(exc).__name__)
                             call.update(status='error', error_type=type(exc).__name__)
+                            status, stop_run = error_policy(exc)
+                            call['http_status'] = status if status is not None else ''
                         call['seconds'] = time.monotonic()-started
                         db.execute('UPDATE calls SET payload=? WHERE id=?', (canonical(call), cursor.lastrowid))
                         db.execute('UPDATE cases SET payload=? WHERE key=?', (canonical(row), key))
                         db.commit()
+                        if stop_run:
+                            raise ValueError(f'Experiment stopped: HTTP {status}. Check API credits, credentials, model and request settings; saved results can be resumed.')
                         if row['status'] == 'success':
                             break
                         if attempt < config['max_attempts']:
                             time.sleep(config['retry_delay_seconds'] * 2**(attempt-1))
+                    if row['status'] == 'error' and mode == 'live':
+                        raise ValueError('Experiment stopped after repeated API/response errors. Check api_errors.csv before resuming.')
                 db.execute('UPDATE cases SET payload=? WHERE key=?', (canonical(row), key))
                 db.commit()
         finally:
@@ -131,7 +156,7 @@ def export(db, output):
     write_csv(output/'predictions.csv', public)
     write_csv(output/'exclusions.csv', [r for r in public if r['status']=='excluded'], list(public[0]) if public else None)
     calls = [json.loads(x[0]) for x in db.execute('SELECT payload FROM calls ORDER BY id')]
-    fields = ['case_key','mode','provider','model','attempt','started_utc','status','error_type','response','usage','response_id','seconds']
+    fields = ['case_key','mode','provider','model','attempt','started_utc','status','error_type','response','usage','response_id','seconds','http_status']
     write_csv(output/'api_calls.csv', calls, fields)
     write_csv(output/'api_errors.csv', [c for c in calls if c['status']!='success'], fields)
     metrics, comparison = evaluate(rows)
