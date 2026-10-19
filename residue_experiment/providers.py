@@ -45,7 +45,7 @@ class Provider:
             return r.choices[0].message.content or '', r.usage.model_dump() if r.usage else {}, r.id
         if self.provider == 'openai':
             r = self.client.responses.create(model=self.model, instructions=SYSTEM,
-                                              input=prompt, max_output_tokens=tokens)
+                                              input=prompt, max_output_tokens=tokens, store=False)
             return r.output_text, r.usage.model_dump() if r.usage else {}, r.id
         if self.provider == 'anthropic':
             r = self.client.messages.create(model=self.model, system=SYSTEM, max_tokens=tokens,

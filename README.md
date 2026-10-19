@@ -1,8 +1,8 @@
-# EFSA–JMPR 잔류정의 Few-shot 실험
+# EFSA–JMPR 잔류물 정의 Few-shot 실험
 
-Python 3.11+에서 JMPR과 EU 잔류정의의 비교 가능성(Yes/No)을 평가합니다.
-**기본 모드는 dry-run이며, 사용자 별도 승인 전에는 live 모드를 실행하지 마세요.**
-원본 CSV는 읽기만 합니다. Mock 결과는 임의의 결정적 예측으로, 실제 모델 성능이 아닙니다.
+JMPR과 EU 농약 잔류물 정의의 비교 가능성을 Yes/No로 평가합니다. Python 3.11+가 필요합니다.
+기본은 dry-run이며 실제 유료 API는 사용자가 승인한 뒤 live 모드로만 호출합니다.
+원본 CSV는 수정하지 않습니다. Mock 점수는 실제 모델 성능이 아닙니다.
 
 ## 현재 프로젝트 구조
 
@@ -10,7 +10,7 @@ Python 3.11+에서 JMPR과 EU 잔류정의의 비교 가능성(Yes/No)을 평가
 |---|---|
 | `residue_experiment/` | 실험 실행, 예시 선택, 프롬프트, API 호출, 결과 집계 |
 | `tests/` | 실험 코드 검증 |
-| `config.json`, `config.openrouter.json` | 기본 실험 설정 |
+| `config.json`, `config.openrouter.yearly-remain.json` | 새 remain 실험 설정 |
 | 루트의 `ESFA_*.csv` | 원본 데이터 21개 |
 | `results/` | 실험 결과와 재개용 체크포인트 |
 | `analysis/compact_10_type_classification/` | 현재 729건·10개 유형 분류표 |
@@ -25,6 +25,9 @@ Python 3.11+에서 JMPR과 EU 잔류정의의 비교 가능성(Yes/No)을 평가
 ## 현재 작업: zero-shot 2회 추가
 
 기존 2023~2025년 실행 설정을 읽어 E0만 추가 2회 실행합니다.
+이 명령은 config.json이나 config.openrouter*.json 대신 기존 결과의 manifest.json을 읽습니다.
+저장된 Claude 모델 ID, 2023~2025년, 최대 출력1000토큰, timeout120초, 최대3회 시도,
+재시도 간격1초와 기존 시스템/사용자 프롬프트를 유지합니다. 새 E5/E6 설정은 적용하지 않습니다.
 자세한 재개·집계 방법은 [실행 안내](docs/RUN_ZERO_SHOT_REPEATS.txt)를 참고하세요.
 
 ```powershell
@@ -36,180 +39,180 @@ python -m residue_experiment.zero_shot_repeats --mode analyze
 각 추가 회차는 210문제이며, 기존1회와 합쳐 3회 오답은 핵심 분석,
 2회 오답은 보조 분석으로 집계합니다. 유효 응답이 부족하면 미완료로 표시합니다.
 
-## 설치와 무료 검증
+## 기본 실험: 공통 예시를 사용하는 네 조건
+
+새 remain 실험 설정의 평가 연도는 2023~2025, seed는 42입니다.
+
+| 조건 | 예시 수 | 선정 방법 | 70문제에서의 사용 |
+|---|---:|---|---|
+| E0 | 0 | 예시 없음 | 전체 문제에 예시 없음 |
+| E1 | 4 | 전년도 remain에서 무작위 | 같은 4개와 순서 고정 |
+| E5 | 4 | 테스트 70개 전체와의 평균 TF-IDF cosine 상위 4개 | 같은 4개와 순서 고정 |
+| E6 | 4 | 목적×대상 네 조합 + 판정 근거 다양성 우선순위 | 같은 4개와 순서 고정 |
+
+E5는 이제 문제별 검색이 아닙니다. 테스트 입력 전체를 참조하는 transductive 선정이며,
+테스트 정답은 선정에 사용하지 않습니다. 이 입력 접근 조건을 연구 보고에 명시하세요.
+이전 버전의 문제별 E5 결과와 같은 조건으로 합치지 마세요.
+E5는 목적·대상·라벨 균형을 강제하지 않아 같은 그룹이나 농약이 여러 번 선택될 수 있습니다.
+E6에만 목적×대상 네 조합을 필수 적용합니다. Yes/No 균형은 강제하지 않습니다.
+
+## 설치와 공통 코드 버전
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-python -m pip install -e '.[api,test]'
+source .venv/bin/activate
+# Windows에서는 .venv\Scripts\activate
+python -m pip install -e ".[api,test]"
 python -m pytest -q
-python -m residue_experiment.cli --mode dry-run --output results/dry-run
-python -m residue_experiment.cli --mode mock --output results/mock
 ```
 
-Mock/dry-run에는 API 키가 필요 없고 SDK 클라이언트도 생성하지 않습니다.
-Mock만 쓸 때는 `pip install -e .`로 최소 의존성만 설치할 수 있습니다.
-`config.json`의 `data_dir`은 설정 파일 위치 기준으로 해석하며 원본 CSV가 있는 폴더를 지정합니다.
-하위 폴더도 검색하지만 동일 연도·종류 파일이 두 개 있으면 오류로 처리합니다.
+세 담당자는 같은 Git 커밋·CSV·주석 파일·패키지 버전을 사용해야 합니다.
+API 키나 .env를 공유·커밋하지 마세요. .env와 기본 results 폴더는 Git에서 제외됩니다.
 
-## 데이터 검증
+## 세 사람이 모델 하나씩 실행
 
-입력은 `substance`, `purpose`, `commodity`, `JMPR`, `EU` 다섯 필드뿐입니다.
-`id`와 `year`는 추적용이고 테스트 `EFSA`, `efsa_comments`, `source_*`는 프롬프트에서 제외합니다.
-과거 예시에는 다섯 입력 필드와 정답 `EFSA`만 제공합니다.
-
-UTF-8 BOM 및 인용된 여러 줄 필드를 지원합니다. CSV 구조, 필수 열·값, 파일/행 연도,
-정확한 Yes/No 라벨, 중복 ID, 테스트/정답지 ID 집합과 다섯 입력 필드의 일치를 확인합니다.
-각 테스트 파일은 70건이어야 합니다. 동일 ID의 입력/정답이 충돌하면 중단합니다.
-동일한 예시 중복은 제거하고 기록하며 테스트 ID 중복은 오류입니다.
-answerkey와 remain 두 파일을 모두 갖춘 연도만 후보 풀이 됩니다.
-원본 문자열과 CSV를 변경하거나 부족한 데이터를 보충하지 않습니다.
-
-| 연도 | 테스트 Yes / No | remain 건수 | 후보 Yes / No | 후보 총수 |
-|---|---:|---:|---:|---:|
-|2018|35 / 35|39|57 / 52|109|
-|2019|43 / 27|37|72 / 35|107|
-|2021|44 / 26|71|92 / 49|141|
-|2022|48 / 22|44|78 / 36|114|
-|2023|40 / 30|20|54 / 36|90|
-|2024|42 / 28|16|55 / 31|86|
-|2025|43 / 27|12|52 / 30|82|
-
-현재 2020년 CSV가 없습니다. 달력상의 t−1/t−2를 그대로 적용합니다.
-
-| 테스트 연도 | 실행 가능 조건 | 과거 연도 부족으로 제외 |
-|---|---|---|
-|2018|E0|E1,E2,E3,E4,E5|
-|2019|E0,E1,E2,E5|E3,E4|
-|2021|E0,E3|E1,E2,E4,E5|
-|2022|E0,E1,E2,E5|E3,E4|
-|2023~2025|E0~E5|없음|
-
-2018/2019/2021/2022에서는 조건별 분석 표본이 다릅니다. E0~E5를 모두 직접 비교할 때는
-`years`를 `[2023,2024,2025]`로 설정해 동일 연도·테스트 집합을 사용하세요.
-CSV 내용 자체의 규제적 정답 타당성을 재판정하지는 않습니다.
-
-## 실험 조건과 재현성
-
-- E0: 예시 없음.
-- E1: t−1 후보 풀에서 무작위 4개.
-- E2: t−1 Yes 2개 + No 2개.
-- E3: t−2 Yes 2개 + No 2개.
-- E4: t−1과 t−2에서 각각 Yes 1개 + No 1개.
-- E5: t−1에서 다섯 입력 필드만 JSON 텍스트로 직렬화해 TF-IDF + cosine 상위 4개.
-
-E1~E4는 **연도·조건·seed마다 한 번 정한 예시 세트**를 해당 70개 테스트에 사용합니다.
-정렬된 후보와 SHA-256으로 파생한 random seed를 사용하고 최종 순서도 seed로 섞습니다.
-모든 제공자에 동일한 예시와 순서를 적용합니다. `seeds`로 반복 횟수를 변경할 수 있습니다.
-E0/E5는 무작위 선택이 없어 seed 없이 한 번만 실행합니다.
-E5의 TF-IDF는 과거 후보 풀에만 fit하며 테스트는 transform합니다. 정답은 계산하지 않습니다.
-동점은 ID 오름차순이고 유사도가 0이어도 순서대로 4개를 선택합니다.
-
-프롬프트는 fat-solubility 표기만 다른 경우 Yes로 판단하도록 지시하고,
-Enforcement/Risk assessment 목적과 EU Regulation 396/2005 / peer review / MRL review를
-구분하도록 합니다. EU 필드 내부 출처 설명은 보존하고 별도 출처 메타데이터는 제공하지 않습니다.
-응답은 정확히 `Yes` 또는 `No`여야 하며, 다른 응답은 오류로 기록·재시도합니다.
-
-## 실제 실험 — 별도 승인 이후에만
-
-모델은 OpenAI Responses API, Anthropic Messages API, Google Gen AI SDK로 호출합니다.
-모델 ID는 `config.json`의 `models`에서 설정합니다. 현재 공란이므로 live 실행은 차단됩니다.
-실행 시점에 각 회사 공식 문서/계정에서 사용 가능한 최신 GPT·Claude·Gemini 모델을 확인하고
-정확한 모델 ID를 입력하세요. 변경 가능한 `latest` 별칭보다 고정 버전을 권장합니다.
-이번 구현에서는 유료 호출로 모델 가용성을 확인하지 않았습니다.
+`--provider`로 담당 모델 하나만 선택하면 models와 model_env를 함께 필터링합니다.
+다른 담당 모델의 키·모델 ID는 필요하지 않습니다. 옵션을 빼면 설정의 모든 모델을 실행합니다.
 
 ```bash
-cp .env.example .env
-# .env에 OPENAI_API_KEY, ANTHROPIC_API_KEY, GEMINI_API_KEY 설정
-# config.json의 models 및 years/seeds를 검토
-python -m residue_experiment.cli --mode dry-run --output results/preflight
-# 사용자 별도 승인을 받은 후에만 아래 명령 실행
-python -m residue_experiment.cli --mode live --approve-paid-api --output results/live-v1
+# GPT 담당: 2024년 무료 계획 검증
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode dry-run --output results/gpt/2024/plan-v2
+# Claude 담당
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider anthropic --year 2024 --mode dry-run --output results/claude/2024/plan-v2
+# Gemini 담당
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider gemini --year 2024 --mode dry-run --output results/gemini/2024/plan-v2
 ```
 
-`.env`와 결과 파일은 `.gitignore`에 포함되며 키는 결과·로그에 기록하지 않습니다.
-`--approve-paid-api`는 사용자가 승인한 뒤 운영자가 지정하는 실행 확인 옵션입니다.
-키가 있다고 자동으로 live 실행하지 않습니다. live 모드에서는 모든 제공자의 키와 모델을
-먼저 확인합니다. 실제 요청에는 최대 출력 토큰과 timeout이 적용됩니다.
-SDK 자체 재시도는 끄고 실행기에서 `max_attempts`, 지수 backoff로 재시도합니다.
-모델별 기본 생성 설정을 사용하므로 서비스측 완전 결정성은 보장하지 않습니다.
-현재 개발 환경의 네트워크 허용 목록에 모델 API가 없다면 승인 후 환경 설정도 필요합니다.
+모델 하나·연도 하나·seed 하나에서는 4조건×70문제=280건입니다.
+3년이면 담당자당 840건, 세 명 합계 2,520건이며 재시도는 별도입니다.
+각 담당자는 examples.csv의 예시 ID·순서가 일치하는지 확인합니다.
 
-## OpenRouter로 실행하기
+## 데이터와 정답 분리
 
-기존 공식 API 모드는 그대로 지원하며, OpenRouter는 `config.openrouter.json`을 사용합니다.
-설정 파일과 같은 폴더의 `.env`에서 아래 값을 읽습니다. 이미 설정한 환경변수가 있으면 우선합니다.
+ESFA_YYYY70.csv는 테스트 70문제, ESFA_YYYY70answerkey.csv는 정답지,
+ESFA_YYYY_remain.csv는 예시 후보입니다. 평가 연도 t의 후보는 달력상 t−1의 remain만 사용합니다.
+과거 테스트 정답지를 예시 후보에 합치지 않습니다.
+
+모델 입력은 substance, purpose, commodity, JMPR, EU 다섯 필드입니다.
+선택된 과거 예시에는 EFSA 정답을 추가하지만 테스트에는 정답·코멘트·별도 source 정보·ID·연도를 넣지 않습니다.
+EU 본문 안의 출처 설명은 보존합니다. 선정기에 전달하는 테스트 데이터도 입력 다섯 필드뿐입니다.
+
+CSV 구조, 필수값, 연도, 정확한 Yes/No, 중복 ID, 테스트/정답지의 ID·입력 일치를 검사합니다.
+테스트는 70건이어야 합니다. remain과 같은 연도 테스트/정답지의 ID가 겹치면 중단합니다.
+같은 ID의 동일 예시 행은 기록 후 중복 제거하며, 내용·라벨이 충돌하면 중단합니다.
+2020년 자료가 없어 2021년에는 전년도 후보가 없고 E1/E5/E6가 제외됩니다.
+2018년도 2017년 자료가 없어 같습니다. 다른 과거 연도로 자동 보충하지 않습니다.
+동봉한 E6 주석은 후보 연도2022~2024만 지원하므로 다른 연도는 주석 추가 전까지 E6를 제외합니다.
+같은 농약이나 정의가 여러 연도에 반복되는 것은 현재 시간 분할에서 허용합니다.
+
+## E5: 전체 평균 유사도
+
+1. 전년도 remain의 다섯 입력 필드를 JSON 텍스트로 만들어 그 후보에만 TF-IDF를 fit합니다.
+2. 현재 연도 테스트 70문제의 입력을 transform하고 70×후보 수의 cosine 유사도 행렬을 계산합니다.
+3. 각 후보와 70문제 사이의 유사도를 평균합니다.
+4. 평균이 높은 순서로 4개를 선택합니다. 동점은 ID 오름차순입니다.
+5. 네 예시를 평균 유사도 순서로 전체 70문제에 공통 사용합니다.
+
+의미 임베딩이 아닌 단어 기반 방식입니다. 정답·코멘트는 유사도에 사용하지 않습니다.
+전체에서 한 세트를 고르므로 개별 문제에 대한 최적 적합이나 예시 간 다양성을 보장하지 않습니다.
+
+## E6: 합의한 우선순위의 4-shot
+
+priority_annotations.json에는 후보 연도2022/2023/2024의 remain 전체 80행에 대한 입력 특징 주석이 있습니다.
+이는 아시스턴트가 정리한 초기 주석이며 전문가 확인 완료를 뜻하지 않습니다.
+팀에서 태그·세부 특징·복잡도를 검토하고 같은 파일을 고정한 뒤 live 실험을 진행하세요.
+기존 Yes/No를 재판정하지 않으며 주석 생성에는 테스트 입력·정답·코멘트를 사용하지 않았습니다.
+
+1. Enforcement/Risk assessment × Plant/Animal의 각 조합에서 하나씩 고르는 모든 세트를 비교합니다.
+2. 다섯 분류 태그의 커버 수, 그다음 세부 판정 특징의 커버 수를 최대화합니다.
+3. 그다음 서로 다른 농약 수를 최대화하고 동일 판정 특징의 중복을 최소화합니다.
+4. 같은 정보를 준다면 주석의 복잡도 합, 그다음 정의 본문 길이 합을 최소화합니다.
+5. 모든 지표가 같은 세트는 고정 seed로 선택하고 최종 예시 순서도 seed로 고정합니다.
+
+가중 합산이 아니라 앞선 기준을 먼저 만족시키는 사전식 비교입니다.
+주분류는 compound(화합물 대응), scope(포함 범위), expression(표현 기준),
+application(적용 조건), status(법적·제안·잠정 등의 상태)입니다.
+세부 특징은 같은 다섯 태그 안에서도 서로 다른 판단을 구별합니다.
+복잡도는 0=단일 모화합물, 1=단순 조건, 2=대사체·환산·예외, 3=복수 정의·시점·조직 조건입니다.
+태그와 복잡도는 정보성의 대리지표이며 실제 모델 성능이나 엄밀한 정보이론량은 아닙니다.
+태그·이유는 선정 및 감사용이며 모델에 보내지 않습니다. 모델에는 과거 예시 입력 다섯 필드와 정답만 보냅니다.
+
+전년도 remain의 모든 후보에 주석이 필요합니다. 누락·형식 오류·네 조합 부족이면 E6를 제외하고 임의 보충하지 않습니다.
+selection_audit.json에 선정 ID·태그·이유·목적함수를, manifest에는 주석 파일 해시를 저장합니다.
+과거 오답 분석을 참고해 설계했으므로 이미 확인한 테스트는 개발 근거이며 미참조 최종 평가와 구별합니다.
+
+## API 설정과 실행
+
+새 remain 실험은 config.openrouter.yearly-remain.json(OpenRouter) 또는 config.json(공식 API)을 사용합니다.
+기존 config.openrouter.json은 main의 Claude 전용 설정을 유지합니다. 새 네 조건 실험과 구분하세요.
+기존 E5와 새 E5는 선정 방식이 다르므로 예전 결과와 새 결과를 합쳐 비교하지 않습니다.
+data_dir와 priority_annotations는 설정 파일 기준 상대 경로입니다.
+정확한 모델 ID를 지정하세요. 환경변수는 설정 파일과 같은 폴더의 .env에서 읽으며 기존 환경값을 덮어쓰지 않습니다.
+OpenRouter 예시:
 
 ```dotenv
-OPENROUTER_API_KEY=발급받은_키
-GPT_MODEL=openai/정확한_모델_ID
-CLAUDE_MODEL=anthropic/정확한_모델_ID
-GEMINI_MODEL=google/정확한_모델_ID
+OPENROUTER_API_KEY=your_key
+GPT_MODEL=exact_openai_model_id
+CLAUDE_MODEL=exact_anthropic_model_id
+GEMINI_MODEL=exact_google_model_id
 ```
 
-모델 ID는 OpenRouter 카탈로그의 정확한 값을 입력하세요. 위 값은 자리표시자입니다.
-세 회사 개별 키 대신 OpenRouter 키 하나를 사용합니다. `.env`를 덮어쓰거나 GitHub에 올리지 마세요.
-모델 ID를 설정 JSON의 `models`에 직접 입력해도 됩니다. 해당 `model_env` 환경값이 있으면 우선합니다.
-GPT만 실행하려면 `models`와 `model_env`에서 `anthropic`, `gemini` 항목을 모두 제거하세요.
+공식 API 키는 OPENAI_API_KEY / ANTHROPIC_API_KEY / GEMINI_API_KEY입니다.
+공식 설정의 models가 비어 있으므로 실행 전에 담당 모델 ID를 설정해야 합니다.
+모델 기본 생성 설정을 사용하고 temperature는 명시하지 않습니다.
+매 문제는 독립 API 요청이며 과거 응답·대화 이력·채점 결과를 누적하지 않습니다.
+OpenAI Responses는 store=False이고 previous_response_id 등을 보내지 않습니다.
 
 ```bash
-git pull origin main
-python -m pip install -e '.[api,test]'
-python -m residue_experiment.cli --config config.openrouter.json --mode dry-run --output results/router-plan
-python -m residue_experiment.cli --config config.openrouter.json --mode mock --output results/router-mock
-# 실제 과금되는 실행: 사용자 승인 후 직접 실행
-python -m residue_experiment.cli --config config.openrouter.json --mode live --approve-paid-api --output results/router-live-v1
+# API 호출과 SDK 클라이언트 생성 없이 계획 검증
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode dry-run --output results/gpt/2024/plan-v2
+# 가상 응답으로 저장·채점 검증. 실제 모델 성능이 아님
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode mock --output results/gpt/2024/mock-v2
+# 실제 과금 실행은 사용자 승인 후에만
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode live --approve-paid-api --output results/gpt/2024/live-v2
 ```
 
-OpenRouter 설정의 기본 테스트 연도는 E0~E5를 모두 실행할 수 있는 2023~2025입니다.
-기본값은 3개 모델 × 3개 연도 × 70개 테스트 × (E0/E5 각각 1회 + E1~E4 각각 3 seed)
-= **8,820개 요청**입니다(재시도 제외). GPT만 선택하면 2,940개입니다.
-처음에는 `years: [2025]`, `conditions: ["E0"]`, GPT 하나로 70개 요청을 실행할 수 있습니다.
-OpenRouter 호출은 Chat Completions API, `max_tokens`, 기존 시스템/사용자 프롬프트를 사용합니다.
-실제 연결·과금 테스트는 자동 검증에 포함하지 않습니다. 이전 결과와 다른 새 결과 폴더를 사용하세요.
-OpenRouter와 회사 공식 API는 제공 경로와 생성 기본 설정이 다를 수 있으므로 같은 실험으로 합치지 마세요.
-백엔드는 manifest 설정과 체크포인트 지문에 저장됩니다.
+응답은 앞뒤 공백 제거 후 정확히 Yes/No여야 합니다. 설명이나 대소문자 차이는 형식 오류입니다.
+잘못된 응답·통신 오류는 최대 3회 시도하며 기본 대기 간격은 1초·2초입니다. 오답이라는 이유로 재시도하지 않습니다.
+SDK 자체 재시도는 비활성화합니다. 이번 변경 검증에서 실제 모델 API를 호출하지 않았습니다.
 
-## 중단과 재개
+## 재개와 신규 실행
 
-동일한 config·mode·output으로 같은 명령을 다시 실행하면 SQLite 체크포인트를 사용합니다.
-성공한 케이스는 재호출하지 않고 pending/error 케이스를 다시 시도합니다.
-실행 계획 전체를 호출 전에 저장해 중단된 케이스도 지표 분모에 포함합니다.
-각 시도는 호출 전에 started로 기록하고 결과·예측은 트랜잭션으로 저장합니다.
-Ctrl+C에서는 저장된 상태로 CSV를 갱신합니다. 강제 종료 후에는 재실행해 CSV를 갱신하세요.
-데이터/설정/모드/구현 코드가 바뀌면 기존 결과 폴더 재사용을 차단합니다.
-**한 결과 폴더에는 한 프로세스만 실행하세요.**
+--year 2025로 연도를 지정하고 --seed 123으로 무작위 선정/E6 동점 처리·순서를 변경할 수 있습니다.
+같은 seed는 같은 예시를 재현합니다. E5는 seed와 무관하게 전체 평균으로 한 번 선택합니다.
+--output을 생략하면 매번 타임스탬프의 새 폴더를 만듭니다.
+같은 --output을 지정하면 같은 설정·데이터·코드의 실행을 SQLite에서 재개합니다.
+성공한 문제는 다시 호출하지 않고 미완료·오류만 재개합니다. --fresh는 새로운 하위 폴더를 만듭니다.
+코드·설정·데이터·주석이 달라지면 기존 결과와 혼합하지 않도록 재개를 거부합니다.
+한 폴더는 한 프로세스만 사용하세요. 새 E5/E6는 이전 결과 폴더를 재사용하지 마세요.
+서버 응답과 로컬 저장 사이에 중단되면 재개 시 같은 요청이 다시 과금될 수 있습니다.
 
-서비스가 응답한 직후 로컬 저장 전에 강제 종료/timeout이 발생하면 서버에서 이미 과금된
-요청을 재개 시 다시 호출할 수 있습니다. 공식 API 전반에 exactly-once 보장은 없습니다.
-started 시도는 `api_errors.csv`에 남아 이런 불확실한 호출을 확인할 수 있습니다.
-재개 시 error 케이스마다 설정한 최대 시도 횟수를 새로 적용합니다.
-
-## 결과 파일
+## 결과와 팀 집계
 
 | 파일 | 내용 |
 |---|---|
-| validation.csv | 모든 CSV의 열, 건수, 라벨 분포, 고유 ID 수, SHA-256 |
-| data_issues.csv | 중복 제거, 후보/테스트 파일 부족 |
-| predictions.csv | 제공자·모델·연도·조건·seed·ID·정답·예측·상태·프롬프트 해시 |
-| examples.csv | 케이스별 예시 ID·연도·정답·순서·E5 유사도 |
-| exclusions.csv | 과거 연도/라벨 데이터 부족으로 제외된 케이스와 이유 |
-| metrics.csv | 반복별 Accuracy, Precision, Recall, Macro-F1, TN/FP/FN/TP, coverage |
-| comparison.csv | 제공자·모델·연도·조건별 반복 평균과 표본 표준편차 |
-| api_calls.csv / api_errors.csv | 시도별 시간·상태·응답·토큰 사용량·응답 ID / 오류 |
-| manifest.json | 설정, 데이터 해시, 모드, 시스템 프롬프트, 실행 지문 |
-| checkpoint.sqlite | 전체 계획·프롬프트·예측·시도 이력 및 재개 상태 |
+| validation.csv / data_issues.csv | CSV 해시·건수·검증 기록 |
+| selection_audit.json | E5 전체 후보 평균 유사도, E6 태그·이유·목적함수 |
+| examples.csv | 문제별 예시 ID·연도·정답·순서·평균 유사도 |
+| prompts.jsonl | 모델에 보내는 사용자 프롬프트. 테스트 정답 제외 |
+| predictions.csv | 정답·예측·상태. 정답은 로컬 채점용 |
+| metrics.csv | 조건/seed별 Accuracy·Precision·Recall·Macro-F1·혼동행렬·coverage |
+| comparison.csv | 완료한 반복만의 평균·표준편차 |
+| exclusions.csv | 전년도·주석 부족 등에 따른 제외 사유 |
+| api_calls.csv / api_errors.csv | 요청 기록·응답·토큰·시간·오류 |
+| manifest.json | 설정·모델·입력/주석 해시·시스템 지침 |
+| checkpoint.sqlite | 재개용 전체 계획·상태 |
 
-Precision/Recall은 Yes를 양성으로 계산합니다. Macro-F1은 항상 No와 Yes 두 라벨을
-평균하며 zero-division=0입니다. 혼동행렬은 행=실제, 열=예측, 순서 `[No, Yes]`입니다.
-실패/제외/미실행을 임의의 정답으로 치환하지 않습니다. 반복별 점수는 성공 응답만으로 계산하고
-coverage와 complete를 함께 제공합니다. comparison 평균·표준편차는 **완료된 반복만** 사용하며,
-완료가 없는 조건은 공란입니다. 단일 반복 표준편차는 0입니다. 불완전 반복이 있다면 수치를
-완료 실험과 동등하게 비교하지 마세요. Dry-run은 예측과 점수가 모두 공란입니다.
+Precision/Recall은 Yes를 양성, Macro-F1은 Yes/No 같은 비중, 혼동행렬은 행=실제·열=예측의 [No,Yes] 순서입니다.
+실패·제외를 임의 정답/오답으로 바꾸지 않습니다. 성공 응답만 채점하므로 coverage/complete도 확인하세요.
+단일 seed의 표준편차0은 변동성이 없다는 뜻이 아닙니다. dry-run은 예측·성능이 공란입니다.
+세 담당자는 같은 문제 ID·예시 순서·파일 해시를 확인한 뒤 모델×연도×조건 성능을 비교하세요.
+세 담당자의 결과 폴더를 자동 통합하는 기능은 아직 없습니다.
 
-기본 설정은 20,580개 계획 중 13,230개 실행 가능, 7,350개 제외입니다.
-실제 실행 비용은 실행 가능 케이스 × 재시도와 입력/출력 토큰에 따라 달라집니다.
-Mock의 세 제공자 이름은 어댑터 경로를 검증하기 위한 구분이며 실제 모델 응답이 아닙니다.
+## 기존 추가 조건
+
+E2는 전년도 Yes2/No2, E3는 2년 전 Yes2/No2, E4는 전년도/2년 전에서 Yes1/No1씩입니다.
+새 remain 실험의 기본 비교에는 포함하지 않습니다.
 
 ## GitHub 반영
 

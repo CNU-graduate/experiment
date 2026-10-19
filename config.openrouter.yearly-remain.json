@@ -1,0 +1,33 @@
+{
+  "data_dir": ".",
+  "years": [
+    2023,
+    2024,
+    2025
+  ],
+  "conditions": [
+    "E0",
+    "E1",
+    "E5",
+    "E6"
+  ],
+  "seeds": [
+    42
+  ],
+  "models": {
+    "openai": "",
+    "anthropic": "",
+    "gemini": ""
+  },
+  "max_output_tokens": 1000,
+  "timeout_seconds": 120,
+  "max_attempts": 3,
+  "retry_delay_seconds": 1,
+  "api_backend": "openrouter",
+  "model_env": {
+    "openai": "GPT_MODEL",
+    "anthropic": "CLAUDE_MODEL",
+    "gemini": "GEMINI_MODEL"
+  },
+  "priority_annotations": "priority_annotations.json"
+}

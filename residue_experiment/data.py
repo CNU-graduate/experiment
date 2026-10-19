@@ -78,16 +78,12 @@ class Dataset:
                 self.tests[year] = [dict(r, EFSA=answers[r['id']]['EFSA']) for r in test]
             else:
                 self.issues.append({'year': year, 'type': 'missing_test_pair', 'detail': 'test or answerkey absent'})
-            if key is None or remain is None:
-                self.issues.append({'year': year, 'type': 'missing_pool_file', 'detail': 'answerkey or remain absent'})
+            if remain is None:
+                self.issues.append({'year': year, 'type': 'missing_pool_file', 'detail': 'remain absent'})
                 continue
-            pool = {}
-            for row in key + remain:
-                old = pool.get(row['id'])
-                if old:
-                    if signature(old) != signature(row) or old['EFSA'] != row['EFSA']:
-                        raise ValueError(f'{year}: conflicting candidate {row["id"]}')
-                    self.issues.append({'year': year, 'type': 'pool_overlap_removed', 'detail': row['id']})
-                else:
-                    pool[row['id']] = row
-            self.pools[year] = sorted(pool.values(), key=lambda r: r['id'])
+            # Held-out test rows must never become demonstration candidates.
+            held_out = {r['id'] for r in (test or []) + (key or [])}
+            overlap = held_out.intersection(r['id'] for r in remain)
+            if overlap:
+                raise ValueError(f'{year}: remain overlaps held-out test IDs: {sorted(overlap)}')
+            self.pools[year] = sorted(remain, key=lambda r: r['id'])

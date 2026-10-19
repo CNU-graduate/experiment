@@ -5,7 +5,7 @@ from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import MagicMock
 import pytest
-from residue_experiment.data import Dataset, FIELDS
+from residue_experiment.data import Dataset, FIELDS, inputs
 from residue_experiment.selection import Selector
 from residue_experiment.prompt import build_prompt, parse_label
 from residue_experiment.evaluation import score
@@ -56,12 +56,12 @@ def test_real_csv_integrity(data):
     assert len(data.files) == 21
     assert sum(len(t) for t in data.tests.values()) == 490
     assert data.issues == []
-    assert {y: len(p) for y,p in data.pools.items()} == {2018:109,2019:107,2021:141,2022:114,2023:90,2024:86,2025:82}
+    assert {y: len(p) for y,p in data.pools.items()} == {2018:39,2019:37,2021:71,2022:44,2023:20,2024:16,2025:12}
 
 
 @pytest.mark.parametrize('condition', ['E0','E1','E2','E3','E4','E5'])
 def test_selection_constraints(data, condition):
-    selector = Selector(data.pools)
+    selector = Selector(data.pools, data.tests)
     test = data.tests[2025][0]
     rows = selector.choose(condition, 2025, 42, test)
     assert rows == selector.choose(condition, 2025, 42, test)
@@ -69,6 +69,8 @@ def test_selection_constraints(data, condition):
     assert len({r['id'] for r in rows}) == len(rows)
     assert all(int(r['year']) < 2025 for r in rows)
     assert all(r['EFSA'] in ('Yes','No') for r in rows)
+    held_out = {r['id'] for test_rows in data.tests.values() for r in test_rows}
+    assert not held_out.intersection(r['id'] for r in rows)
     if condition in ('E2','E3','E4'):
         assert sum(r['EFSA']=='Yes' for r in rows) == 2
     if condition == 'E3':
@@ -80,16 +82,16 @@ def test_selection_constraints(data, condition):
 
 
 def test_random_examples_fixed_across_tests(data):
-    s = Selector(data.pools)
+    s = Selector(data.pools, data.tests)
     for c in ('E1','E2','E3','E4'):
         assert s.choose(c,2025,42,data.tests[2025][0]) == s.choose(c,2025,42,data.tests[2025][-1])
         assert s.choose(c,2025,42,data.tests[2025][0]) != s.choose(c,2025,123,data.tests[2025][0])
 
 
 def test_similarity_ignores_labels_and_metadata(data):
-    a = Selector(data.pools)
+    a = Selector(data.pools, data.tests)
     changed = {y: [dict(r, EFSA='No' if r['EFSA']=='Yes' else 'Yes', efsa_comments='LEAK') for r in p] for y,p in data.pools.items()}
-    b = Selector(changed)
+    b = Selector(changed, data.tests)
     t = data.tests[2025][0]
     aa = a.choose('E5',2025,None,t)
     bb = b.choose('E5',2025,None,dict(t,EFSA='No',source_url='LEAK'))
@@ -99,12 +101,12 @@ def test_similarity_ignores_labels_and_metadata(data):
 def test_similarity_ranking_and_tie_break():
     pool = [dict.fromkeys(FIELDS,'apple') | {'id':str(i),'EFSA':'Yes','year':'2024'} for i in range(5)]
     pool[-1] = dict.fromkeys(FIELDS,'zebra') | {'id':'4','EFSA':'No','year':'2024'}
-    s = Selector({2024:pool})
+    s = Selector({2024:pool}, {2025:[dict.fromkeys(FIELDS,'zebra')]})
     assert [r['id'] for r in s.choose('E5',2025,None,dict.fromkeys(FIELDS,'zebra'))] == ['4','0','1','2']
 
 
 def test_prompt_allowlist(data):
-    examples = Selector(data.pools).choose('E2',2025,7,data.tests[2025][0])
+    examples = Selector(data.pools, data.tests).choose('E2',2025,7,data.tests[2025][0])
     p = json.loads(build_prompt(data.tests[2025][0],examples))
     assert set(p['test']) == set(FIELDS)
     assert all(set(r) == set(FIELDS)|{'EFSA'} for r in p['examples'])
@@ -113,7 +115,7 @@ def test_prompt_allowlist(data):
 
 
 def test_missing_and_insufficient_pools(data):
-    s = Selector(data.pools)
+    s = Selector(data.pools, data.tests)
     with pytest.raises(ValueError, match='2020'):
         s.choose('E2',2021,42,data.tests[2021][0])
     tiny = {2024:[r for r in data.pools[2024] if r['EFSA']=='Yes']}
@@ -237,7 +239,7 @@ def test_official_adapter_requests(provider,monkeypatch):
         assert factory.return_value.models.generate_content.call_args.kwargs['contents']=='safe-input'
 
 
-def test_pool_overlap_dedup_and_conflict(tmp_path):
+def test_pool_rejects_held_out_overlap(tmp_path):
     for name in ('ESFA_202570.csv','ESFA_202570answerkey.csv','ESFA_2025_remain.csv'):
         (tmp_path/name).write_bytes((ROOT/name).read_bytes())
     key=tmp_path/'ESFA_202570answerkey.csv'
@@ -247,9 +249,8 @@ def test_pool_overlap_dedup_and_conflict(tmp_path):
     remain=tmp_path/'ESFA_2025_remain.csv'
     with remain.open('a',encoding='utf-8',newline='') as f:
         csv.DictWriter(f,fieldnames=fields).writerow(rows[0])
-    d=Dataset(tmp_path)
-    assert len(d.pools[2025])==82
-    assert d.issues[0]['type']=='pool_overlap_removed'
+    with pytest.raises(ValueError,match='remain overlaps held-out'):
+        Dataset(tmp_path)
     rows[0]['EFSA']='No' if rows[0]['EFSA']=='Yes' else 'Yes'
     with remain.open('a',encoding='utf-8',newline='') as f:
         csv.DictWriter(f,fieldnames=fields).writerow(rows[0])
@@ -290,7 +291,7 @@ def test_missing_keys_fail_without_calls(config,tmp_path,monkeypatch):
 @pytest.mark.parametrize('provider', ['openai', 'anthropic', 'gemini'])
 def test_openrouter_adapter(provider, monkeypatch):
     import openai
-    config = json.loads((ROOT/'config.openrouter.json').read_text())
+    config = json.loads((ROOT/'config.openrouter.yearly-remain.json').read_text())
     monkeypatch.setenv('OPENROUTER_API_KEY', 'dummy-unit-test')
     factory = MagicMock()
     monkeypatch.setattr(openai, 'OpenAI', factory)
@@ -317,7 +318,7 @@ def test_invalid_backend(config):
 
 def test_cli_openrouter_env_resolution(tmp_path, monkeypatch):
     from residue_experiment import cli
-    config = json.loads((ROOT/'config.openrouter.json').read_text())
+    config = json.loads((ROOT/'config.openrouter.yearly-remain.json').read_text())
     config['data_dir'] = str(ROOT)
     path = tmp_path/'config.json'
     path.write_text(json.dumps(config))
@@ -332,3 +333,195 @@ def test_cli_openrouter_env_resolution(tmp_path, monkeypatch):
     monkeypatch.setattr(cli, 'run', fake_run)
     cli.main()
     assert captured['models'] == {'openai':'openai/test','anthropic':'anthropic/test','gemini':'google/test'}
+
+
+def test_remain_pool_without_answerkey(tmp_path):
+    name = 'ESFA_2024_remain.csv'
+    (tmp_path/name).write_bytes((ROOT/name).read_bytes())
+    data = Dataset(tmp_path)
+    assert len(data.pools[2024]) == 16
+    assert data.tests == {}
+
+
+def test_default_four_conditions():
+    for name in ('config.json', 'config.openrouter.yearly-remain.json'):
+        c = json.loads((ROOT/name).read_text())
+        assert c['conditions'] == ['E0', 'E1', 'E5', 'E6']
+        assert c['seeds'] == [42]
+
+
+def test_runner_selection_and_prompt_answer_isolation(config, tmp_path, monkeypatch):
+    config.update(conditions=['E0', 'E1', 'E5'], seeds=[42], models={'openai': ''})
+    choose = Selector.choose
+    def guarded(self, condition, year, seed, test):
+        assert set(test) == set(FIELDS)
+        return choose(self, condition, year, seed, test)
+    monkeypatch.setattr(Selector, 'choose', guarded)
+    assert run(config, tmp_path, 'dry-run') == {'cases': 210, 'calls': 0}
+    data = Dataset(ROOT)
+    held_out = {r['id'] for rows in data.tests.values() for r in rows}
+    examples = list(csv.DictReader((tmp_path/'examples.csv').open(encoding='utf-8-sig')))
+    assert not held_out.intersection(r['example_id'] for r in examples)
+    assert {r['example_year'] for r in examples} == {'2024'}
+    for line in (tmp_path/'prompts.jsonl').read_text().splitlines():
+        payload = json.loads(json.loads(line)['prompt'])
+        assert set(payload['test']) == set(FIELDS)
+        assert all(set(r) == set(FIELDS) | {'EFSA'} for r in payload['examples'])
+
+
+def test_changing_test_answers_does_not_change_prompts(config, tmp_path):
+    folder = tmp_path/'data'
+    folder.mkdir()
+    for path in ROOT.glob('ESFA_*.csv'):
+        (folder/path.name).write_bytes(path.read_bytes())
+    config.update(data_dir=str(folder), conditions=['E0', 'E1', 'E5'],
+                  seeds=[42], models={'openai': ''})
+    first, second = tmp_path/'first', tmp_path/'second'
+    run(config, first)
+    p = folder/'ESFA_202570answerkey.csv'
+    with p.open(encoding='utf-8-sig', newline='') as f:
+        reader = csv.DictReader(f)
+        fields, rows = reader.fieldnames, list(reader)
+    for row in rows:
+        row['EFSA'] = 'No' if row['EFSA'] == 'Yes' else 'Yes'
+        row['efsa_comments'] = 'TEST_ANSWER_MUST_NEVER_BE_SENT'
+    with p.open('w', encoding='utf-8-sig', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=fields)
+        writer.writeheader()
+        writer.writerows(rows)
+    run(config, second)
+    assert (first/'prompts.jsonl').read_bytes() == (second/'prompts.jsonl').read_bytes()
+
+
+def test_cli_year_seed_and_fresh_outputs(tmp_path, monkeypatch, capsys):
+    from residue_experiment import cli
+    c = json.loads((ROOT/'config.json').read_text())
+    c['data_dir'] = str(ROOT)
+    path = tmp_path/'config.json'
+    path.write_text(json.dumps(c))
+    captured = []
+    def fake_run(config, output, *args):
+        captured.append((config, Path(output)))
+        return {'cases': 210, 'calls': 0}
+    monkeypatch.setattr(cli, 'run', fake_run)
+    argv = ['residue-experiment', '--config', str(path), '--year', '2024', '--seed', '123']
+    monkeypatch.setattr('sys.argv', argv)
+    cli.main()
+    cli.main()
+    assert captured[0][0]['years'] == [2024]
+    assert captured[0][0]['seeds'] == [123]
+    assert captured[0][1] != captured[1][1]
+    output = tmp_path/'resume'
+    monkeypatch.setattr('sys.argv', argv + ['--output', str(output)])
+    cli.main()
+    assert captured[-1][1] == output
+    monkeypatch.setattr('sys.argv', argv + ['--output', str(output), '--fresh'])
+    cli.main()
+    assert captured[-1][1].parent == output
+    assert captured[-1][1] != output
+
+
+def test_global_similarity_uses_all_queries_and_is_fixed():
+    from sklearn.feature_extraction.text import TfidfVectorizer
+    from sklearn.metrics.pairwise import cosine_similarity
+    words = ['apple', 'apple pear', 'pear', 'zebra', 'other']
+    pool = [dict.fromkeys(FIELDS,w) | {'id':str(i),'EFSA':'Yes','year':'2024'} for i,w in enumerate(words)]
+    tests = [dict.fromkeys(FIELDS,w) for w in ['apple','apple','pear']]
+    s = Selector({2024:pool}, {2025:tests})
+    result = s.choose('E5',2025,None,tests[0])
+    assert result == s.choose('E5',2025,None,dict.fromkeys(FIELDS,'zebra'))
+    v = TfidfVectorizer()
+    m = v.fit_transform([Selector.text(r) for r in pool])
+    expected = cosine_similarity(v.transform([Selector.text(r) for r in tests]),m).mean(axis=0)
+    assert [r['id'] for r in result] == [pool[i]['id'] for i in sorted(range(5),key=lambda i:(-expected[i],pool[i]['id']))[:4]]
+    assert [r['similarity'] for r in result] == pytest.approx([expected[int(r['id'])] for r in result])
+    altered = Selector({2024:pool}, {2025:[dict.fromkeys(FIELDS,'zebra')]})
+    assert altered.choose('E5',2025,None,tests[0])[0]['id'] == '3'
+
+
+def test_priority_coverage_labels_and_fixed_set(data):
+    annotations = json.loads((ROOT/'priority_annotations.json').read_text())['annotations']
+    for year in [2023,2024,2025]:
+        s = Selector(data.pools, data.tests, annotations)
+        chosen = s.choose('E6',year,42,inputs(data.tests[year][0]))
+        assert len(chosen) == 4
+        assert {(r['purpose'],r['commodity']) for r in chosen} == {
+            ('Enforcement','Plant products'),('Enforcement','Animal products'),
+            ('Risk assessment','Plant products'),('Risk assessment','Animal products')}
+        assert chosen == s.choose('E6',year,42,inputs(data.tests[year][-1]))
+        changed = {y:[dict(r,EFSA='No' if r['EFSA']=='Yes' else 'Yes') for r in pool] for y,pool in data.pools.items()}
+        other = Selector(changed, data.tests, annotations).choose('E6',year,42,{})
+        assert [r['id'] for r in chosen] == [r['id'] for r in other]
+        assert all(r['id'] in annotations for r in chosen)
+
+
+def test_priority_requires_complete_annotations_and_groups(data):
+    with pytest.raises(ValueError,match='annotations missing'):
+        Selector(data.pools).choose('E6',2025,42,{})
+    annotations = json.loads((ROOT/'priority_annotations.json').read_text())['annotations']
+    pool = [r for r in data.pools[2024] if r['commodity'] == 'Plant products']
+    with pytest.raises(ValueError,match='all four'):
+        Selector({2024:pool},annotations=annotations).choose('E6',2025,42,{})
+
+
+def test_four_condition_plan_and_annotation_fingerprint(config,tmp_path):
+    config.update(years=[2024],conditions=['E0','E1','E5','E6'],seeds=[42],models={'openai':''})
+    p = tmp_path/'annotations.json'
+    p.write_bytes((ROOT/'priority_annotations.json').read_bytes())
+    config['priority_annotations'] = str(p)
+    output = tmp_path/'plan'
+    assert run(config,output) == {'cases':280,'calls':0}
+    audit = json.loads((output/'selection_audit.json').read_text())
+    assert audit['2024:E5']['n_queries'] == 70
+    assert len(audit['2024:E6:42']['selected']) == 4
+    examples = list(csv.DictReader((output/'examples.csv').open(encoding='utf-8-sig')))
+    for condition in ['E1','E5','E6']:
+        grouped = {}
+        for r in examples:
+            if r['condition'] == condition:
+                grouped.setdefault(r['id'],[]).append(r['example_id'])
+        assert len(grouped) == 70
+        assert len({tuple(ids) for ids in grouped.values()}) == 1
+    for line in (output/'prompts.jsonl').read_text().splitlines():
+        prompt = json.loads(json.loads(line)['prompt'])
+        assert set(prompt['test']) == set(FIELDS)
+        assert all(set(r) == set(FIELDS)|{'EFSA'} for r in prompt['examples'])
+    p.write_text(p.read_text()+'\n')
+    with pytest.raises(ValueError,match='different config'):
+        run(config,output)
+
+
+def test_cli_single_provider(tmp_path,monkeypatch):
+    from residue_experiment import cli
+    config = json.loads((ROOT/'config.openrouter.yearly-remain.json').read_text())
+    config['data_dir'] = str(ROOT)
+    config['priority_annotations'] = str(ROOT/'priority_annotations.json')
+    p = tmp_path/'config.json'
+    p.write_text(json.dumps(config))
+    captured = {}
+    monkeypatch.setattr('sys.argv',['residue-experiment','--config',str(p),'--provider','anthropic','--year','2024'])
+    def fake_run(c,*args):
+        captured.update(c)
+        return {'cases':280,'calls':0}
+    monkeypatch.setattr(cli,'run',fake_run)
+    cli.main()
+    assert set(captured['models']) == {'anthropic'}
+    assert captured['model_env'] == {'anthropic':'CLAUDE_MODEL'}
+    assert captured['years'] == [2024]
+
+
+def test_priority_information_before_simplicity():
+    from residue_experiment.selection import GROUPS
+    rows=[]
+    annotations={}
+    for i,(purpose,commodity) in enumerate(GROUPS):
+        row=dict.fromkeys(FIELDS,'parent')|{'id':str(i),'year':'2024','substance':str(i),
+                                         'purpose':purpose,'commodity':commodity,'EFSA':'Yes'}
+        rows.append(row)
+        annotations[str(i)]={'tags':['compound'],'features':['parent_match'],'complexity':0,'reason':'parent'}
+    rows.append(dict(rows[0],id='extra',substance='extra'))
+    annotations['extra']={'tags':['compound','scope'],'features':['parent_match','additional_metabolites'],
+                          'complexity':3,'reason':'additional information'}
+    assert 'extra' in {r['id'] for r in Selector({2024:rows},annotations=annotations).choose('E6',2025,42,{})}
+    annotations['extra']={'tags':['compound'],'features':['parent_match'],'complexity':3,'reason':'redundant information'}
+    assert 'extra' not in {r['id'] for r in Selector({2024:rows},annotations=annotations).choose('E6',2025,42,{})}
