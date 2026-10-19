@@ -11,7 +11,7 @@ JMPR과 EU 농약 잔류물 정의의 비교 가능성을 Yes/No로 평가합니
 | `residue_experiment/` | 실험 실행, 예시 선택, 프롬프트, API 호출, 결과 집계 |
 | `tests/` | 실험 코드 검증 |
 | `config.json`, `config.openrouter.yearly-remain.json` | 새 remain 실험 설정 |
-| 루트의 `ESFA_*.csv` | 원본 데이터 21개 |
+| `data/ESFA_*.csv` | 원본 데이터 21개 |
 | `results/` | 실험 결과와 재개용 체크포인트 |
 | `analysis/compact_10_type_classification/` | 현재 729건·10개 유형 분류표 |
 | `analysis/prompt_clarity_audit/` | 실제 입력과 명확·조건부 사례 비교 |

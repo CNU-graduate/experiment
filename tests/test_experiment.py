@@ -13,6 +13,7 @@ from residue_experiment.runner import run
 from residue_experiment.providers import Provider
 
 ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / 'data'
 
 
 @pytest.mark.parametrize('status,fatal', [(400,True),(401,True),(402,True),(403,True),(404,True),(408,False),(409,False),(429,False),(500,False),(503,False)])
@@ -195,7 +196,7 @@ def test_interrupt_export_and_resume(config,tmp_path,monkeypatch):
 
 def test_data_conflict_and_invalid_label(tmp_path):
     for name in ('ESFA_202570.csv','ESFA_202570answerkey.csv','ESFA_2025_remain.csv'):
-        (tmp_path/name).write_bytes((ROOT/name).read_bytes())
+        (tmp_path/name).write_bytes((DATA/name).read_bytes())
     p=tmp_path/'ESFA_202570answerkey.csv'
     with p.open(encoding='utf-8-sig', newline='') as handle:
         reader = csv.DictReader(handle)
@@ -241,7 +242,7 @@ def test_official_adapter_requests(provider,monkeypatch):
 
 def test_pool_rejects_held_out_overlap(tmp_path):
     for name in ('ESFA_202570.csv','ESFA_202570answerkey.csv','ESFA_2025_remain.csv'):
-        (tmp_path/name).write_bytes((ROOT/name).read_bytes())
+        (tmp_path/name).write_bytes((DATA/name).read_bytes())
     key=tmp_path/'ESFA_202570answerkey.csv'
     with key.open(encoding='utf-8-sig',newline='') as f:
         reader=csv.DictReader(f)
@@ -259,7 +260,7 @@ def test_pool_rejects_held_out_overlap(tmp_path):
 
 def test_test_answerkey_mismatch(tmp_path):
     for name in ('ESFA_202570.csv','ESFA_202570answerkey.csv','ESFA_2025_remain.csv'):
-        (tmp_path/name).write_bytes((ROOT/name).read_bytes())
+        (tmp_path/name).write_bytes((DATA/name).read_bytes())
     p=tmp_path/'ESFA_202570.csv'
     with p.open(encoding='utf-8-sig',newline='') as f:
         reader=csv.DictReader(f)
@@ -337,7 +338,7 @@ def test_cli_openrouter_env_resolution(tmp_path, monkeypatch):
 
 def test_remain_pool_without_answerkey(tmp_path):
     name = 'ESFA_2024_remain.csv'
-    (tmp_path/name).write_bytes((ROOT/name).read_bytes())
+    (tmp_path/name).write_bytes((DATA/name).read_bytes())
     data = Dataset(tmp_path)
     assert len(data.pools[2024]) == 16
     assert data.tests == {}
@@ -372,7 +373,7 @@ def test_runner_selection_and_prompt_answer_isolation(config, tmp_path, monkeypa
 def test_changing_test_answers_does_not_change_prompts(config, tmp_path):
     folder = tmp_path/'data'
     folder.mkdir()
-    for path in ROOT.glob('ESFA_*.csv'):
+    for path in DATA.glob('ESFA_*.csv'):
         (folder/path.name).write_bytes(path.read_bytes())
     config.update(data_dir=str(folder), conditions=['E0', 'E1', 'E5'],
                   seeds=[42], models={'openai': ''})

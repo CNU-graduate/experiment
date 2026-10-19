@@ -63,7 +63,9 @@ class Store:
                 CREATE TABLE IF NOT EXISTS history(id INTEGER PRIMARY KEY AUTOINCREMENT,
                   case_id TEXT NOT NULL, action TEXT NOT NULL, data TEXT NOT NULL, created TEXT NOT NULL);
             ''')
-            for path in sorted(self.data_dir.glob('ESFA_*70.csv')):
+            # Accept the organized repository and standalone fixture directories.
+            source_dir = self.data_dir / 'data' if (self.data_dir / 'data').is_dir() else self.data_dir
+            for path in sorted(source_dir.glob('ESFA_*70.csv')):
                 with path.open(encoding='utf-8-sig', newline='') as f:
                     for row in csv.DictReader(f):
                         # Deliberately exclude EFSA labels and comments from target cases.
