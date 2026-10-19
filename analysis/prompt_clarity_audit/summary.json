@@ -1,0 +1,105 @@
+{
+  "saved_cases_checked": 2940,
+  "saved_status": {
+    "success": 2940
+  },
+  "example_counts": {
+    "0": 210,
+    "4": 2730
+  },
+  "test_fields": [
+    "substance",
+    "purpose",
+    "commodity",
+    "JMPR",
+    "EU"
+  ],
+  "example_fields": [
+    "substance",
+    "purpose",
+    "commodity",
+    "JMPR",
+    "EU",
+    "EFSA"
+  ],
+  "system_matches_saved_manifest": true,
+  "not_sent": [
+    "year",
+    "id",
+    "efsa_comments",
+    "source_url",
+    "source_section",
+    "source_table",
+    "primary_type",
+    "review_status",
+    "judgment_basis_ko",
+    "review_reason"
+  ],
+  "labels_by_status": {
+    "명확": {
+      "No": 242,
+      "Yes": 328
+    },
+    "조건부": {
+      "Yes": 124,
+      "No": 20
+    },
+    "검토 필요": {
+      "No": 7,
+      "Yes": 8
+    }
+  },
+  "type_status": [
+    {
+      "type": "N1",
+      "clear": 189,
+      "conditional": 11
+    },
+    {
+      "type": "N2",
+      "clear": 14,
+      "conditional": 1
+    },
+    {
+      "type": "Y1",
+      "clear": 188,
+      "conditional": 0
+    },
+    {
+      "type": "Y2",
+      "clear": 108,
+      "conditional": 17
+    },
+    {
+      "type": "Y4",
+      "clear": 12,
+      "conditional": 107
+    },
+    {
+      "type": "D1",
+      "clear": 0,
+      "conditional": 0
+    },
+    {
+      "type": "N4",
+      "clear": 24,
+      "conditional": 2
+    },
+    {
+      "type": "Y3",
+      "clear": 20,
+      "conditional": 0
+    },
+    {
+      "type": "N3",
+      "clear": 15,
+      "conditional": 6
+    },
+    {
+      "type": "D2",
+      "clear": 0,
+      "conditional": 0
+    }
+  ],
+  "conclusion": "현 상태는 검토 확실성이지 모델 입력만으로 판단 가능한 정도와 동일하지 않음. 단순 명확/조건부 분할의 효과를 정보 명확성의 인과 효과로 해석하기 어려움. 라벨·유형·연도·목적·대상·예시 수 통제 후 탐색적 비교는 가능."
+}

@@ -19,9 +19,7 @@
     2026
   ],
   "models": {
-    "openai": "",
-    "anthropic": "",
-    "gemini": ""
+    "anthropic": ""
   },
   "max_output_tokens": 1000,
   "timeout_seconds": 120,
@@ -29,8 +27,6 @@
   "retry_delay_seconds": 1,
   "api_backend": "openrouter",
   "model_env": {
-    "openai": "GPT_MODEL",
-    "anthropic": "CLAUDE_MODEL",
-    "gemini": "GEMINI_MODEL"
+    "anthropic": "CLAUDE_MODEL"
   }
 }

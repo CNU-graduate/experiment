@@ -4,6 +4,38 @@ Python 3.11+에서 JMPR과 EU 잔류정의의 비교 가능성(Yes/No)을 평가
 **기본 모드는 dry-run이며, 사용자 별도 승인 전에는 live 모드를 실행하지 마세요.**
 원본 CSV는 읽기만 합니다. Mock 결과는 임의의 결정적 예측으로, 실제 모델 성능이 아닙니다.
 
+## 현재 프로젝트 구조
+
+| 경로 | 용도 |
+|---|---|
+| `residue_experiment/` | 실험 실행, 예시 선택, 프롬프트, API 호출, 결과 집계 |
+| `tests/` | 실험 코드 검증 |
+| `config.json`, `config.openrouter.json` | 기본 실험 설정 |
+| 루트의 `ESFA_*.csv` | 원본 데이터 21개 |
+| `results/` | 실험 결과와 재개용 체크포인트 |
+| `analysis/compact_10_type_classification/` | 현재 729건·10개 유형 분류표 |
+| `analysis/prompt_clarity_audit/` | 실제 입력과 명확·조건부 사례 비교 |
+| `analysis/zero_shot_repeat_plan/` | 기존 zero-shot 점검과 분석 계획 |
+| `docs/` | 실행 안내와 기존 테스트 보고서 |
+| `archive/data_review_2026-10-19/` | 이전 분류표·중간 산출물의 로컬 보관본 |
+
+일회성 분석 스크립트와 해당 바이트코드 캐시는 삭제했습니다. 분류표·보고서는 보존했으며,
+`archive/`는 Git 추적 대상에서 제외합니다. 실험 실행에는 필요하지 않습니다.
+
+## 현재 작업: zero-shot 2회 추가
+
+기존 2023~2025년 실행 설정을 읽어 E0만 추가 2회 실행합니다.
+자세한 재개·집계 방법은 [실행 안내](docs/RUN_ZERO_SHOT_REPEATS.txt)를 참고하세요.
+
+```powershell
+python -m residue_experiment.zero_shot_repeats --mode dry-run
+python -m residue_experiment.zero_shot_repeats --mode live --approve-paid-api
+python -m residue_experiment.zero_shot_repeats --mode analyze
+```
+
+각 추가 회차는 210문제이며, 기존1회와 합쳐 3회 오답은 핵심 분석,
+2회 오답은 보조 분석으로 집계합니다. 유효 응답이 부족하면 미완료로 표시합니다.
+
 ## 설치와 무료 검증
 
 ```bash
@@ -187,9 +219,9 @@ Mock의 세 제공자 이름은 어댑터 경로를 검증하기 위한 구분�
 ```bash
 git switch -c feat/residue-few-shot
 # 제공된 residue_experiment/, tests/, README.md, config.json,
-# pyproject.toml, .env.example, .gitignore, TEST_REPORT.md를 복사
+# pyproject.toml, .env.example, .gitignore, docs/TEST_REPORT.md를 복사
 python -m pytest -q
-git add residue_experiment tests README.md config.json pyproject.toml .env.example .gitignore TEST_REPORT.md
+git add residue_experiment tests README.md config.json pyproject.toml .env.example .gitignore docs/TEST_REPORT.md
 git diff --cached --stat
 git commit -m "Implement temporal EFSA-JMPR few-shot experiments"
 git push -u origin feat/residue-few-shot

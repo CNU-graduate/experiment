@@ -1,0 +1,4 @@
+﻿year,valid_repeats,questions,correct,wrong,accuracy,model
+2023,1,70,64,6,0.9142857142857143,anthropic/claude-opus-5.5
+2024,1,70,68,2,0.9714285714285714,anthropic/claude-opus-5.5
+2025,1,70,68,2,0.9714285714285714,anthropic/claude-opus-5.5

@@ -1,0 +1,40 @@
+2023~2025 zero-shot 추가 2회 실행 (기존1회 + 추가2회 = 총3회)
+
+프로젝트 폴더에서 PowerShell로 실행:
+
+1. 유료 호출 없이 420개 계획 확인
+python -m residue_experiment.zero_shot_repeats --mode dry-run
+
+2. 실제 실행 (추가420개 성공 응답 목표, 재시도 호출은 별도 발생 가능)
+python -m residue_experiment.zero_shot_repeats --mode live --approve-paid-api
+
+중단 후 위와 같은 명령으로 재개. 완료한 응답은 재호출하지 않음.
+크레딧 부족 HTTP402 등 치명 오류 또는 반복 오류 발생 시 즉시 중단.
+그 시점까지의 응답과 집계는 보존됨.
+
+회차를 나눠 실행하려면:
+python -m residue_experiment.zero_shot_repeats --mode live --round 2 --approve-paid-api
+python -m residue_experiment.zero_shot_repeats --mode live --round 3 --approve-paid-api
+
+API 호출 없이 현재 결과만 집계:
+python -m residue_experiment.zero_shot_repeats --mode analyze
+
+설정: results/claude-2023-2025/manifest.json의 기존 설정 사용.
+모델은 저장된 anthropic/claude-opus-5.5로 고정; CLAUDE_MODEL 변경 무시.
+OpenRouter 인증 키는 기존 환경/.env의 OPENROUTER_API_KEY 사용.
+프롬프트·원본 데이터 변경 시 실행 전 거부.
+temperature 등 기존에 보내지 않은 생성 파라미터를 새로 추가하지 않음.
+서버의 모델 버전이나 기본값 변경까지 재현하는 것은 보장하지 않음.
+
+결과:
+results/zero-shot-3-runs/live/round_2/
+results/zero-shot-3-runs/live/round_3/
+results/zero-shot-3-runs/analysis/all_210_error_frequency.csv
+results/zero-shot-3-runs/analysis/core_errors_3_of_3.csv
+results/zero-shot-3-runs/analysis/secondary_errors_2_of_3.csv
+results/zero-shot-3-runs/analysis/summary_by_year.csv
+
+3개의 유효 응답이 모인 문제만 핵심/보조 분석 대상으로 확정.
+3회 오답=핵심, 2회 오답=보조, 1회=단발, 0회=안정적 정답.
+응답 미완료는 미완료로 표시하며 API 실패를 정답 오답으로 세지 않음.
+dry-run/mock은 별도 폴더 사용. 실제 성능 집계에는 live만 포함.

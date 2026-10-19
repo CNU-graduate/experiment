@@ -1,0 +1,11 @@
+﻿id,year,substance,purpose,commodity,actual,prediction,type,review_status,evidence_scope
+2023-04-03,2023,Mancozeb (dithiocarbamates),Risk assessment,Plant products,No,Yes,N4,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2023-04-04,2023,Mancozeb (dithiocarbamates),Risk assessment,Animal products,No,Yes,N4,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2023-12-03,2023,Difenoconazole,Risk assessment,Plant products,No,Yes,N4,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2023-17-03,2023,Flutriafol,Risk assessment,Plant products,No,Yes,N4,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2023-20-01,2023,Flupyradifurone,Enforcement,Plant products,No,Yes,N1,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2023-27-03,2023,Mefentrifluconazole,Risk assessment,Plant products,No,Yes,N4,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2024-03-03,2024,Thiophanate‐methyl,Risk assessment,Plant products,No,Yes,N4,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2024-27-04,2024,"1,4‐Dimethylnaphthalene",Risk assessment,Animal products,No,Yes,N2,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2025-22-03,2025,Cyproconazole,Risk assessment,Plant products,No,Yes,N4,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
+2025-25-01,2025,Flupyradifurone,Enforcement,Plant products,No,Yes,N1,명확,기존 zero-shot 1회의 오답. 반복 오답 여부는 아직 미확인
