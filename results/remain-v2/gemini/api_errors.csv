@@ -1,0 +1,4 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds,http_status
+"[2024, ""E5"", null, ""2024-07-02"", ""gemini""]",live,gemini,google/gemini-3.8-flash,1,2026-10-22T17:35:33.724720+00:00,error,InternalServerError,,,,11.156000000075437,504
+"[2025, ""E5"", null, ""2025-22-01"", ""gemini""]",live,gemini,google/gemini-3.8-flash,1,2026-10-22T18:11:30.120843+00:00,error,InternalServerError,,,,11.233999999938533,504
+"[2025, ""E6"", 42, ""2025-04-04"", ""gemini""]",live,gemini,google/gemini-3.8-flash,1,2026-10-22T18:14:30.354027+00:00,error,APITimeoutError,,,,120.03200000000652,
