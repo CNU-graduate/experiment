@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from .data import inputs
 
-CONDITIONS = ('E0', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6')
+CONDITIONS = ('E0', 'E1', 'E2', 'E3', 'E4', 'E5', 'E6', 'E7')
 RANDOM = ('E1', 'E2', 'E3', 'E4', 'E6')
 TAG_TYPES = {'compound', 'scope', 'expression', 'application', 'status'}
 GROUPS = tuple(itertools.product(('Enforcement', 'Risk assessment'),
@@ -45,7 +45,16 @@ class Selector:
             if len(pool) < count:
                 raise ValueError(f'{y}: need {count} {label or "any"} examples, found {len(pool)}')
             return tagged(y, rng.sample(pool, count))
-        if condition == 'E1':
+        if condition == 'E7':
+            from .e7_examples import VERSION, select
+            result = tagged(year - 1, select(self.pool(year - 1), year))
+            self.audit[f'{year}:E7'] = {
+                'method': 'frozen manual error-informed examples', 'version': VERSION,
+                'candidate_year': year - 1, 'order': ['N1', 'Y1', 'N2', 'Y2'],
+                'selected': [{'id': r['id'], 'role': r['role'], 'label': r['EFSA'],
+                              'reason': r['selection_reason']} for r in result],
+            }
+        elif condition == 'E1':
             result = sample(year - 1, 4)
         elif condition in ('E2', 'E3'):
             y = year - (1 if condition == 'E2' else 2)

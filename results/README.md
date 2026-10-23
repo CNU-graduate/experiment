@@ -50,3 +50,7 @@ results/
 `zero-shot-repeats/gemini-3.8-flash/2023-2025/`에는 Gemini E0 3회(각 210건), 1회차 출처와 오답 빈도 집계가 있습니다. 상세 내용은 해당 폴더의 README.md를 확인하세요.
 
 GPT E0 3회 반복 실험도 완료되었습니다. 기존 baseline E0 210건과 추가 2·3회차 각 210건을 비교했으며, 핵심 오답 11문제·보조 오답 4문제·미완료 0문제입니다. [GPT 결과와 집계 안내](zero-shot-repeats/gpt-6-sol/2023-2025/README.md)를 확인하세요.
+
+## E7 실행 계획
+
+[error-informed/claude-opus-5.5/2023-2025/](error-informed/claude-opus-5.5/2023-2025/)에는 E7 고정 예시 12건과 3회×210건의 dry-run 계획을 저장했습니다. 실제 모델 응답·성능 결과는 아직 포함하지 않습니다. [실행 안내](../docs/RUN_E7.md)를 참고하세요.

@@ -1,6 +1,7 @@
 import csv
 import json
 import sqlite3
+from contextlib import closing
 from pathlib import Path
 from types import SimpleNamespace
 from unittest.mock import MagicMock
@@ -285,7 +286,7 @@ def test_missing_keys_fail_without_calls(config,tmp_path,monkeypatch):
     for key in KEYS.values():monkeypatch.delenv(key,raising=False)
     monkeypatch.setattr('dotenv.load_dotenv',lambda **kw:False)
     with pytest.raises(ValueError,match='API key'):run(config,tmp_path,'live',approved=True)
-    with sqlite3.connect(tmp_path/'checkpoint.sqlite') as db:
+    with closing(sqlite3.connect(tmp_path/'checkpoint.sqlite')) as db, db:
         assert db.execute('SELECT COUNT(*) FROM calls').fetchone()[0]==0
 
 
