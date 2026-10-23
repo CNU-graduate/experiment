@@ -1,0 +1,8 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds,http_status
+"[2024, ""E0"", null, ""2024-27-01"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,1,2026-10-19T15:00:33.983378+00:00,error,ValueError,"Every definition names the same single parent compound, 1,4‐dimethylnaphthalene, with no metabolites, isomers or different expression basis.
+
+- **JMPR (enforcement, plant products):** 1,4‐dimethylnaphthalene.
+- **EU Regulation 396/2005:** 1,4‐dimethylnaphthalene.
+- **EFSA MRL review (2017c):** 1,4‐dimethylnaphthalene for root crops and for processed potato (tentative).
+
+Yes","{""completion_tokens"": 169, ""completion_tokens_details"": {""accepted_prediction_tokens"": null, ""audio_tokens"": 0, ""image_tokens"": 0, ""reasoning_tokens"": 0, ""rejected_prediction_tokens"": null}, ""cost"": 0.00526, ""cost_details"": {""upstream_inference_completions_cost"": 0.00338, ""upstream_inference_cost"": 0.00526, ""upstream_inference_prompt_cost"": 0.00188}, ""is_byok"": false, ""prompt_tokens"": 470, ""prompt_tokens_details"": {""audio_tokens"": 0, ""cache_write_tokens"": 0, ""cached_tokens"": 0, ""video_tokens"": 0}, ""total_tokens"": 639}",gen-1792422035-rT5Le0bQP1WUt2yIVPXB,3.2660000000032596,
