@@ -19,7 +19,7 @@ python -m residue_experiment.zero_shot_repeats --mode live --round 3 --approve-p
 API 호출 없이 현재 결과만 집계:
 python -m residue_experiment.zero_shot_repeats --mode analyze
 
-설정: results/claude-2023-2025/manifest.json의 기존 설정 사용.
+설정: results/claude-opus-5.5__baseline__2023-2025/manifest.json의 기존 설정 사용.
 모델은 저장된 anthropic/claude-opus-5.5로 고정; CLAUDE_MODEL 변경 무시.
 OpenRouter 인증 키는 기존 환경/.env의 OPENROUTER_API_KEY 사용.
 프롬프트·원본 데이터 변경 시 실행 전 거부.
@@ -27,12 +27,12 @@ temperature 등 기존에 보내지 않은 생성 파라미터를 새로 추가�
 서버의 모델 버전이나 기본값 변경까지 재현하는 것은 보장하지 않음.
 
 결과:
-results/zero-shot-3-runs/live/round_2/
-results/zero-shot-3-runs/live/round_3/
-results/zero-shot-3-runs/analysis/all_210_error_frequency.csv
-results/zero-shot-3-runs/analysis/core_errors_3_of_3.csv
-results/zero-shot-3-runs/analysis/secondary_errors_2_of_3.csv
-results/zero-shot-3-runs/analysis/summary_by_year.csv
+results/claude-opus-5.5__zero-shot-3-runs__2023-2025/live/round_2/
+results/claude-opus-5.5__zero-shot-3-runs__2023-2025/live/round_3/
+results/claude-opus-5.5__zero-shot-3-runs__2023-2025/analysis/all_210_error_frequency.csv
+results/claude-opus-5.5__zero-shot-3-runs__2023-2025/analysis/core_errors_3_of_3.csv
+results/claude-opus-5.5__zero-shot-3-runs__2023-2025/analysis/secondary_errors_2_of_3.csv
+results/claude-opus-5.5__zero-shot-3-runs__2023-2025/analysis/summary_by_year.csv
 
 3개의 유효 응답이 모인 문제만 핵심/보조 분석 대상으로 확정.
 3회 오답=핵심, 2회 오답=보조, 1회=단발, 0회=안정적 정답.

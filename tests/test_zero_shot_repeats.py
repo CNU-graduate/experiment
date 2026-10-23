@@ -21,7 +21,7 @@ class RepeatTests(unittest.TestCase):
         self.folder = Path(self.temp.name)
 
     def test_baseline_and_settings(self):
-        config, rows = prepare(ROOT / 'results/claude-2023-2025')
+        config, rows = prepare(ROOT / 'results/claude-opus-5.5__baseline__2023-2025')
         assert len(rows) == 210
         assert config['conditions'] == ['E0']
         assert config['years'] == [2023, 2024, 2025]
@@ -32,7 +32,7 @@ class RepeatTests(unittest.TestCase):
 
     def test_partial_and_error_frequency(self):
         tmp_path = self.folder
-        _, baseline = prepare(ROOT / 'results/claude-2023-2025')
+        _, baseline = prepare(ROOT / 'results/claude-opus-5.5__baseline__2023-2025')
         # Choose baseline errors so controlled repeats yield exactly 3/3 and 2/3.
         wrong = [r for r in baseline.values() if r['prediction'] != r['actual']]
         core, secondary = wrong[0]['id'], wrong[1]['id']
@@ -58,7 +58,7 @@ class RepeatTests(unittest.TestCase):
 
     def test_reject_mixed_prompts(self):
         tmp_path = self.folder
-        _, baseline = prepare(ROOT / 'results/claude-2023-2025')
+        _, baseline = prepare(ROOT / 'results/claude-opus-5.5__baseline__2023-2025')
         row = copy.deepcopy(next(iter(baseline.values())))
         row['prompt'] = 'changed'
         save(tmp_path / 'live/round_2', [row])

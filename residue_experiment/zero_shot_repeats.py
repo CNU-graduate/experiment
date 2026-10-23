@@ -101,8 +101,8 @@ def aggregate(baseline_rows, output, expected_config=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--baseline', type=Path, default=ROOT / 'results/claude-2023-2025')
-    parser.add_argument('--output', type=Path, default=ROOT / 'results/zero-shot-3-runs')
+    parser.add_argument('--baseline', type=Path, default=ROOT / 'results/claude-opus-5.5__baseline__2023-2025')
+    parser.add_argument('--output', type=Path, default=ROOT / 'results/claude-opus-5.5__zero-shot-3-runs__2023-2025')
     parser.add_argument('--mode', choices=['dry-run', 'mock', 'live', 'analyze'], default='dry-run')
     parser.add_argument('--round', type=int, choices=[2, 3], dest='only_round')
     parser.add_argument('--approve-paid-api', action='store_true')

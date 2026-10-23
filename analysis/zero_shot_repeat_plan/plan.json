@@ -1,5 +1,5 @@
 {
-  "existing_run": "C:\\Users\\hhj48\\Projects\\experiment\\results\\claude-2023-2025",
+  "existing_run": "C:\\Users\\hhj48\\Projects\\experiment\\results\\claude-opus-5.5__baseline__2023-2025",
   "existing_mode": "live",
   "existing_model": "anthropic/claude-opus-5.5",
   "completed_repeats_per_year": 1,
