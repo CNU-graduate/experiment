@@ -231,3 +231,7 @@ git push -u origin feat/residue-few-shot
 
 CSV 변경이 없는지 `git diff -- '*.csv'`로 확인하세요. 실제 유료 API 호출은 실행하지 않았습니다.
 API 통합 테스트도 SDK 네트워크 메서드를 Mock으로 대체합니다.
+
+## E7 고정 4-shot 반복 실험
+
+오류 분석 기반 고정 예시를 사용하는 E7 실행 방법은 [E7 안내](docs/RUN_E7.md)를 확인하세요. 현재 저장된 자료는 3회 합계 630건의 dry-run 실행 계획이며 유료 모델 응답이 아닙니다.

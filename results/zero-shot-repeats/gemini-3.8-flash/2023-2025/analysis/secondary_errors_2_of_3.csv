@@ -1,0 +1,5 @@
+﻿id,year,actual,valid_runs,wrong_count,complete,analysis_group,round_1_prediction,round_1_status,round_2_prediction,round_2_status,round_3_prediction,round_3_status
+2023-04-04,2023,No,3,2,True,보조 분석,No,success,Yes,success,Yes,success
+2023-09-04,2023,Yes,3,2,True,보조 분석,No,success,Yes,success,No,success
+2024-22-03,2024,Yes,3,2,True,보조 분석,No,success,No,success,Yes,success
+2025-11-02,2025,Yes,3,2,True,보조 분석,No,success,No,success,Yes,success

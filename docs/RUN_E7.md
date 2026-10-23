@@ -26,7 +26,7 @@ python -m residue_experiment.e7_repeats --mode dry-run
 별도 설정 `config.openrouter.e7.json`은 Claude의 고정 모델 ID와 E7만 지정합니다.
 회차당 210건(3년×70건), 3회 합계 630건입니다. seed로 예시를 바꾸지 않고 독립 회차 폴더에 저장합니다.
 
-出力: `results/error-informed/claude-opus-5.5/2023-2025/`
+출력: `results/error-informed/claude-opus-5.5/2023-2025/`
 
 - `plan.json`: 설정·순서·총수
 - `plan_by_year.csv`: 연도별 건수

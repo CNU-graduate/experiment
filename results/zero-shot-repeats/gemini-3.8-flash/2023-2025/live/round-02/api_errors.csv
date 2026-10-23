@@ -1,0 +1,2 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds,http_status
+"[2023, ""E0"", null, ""2023-19-01"", ""gemini""]",live,gemini,google/gemini-3.8-flash,1,2026-10-23T09:46:59.571740+00:00,started,,,,,,

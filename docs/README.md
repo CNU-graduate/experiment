@@ -9,3 +9,5 @@
 - [테스트 구성과 실행 방법](../tests/README.md)
 
 실제 분석 산출물은 [analysis/](../analysis/README.md)에서 확인하세요.
+
+- [E7 고정 4-shot 3회 반복 실험](RUN_E7.md)
