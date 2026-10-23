@@ -12,7 +12,7 @@ JMPR과 EU 농약 잔류물 정의의 비교 가능성을 Yes/No로 평가합니
 | `tests/` | 실험 코드 검증 |
 | `config.json`, `config.openrouter.yearly-remain.json` | 새 remain 실험 설정 |
 | `data/ESFA_*.csv` | 원본 데이터 21개 |
-| `results/` | 실험 결과와 재개용 체크포인트 |
+| `results/` | [실험별·모델별 결과 안내](results/README.md)와 로컬 재개용 체크포인트 |
 | `analysis/compact_10_type_classification/` | 현재 729건·10개 유형 분류표 |
 | `analysis/prompt_clarity_audit/` | 실제 입력과 명확·조건부 사례 비교 |
 | `analysis/zero_shot_repeat_plan/` | 기존 zero-shot 점검과 분석 계획 |
@@ -67,7 +67,7 @@ python -m pytest -q
 ```
 
 세 담당자는 같은 Git 커밋·CSV·주석 파일·패키지 버전을 사용해야 합니다.
-API 키나 .env를 공유·커밋하지 마세요. .env와 기본 results 폴더는 Git에서 제외됩니다.
+API 키나 .env를 공유·커밋하지 마세요. .env와 SQLite 체크포인트는 Git에서 제외됩니다. 결과 CSV와 manifest는 Git으로 관리합니다.
 
 ## 세 사람이 모델 하나씩 실행
 
@@ -76,11 +76,11 @@ API 키나 .env를 공유·커밋하지 마세요. .env와 기본 results 폴더
 
 ```bash
 # GPT 담당: 2024년 무료 계획 검증
-python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode dry-run --output results/gpt/2024/plan-v2
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode dry-run --output results/remain-v2/gpt-6-sol/2024/dry-run
 # Claude 담당
-python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider anthropic --year 2024 --mode dry-run --output results/claude/2024/plan-v2
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider anthropic --year 2024 --mode dry-run --output results/remain-v2/claude-opus-5.5/2024/dry-run
 # Gemini 담당
-python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider gemini --year 2024 --mode dry-run --output results/gemini/2024/plan-v2
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider gemini --year 2024 --mode dry-run --output results/remain-v2/gemini-3.8-flash/2024/dry-run
 ```
 
 모델 하나·연도 하나·seed 하나에서는 4조건×70문제=280건입니다.
@@ -165,11 +165,11 @@ OpenAI Responses는 store=False이고 previous_response_id 등을 보내지 않�
 
 ```bash
 # API 호출과 SDK 클라이언트 생성 없이 계획 검증
-python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode dry-run --output results/gpt/2024/plan-v2
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode dry-run --output results/remain-v2/gpt-6-sol/2024/dry-run
 # 가상 응답으로 저장·채점 검증. 실제 모델 성능이 아님
-python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode mock --output results/gpt/2024/mock-v2
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode mock --output results/remain-v2/gpt-6-sol/2024/mock
 # 실제 과금 실행은 사용자 승인 후에만
-python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode live --approve-paid-api --output results/gpt/2024/live-v2
+python -m residue_experiment.cli --config config.openrouter.yearly-remain.json --provider openai --year 2024 --mode live --approve-paid-api --output results/remain-v2/gpt-6-sol/2024/live
 ```
 
 응답은 앞뒤 공백 제거 후 정확히 Yes/No여야 합니다. 설명이나 대소문자 차이는 형식 오류입니다.

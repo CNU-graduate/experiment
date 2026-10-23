@@ -54,12 +54,12 @@ def aggregate(baseline_rows, output, expected_config=None):
     output = Path(output)
     rounds = {1: baseline_rows}
     for number in (2, 3):
-        manifest_path = output / 'live' / f'round_{number}' / 'manifest.json'
+        manifest_path = output / 'live' / f'round-{number:02d}' / 'manifest.json'
         if expected_config is not None and manifest_path.exists():
             manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
             if manifest['config'] != expected_config or manifest['system_prompt'] != SYSTEM or manifest['mode'] != 'live':
                 raise ValueError('Repeat manifest differs from baseline settings')
-        found = read_cases(output / 'live' / f'round_{number}')
+        found = read_cases(output / 'live' / f'round-{number:02d}')
         actual = {}
         for r in found:
             b = baseline_rows.get(r['id'])
@@ -101,8 +101,8 @@ def aggregate(baseline_rows, output, expected_config=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--baseline', type=Path, default=ROOT / 'results/claude-2023-2025')
-    parser.add_argument('--output', type=Path, default=ROOT / 'results/zero-shot-3-runs')
+    parser.add_argument('--baseline', type=Path, default=ROOT / 'results/baseline/claude-opus-5.5/2023-2025')
+    parser.add_argument('--output', type=Path, default=ROOT / 'results/zero-shot-repeats/claude-opus-5.5/2023-2025')
     parser.add_argument('--mode', choices=['dry-run', 'mock', 'live', 'analyze'], default='dry-run')
     parser.add_argument('--round', type=int, choices=[2, 3], dest='only_round')
     parser.add_argument('--approve-paid-api', action='store_true')
@@ -117,7 +117,7 @@ def main():
             load_dotenv(ROOT / '.env', override=False)
             numbers = [args.only_round] if args.only_round else [2, 3]
             for number in numbers:
-                folder = args.output / args.mode / f'round_{number}'
+                folder = args.output / args.mode / f'round-{number:02d}'
                 print(f'Round {number}: 210 E0 cases; {args.mode}; {folder}', flush=True)
                 try:
                     info = run(config, folder, args.mode, approved=args.approve_paid_api)
