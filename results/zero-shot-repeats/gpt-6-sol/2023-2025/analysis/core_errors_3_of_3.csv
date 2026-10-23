@@ -1,0 +1,12 @@
+﻿id,year,actual,valid_runs,wrong_count,complete,analysis_group,round_1_prediction,round_1_status,round_2_prediction,round_2_status,round_3_prediction,round_3_status
+2023-04-04,2023,No,3,3,True,핵심 분석,Yes,success,Yes,success,Yes,success
+2023-09-04,2023,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2023-15-04,2023,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2023-18-02,2023,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2024-01-01,2024,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2024-01-02,2024,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2024-17-02,2024,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2024-17-03,2024,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2024-22-03,2024,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2025-15-03,2025,Yes,3,3,True,핵심 분석,No,success,No,success,No,success
+2025-20-01,2025,Yes,3,3,True,핵심 분석,No,success,No,success,No,success

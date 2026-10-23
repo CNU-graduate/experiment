@@ -13,9 +13,8 @@ JMPR과 EU 농약 잔류물 정의의 비교 가능성을 Yes/No로 평가합니
 | `config.json`, `config.openrouter.yearly-remain.json` | 새 remain 실험 설정 |
 | `data/ESFA_*.csv` | 원본 데이터 21개 |
 | `results/` | [실험별·모델별 결과 안내](results/README.md)와 로컬 재개용 체크포인트 |
-| `analysis/compact_10_type_classification/` | 현재 729건·10개 유형 분류표 |
-| `analysis/prompt_clarity_audit/` | 실제 입력과 명확·조건부 사례 비교 |
-| `analysis/zero_shot_repeat_plan/` | 기존 zero-shot 점검과 분석 계획 |
+| `analysis/reports/compact_10_type_classification/` | 현재 729건·10개 유형 분류표 |
+| `analysis/reports/prompt_clarity_audit/` | 실제 입력과 명확·조건부 사례 비교 |
 | `docs/` | 실행 안내와 기존 테스트 보고서 |
 | `archive/data_review_2026-10-19/` | 이전 분류표·중간 산출물의 로컬 보관본 |
 
@@ -222,9 +221,9 @@ E2는 전년도 Yes2/No2, E3는 2년 전 Yes2/No2, E4는 전년도/2년 전에�
 ```bash
 git switch -c feat/residue-few-shot
 # 제공된 residue_experiment/, tests/, README.md, config.json,
-# pyproject.toml, .env.example, .gitignore, docs/TEST_REPORT.md를 복사
+# pyproject.toml, .env.example, .gitignore를 복사
 python -m pytest -q
-git add residue_experiment tests README.md config.json pyproject.toml .env.example .gitignore docs/TEST_REPORT.md
+git add residue_experiment tests README.md config.json pyproject.toml .env.example .gitignore
 git diff --cached --stat
 git commit -m "Implement temporal EFSA-JMPR few-shot experiments"
 git push -u origin feat/residue-few-shot

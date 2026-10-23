@@ -83,6 +83,8 @@ def run(config, output, mode='dry-run', approved=False):
                         except ValueError as exc:
                             error = str(exc)
                         prompt = build_prompt(test, examples)
+                        if config.get('prompt_newlines') == 'lf':
+                            prompt = prompt.replace('\\r\\n', '\\n')
                         for provider, model in config['models'].items():
                             key = canonical([year, condition, seed, test['id'], provider])
                             payload = {'mode': mode, 'provider': provider, 'model': model or 'UNCONFIGURED',

@@ -1,8 +1,11 @@
 """Two resumable E0 rounds using a completed live run's exact settings."""
 import argparse
 import copy
+import csv
+import hashlib
 import json
 import sqlite3
+from contextlib import closing
 from pathlib import Path
 from dotenv import load_dotenv
 from .data import Dataset
@@ -14,12 +17,34 @@ ROOT = Path(__file__).resolve().parents[1]
 YEARS = [2023, 2024, 2025]
 
 
-def read_cases(directory):
+def read_cases(directory, prompts=None):
     path = Path(directory) / 'checkpoint.sqlite'
+    if path.exists():
+        with closing(sqlite3.connect(path.resolve().as_uri() + '?mode=ro', uri=True)) as db:
+            return [json.loads(p) for (p,) in db.execute('SELECT payload FROM cases')]
+    path = Path(directory) / 'predictions.csv'
     if not path.exists():
         return []
-    with sqlite3.connect(path.resolve().as_uri() + '?mode=ro', uri=True) as db:
-        return [json.loads(p) for (p,) in db.execute('SELECT payload FROM cases')]
+    rows = []
+    with path.open(encoding='utf-8-sig', newline='') as handle:
+        for stored in csv.DictReader(handle):
+            if stored.get('condition') != 'E0':
+                continue
+            row = dict(stored)
+            try:
+                row['year'] = int(row['year'])
+                row['seed'] = int(row['seed']) if row['seed'] else None
+                row['prompt'] = prompts[row['id']]
+                digest = hashlib.sha256((SYSTEM + row['prompt']).encode()).hexdigest()
+                if row['prompt_sha256'] != digest:
+                    row['prompt'] = row['prompt'].replace('\\r\\n', '\\n')
+                    digest = hashlib.sha256((SYSTEM + row['prompt']).encode()).hexdigest()
+                    if row['prompt_sha256'] != digest:
+                        raise ValueError('CSV prompt hash differs from the current E0 prompt')
+            except (KeyError, TypeError) as exc:
+                raise ValueError(f'CSV is missing E0 verification data: {path}') from exc
+            rows.append(row)
+    return rows
 
 
 def prepare(baseline):
@@ -31,21 +56,37 @@ def prepare(baseline):
     # Freeze the resolved model ID, rather than resolving a possibly changed env value.
     config.pop('model_env', None)
     config.update(years=YEARS, conditions=['E0'])
+    config['data_dir'] = str(ROOT / 'data' if (ROOT / 'data').is_dir() else ROOT)
+    if config.get('priority_annotations'):
+        config['priority_annotations'] = str(ROOT / 'priority_annotations.json')
     if len(config['models']) != 1:
         raise ValueError('Expected one baseline model')
     data = Dataset(config['data_dir'])
-    if {x['file']: x['sha256'] for x in data.files} != {x['file']: x['sha256'] for x in manifest['data_files']}:
+    saved_files = {x['file']: x['sha256'] for x in manifest['data_files']}
+    if {x['file'] for x in data.files} != set(saved_files):
         raise ValueError('Dataset differs from the completed baseline')
-    rows = [r for r in read_cases(baseline) if r['condition'] == 'E0' and r['year'] in YEARS]
+    for entry in data.files:
+        # Git may convert LF to CRLF on a different computer; keep content verification.
+        raw = (Path(config['data_dir']) / entry['file']).read_bytes()
+        lf = raw.replace(b'\r\n', b'\n')
+        hashes = {hashlib.sha256(value).hexdigest() for value in (raw, lf, lf.replace(b'\n', b'\r\n'))}
+        if saved_files[entry['file']] not in hashes:
+            raise ValueError('Dataset differs from the completed baseline')
     expected = {r['id']: r for y in YEARS for r in data.tests[y]}
+    prompts = {ident: build_prompt(row, []) for ident, row in expected.items()}
+    rows = [r for r in read_cases(baseline, prompts) if r['condition'] == 'E0' and r['year'] in YEARS]
     if len(rows) != 210 or {r['id'] for r in rows} != set(expected):
         raise ValueError('Baseline needs exactly 210 unique E0 cases')
+    if any(r['prompt'] != prompts[r['id']] for r in rows):
+        config['prompt_newlines'] = 'lf'
+        prompts = {ident: prompt.replace('\\r\\n', '\\n') for ident, prompt in prompts.items()}
     for r in rows:
         if (r['status'] != 'success' or r['mode'] != 'live' or r['seed'] is not None
                 or r['prediction'] not in ('Yes', 'No')
                 or config['models'].get(r['provider']) != r['model']
                 or r['actual'] != expected[r['id']]['EFSA']
-                or r['prompt'] != build_prompt(expected[r['id']], [])):
+                or r['prompt'] != prompts[r['id']]
+                or r['prompt_sha256'] != hashlib.sha256((SYSTEM + r['prompt']).encode()).hexdigest()):
             raise ValueError('Baseline settings, labels, prompt or completion mismatch')
     return config, {r['id']: r for r in rows}
 
@@ -59,7 +100,8 @@ def aggregate(baseline_rows, output, expected_config=None):
             manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
             if manifest['config'] != expected_config or manifest['system_prompt'] != SYSTEM or manifest['mode'] != 'live':
                 raise ValueError('Repeat manifest differs from baseline settings')
-        found = read_cases(output / 'live' / f'round-{number:02d}')
+        found = read_cases(output / 'live' / f'round-{number:02d}',
+                           {ident: row['prompt'] for ident, row in baseline_rows.items()})
         actual = {}
         for r in found:
             b = baseline_rows.get(r['id'])

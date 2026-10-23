@@ -38,3 +38,15 @@ results/zero-shot-repeats/claude-opus-5.5/2023-2025/analysis/summary_by_year.csv
 3회 오답=핵심, 2회 오답=보조, 1회=단발, 0회=안정적 정답.
 응답 미완료는 미완료로 표시하며 API 실패를 정답 오답으로 세지 않음.
 dry-run/mock은 별도 폴더 사용. 실제 성능 집계에는 live만 포함.
+
+GPT로 실행하려면 baseline과 output을 모두 지정:
+python -m residue_experiment.zero_shot_repeats --baseline results/baseline/gpt-6-sol/2023-2025 --output results/zero-shot-repeats/gpt-6-sol/2023-2025 --mode dry-run
+python -m residue_experiment.zero_shot_repeats --baseline results/baseline/gpt-6-sol/2023-2025 --output results/zero-shot-repeats/gpt-6-sol/2023-2025 --mode live --approve-paid-api
+
+checkpoint.sqlite가 있으면 우선 사용하고, 없으면 predictions.csv의 E0 응답을 읽음.
+CSV에 없는 프롬프트는 현재 데이터에서 복원하고 저장된 prompt_sha256으로 검증.
+반복 결과도 checkpoint 없이 CSV로 집계 가능. CSV는 재시작용 checkpoint를 생성하지 않음.
+data_dir는 현재 프로젝트의 data/로 자동 설정하며, 구형 구조에서는 프로젝트 루트 사용.
+데이터 파일과 프롬프트 해시 검증은 유지하되 운영체제 간 LF/CRLF 차이를 허용.
+기존 GPT 응답이 LF 프롬프트를 사용했다면 추가 호출에도 동일한 프롬프트를 사용.
+모델 ID는 baseline manifest에 고정되므로 GPT_MODEL 환경변수 변경은 무시됨.
