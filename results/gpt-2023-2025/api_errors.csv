@@ -1,0 +1,2 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds
+"[2023, ""E3"", 2026, ""2023-24-01"", ""openai""]",live,openai,openai/gpt-6-sol,1,2026-10-12T10:40:46.468718+00:00,started,,,,,
