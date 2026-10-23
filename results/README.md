@@ -12,10 +12,9 @@ results/
 │   ├── gpt-6-sol/2023-2025/
 │   └── gemini-3.8-flash/2023-2025/
 ├── zero-shot-repeats/
-│   └── claude-opus-5.5/2023-2025/
-│       ├── live/round-02/, round-03/
-│       ├── dry-run/round-02/, round-03/
-│       └── analysis/
+│   ├── claude-opus-5.5/2023-2025/
+│   ├── gemini-3.8-flash/2023-2025/
+│   └── gpt-6-sol/2023-2025/
 └── preflight/
     └── 2026-10-19/
 ```
@@ -31,6 +30,8 @@ results/
 | [remain-v2/gpt-6-sol/2023-2025/](remain-v2/gpt-6-sol/2023-2025/) | E0, E1, E5, E6 | 840 |
 | [zero-shot-repeats/claude-opus-5.5/2023-2025/live/round-02/](zero-shot-repeats/claude-opus-5.5/2023-2025/live/round-02/) | E0 | 210 |
 | [zero-shot-repeats/claude-opus-5.5/2023-2025/live/round-03/](zero-shot-repeats/claude-opus-5.5/2023-2025/live/round-03/) | E0 | 210 |
+| [zero-shot-repeats/gpt-6-sol/2023-2025/live/round-02/](zero-shot-repeats/gpt-6-sol/2023-2025/live/round-02/) | E0 | 210 |
+| [zero-shot-repeats/gpt-6-sol/2023-2025/live/round-03/](zero-shot-repeats/gpt-6-sol/2023-2025/live/round-03/) | E0 | 210 |
 
 `baseline`은 기존 E0~E5 실험, `remain-v2`는 E0·E1·E5·E6 실험입니다. `zero-shot-repeats`는 baseline의 E0를 1회차로 사용하고 추가 2·3회차와 비교합니다. 집계는 해당 폴더의 `analysis/`에 있습니다.
 
@@ -45,3 +46,5 @@ results/
 
 루트 README의 실행 예제도 같은 경로 규칙을 사용합니다. 실행 시 실제 모델 ID와 출력 경로의 모델명을 일치시키세요.
 `zero-shot-repeats/gemini-3.8-flash/2023-2025/`에는 Gemini E0 3회(각 210건), 1회차 출처와 오답 빈도 집계가 있습니다. 상세 내용은 해당 폴더의 README.md를 확인하세요.
+
+GPT E0 3회 반복 실험도 완료되었습니다. 기존 baseline E0 210건과 추가 2·3회차 각 210건을 비교했으며, 핵심 오답 11문제·보조 오답 4문제·미완료 0문제입니다. [GPT 결과와 집계 안내](zero-shot-repeats/gpt-6-sol/2023-2025/README.md)를 확인하세요.
