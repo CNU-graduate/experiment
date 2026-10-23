@@ -1,1 +1,2 @@
 ﻿id,year,actual,valid_runs,wrong_count,complete,analysis_group,round_1_prediction,round_1_status,round_2_prediction,round_2_status,round_3_prediction,round_3_status
+2024-17-03,2024,Yes,3,2,True,보조 분석,Yes,success,No,success,No,success
