@@ -6,7 +6,8 @@
 results/
 ├── baseline/
 │   ├── claude-opus-5.5/2023-2025/
-│   └── gpt-6-sol/2023-2025/
+│   ├── gpt-6-sol/2023-2025/
+│   └── gemini-3.8-flash/2023-2025/
 ├── remain-v2/
 │   ├── claude-opus-5.5/2023-2025/
 │   ├── gpt-6-sol/2023-2025/
@@ -25,6 +26,7 @@ results/
 |---|---|---:|
 | [baseline/claude-opus-5.5/2023-2025/](baseline/claude-opus-5.5/2023-2025/) | E0, E1, E2, E3, E4, E5 | 2,940 |
 | [baseline/gpt-6-sol/2023-2025/](baseline/gpt-6-sol/2023-2025/) | E0, E1, E2, E3, E4, E5 | 2,940 |
+| [baseline/gemini-3.8-flash/2023-2025/](baseline/gemini-3.8-flash/2023-2025/) | E0, E1, E2, E3, E4, E5 | 2,940 |
 | [remain-v2/claude-opus-5.5/2023-2025/](remain-v2/claude-opus-5.5/2023-2025/) | E0, E1, E5, E6 | 840 |
 | [remain-v2/gemini-3.8-flash/2023-2025/](remain-v2/gemini-3.8-flash/2023-2025/) | E0, E1, E5, E6 | 840 |
 | [remain-v2/gpt-6-sol/2023-2025/](remain-v2/gpt-6-sol/2023-2025/) | E0, E1, E5, E6 | 840 |
