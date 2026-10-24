@@ -93,6 +93,8 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
                         prompt = build_prompt(test, examples)
                         if config.get('prompt_newlines') == 'lf':
                             prompt = prompt.replace('\\r\\n', '\\n')
+                        elif config.get('prompt_newlines') == 'crlf':
+                            prompt = prompt.replace('\\r\\n', '\\n').replace('\\n', '\\r\\n')
                         for provider, model in config['models'].items():
                             key = canonical([year, condition, seed, test['id'], provider])
                             payload = {'mode': mode, 'provider': provider, 'model': model or 'UNCONFIGURED',

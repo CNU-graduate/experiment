@@ -77,6 +77,17 @@ class RepeatTests(unittest.TestCase):
             self.assertEqual(row['prompt'], baseline[row['id']]['prompt'])
             self.assertEqual(row['prompt_sha256'], baseline[row['id']]['prompt_sha256'])
 
+
+    def test_claude_plan_preserves_windows_prompt_hashes(self):
+        config, baseline = prepare(ROOT / 'results/baseline/claude-opus-5.5/2023-2025')
+        output = self.folder / 'claude-plan'
+        run(config, output, 'dry-run')
+        rows = read_cases(output)
+        self.assertEqual(len(rows), 210)
+        for row in rows:
+            self.assertEqual(row['prompt'], baseline[row['id']]['prompt'])
+            self.assertEqual(row['prompt_sha256'], baseline[row['id']]['prompt_sha256'])
+
     def test_baseline_and_settings(self):
         config, rows = prepare(ROOT / 'results/baseline/claude-opus-5.5/2023-2025')
         assert len(rows) == 210

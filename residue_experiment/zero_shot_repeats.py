@@ -34,13 +34,14 @@ def read_cases(directory, prompts=None):
             try:
                 row['year'] = int(row['year'])
                 row['seed'] = int(row['seed']) if row['seed'] else None
-                row['prompt'] = prompts[row['id']]
-                digest = hashlib.sha256((SYSTEM + row['prompt']).encode()).hexdigest()
-                if row['prompt_sha256'] != digest:
-                    row['prompt'] = row['prompt'].replace('\\r\\n', '\\n')
-                    digest = hashlib.sha256((SYSTEM + row['prompt']).encode()).hexdigest()
-                    if row['prompt_sha256'] != digest:
-                        raise ValueError('CSV prompt hash differs from the current E0 prompt')
+                current = prompts[row['id']]
+                lf = current.replace('\\r\\n', '\\n')
+                candidates = (current, lf, lf.replace('\\n', '\\r\\n'))
+                matched = [p for p in candidates if row['prompt_sha256'] ==
+                           hashlib.sha256((SYSTEM + p).encode()).hexdigest()]
+                if not matched:
+                    raise ValueError('CSV prompt hash differs from the current E0 prompt')
+                row['prompt'] = matched[0]
             except (KeyError, TypeError) as exc:
                 raise ValueError(f'CSV is missing E0 verification data: {path}') from exc
             rows.append(row)
@@ -99,8 +100,13 @@ def prepare(baseline):
     if len(rows) != 210 or {r['id'] for r in rows} != set(expected):
         raise ValueError('Baseline needs exactly 210 unique E0 cases')
     if any(r['prompt'] != prompts[r['id']] for r in rows):
-        config['prompt_newlines'] = 'lf'
-        prompts = {ident: prompt.replace('\\r\\n', '\\n') for ident, prompt in prompts.items()}
+        lf_prompts = {ident: p.replace('\\r\\n', '\\n') for ident, p in prompts.items()}
+        if all(r['prompt'] == lf_prompts[r['id']] for r in rows):
+            config['prompt_newlines'] = 'lf'
+            prompts = lf_prompts
+        else:
+            config['prompt_newlines'] = 'crlf'
+            prompts = {ident: p.replace('\\n', '\\r\\n') for ident, p in lf_prompts.items()}
     for r in rows:
         if (r['status'] != 'success' or r['mode'] != 'live' or r['seed'] is not None
                 or r['prediction'] not in ('Yes', 'No')
