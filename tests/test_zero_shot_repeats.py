@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import csv
 import json
 import sqlite3
@@ -7,7 +8,7 @@ import tempfile
 import shutil
 from contextlib import closing
 from pathlib import Path
-from residue_experiment.zero_shot_repeats import ROOT, prepare, aggregate, read_cases
+from residue_experiment.zero_shot_repeats import ROOT, prepare, aggregate, read_cases, _csv_line_ending_hashes
 from residue_experiment.runner import run
 
 
@@ -119,3 +120,15 @@ class RepeatTests(unittest.TestCase):
         save(tmp_path / 'live/round-02', [row])
         with self.assertRaisesRegex(ValueError, 'prompt'):
             aggregate(baseline, tmp_path)
+
+
+class CSVNewlineTests(unittest.TestCase):
+    def test_mixed_record_and_cell_newlines_preserve_archived_hash(self):
+        lf = b'\xef\xbb\xbf"id","text"\n"1","a\n""quoted""\nb"\n'
+        original = b'\xef\xbb\xbf"id","text"\r\n"1","a\n""quoted""\nb"\r\n'
+        digest = hashlib.sha256(original).hexdigest()
+        self.assertIn(digest, _csv_line_ending_hashes(lf))
+        self.assertIn(digest, _csv_line_ending_hashes(lf.replace(b'\n', b'\r\n')))
+        self.assertNotIn(digest, _csv_line_ending_hashes(lf.replace(b'quoted', b'changed')))
+        self.assertNotIn(digest, _csv_line_ending_hashes(lf.replace(b'"text"', b'"text "')))
+        self.assertNotIn(digest, _csv_line_ending_hashes(lf[3:]))

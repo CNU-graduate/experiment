@@ -47,6 +47,28 @@ def read_cases(directory, prompts=None):
     return rows
 
 
+def _csv_line_ending_hashes(raw):
+    """Accept OS newline conversions, including CRLF records with LF cells.
+
+    Preserve every non-newline byte (including BOM, quoting and whitespace).
+    CSV writers may use different newlines inside quoted cells and between rows.
+    """
+    lf = raw.replace(b'\r\n', b'\n')
+    candidates = {raw}
+    for record_newline in (b'\n', b'\r\n'):
+        for cell_newline in (b'\n', b'\r\n'):
+            quoted = False
+            chunks = []
+            for char in lf:
+                if char == 34:
+                    # Doubled escaped quotes toggle twice, preserving quoted state.
+                    quoted = not quoted
+                chunks.append((cell_newline if quoted else record_newline)
+                              if char == 10 else bytes((char,)))
+            candidates.add(b''.join(chunks))
+    return {hashlib.sha256(value).hexdigest() for value in candidates}
+
+
 def prepare(baseline):
     baseline = Path(baseline)
     manifest = json.loads((baseline / 'manifest.json').read_text(encoding='utf-8'))
@@ -68,8 +90,7 @@ def prepare(baseline):
     for entry in data.files:
         # Git may convert LF to CRLF on a different computer; keep content verification.
         raw = (Path(config['data_dir']) / entry['file']).read_bytes()
-        lf = raw.replace(b'\r\n', b'\n')
-        hashes = {hashlib.sha256(value).hexdigest() for value in (raw, lf, lf.replace(b'\n', b'\r\n'))}
+        hashes = _csv_line_ending_hashes(raw)
         if saved_files[entry['file']] not in hashes:
             raise ValueError('Dataset differs from the completed baseline')
     expected = {r['id']: r for y in YEARS for r in data.tests[y]}
