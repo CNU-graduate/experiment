@@ -1,0 +1,25 @@
+{
+  "data_dir": "data",
+  "years": [
+    2023,
+    2024,
+    2025
+  ],
+  "conditions": [
+    "P1",
+    "P2"
+  ],
+  "seeds": [
+    42
+  ],
+  "models": {
+    "openai": "openai/gpt-6-sol",
+    "anthropic": "anthropic/claude-opus-5.5",
+    "gemini": "google/gemini-3.8-flash"
+  },
+  "max_output_tokens": 1000,
+  "timeout_seconds": 120,
+  "max_attempts": 3,
+  "retry_delay_seconds": 1,
+  "api_backend": "openrouter"
+}

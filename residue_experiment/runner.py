@@ -27,7 +27,12 @@ def error_policy(exc):
     return status, fatal
 
 
-def run(config, output, mode='dry-run', approved=False):
+def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
+    system = SYSTEM if system_prompt is None else system_prompt
+    if not isinstance(system, str) or not system.strip():
+        raise ValueError('A nonempty system prompt is required')
+    if any(c in ('P1', 'P2') for c in config['conditions']) and system_prompt is None:
+        raise ValueError('Instruction variants require an explicit system prompt')
     if mode == 'live' and not approved:
         raise ValueError('Live calls require separate user approval and --approve-paid-api')
     data = Dataset(config['data_dir'])
@@ -45,7 +50,7 @@ def run(config, output, mode='dry-run', approved=False):
     write_csv(output/'validation.csv', data.files)
     write_csv(output/'data_issues.csv', data.issues, ['year', 'type', 'detail'])
     identity = {'config': config, 'files': data.files, 'mode': mode,
-                                            'system': SYSTEM, 'version': 2, 'annotation_files': annotation_files,
+                                            'system': system, 'version': 2, 'annotation_files': annotation_files,
                                             'implementation': {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
                                                 for p in sorted(Path(__file__).parent.glob('*.py'))}}
     fingerprint = hashlib.sha256(canonical(identity).encode()).hexdigest()
@@ -68,7 +73,9 @@ def run(config, output, mode='dry-run', approved=False):
         selector = Selector(data.pools, {y: [inputs(r) for r in rows] for y, rows in data.tests.items()}, annotations)
         clients = {}
         if mode == 'live':
-            clients = {p: Provider(p, m, config) for p, m in config['models'].items()}
+            clients = {p: (Provider(p, m, config) if system_prompt is None else
+                           Provider(p, m, config, system_prompt=system))
+                       for p, m in config['models'].items()}
         # Persist the entire plan before any calls, so interruptions retain denominator.
         for year in config['years']:
             if year not in data.tests:
@@ -79,7 +86,8 @@ def run(config, output, mode='dry-run', approved=False):
                     for test in data.tests[year]:
                         examples, error = [], ''
                         try:
-                            examples = selector.choose(condition, year, seed, inputs(test))
+                            examples = ([] if condition in ('P1', 'P2') else
+                                        selector.choose(condition, year, seed, inputs(test)))
                         except ValueError as exc:
                             error = str(exc)
                         prompt = build_prompt(test, examples)
@@ -93,13 +101,13 @@ def run(config, output, mode='dry-run', approved=False):
                                        'status': 'excluded' if error else 'pending', 'error': error,
                                        'examples': [{'id': r['id'], 'year': int(r['year']), 'label': r['EFSA'],
                                                      'similarity': r.get('similarity', '')} for r in examples],
-                                       'prompt_sha256': hashlib.sha256((SYSTEM+prompt).encode()).hexdigest(),
+                                       'prompt_sha256': hashlib.sha256((system+prompt).encode()).hexdigest(),
                                        'prompt': prompt}
                             db.execute('INSERT OR IGNORE INTO cases VALUES (?, ?)', (key, canonical(payload)))
         db.commit()
         (output/'selection_audit.json').write_text(json.dumps(selector.audit, ensure_ascii=False, indent=2), encoding='utf-8')
         manifest = {'annotation_files': annotation_files, 'fingerprint': fingerprint, 'mode': mode, 'config': config,
-                    'data_files': data.files, 'system_prompt': SYSTEM,
+                    'data_files': data.files, 'system_prompt': system,
                     'created_utc': datetime.now(timezone.utc).isoformat()}
         if not (output/'manifest.json').exists():
             (output/'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')

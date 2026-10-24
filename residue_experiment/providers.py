@@ -7,8 +7,11 @@ KEYS = {'openai': 'OPENAI_API_KEY', 'anthropic': 'ANTHROPIC_API_KEY', 'gemini': 
 
 
 class Provider:
-    def __init__(self, provider, model, config):
+    def __init__(self, provider, model, config, *, system_prompt=None):
         self.provider, self.model, self.config = provider, model, config
+        self.system_prompt = SYSTEM if system_prompt is None else system_prompt
+        if not isinstance(self.system_prompt, str) or not self.system_prompt.strip():
+            raise ValueError('A nonempty system prompt is required')
         self.backend = config.get('api_backend', 'official')
         if self.backend not in ('official', 'openrouter'):
             raise ValueError('api_backend must be official or openrouter')
@@ -37,23 +40,23 @@ class Provider:
         tokens = self.config['max_output_tokens']
         if self.backend == 'openrouter':
             r = self.client.chat.completions.create(
-                model=self.model, messages=[{'role': 'system', 'content': SYSTEM},
+                model=self.model, messages=[{'role': 'system', 'content': self.system_prompt},
                                            {'role': 'user', 'content': prompt}],
                 max_tokens=tokens)
             if not r.choices:
                 raise ValueError('OpenRouter returned no choices')
             return r.choices[0].message.content or '', r.usage.model_dump() if r.usage else {}, r.id
         if self.provider == 'openai':
-            r = self.client.responses.create(model=self.model, instructions=SYSTEM,
+            r = self.client.responses.create(model=self.model, instructions=self.system_prompt,
                                               input=prompt, max_output_tokens=tokens, store=False)
             return r.output_text, r.usage.model_dump() if r.usage else {}, r.id
         if self.provider == 'anthropic':
-            r = self.client.messages.create(model=self.model, system=SYSTEM, max_tokens=tokens,
+            r = self.client.messages.create(model=self.model, system=self.system_prompt, max_tokens=tokens,
                                             messages=[{'role': 'user', 'content': prompt}])
             return ''.join(b.text for b in r.content if b.type == 'text'), r.usage.model_dump(), r.id
         from google.genai import types
         r = self.client.models.generate_content(model=self.model, contents=prompt,
-            config=types.GenerateContentConfig(system_instruction=SYSTEM, max_output_tokens=tokens))
+            config=types.GenerateContentConfig(system_instruction=self.system_prompt, max_output_tokens=tokens))
         return r.text or '', r.usage_metadata.model_dump(mode='json') if r.usage_metadata else {}, getattr(r, 'response_id', '')
 
 

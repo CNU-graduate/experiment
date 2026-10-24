@@ -1,5 +1,18 @@
 # EFSA–JMPR 잔류물 정의 Few-shot 실험
 
+## 추가 실험: P1/P2 지침을 각각 3회 (P0 호출 없음)
+
+예시 없이 P1(공통 절차), P2(공통 절차＋모델별 보완 지침)를 각각3회 실행합니다.
+기존 E0 3회 결과는 읽기 전용 비교 기준으로 사용합니다. 모델당1,260건입니다.
+
+```bash
+python -m residue_experiment.instruction_repeats --provider openai --mode dry-run
+```
+
+담당 모델은 openai / anthropic / gemini로 선택합니다.
+[설계·검증·실행·재개 안내](docs/RUN_INSTRUCTION_REPEATS.md)를 먼저 확인하세요.
+
+
 JMPR과 EU 농약 잔류물 정의의 비교 가능성을 Yes/No로 평가합니다. Python 3.11+가 필요합니다.
 기본은 dry-run이며 실제 유료 API는 사용자가 승인한 뒤 live 모드로만 호출합니다.
 원본 CSV는 수정하지 않습니다. Mock 점수는 실제 모델 성능이 아닙니다.

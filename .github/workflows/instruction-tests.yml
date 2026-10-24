@@ -1,0 +1,24 @@
+name: Instruction experiment tests
+on:
+  pull_request:
+    paths:
+      - 'residue_experiment/**'
+      - 'tests/**'
+      - 'config.openrouter.instructions.json'
+      - 'pyproject.toml'
+      - '.github/workflows/instruction-tests.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -e ".[api,test]"
+      - name: Tests without real model API calls
+        run: python -m pytest -q tests
