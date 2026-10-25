@@ -1,0 +1,4 @@
+﻿mode,provider,model,year,condition,seed,n_total,n_evaluated,coverage,complete,accuracy,precision,recall,macro_f1,tn,fp,fn,tp
+live,gemini,google/gemini-3.8-flash,2023,E0,,70,70,1.0,True,0.9428571428571428,1.0,0.9,0.9424342105263157,30,0,4,36
+live,gemini,google/gemini-3.8-flash,2024,E0,,70,70,1.0,True,0.8714285714285714,1.0,0.7857142857142857,0.8707692307692307,28,0,9,33
+live,gemini,google/gemini-3.8-flash,2025,E0,,70,70,1.0,True,0.9142857142857143,1.0,0.8604651162790697,0.9125000000000001,27,0,6,37

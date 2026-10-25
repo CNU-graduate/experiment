@@ -1,0 +1,4 @@
+﻿mode,provider,model,year,condition,seed,n_total,n_evaluated,coverage,complete,accuracy,precision,recall,macro_f1,tn,fp,fn,tp
+dry-run,gemini,google/gemini-3.8-flash,2023,E0,,70,0,0.0,False,,,,,,,,
+dry-run,gemini,google/gemini-3.8-flash,2024,E0,,70,0,0.0,False,,,,,,,,
+dry-run,gemini,google/gemini-3.8-flash,2025,E0,,70,0,0.0,False,,,,,,,,
