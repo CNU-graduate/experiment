@@ -1,0 +1,163 @@
+{
+  "sources": [
+    {
+      "path": "results\\zero-shot-repeats\\gemini-3.8-flash\\2023-2025\\live\\round-01\\predictions.csv",
+      "sha256": "0970fb7b32deb07f613704b39c38c55844a2a759da2bc62bc9156dd99c7923b1"
+    },
+    {
+      "path": "results\\zero-shot-repeats\\gemini-3.8-flash\\2023-2025\\live\\round-02\\predictions.csv",
+      "sha256": "cfc7d1f97b8a29482c194b3191d09de8282c75fd869c3113308d5a804a917aa5"
+    },
+    {
+      "path": "results\\zero-shot-repeats\\gemini-3.8-flash\\2023-2025\\live\\round-03\\predictions.csv",
+      "sha256": "2b53a6f28bffc4502b3ac91aa2252dfd61eefae71845af590ffe3010c40f4246"
+    }
+  ],
+  "core_count": 8,
+  "core_actual_labels": {
+    "No": 2,
+    "Yes": 6
+  },
+  "errors": [
+    {
+      "id": "2023-04-03",
+      "actual": "No",
+      "wrong_count": 3,
+      "predictions": [
+        "Yes",
+        "Yes",
+        "Yes"
+      ]
+    },
+    {
+      "id": "2023-04-04",
+      "actual": "No",
+      "wrong_count": 2,
+      "predictions": [
+        "No",
+        "Yes",
+        "Yes"
+      ]
+    },
+    {
+      "id": "2023-09-04",
+      "actual": "Yes",
+      "wrong_count": 2,
+      "predictions": [
+        "No",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "id": "2023-15-04",
+      "actual": "Yes",
+      "wrong_count": 3,
+      "predictions": [
+        "No",
+        "No",
+        "No"
+      ]
+    },
+    {
+      "id": "2024-12-02",
+      "actual": "Yes",
+      "wrong_count": 1,
+      "predictions": [
+        "No",
+        "Yes",
+        "Yes"
+      ]
+    },
+    {
+      "id": "2024-15-03",
+      "actual": "Yes",
+      "wrong_count": 3,
+      "predictions": [
+        "No",
+        "No",
+        "No"
+      ]
+    },
+    {
+      "id": "2024-17-01",
+      "actual": "Yes",
+      "wrong_count": 1,
+      "predictions": [
+        "No",
+        "Yes",
+        "Yes"
+      ]
+    },
+    {
+      "id": "2024-17-02",
+      "actual": "Yes",
+      "wrong_count": 3,
+      "predictions": [
+        "No",
+        "No",
+        "No"
+      ]
+    },
+    {
+      "id": "2024-17-03",
+      "actual": "Yes",
+      "wrong_count": 3,
+      "predictions": [
+        "No",
+        "No",
+        "No"
+      ]
+    },
+    {
+      "id": "2024-22-03",
+      "actual": "Yes",
+      "wrong_count": 2,
+      "predictions": [
+        "No",
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "id": "2024-27-04",
+      "actual": "No",
+      "wrong_count": 3,
+      "predictions": [
+        "Yes",
+        "Yes",
+        "Yes"
+      ]
+    },
+    {
+      "id": "2025-05-01",
+      "actual": "Yes",
+      "wrong_count": 3,
+      "predictions": [
+        "No",
+        "No",
+        "No"
+      ]
+    },
+    {
+      "id": "2025-11-02",
+      "actual": "Yes",
+      "wrong_count": 2,
+      "predictions": [
+        "No",
+        "No",
+        "Yes"
+      ]
+    },
+    {
+      "id": "2025-15-03",
+      "actual": "Yes",
+      "wrong_count": 3,
+      "predictions": [
+        "No",
+        "No",
+        "No"
+      ]
+    }
+  ]
+}

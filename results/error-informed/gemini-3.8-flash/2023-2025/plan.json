@@ -1,0 +1,36 @@
+{
+  "condition": "E7",
+  "selection_version": "error-informed-v1",
+  "config": {
+    "data_dir": "C:\\Users\\hhj48\\Projects\\experiment",
+    "years": [
+      2023,
+      2024,
+      2025
+    ],
+    "conditions": [
+      "E7"
+    ],
+    "seeds": [
+      42
+    ],
+    "models": {
+      "gemini": "google/gemini-3.8-flash"
+    },
+    "max_output_tokens": 1000,
+    "timeout_seconds": 120,
+    "max_attempts": 3,
+    "retry_delay_seconds": 1,
+    "api_backend": "openrouter"
+  },
+  "rounds": 3,
+  "cases_per_round": 210,
+  "total_cases": 630,
+  "order": [
+    "N1",
+    "Y1",
+    "N2",
+    "Y2"
+  ],
+  "note": "Fixed examples; round repetition is not random-example seeds."
+}

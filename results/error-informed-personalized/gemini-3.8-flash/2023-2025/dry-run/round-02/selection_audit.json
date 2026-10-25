@@ -1,0 +1,92 @@
+{
+  "2023:E7": {
+    "version": "model-specific-error-informed-v1",
+    "provider": "gemini",
+    "selected": [
+      {
+        "id": "2022-16-03",
+        "role": "N1",
+        "label": "No",
+        "reason": "Mancozeb의 합산·별도 평가 차이에 연결되는 No. 동일한 독성등가 구조를 완전히 재현하지는 않음."
+      },
+      {
+        "id": "2022-20-04",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "Clothianidin·Thiamethoxam 반복 오답의 개별 정의·종별 적용 범위에 대응하는 조건부 Yes."
+      },
+      {
+        "id": "2022-25-04",
+        "role": "N2",
+        "label": "No",
+        "reason": "Bixafen 포합체 범위 차이. 1,4-Dimethylnaphthalene 반복 오류에 연결되나 특정 포합체 대 전체의 정확한 재현은 아님."
+      },
+      {
+        "id": "2022-09-02",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "일반명·구성 이성질체의 대응. Maleic hydrazide의 표현을 과도하게 읽는 오류에 대한 간접 대조이며 free 표기와 동일 유형은 아님."
+      }
+    ]
+  },
+  "2024:E7": {
+    "version": "model-specific-error-informed-v1",
+    "provider": "gemini",
+    "selected": [
+      {
+        "id": "2023-20-02",
+        "role": "N1",
+        "label": "No",
+        "reason": "합산·별도 평가 구조 차이. Mancozeb 반복 오답의 구조적 경계를 보여줌."
+      },
+      {
+        "id": "2023-09-02",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "법규·MRL review의 대응과 peer review의 종별 예외를 구분. Famoxadone 보조 오류 및 출처 의존 핵심 오류에 연결."
+      },
+      {
+        "id": "2023-21-02",
+        "role": "N2",
+        "label": "No",
+        "reason": "Quinclorac 포합체 포함 범위 차이. 포합체 관련 반복 오류 교정용."
+      },
+      {
+        "id": "2023-15-02",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "일반명과 구성 이성질체 표현이 대응하는 Yes. free·형태 관련 문구를 모두 No로 일반화하지 않기 위한 간접 대조."
+      }
+    ]
+  },
+  "2025:E7": {
+    "version": "model-specific-error-informed-v1",
+    "provider": "gemini",
+    "selected": [
+      {
+        "id": "2024-08-03",
+        "role": "N1",
+        "label": "No",
+        "reason": "명시된 과실류·엽면처리 범위에서 PCA가 별도 추가되는 No. 이 범위를 모든 식물로 확대하지 않음."
+      },
+      {
+        "id": "2024-06-04",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "현행 정의와 결정 대기인 별도 대사산물 제안을 구분. 출처·상태 때문에 Yes를 No로 보는 오류에 대응하는 조건부 예시."
+      },
+      {
+        "id": "2024-21-04",
+        "role": "N2",
+        "label": "No",
+        "reason": "전년도 후보에 명확한 포합체 No가 없어 일반적인 추가 대사체 집합 차이로 대응. 포합체 교정의 직접 예시로 해석하지 않음."
+      },
+      {
+        "id": "2024-23-04",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "대사체 B-1 명칭·이성질체 표현이 대응. MRL review와 peer review not applicable을 분리해야 하는 출처 해석 부담을 기록."
+      }
+    ]
+  }
+}
