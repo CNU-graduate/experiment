@@ -1,0 +1,4 @@
+﻿mode,provider,model,year,condition,repeats_planned,repeats_complete,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,macro_f1_mean,macro_f1_std
+live,anthropic,anthropic/claude-opus-5.5,2023,E7,1,1,0.9428571428571428,0.0,0.9090909090909091,0.0,1.0,0.0,0.9404761904761905,0.0
+live,anthropic,anthropic/claude-opus-5.5,2024,E7,1,1,0.9428571428571428,0.0,0.9318181818181818,0.0,0.9761904761904762,0.0,0.9397071490094746,0.0
+live,anthropic,anthropic/claude-opus-5.5,2025,E7,1,1,0.9428571428571428,0.0,0.9534883720930233,0.0,0.9534883720930233,0.0,0.9397071490094746,0.0

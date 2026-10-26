@@ -1,0 +1,113 @@
+{
+  "2023:E7": {
+    "method": "frozen manual error-informed examples",
+    "version": "error-informed-v1",
+    "candidate_year": 2022,
+    "order": [
+      "N1",
+      "Y1",
+      "N2",
+      "Y2"
+    ],
+    "selected": [
+      {
+        "id": "2022-16-03",
+        "role": "N1",
+        "label": "No",
+        "reason": "EU adds separate TDM residue definitions."
+      },
+      {
+        "id": "2022-22-03",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "Both sides consider the same two compounds separately."
+      },
+      {
+        "id": "2022-02-02",
+        "role": "N2",
+        "label": "No",
+        "reason": "EU additionally includes metabolite FK-772."
+      },
+      {
+        "id": "2022-13-02",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "Chemical name and CGA321113 code describe corresponding definitions."
+      }
+    ]
+  },
+  "2024:E7": {
+    "method": "frozen manual error-informed examples",
+    "version": "error-informed-v1",
+    "candidate_year": 2023,
+    "order": [
+      "N1",
+      "Y1",
+      "N2",
+      "Y2"
+    ],
+    "selected": [
+      {
+        "id": "2023-20-02",
+        "role": "N1",
+        "label": "No",
+        "reason": "JMPR sums parent equivalents; EU sets separate definitions."
+      },
+      {
+        "id": "2023-10-02",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "Common-metabolite scope and expression basis correspond."
+      },
+      {
+        "id": "2023-21-02",
+        "role": "N2",
+        "label": "No",
+        "reason": "Only JMPR includes quinclorac conjugates."
+      },
+      {
+        "id": "2023-15-02",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "Common name and constituent-isomer wording correspond."
+      }
+    ]
+  },
+  "2025:E7": {
+    "method": "frozen manual error-informed examples",
+    "version": "error-informed-v1",
+    "candidate_year": 2024,
+    "order": [
+      "N1",
+      "Y1",
+      "N2",
+      "Y2"
+    ],
+    "selected": [
+      {
+        "id": "2024-03-04",
+        "role": "N1",
+        "label": "No",
+        "reason": "Latest EU assessment adds tissue/milk-specific definitions."
+      },
+      {
+        "id": "2024-01-04",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "Both sides list the same six pyrethrin components."
+      },
+      {
+        "id": "2024-21-04",
+        "role": "N2",
+        "label": "No",
+        "reason": "Only JMPR additionally includes IN-MYX98."
+      },
+      {
+        "id": "2024-23-04",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "B-1 names and added isomer wording correspond in MRL review."
+      }
+    ]
+  }
+}

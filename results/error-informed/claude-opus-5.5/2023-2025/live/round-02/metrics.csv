@@ -1,0 +1,4 @@
+﻿mode,provider,model,year,condition,seed,n_total,n_evaluated,coverage,complete,accuracy,precision,recall,macro_f1,tn,fp,fn,tp
+live,anthropic,anthropic/claude-opus-5.5,2023,E7,,70,70,1.0,True,0.9571428571428572,0.9302325581395349,1.0,0.9556119213696892,27,3,0,40
+live,anthropic,anthropic/claude-opus-5.5,2024,E7,,70,70,1.0,True,0.9428571428571428,0.9318181818181818,0.9761904761904762,0.9397071490094746,25,3,1,41
+live,anthropic,anthropic/claude-opus-5.5,2025,E7,,70,70,1.0,True,0.9571428571428572,0.9761904761904762,0.9534883720930233,0.9550802139037433,26,1,2,41

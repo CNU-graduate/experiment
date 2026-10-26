@@ -1,0 +1,2 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds,http_status
+"[2025, ""E7"", null, ""2025-20-02"", ""gemini""]",live,gemini,google/gemini-3.8-flash,1,2026-10-25T05:41:41.721567+00:00,error,APITimeoutError,,,,120.0,

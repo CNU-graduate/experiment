@@ -1,0 +1,92 @@
+{
+  "2023:E7": {
+    "version": "model-specific-error-informed-v1",
+    "provider": "openai",
+    "selected": [
+      {
+        "id": "2022-16-03",
+        "role": "N1",
+        "label": "No",
+        "reason": "Mancozeb 반복 오류에 대응하는 별도 평가 구조 차이. 독성등가 합산을 완전히 재현하는 예시는 아님."
+      },
+      {
+        "id": "2022-17-04",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "Famoxadone·Mandipropamid의 출처 의존 Yes 오판에 대응. not required와 대응하는 peer review를 구분하는 조건부 예시."
+      },
+      {
+        "id": "2022-10-03",
+        "role": "N2",
+        "label": "No",
+        "reason": "추가 대사체가 실제로 다르면 No인 대조용. GPT 핵심 오답의 직접 대표 유형이 아닌 과잉 교정 방지용."
+      },
+      {
+        "id": "2022-13-02",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "긴 화학명·코드가 대응하는 복합 정의. Pyrethrins 등 표현을 엄격하게 읽는 Yes 오판에 대응."
+      }
+    ]
+  },
+  "2024:E7": {
+    "version": "model-specific-error-informed-v1",
+    "provider": "openai",
+    "selected": [
+      {
+        "id": "2023-20-02",
+        "role": "N1",
+        "label": "No",
+        "reason": "합산·별도 구조 차이. Mancozeb 오류와 연결되나 독성 가중치까지 동일한 구조는 아님."
+      },
+      {
+        "id": "2023-09-02",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "Famoxadone·Thiamethoxam의 출처·종별 예외 Yes 오판에 대응하는 조건부 사례."
+      },
+      {
+        "id": "2023-21-02",
+        "role": "N2",
+        "label": "No",
+        "reason": "포합체 범위가 실제로 다를 때의 No 대조용. GPT 핵심 오류의 직접 대표 유형은 아님."
+      },
+      {
+        "id": "2023-08-01",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "양쪽 sum of isomers의 명확한 대응. Sulfoxaflor·Novaluron 등의 표현 대응 Yes 오판에 연결."
+      }
+    ]
+  },
+  "2025:E7": {
+    "version": "model-specific-error-informed-v1",
+    "provider": "openai",
+    "selected": [
+      {
+        "id": "2024-03-04",
+        "role": "N1",
+        "label": "No",
+        "reason": "실제로 추가 평가 정의가 있는 No 대조. 판단 근거가 불명확한 Tebuconazole Yes를 무조건 모방하지 않도록 구분."
+      },
+      {
+        "id": "2024-06-04",
+        "role": "Y1",
+        "label": "Yes",
+        "reason": "현행 이성질체 정의와 아직 결정 대기인 대사체 제안을 구분하는 조건부 Yes. 출처·상태의 과도한 No 판단에 대응."
+      },
+      {
+        "id": "2024-21-04",
+        "role": "N2",
+        "label": "No",
+        "reason": "IN-MYX98 추가로 집합이 다른 No 대조. GPT에서 관찰된 주된 핵심 오류의 직접 대표 유형은 아님."
+      },
+      {
+        "id": "2024-01-04",
+        "role": "Y2",
+        "label": "Yes",
+        "reason": "같은 여섯 성분이 직접 대응. GPT의 Pyrethrins 반복 오답과 직접 연결되며 동일 물질 전이 한계가 있음."
+      }
+    ]
+  }
+}
