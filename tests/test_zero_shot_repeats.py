@@ -1,4 +1,5 @@
 import copy
+import hashlib
 import csv
 import json
 import sqlite3
@@ -7,7 +8,7 @@ import tempfile
 import shutil
 from contextlib import closing
 from pathlib import Path
-from residue_experiment.zero_shot_repeats import ROOT, prepare, aggregate, read_cases
+from residue_experiment.zero_shot_repeats import ROOT, prepare, aggregate, read_cases, _csv_line_ending_hashes
 from residue_experiment.runner import run
 
 
@@ -76,6 +77,17 @@ class RepeatTests(unittest.TestCase):
             self.assertEqual(row['prompt'], baseline[row['id']]['prompt'])
             self.assertEqual(row['prompt_sha256'], baseline[row['id']]['prompt_sha256'])
 
+
+    def test_claude_plan_preserves_windows_prompt_hashes(self):
+        config, baseline = prepare(ROOT / 'results/baseline/claude-opus-5.5/2023-2025')
+        output = self.folder / 'claude-plan'
+        run(config, output, 'dry-run')
+        rows = read_cases(output)
+        self.assertEqual(len(rows), 210)
+        for row in rows:
+            self.assertEqual(row['prompt'], baseline[row['id']]['prompt'])
+            self.assertEqual(row['prompt_sha256'], baseline[row['id']]['prompt_sha256'])
+
     def test_baseline_and_settings(self):
         config, rows = prepare(ROOT / 'results/baseline/claude-opus-5.5/2023-2025')
         assert len(rows) == 210
@@ -119,3 +131,15 @@ class RepeatTests(unittest.TestCase):
         save(tmp_path / 'live/round-02', [row])
         with self.assertRaisesRegex(ValueError, 'prompt'):
             aggregate(baseline, tmp_path)
+
+
+class CSVNewlineTests(unittest.TestCase):
+    def test_mixed_record_and_cell_newlines_preserve_archived_hash(self):
+        lf = b'\xef\xbb\xbf"id","text"\n"1","a\n""quoted""\nb"\n'
+        original = b'\xef\xbb\xbf"id","text"\r\n"1","a\n""quoted""\nb"\r\n'
+        digest = hashlib.sha256(original).hexdigest()
+        self.assertIn(digest, _csv_line_ending_hashes(lf))
+        self.assertIn(digest, _csv_line_ending_hashes(lf.replace(b'\n', b'\r\n')))
+        self.assertNotIn(digest, _csv_line_ending_hashes(lf.replace(b'quoted', b'changed')))
+        self.assertNotIn(digest, _csv_line_ending_hashes(lf.replace(b'"text"', b'"text "')))
+        self.assertNotIn(digest, _csv_line_ending_hashes(lf[3:]))

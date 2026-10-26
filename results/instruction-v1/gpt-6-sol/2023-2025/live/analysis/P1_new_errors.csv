@@ -1,0 +1,11 @@
+﻿id,year,actual,baseline_wrong_count,valid_runs,wrong_count,complete,analysis_group,core_fully_fixed,core_partly_fixed,stable_correct_damaged,round_1_prediction,round_1_status,round_2_prediction,round_2_status,round_3_prediction,round_3_status
+2023-04-01,2023,Yes,0,3,3,True,core,False,False,True,No,success,No,success,No,success
+2023-04-02,2023,Yes,0,3,2,True,secondary,False,False,True,Yes,success,No,success,No,success
+2023-11-02,2023,Yes,0,3,3,True,core,False,False,True,No,success,No,success,No,success
+2023-25-02,2023,Yes,0,3,1,True,one_off,False,False,True,Yes,success,No,success,Yes,success
+2024-12-02,2024,Yes,0,3,3,True,core,False,False,True,No,success,No,success,No,success
+2024-17-01,2024,Yes,0,3,1,True,one_off,False,False,True,Yes,success,Yes,success,No,success
+2024-18-02,2024,Yes,0,3,3,True,core,False,False,True,No,success,No,success,No,success
+2025-03-01,2025,Yes,0,3,1,True,one_off,False,False,True,Yes,success,Yes,success,No,success
+2025-11-02,2025,Yes,0,3,3,True,core,False,False,True,No,success,No,success,No,success
+2025-24-02,2025,Yes,0,3,3,True,core,False,False,True,No,success,No,success,No,success
