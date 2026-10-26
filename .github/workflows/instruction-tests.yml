@@ -5,6 +5,7 @@ on:
       - 'residue_experiment/**'
       - 'tests/**'
       - 'config.openrouter.instructions.json'
+      - 'config.openrouter.prompt-methods.json'
       - 'pyproject.toml'
       - '.github/workflows/instruction-tests.yml'
   workflow_dispatch:
@@ -25,5 +26,7 @@ jobs:
           python -m residue_experiment.instruction_repeats --provider openai --mode dry-run
           python -m residue_experiment.instruction_repeats --provider anthropic --mode dry-run
           python -m residue_experiment.instruction_repeats --provider gemini --mode dry-run
+      - name: Validate GPT P3 P4 P5 with no API calls
+        run: python -m residue_experiment.prompt_method_repeats --mode dry-run
       - name: Tests without real model API calls
         run: python -m pytest -q tests
