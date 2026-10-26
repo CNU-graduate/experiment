@@ -1,0 +1,8 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds,http_status
+"[2023, ""P1"", null, ""2023-07-02"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,1,2026-10-25T08:42:53.522253+00:00,error,APIConnectionError,,,,1.702999999979511,
+"[2023, ""P1"", null, ""2023-07-02"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,2,2026-10-25T08:42:56.256492+00:00,error,APIConnectionError,,,,0.0,
+"[2023, ""P1"", null, ""2023-07-02"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,3,2026-10-25T08:42:58.272558+00:00,error,APIConnectionError,,,,0.0,
+"[2023, ""P1"", null, ""2023-10-04"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,1,2026-10-25T08:43:18.018380+00:00,started,,,,,,
+"[2025, ""P1"", null, ""2025-25-01"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,1,2026-10-25T08:57:16.529479+00:00,error,APITimeoutError,,,,126.5,
+"[2025, ""P1"", null, ""2025-25-01"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,2,2026-10-25T08:59:24.042118+00:00,error,APIConnectionError,,,,0.0470000000204891,
+"[2025, ""P1"", null, ""2025-25-01"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,3,2026-10-25T08:59:26.109274+00:00,error,APIConnectionError,,,,0.03100000007543713,
