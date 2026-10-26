@@ -1,0 +1,15 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds,http_status
+"[2024, ""P2"", null, ""2024-17-01"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,1,2026-10-25T10:23:23.887923+00:00,error,APIConnectionError,,,,27.70299999997951,
+"[2024, ""P2"", null, ""2024-17-01"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,2,2026-10-25T10:23:52.600048+00:00,error,APIConnectionError,,,,0.015000000013969839,
+"[2024, ""P2"", null, ""2024-17-01"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,3,2026-10-25T10:23:54.651164+00:00,error,APIConnectionError,,,,46.07799999997951,
+"[2024, ""P2"", null, ""2024-21-03"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,1,2026-10-25T14:22:47.168099+00:00,error,ValueError,"Both definitions match on every element that matters for risk assessment in plant products.
+
+- **Raw commodities:** both cover cyantraniliprole alone.
+- **Processed commodities:** both use the sum of cyantraniliprole and IN-J9Z38, expressed as cyantraniliprole.
+- **Wording:** the EU text omits ""of"" (""Sum cyantraniliprole""), which does not change the scope.
+- **Source:** the EU definition comes from the EFSA 2014 peer review. That is a single source, so there is nothing to combine or substitute.
+
+Yes","{""completion_tokens"": 190, ""completion_tokens_details"": {""accepted_prediction_tokens"": null, ""audio_tokens"": 0, ""image_tokens"": 0, ""reasoning_tokens"": 0, ""rejected_prediction_tokens"": null}, ""cost"": 0.007928, ""cost_details"": {""upstream_inference_completions_cost"": 0.0038, ""upstream_inference_cost"": 0.007928, ""upstream_inference_prompt_cost"": 0.004128}, ""is_byok"": false, ""prompt_tokens"": 1032, ""prompt_tokens_details"": {""audio_tokens"": 0, ""cache_write_tokens"": 0, ""cached_tokens"": 0, ""video_tokens"": 0}, ""total_tokens"": 1222}",gen-1792938167-dkkUxJOci8vCSaUUDhy5,3.6570000000065193,
+"[2024, ""P2"", null, ""2024-21-03"", ""anthropic""]",live,anthropic,anthropic/claude-opus-5.5,2,2026-10-25T14:22:51.830219+00:00,error,ValueError,"Both definitions cover cyantraniliprole as the parent. For processed commodities, both use the sum of cyantraniliprole and IN-J9Z38, expressed as cyantraniliprole. The EU text is from the EFSA peer review, the only source given. The wording differs only by a missing ""of"", which does not change the scope.
+
+Yes","{""completion_tokens"": 111, ""completion_tokens_details"": {""accepted_prediction_tokens"": null, ""audio_tokens"": 0, ""image_tokens"": 0, ""reasoning_tokens"": 0, ""rejected_prediction_tokens"": null}, ""cost"": 0.006348, ""cost_details"": {""upstream_inference_completions_cost"": 0.00222, ""upstream_inference_cost"": 0.006348, ""upstream_inference_prompt_cost"": 0.004128}, ""is_byok"": false, ""prompt_tokens"": 1032, ""prompt_tokens_details"": {""audio_tokens"": 0, ""cache_write_tokens"": 0, ""cached_tokens"": 0, ""video_tokens"": 0}, ""total_tokens"": 1143}",gen-1792938171-FPcY5GSvchAh1DGs7VZP,3.140999999945052,

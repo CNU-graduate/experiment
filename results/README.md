@@ -54,3 +54,7 @@ GPT E0 3회 반복 실험도 완료되었습니다. 기존 baseline E0 210건과
 ## E7 실행 계획
 
 [error-informed/claude-opus-5.5/2023-2025/](error-informed/claude-opus-5.5/2023-2025/)에는 E7 고정 예시 12건과 3회×210건의 dry-run 계획을 저장했습니다. 실제 모델 응답·성능 결과는 아직 포함하지 않습니다. [실행 안내](../docs/RUN_E7.md)를 참고하세요.
+
+## Claude P1/P2 지침 개선 실험
+
+[instruction-v1/claude-opus-5.5/2023-2025/](instruction-v1/claude-opus-5.5/2023-2025/)의 P1·P2 각 3회, 총 1,260건이 정상 완료됐습니다. 평균 정확도는 P1 94.44%, P2 95.24%입니다. [검증 및 성능 보고서](../docs/CLAUDE_INSTRUCTION_RESULTS.md)를 참고하세요.
