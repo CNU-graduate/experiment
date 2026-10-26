@@ -1,0 +1,104 @@
+{
+  "years": [
+    2018,
+    2019,
+    2021,
+    2022
+  ],
+  "missing_year": 2020,
+  "exact_match_fields": [
+    "substance",
+    "purpose",
+    "commodity",
+    "JMPR",
+    "EU",
+    "EFSA"
+  ],
+  "normalization": "None: case, whitespace, punctuation and parsed cell newlines are preserved.",
+  "ignored_metadata": [
+    "id",
+    "year",
+    "source_url",
+    "source_section",
+    "source_table",
+    "source_table_url",
+    "efsa_comments"
+  ],
+  "retention_rule": "First occurrence: ascending year; answerkey before remain; source row order.",
+  "original_count": 471,
+  "unique_count": 466,
+  "removed_count": 5,
+  "by_year": [
+    {
+      "year": 2018,
+      "original": 109,
+      "retained": 109,
+      "removed": 0
+    },
+    {
+      "year": 2019,
+      "original": 107,
+      "retained": 105,
+      "removed": 2
+    },
+    {
+      "year": 2021,
+      "original": 141,
+      "retained": 138,
+      "removed": 3
+    },
+    {
+      "year": 2022,
+      "original": 114,
+      "retained": 114,
+      "removed": 0
+    }
+  ],
+  "retained_labels": {
+    "No": 171,
+    "Yes": 295
+  },
+  "same_input_different_label_groups": [],
+  "sources": [
+    {
+      "file": "ESFA_201870answerkey.csv",
+      "rows": 70,
+      "sha256": "83851d17bf70cbf188e96ce80839ec440a57064f404c40ea0bdf85b372dd5a55"
+    },
+    {
+      "file": "ESFA_2018_remain.csv",
+      "rows": 39,
+      "sha256": "f34df879f3098df52c670b087bcfc8b63061199aaf8fb43b726f6d500a7be957"
+    },
+    {
+      "file": "ESFA_201970answerkey.csv",
+      "rows": 70,
+      "sha256": "e97d4b43ff6641d05fbc25b9717465c8d447dc003793b1c617c6cc5d4338de9e"
+    },
+    {
+      "file": "ESFA_2019_remain.csv",
+      "rows": 37,
+      "sha256": "1671b1979c84faa850da67c5d962a822194e53830a4af5de86dcdac148156dc5"
+    },
+    {
+      "file": "ESFA_202170answerkey.csv",
+      "rows": 70,
+      "sha256": "215c3474885c07004bf2f9afdc04ab9f222528b7b4e350e8f370cb3f5d4ecdb4"
+    },
+    {
+      "file": "ESFA_2021_remain.csv",
+      "rows": 71,
+      "sha256": "1b4b55dff5d2313f0cdcbf0e7c69d369ce6b987ada4103ab0f09665725189c2c"
+    },
+    {
+      "file": "ESFA_202270answerkey.csv",
+      "rows": 70,
+      "sha256": "351c7475f38098dd00a26ddb8633c64bf410aaa4fa2a8a2ce5895a39d835f859"
+    },
+    {
+      "file": "ESFA_2022_remain.csv",
+      "rows": 44,
+      "sha256": "8dbac1eebc428697483240eec09da4a478e19ca38c65a05817dfcbcd14978ddc"
+    }
+  ]
+}
