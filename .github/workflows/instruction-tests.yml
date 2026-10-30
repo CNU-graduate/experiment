@@ -28,5 +28,7 @@ jobs:
           python -m residue_experiment.instruction_repeats --provider gemini --mode dry-run --output "$RUNNER_TEMP/archived-gemini-check"
       - name: Validate GPT P3 P4 P5 with no API calls
         run: python -m residue_experiment.prompt_method_repeats --mode dry-run --output "$RUNNER_TEMP/gpt-prompt-methods-check"
+      - name: Validate E6 guided with archived examples and no API calls
+        run: python -m residue_experiment.e6_guided --mode dry-run --output "$RUNNER_TEMP/e6-guided-check"
       - name: Tests without real model API calls
         run: python -m pytest -q tests
