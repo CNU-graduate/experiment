@@ -1,0 +1,14 @@
+{
+  "mode": "live",
+  "metrics": {
+    "P0": {
+      "accuracy": 0.9238095238095239,
+      "macro_f1": 0.9226310041363358
+    },
+    "final": {
+      "accuracy": 0.8952380952380953,
+      "macro_f1": 0.8917032093374309
+    }
+  },
+  "note": "2023 was inspected in earlier experiments; not an untouched prospective test."
+}
