@@ -27,11 +27,12 @@ def error_policy(exc):
     return status, fatal
 
 
-def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
+def run(config, output, mode='dry-run', approved=False, *, system_prompt=None, response_parser=None):
+    parser = parse_label if response_parser is None else response_parser
     system = SYSTEM if system_prompt is None else system_prompt
     if not isinstance(system, str) or not system.strip():
         raise ValueError('A nonempty system prompt is required')
-    if any(c in ('P1', 'P2') for c in config['conditions']) and system_prompt is None:
+    if any(c in ('P1', 'P2', 'P3', 'P4', 'P5') for c in config['conditions']) and system_prompt is None:
         raise ValueError('Instruction variants require an explicit system prompt')
     if mode == 'live' and not approved:
         raise ValueError('Live calls require separate user approval and --approve-paid-api')
@@ -86,7 +87,7 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
                     for test in data.tests[year]:
                         examples, error = [], ''
                         try:
-                            examples = ([] if condition in ('P1', 'P2') else
+                            examples = ([] if condition in ('P1', 'P2', 'P3', 'P4', 'P5') else
                                         selector.choose(condition, year, seed, inputs(test)))
                         except ValueError as exc:
                             error = str(exc)
@@ -105,6 +106,8 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
                                                      'similarity': r.get('similarity', '')} for r in examples],
                                        'prompt_sha256': hashlib.sha256((system+prompt).encode()).hexdigest(),
                                        'prompt': prompt}
+                            if condition in ('P3', 'P4', 'P5'):
+                                payload['response'] = ''
                             db.execute('INSERT OR IGNORE INTO cases VALUES (?, ?)', (key, canonical(payload)))
         db.commit()
         (output/'selection_audit.json').write_text(json.dumps(selector.audit, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -134,8 +137,12 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
                         try:
                             raw, usage, response_id = (mock_call(row['provider'], row['prompt']) if mode == 'mock'
                                 else clients[row['provider']].call(row['prompt']))
+                            if mode == 'mock' and row['condition'] == 'P5':
+                                raw = 'Mock infrastructure response.\nFinal label: ' + raw
                             call.update(response=raw, usage=canonical(usage), response_id=response_id)
-                            row.update(prediction=parse_label(raw), status='success', error='')
+                            if 'response' in row:
+                                row['response'] = raw
+                            row.update(prediction=parser(raw), status='success', error='')
                             call['status'] = 'success'
                         except Exception as exc:
                             # Do not persist SDK exception messages: they may contain request secrets.
