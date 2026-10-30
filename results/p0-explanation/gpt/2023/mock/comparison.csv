@@ -1,0 +1,2 @@
+﻿mode,provider,model,year,condition,repeats_planned,repeats_complete,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,macro_f1_mean,macro_f1_std
+mock,openai,openai/gpt-6-sol,2023,E0,1,1,0.5571428571428572,0.0,0.6153846153846154,0.0,0.6,0.0,0.5496991076986927,0.0

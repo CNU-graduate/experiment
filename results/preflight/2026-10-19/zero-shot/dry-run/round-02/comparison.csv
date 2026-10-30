@@ -1,4 +1,0 @@
-﻿mode,provider,model,year,condition,repeats_planned,repeats_complete,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,macro_f1_mean,macro_f1_std
-dry-run,anthropic,anthropic/claude-opus-5.5,2023,E0,1,0,,,,,,,,
-dry-run,anthropic,anthropic/claude-opus-5.5,2024,E0,1,0,,,,,,,,
-dry-run,anthropic,anthropic/claude-opus-5.5,2025,E0,1,0,,,,,,,,

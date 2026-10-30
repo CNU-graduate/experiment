@@ -1,0 +1,12 @@
+{
+  "data_dir": "data",
+  "years": [2023],
+  "conditions": ["E0"],
+  "seeds": [42],
+  "models": {"openai": "openai/gpt-6-sol"},
+  "max_output_tokens": 4000,
+  "timeout_seconds": 180,
+  "max_attempts": 3,
+  "retry_delay_seconds": 1,
+  "api_backend": "openrouter"
+}

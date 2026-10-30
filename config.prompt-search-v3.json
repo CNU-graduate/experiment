@@ -1,0 +1,18 @@
+{
+  "pool": "analysis/reports/pre2023_exact_dedup/pool_unique.csv",
+  "data_dir": "data",
+  "seed": 42,
+  "rounds": 5,
+  "batch_size": 50,
+  "candidates": 3,
+  "model": "openai/gpt-6-sol",
+  "api_backend": "openrouter",
+  "timeout_seconds": 120,
+  "prediction_tokens": 1000,
+  "optimizer_tokens": 6000,
+  "cumulative_validation": true,
+  "memory_per_round": 10,
+  "patience": 2,
+  "development_feedback": true,
+  "require_memory_gate": false
+}

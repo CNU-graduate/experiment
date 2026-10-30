@@ -80,6 +80,9 @@ def prepare(config, output):
     rounds, batch = config['rounds'], config['batch_size']
     if rounds * batch > len(development):
         raise ValueError('Nonoverlapping development batches exceed development pool')
+    if config.get('cumulative_validation'):
+        if not 1 <= config['memory_per_round'] <= batch or config['patience'] < 1:
+            raise ValueError('Invalid cumulative validation settings')
     test = Dataset(config['data_dir']).tests[2023]
     # Audit only: test outcomes never affect prompt search or selection.
     past = defaultdict(list)
@@ -95,6 +98,15 @@ def prepare(config, output):
             'split_note': 'Seeded year/label proportional split; semantic near-duplicates are NOT detected.',
             'expected_calls': 140 + rounds * (batch + 2 + config['candidates'] * 140) + 420,
             'data_hash': hash_value(rows)}
+    if config.get('cumulative_validation'):
+        plan['expected_calls'] += config['candidates'] * config['memory_per_round'] * rounds * (rounds + 1) // 2
+        plan['optimizer_system'] += '''
+Change only one decision rule per candidate; preserve unrelated rules.
+Use the supplied accumulated development counterexamples to bound each proposed rule.
+A Yes label alone does not prove chemical synonymy or a general source-priority rule.
+Explicitly separate insufficient input evidence from an instruction defect.
+Specify the applicability and counterexample boundary of each change.
+Never receive or infer selection/test labels from outside the provided development cases.'''
     plan['plan_hash'] = hash_value(plan)
     output = Path(output)
     path = output / 'plan.json'
@@ -124,6 +136,7 @@ class Calls:
         self.limit = max_calls if max_calls is not None else plan['expected_calls']
         self.attempts = self.folder / 'calls'
         self.attempts.mkdir(exist_ok=True)
+        self.count = len(list(self.attempts.glob('*.json')))
 
     def call(self, key, system, user, kind):
         cfg = self.plan['config']
@@ -139,10 +152,11 @@ class Calls:
             if old['status'] != 'success':
                 raise RuntimeError(f'Unresolved call {path}; inspect before any paid retry')
             return old['response']
-        if len(list(self.attempts.glob('*.json'))) >= self.limit:
+        if self.count >= self.limit:
             raise RuntimeError('Total call cap reached; resume with an explicitly larger --max-calls')
         record = {'status': 'started', 'request': request}
         save(path, record)
+        self.count += 1
         try:
             if self.mode == 'mock':
                 if kind == 'analysis':
@@ -194,6 +208,9 @@ def parse_candidates(raw, count, guard):
 
 
 def search(plan, output, mode, max_calls=None, through_round=None):
+    if plan['config'].get('cumulative_validation'):
+        from .prompt_search_guarded import search_guarded
+        return search_guarded(plan, output, mode, max_calls, through_round)
     calls = Calls(plan, output, mode, max_calls)
     final_path = calls.folder / 'final_prompt.json'
     if final_path.exists():
@@ -249,7 +266,10 @@ def final_evaluation(plan, output, mode, max_calls=None):
     if best['plan_hash'] != plan['plan_hash']:
         raise ValueError('Final prompt belongs to another plan')
     expected = {'name': 'P0', 'prompt': plan['p0']}
-    for n in range(1, plan['config']['rounds'] + 1):
+    completed = best.get('completed_rounds', plan['config']['rounds'])
+    if not 1 <= completed <= plan['config']['rounds']:
+        raise ValueError('Invalid completed rounds')
+    for n in range(1, completed + 1):
         expected = read(calls.folder / f'round-{n:02d}' / 'selection.json')['winner']
     if best['name'] != expected['name'] or best['prompt'] != expected['prompt']:
         raise ValueError('Final prompt differs from frozen search winner')

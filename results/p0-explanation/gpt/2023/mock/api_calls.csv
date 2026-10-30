@@ -1,0 +1,141 @@
+﻿case_key,mode,provider,model,attempt,started_utc,status,error_type,response,usage,response_id,seconds,http_status
+"[2023, ""E0"", null, ""2023-02-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.640567+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-03-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.648250+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-03-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.656512+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-03-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.664645+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-04-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.672854+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-04-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.680992+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-04-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.690671+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-04-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.690671+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.014999999897554517,
+"[2023, ""E0"", null, ""2023-05-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.705987+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-06-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.705987+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.01600000006146729,
+"[2023, ""E0"", null, ""2023-07-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.721126+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-07-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.736986+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-07-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.736986+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-07-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.753483+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-09-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.761145+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-09-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.769541+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-09-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.777705+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.01500000013038516,
+"[2023, ""E0"", null, ""2023-10-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.785886+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-10-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.794070+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-10-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.810106+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-11-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.810106+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-11-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.825921+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-11-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.825921+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.014999999897554517,
+"[2023, ""E0"", null, ""2023-12-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.842344+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.01600000006146729,
+"[2023, ""E0"", null, ""2023-12-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.850003+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-12-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.858142+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-13-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.858142+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.01500000013038516,
+"[2023, ""E0"", null, ""2023-13-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.874167+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-13-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.874167+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.015999999828636646,
+"[2023, ""E0"", null, ""2023-14-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.890005+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-14-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.906906+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-14-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.906906+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.01500000013038516,
+"[2023, ""E0"", null, ""2023-15-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.921546+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-15-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.921546+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.015999999828636646,
+"[2023, ""E0"", null, ""2023-16-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.937346+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-16-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.953177+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-16-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.961577+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-17-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.961577+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-17-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.977478+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-17-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.977478+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.01500000013038516,
+"[2023, ""E0"", null, ""2023-18-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:31.993284+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-18-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.006982+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-18-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.009106+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-19-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.009106+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.01600000006146729,
+"[2023, ""E0"", null, ""2023-19-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.024906+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-19-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.040729+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-19-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.040729+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.015999999828636646,
+"[2023, ""E0"", null, ""2023-20-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.057257+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.01600000006146729,
+"[2023, ""E0"", null, ""2023-20-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.064902+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-20-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.073036+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-21-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.073036+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.014999999897554517,
+"[2023, ""E0"", null, ""2023-22-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.088913+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-22-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.104746+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-23-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.107356+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-23-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.120504+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-24-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.120504+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.015999999828636646,
+"[2023, ""E0"", null, ""2023-24-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.136325+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-25-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.136325+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.01600000006146729,
+"[2023, ""E0"", null, ""2023-25-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.152123+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-26-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.167960+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-26-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.176131+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-27-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.184254+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-27-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.192431+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-27-03"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.200574+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.014999999897554517,
+"[2023, ""E0"", null, ""2023-27-04"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.208716+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-28-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.216753+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.01600000006146729,
+"[2023, ""E0"", null, ""2023-33-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.225309+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-33-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.239503+00:00,success,,"Mock explanation; not model evidence.
+Final label: Yes",{},mock,0.0,
+"[2023, ""E0"", null, ""2023-34-01"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.249243+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.015999999828636646,
+"[2023, ""E0"", null, ""2023-34-02"", ""openai""]",mock,openai,openai/gpt-6-sol,1,2026-10-30T10:30:32.253258+00:00,success,,"Mock explanation; not model evidence.
+Final label: No",{},mock,0.0,

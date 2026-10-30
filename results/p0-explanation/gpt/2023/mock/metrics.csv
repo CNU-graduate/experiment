@@ -1,0 +1,2 @@
+﻿mode,provider,model,year,condition,seed,n_total,n_evaluated,coverage,complete,accuracy,precision,recall,macro_f1,tn,fp,fn,tp
+mock,openai,openai/gpt-6-sol,2023,E0,,70,70,1.0,True,0.5571428571428572,0.6153846153846154,0.6,0.5496991076986927,15,15,16,24
