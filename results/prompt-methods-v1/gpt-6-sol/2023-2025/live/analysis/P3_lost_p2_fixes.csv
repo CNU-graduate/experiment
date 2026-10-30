@@ -1,0 +1,2 @@
+﻿id,year,actual,p0_wrong_count,p2_wrong_count,valid_runs,complete,wrong_count,p2_new_error,p2_core_fix,common_stable,p2_new_error_recovered,p2_fix_retained,p2_fix_lost,additional_new_error,p0_stable_damaged,p0_core_fixed,round_1_prediction,round_1_status,round_2_prediction,round_2_status,round_3_prediction,round_3_status
+2024-01-02,2024,Yes,3,0,3,True,1,False,True,False,False,False,True,False,False,False,Yes,success,Yes,success,No,success

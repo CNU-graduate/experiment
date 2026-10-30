@@ -1,0 +1,4 @@
+﻿mode,provider,model,year,condition,repeats_planned,repeats_complete,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,macro_f1_mean,macro_f1_std
+dry-run,openai,openai/gpt-6-sol,2023,P5,1,0,,,,,,,,
+dry-run,openai,openai/gpt-6-sol,2024,P5,1,0,,,,,,,,
+dry-run,openai,openai/gpt-6-sol,2025,P5,1,0,,,,,,,,

@@ -1,0 +1,4 @@
+﻿mode,provider,model,year,condition,repeats_planned,repeats_complete,accuracy_mean,accuracy_std,precision_mean,precision_std,recall_mean,recall_std,macro_f1_mean,macro_f1_std
+live,openai,openai/gpt-6-sol,2023,P3,1,1,0.9714285714285714,0.0,1.0,0.0,0.95,0.0,0.9710504549214227,0.0
+live,openai,openai/gpt-6-sol,2024,P3,1,1,0.9285714285714286,0.0,0.9743589743589743,0.0,0.9047619047619048,0.0,0.9267629211132036,0.0
+live,openai,openai/gpt-6-sol,2025,P3,1,1,0.9857142857142858,0.0,1.0,0.0,0.9767441860465116,0.0,0.9850267379679145,0.0
