@@ -10,7 +10,7 @@ from statistics import mean, stdev
 from dotenv import load_dotenv
 
 from .cli import validate_config
-from .data import Dataset, inputs, LABELS
+from .data import Dataset, LABELS
 from .evaluation import write_csv, score
 from .instruction_prompts import VERSION, VARIANTS, system_for
 from .prompt import SYSTEM, build_prompt

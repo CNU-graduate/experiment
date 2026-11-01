@@ -1,0 +1,14 @@
+{
+  "P0": {
+    "accuracy_mean": 0.5428571428571428,
+    "macro_f1_mean": 0.542483660130719,
+    "fp_total": 27,
+    "fn_total": 69
+  },
+  "final": {
+    "accuracy_mean": 0.6,
+    "macro_f1_mean": 0.5916666666666667,
+    "fp_total": 33,
+    "fn_total": 51
+  }
+}

@@ -4,7 +4,6 @@ import html
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
-from statistics import mean
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'results/prompt-search-2023'

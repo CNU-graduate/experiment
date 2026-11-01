@@ -1,7 +1,6 @@
 """Opt-in cumulative development validation; existing v1 runs stay unchanged."""
 import json
 import difflib
-from pathlib import Path
 
 from .data import inputs
 from .evaluation import write_csv

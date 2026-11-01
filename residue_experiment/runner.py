@@ -7,7 +7,7 @@ from pathlib import Path
 from .data import Dataset, inputs
 from .selection import Selector, RANDOM
 from .prompt import build_prompt, parse_label, SYSTEM
-from .providers import Provider, mock_call, KEYS
+from .providers import Provider, mock_call
 from .evaluation import write_csv, evaluate
 
 

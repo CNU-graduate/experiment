@@ -7,6 +7,3 @@ __pycache__/
 .pytest_cache/
 archive/
 *.sqlite*
-results/prompt-search-*/mock/
-results/prompt-search-*/live/
-results/prompt-search-*/**/*.lock
