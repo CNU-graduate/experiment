@@ -1,0 +1,14 @@
+{
+  "original_manifest": {
+    "config": {
+      "models": {
+        "openai": "openai/gpt-6-sol"
+      },
+      "api_backend": "openrouter",
+      "max_output_tokens": 1000,
+      "timeout_seconds": 120,
+      "max_attempts": 1,
+      "retry_delay_seconds": 1
+    }
+  }
+}

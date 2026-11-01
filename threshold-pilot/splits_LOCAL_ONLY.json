@@ -1,0 +1,1602 @@
+[
+  {
+    "phase": "development",
+    "id": "2018-12-02",
+    "year": "2018",
+    "substance": "Trifloxystrobin",
+    "group": "trifloxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-14-02",
+    "year": "2022",
+    "substance": "Fenhexamid",
+    "group": "fenhexamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-31-03",
+    "year": "2019",
+    "substance": "Pyriofenone",
+    "group": "pyriofenone",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-27-02",
+    "year": "2022",
+    "substance": "Isoxaflutole",
+    "group": "isoxaflutole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-07-03",
+    "year": "2019",
+    "substance": "Bentazone",
+    "group": "bentazone",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-15-03",
+    "year": "2018",
+    "substance": "Prothioconazole",
+    "group": "prothioconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-33-02",
+    "year": "2018",
+    "substance": "Isoprothiolane",
+    "group": "isoprothiolane",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-05-01",
+    "year": "2019",
+    "substance": "Propiconazole",
+    "group": "propiconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-35-02",
+    "year": "2021",
+    "substance": "Pendimethalin",
+    "group": "pendimethalin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-38-01",
+    "year": "2021",
+    "substance": "Fosetyl‐Al",
+    "group": "fosetyl-al",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-18-02",
+    "year": "2022",
+    "substance": "Prothioconazole",
+    "group": "prothioconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-25-02",
+    "year": "2021",
+    "substance": "Picoxystrobin",
+    "group": "picoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-32-03",
+    "year": "2021",
+    "substance": "Fluazifop‐p‐butyl",
+    "group": "fluazifop-p-butyl",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-05-04",
+    "year": "2018",
+    "substance": "Propiconazole",
+    "group": "propiconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-33-01",
+    "year": "2021",
+    "substance": "Flupyradifurone",
+    "group": "flupyradifurone",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-31-01",
+    "year": "2018",
+    "substance": "Fenazaquin",
+    "group": "fenazaquin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-11-01",
+    "year": "2022",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-04-02",
+    "year": "2019",
+    "substance": "Propamocarb",
+    "group": "propamocarb",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-09-04",
+    "year": "2021",
+    "substance": "Bifenthrin",
+    "group": "bifenthrin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-35-04",
+    "year": "2021",
+    "substance": "Pendimethalin",
+    "group": "pendimethalin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-11-01",
+    "year": "2019",
+    "substance": "Pyriproxyfen",
+    "group": "pyriproxyfen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-10-03",
+    "year": "2022",
+    "substance": "Fipronil",
+    "group": "fipronil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-18-04",
+    "year": "2018",
+    "substance": "Acetamiprid",
+    "group": "acetamiprid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-14-01",
+    "year": "2019",
+    "substance": "Fludioxonil",
+    "group": "fludioxonil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-21-01",
+    "year": "2019",
+    "substance": "Cyantraniliprole",
+    "group": "cyantraniliprole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-23-01",
+    "year": "2019",
+    "substance": "Lufenuron",
+    "group": "lufenuron",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-04-03",
+    "year": "2019",
+    "substance": "Propamocarb",
+    "group": "propamocarb",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2018-32-01",
+    "year": "2018",
+    "substance": "Fenpyrazamine",
+    "group": "fenpyrazamine",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-49-01",
+    "year": "2021",
+    "substance": "Acetamiprid",
+    "group": "acetamiprid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-06-02",
+    "year": "2022",
+    "substance": "Propiconazole",
+    "group": "propiconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-19-02",
+    "year": "2019",
+    "substance": "Fluxapyroxad",
+    "group": "fluxapyroxad",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2018-17-02",
+    "year": "2018",
+    "substance": "Fluopyram",
+    "group": "fluopyram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-15-01",
+    "year": "2021",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-21-01",
+    "year": "2022",
+    "substance": "Fluopyram",
+    "group": "fluopyram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-23-03",
+    "year": "2019",
+    "substance": "Lufenuron",
+    "group": "lufenuron",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-17-04",
+    "year": "2022",
+    "substance": "Mandipropamid",
+    "group": "mandipropamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-14-03",
+    "year": "2021",
+    "substance": "Pyriproxyfen",
+    "group": "pyriproxyfen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-24-02",
+    "year": "2021",
+    "substance": "Fluxapyroxad",
+    "group": "fluxapyroxad",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-32-03",
+    "year": "2022",
+    "substance": "Fenpicoxamid",
+    "group": "fenpicoxamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-15-01",
+    "year": "2019",
+    "substance": "Mandipropamid",
+    "group": "mandipropamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2018-22-02",
+    "year": "2018",
+    "substance": "Picoxystrobin",
+    "group": "picoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-35-02",
+    "year": "2022",
+    "substance": "Flutianil",
+    "group": "flutianil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-25-04",
+    "year": "2022",
+    "substance": "Bixafen",
+    "group": "bixafen",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-04-02",
+    "year": "2021",
+    "substance": "Cypermethrin (including alpha and zeta‐cypermethrin)",
+    "group": "cypermethrin (including alpha and zeta-cypermethrin)",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-03-03",
+    "year": "2021",
+    "substance": "Chlorothalonil",
+    "group": "chlorothalonil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-34-02",
+    "year": "2021",
+    "substance": "Isofetamid",
+    "group": "isofetamid",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-15-04",
+    "year": "2021",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-05-01",
+    "year": "2021",
+    "substance": "S‐Methoprene",
+    "group": "s-methoprene",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-09-01",
+    "year": "2021",
+    "substance": "Bifenthrin",
+    "group": "bifenthrin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-26-03",
+    "year": "2021",
+    "substance": "Benzovindiflupyr",
+    "group": "benzovindiflupyr",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-20-02",
+    "year": "2019",
+    "substance": "Benzovindiflupyr",
+    "group": "benzovindiflupyr",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-10-03",
+    "year": "2021",
+    "substance": "Clethodim",
+    "group": "clethodim",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-15-02",
+    "year": "2019",
+    "substance": "Mandipropamid",
+    "group": "mandipropamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-20-04",
+    "year": "2019",
+    "substance": "Benzovindiflupyr",
+    "group": "benzovindiflupyr",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-13-02",
+    "year": "2019",
+    "substance": "Pyraclostrobin",
+    "group": "pyraclostrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-15-02",
+    "year": "2021",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-08-03",
+    "year": "2019",
+    "substance": "Abamectin",
+    "group": "abamectin",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-10-04",
+    "year": "2022",
+    "substance": "Fipronil",
+    "group": "fipronil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-09-04",
+    "year": "2019",
+    "substance": "Fenpyroximate",
+    "group": "fenpyroximate",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-25-04",
+    "year": "2019",
+    "substance": "Oxathiapiproline",
+    "group": "oxathiapiproline",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-37-02",
+    "year": "2021",
+    "substance": "Fenazaquin",
+    "group": "fenazaquin",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-17-02",
+    "year": "2022",
+    "substance": "Mandipropamid",
+    "group": "mandipropamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-15-03",
+    "year": "2021",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-11-04",
+    "year": "2022",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-34-02",
+    "year": "2022",
+    "substance": "Metconazole",
+    "group": "metconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-33-03",
+    "year": "2021",
+    "substance": "Flupyradifurone",
+    "group": "flupyradifurone",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-16-02",
+    "year": "2019",
+    "substance": "Fluopyram",
+    "group": "fluopyram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-43-04",
+    "year": "2021",
+    "substance": "Metconazole",
+    "group": "metconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-02-03",
+    "year": "2022",
+    "substance": "Imazalil",
+    "group": "imazalil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-11-01",
+    "year": "2018",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-16-03",
+    "year": "2019",
+    "substance": "Fluopyram",
+    "group": "fluopyram",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2019-03-02",
+    "year": "2019",
+    "substance": "Lambda‐cyhalothrin",
+    "group": "lambda-cyhalothrin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-05-04",
+    "year": "2019",
+    "substance": "Propiconazole",
+    "group": "propiconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-14-02",
+    "year": "2021",
+    "substance": "Pyriproxyfen",
+    "group": "pyriproxyfen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2018-31-03",
+    "year": "2018",
+    "substance": "Fenazaquin",
+    "group": "fenazaquin",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-23-03",
+    "year": "2022",
+    "substance": "Acetamiprid",
+    "group": "acetamiprid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-03-04",
+    "year": "2021",
+    "substance": "Chlorothalonil",
+    "group": "chlorothalonil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-11-02",
+    "year": "2019",
+    "substance": "Pyriproxyfen",
+    "group": "pyriproxyfen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-21-04",
+    "year": "2021",
+    "substance": "Metaflumizone",
+    "group": "metaflumizone",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-27-02",
+    "year": "2021",
+    "substance": "Fluensulfone",
+    "group": "fluensulfone",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-11-04",
+    "year": "2019",
+    "substance": "Pyriproxyfen",
+    "group": "pyriproxyfen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2018-25-04",
+    "year": "2018",
+    "substance": "Imazamox",
+    "group": "imazamox",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-08-04",
+    "year": "2018",
+    "substance": "Tebuconazole",
+    "group": "tebuconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-27-01",
+    "year": "2022",
+    "substance": "Isoxaflutole",
+    "group": "isoxaflutole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2019-08-04",
+    "year": "2019",
+    "substance": "Abamectin",
+    "group": "abamectin",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-16-04",
+    "year": "2021",
+    "substance": "Pyraclostrobin",
+    "group": "pyraclostrobin",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-23-03",
+    "year": "2021",
+    "substance": "Penthiopyrad",
+    "group": "penthiopyrad",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-11-04",
+    "year": "2018",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-08-05",
+    "year": "2018",
+    "substance": "Tebuconazole",
+    "group": "tebuconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-07-02",
+    "year": "2022",
+    "substance": "Tebuconazole",
+    "group": "tebuconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-12-03",
+    "year": "2021",
+    "substance": "Tolclofos‐methyl",
+    "group": "tolclofos-methyl",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2022-15-04",
+    "year": "2022",
+    "substance": "Quinoxyfen",
+    "group": "quinoxyfen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2018-33-04",
+    "year": "2018",
+    "substance": "Isoprothiolane",
+    "group": "isoprothiolane",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2018-11-03",
+    "year": "2018",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-16-02",
+    "year": "2021",
+    "substance": "Pyraclostrobin",
+    "group": "pyraclostrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-27-01",
+    "year": "2021",
+    "substance": "Fluensulfone",
+    "group": "fluensulfone",
+    "actual": "No"
+  },
+  {
+    "phase": "development",
+    "id": "2021-35-03",
+    "year": "2021",
+    "substance": "Pendimethalin",
+    "group": "pendimethalin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2021-31-02",
+    "year": "2021",
+    "substance": "Flonicamid",
+    "group": "flonicamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2022-11-03",
+    "year": "2022",
+    "substance": "Cyprodinil",
+    "group": "cyprodinil",
+    "actual": "Yes"
+  },
+  {
+    "phase": "development",
+    "id": "2018-26-03",
+    "year": "2018",
+    "substance": "Flonicamid",
+    "group": "flonicamid",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-24-01",
+    "year": "2022",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-14-02",
+    "year": "2018",
+    "substance": "Azoxystrobin",
+    "group": "azoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-30-03",
+    "year": "2019",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-16-04",
+    "year": "2018",
+    "substance": "Spinetoram",
+    "group": "spinetoram",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-03-02",
+    "year": "2018",
+    "substance": "2,4‐D",
+    "group": "2,4-d",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-18-04",
+    "year": "2021",
+    "substance": "Azoxystrobin",
+    "group": "azoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-09-01",
+    "year": "2022",
+    "substance": "Fenbuconazole",
+    "group": "fenbuconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-07-04",
+    "year": "2018",
+    "substance": "Fenpropimorph",
+    "group": "fenpropimorph",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-24-02",
+    "year": "2022",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-01-01",
+    "year": "2019",
+    "substance": "Diquat",
+    "group": "diquat",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-26-01",
+    "year": "2019",
+    "substance": "Ethiprole",
+    "group": "ethiprole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-26-02",
+    "year": "2019",
+    "substance": "Ethiprole",
+    "group": "ethiprole",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-05-04",
+    "year": "2022",
+    "substance": "Clofentezine",
+    "group": "clofentezine",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-18-01",
+    "year": "2019",
+    "substance": "Chlorfenapyr",
+    "group": "chlorfenapyr",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-03-03",
+    "year": "2018",
+    "substance": "2,4‐D",
+    "group": "2,4-d",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-17-02",
+    "year": "2019",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-18-03",
+    "year": "2021",
+    "substance": "Azoxystrobin",
+    "group": "azoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-10-03",
+    "year": "2018",
+    "substance": "Imidacloprid",
+    "group": "imidacloprid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-01-02",
+    "year": "2018",
+    "substance": "Captan",
+    "group": "captan",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-16-03",
+    "year": "2018",
+    "substance": "Spinetoram",
+    "group": "spinetoram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-33-02",
+    "year": "2022",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-35-02",
+    "year": "2018",
+    "substance": "Phosphonic acid",
+    "group": "phosphonic acid",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-13-01",
+    "year": "2018",
+    "substance": "Difenoconazole",
+    "group": "difenoconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-30-03",
+    "year": "2021",
+    "substance": "Acetochlor",
+    "group": "acetochlor",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-14-01",
+    "year": "2018",
+    "substance": "Azoxystrobin",
+    "group": "azoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-30-04",
+    "year": "2019",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-24-03",
+    "year": "2018",
+    "substance": "Imazapyr",
+    "group": "imazapyr",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-40-01",
+    "year": "2021",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-12-01",
+    "year": "2022",
+    "substance": "Methoxyfenozide",
+    "group": "methoxyfenozide",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-01-03",
+    "year": "2018",
+    "substance": "Captan",
+    "group": "captan",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-10-02",
+    "year": "2018",
+    "substance": "Imidacloprid",
+    "group": "imidacloprid",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-28-02",
+    "year": "2018",
+    "substance": "Quinclorac",
+    "group": "quinclorac",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-14-03",
+    "year": "2018",
+    "substance": "Azoxystrobin",
+    "group": "azoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-22-01",
+    "year": "2019",
+    "substance": "Cyazofamid",
+    "group": "cyazofamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-16-04",
+    "year": "2022",
+    "substance": "Difenoconazole",
+    "group": "difenoconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-22-02",
+    "year": "2019",
+    "substance": "Cyazofamid",
+    "group": "cyazofamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-22-04",
+    "year": "2019",
+    "substance": "Cyazofamid",
+    "group": "cyazofamid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-24-03",
+    "year": "2022",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-47-01",
+    "year": "2021",
+    "substance": "Triflumuron",
+    "group": "triflumuron",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-47-02",
+    "year": "2021",
+    "substance": "Triflumuron",
+    "group": "triflumuron",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-29-04",
+    "year": "2021",
+    "substance": "Mesotrione",
+    "group": "mesotrione",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-04-02",
+    "year": "2018",
+    "substance": "Oxamyl",
+    "group": "oxamyl",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-40-03",
+    "year": "2021",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-07-03",
+    "year": "2018",
+    "substance": "Fenpropimorph",
+    "group": "fenpropimorph",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-10-04",
+    "year": "2018",
+    "substance": "Imidacloprid",
+    "group": "imidacloprid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-07-01",
+    "year": "2018",
+    "substance": "Fenpropimorph",
+    "group": "fenpropimorph",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-12-02",
+    "year": "2022",
+    "substance": "Methoxyfenozide",
+    "group": "methoxyfenozide",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-22-03",
+    "year": "2022",
+    "substance": "Thiamethoxam",
+    "group": "thiamethoxam",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-22-02",
+    "year": "2022",
+    "substance": "Thiamethoxam",
+    "group": "thiamethoxam",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-20-02",
+    "year": "2021",
+    "substance": "Spirotetramat",
+    "group": "spirotetramat",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-06-02",
+    "year": "2019",
+    "substance": "Profenofos",
+    "group": "profenofos",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-19-01",
+    "year": "2022",
+    "substance": "Spinetoram",
+    "group": "spinetoram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-03-01",
+    "year": "2018",
+    "substance": "2,4‐D",
+    "group": "2,4-d",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-06-01",
+    "year": "2019",
+    "substance": "Profenofos",
+    "group": "profenofos",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-33-01",
+    "year": "2022",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-40-04",
+    "year": "2021",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-16-02",
+    "year": "2018",
+    "substance": "Spinetoram",
+    "group": "spinetoram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-12-03",
+    "year": "2022",
+    "substance": "Methoxyfenozide",
+    "group": "methoxyfenozide",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-40-02",
+    "year": "2021",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-35-04",
+    "year": "2018",
+    "substance": "Phosphonic acid",
+    "group": "phosphonic acid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-06-03",
+    "year": "2019",
+    "substance": "Profenofos",
+    "group": "profenofos",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-35-01",
+    "year": "2018",
+    "substance": "Phosphonic acid",
+    "group": "phosphonic acid",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-19-03",
+    "year": "2021",
+    "substance": "Chlorantraniliprole",
+    "group": "chlorantraniliprole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-28-02",
+    "year": "2021",
+    "substance": "Tolfenpyrad",
+    "group": "tolfenpyrad",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-24-02",
+    "year": "2018",
+    "substance": "Imazapyr",
+    "group": "imazapyr",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-30-01",
+    "year": "2019",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-30-02",
+    "year": "2019",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-19-02",
+    "year": "2021",
+    "substance": "Chlorantraniliprole",
+    "group": "chlorantraniliprole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-17-03",
+    "year": "2019",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-17-01",
+    "year": "2019",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-19-03",
+    "year": "2018",
+    "substance": "Isopyrazam",
+    "group": "isopyrazam",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-12-04",
+    "year": "2022",
+    "substance": "Methoxyfenozide",
+    "group": "methoxyfenozide",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-07-02",
+    "year": "2018",
+    "substance": "Fenpropimorph",
+    "group": "fenpropimorph",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-35-03",
+    "year": "2018",
+    "substance": "Phosphonic acid",
+    "group": "phosphonic acid",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-14-04",
+    "year": "2018",
+    "substance": "Azoxystrobin",
+    "group": "azoxystrobin",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-01-02",
+    "year": "2022",
+    "substance": "Ethion",
+    "group": "ethion",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-19-04",
+    "year": "2022",
+    "substance": "Spinetoram",
+    "group": "spinetoram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-01-04",
+    "year": "2018",
+    "substance": "Captan",
+    "group": "captan",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-33-04",
+    "year": "2022",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-09-02",
+    "year": "2022",
+    "substance": "Fenbuconazole",
+    "group": "fenbuconazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-01-01",
+    "year": "2022",
+    "substance": "Ethion",
+    "group": "ethion",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-20-03",
+    "year": "2021",
+    "substance": "Spirotetramat",
+    "group": "spirotetramat",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-19-02",
+    "year": "2018",
+    "substance": "Isopyrazam",
+    "group": "isopyrazam",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-26-03",
+    "year": "2019",
+    "substance": "Ethiprole",
+    "group": "ethiprole",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-16-01",
+    "year": "2018",
+    "substance": "Spinetoram",
+    "group": "spinetoram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-06-04",
+    "year": "2019",
+    "substance": "Profenofos",
+    "group": "profenofos",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-18-02",
+    "year": "2019",
+    "substance": "Chlorfenapyr",
+    "group": "chlorfenapyr",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-05-03",
+    "year": "2022",
+    "substance": "Clofentezine",
+    "group": "clofentezine",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-24-04",
+    "year": "2022",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2019-17-04",
+    "year": "2019",
+    "substance": "Sulfoxaflor",
+    "group": "sulfoxaflor",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-02-01",
+    "year": "2021",
+    "substance": "Thiabendazole",
+    "group": "thiabendazole",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-16-03",
+    "year": "2022",
+    "substance": "Difenoconazole",
+    "group": "difenoconazole",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-30-04",
+    "year": "2021",
+    "substance": "Acetochlor",
+    "group": "acetochlor",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-33-03",
+    "year": "2022",
+    "substance": "Pydiflumetofen",
+    "group": "pydiflumetofen",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-24-04",
+    "year": "2018",
+    "substance": "Imazapyr",
+    "group": "imazapyr",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2022-19-02",
+    "year": "2022",
+    "substance": "Spinetoram",
+    "group": "spinetoram",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2021-20-04",
+    "year": "2021",
+    "substance": "Spirotetramat",
+    "group": "spirotetramat",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-01-01",
+    "year": "2018",
+    "substance": "Captan",
+    "group": "captan",
+    "actual": "No"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-19-01",
+    "year": "2018",
+    "substance": "Isopyrazam",
+    "group": "isopyrazam",
+    "actual": "Yes"
+  },
+  {
+    "phase": "validation",
+    "id": "2018-03-04",
+    "year": "2018",
+    "substance": "2,4‐D",
+    "group": "2,4-d",
+    "actual": "No"
+  }
+]

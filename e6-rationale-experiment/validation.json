@@ -1,0 +1,46 @@
+{
+  "version": "e6-rationale-v1",
+  "source_commit": "391ea081a7707a60eeeba25e46d88bab8f0581aa",
+  "requests": 420,
+  "unique_test_cases": 210,
+  "examples": 12,
+  "example_order": {
+    "2023": [
+      "2022-11-04",
+      "2022-07-01",
+      "2022-22-02",
+      "2022-10-03"
+    ],
+    "2024": [
+      "2023-12-04",
+      "2023-08-03",
+      "2023-23-01",
+      "2023-16-02"
+    ],
+    "2025": [
+      "2024-08-03",
+      "2024-25-02",
+      "2024-23-04",
+      "2024-29-01"
+    ]
+  },
+  "conditional_examples": [
+    "2022-22-02",
+    "2023-23-01",
+    "2024-23-04",
+    "2024-29-01"
+  ],
+  "verified": [
+    "GitHub source blob hashes (LF checkout normalization)",
+    "4 examples per year in saved request order",
+    "all 210 control prompts unchanged",
+    "all rationale quotations are literal source substrings",
+    "removing rationale restores original payload",
+    "test contains only original five input fields",
+    "system and model request settings unchanged"
+  ],
+  "requests_sha256": "6ab7d580679977300875c835cd006ad3049fa53fea79f7f52b08ff2a62c8b549",
+  "rationales_sha256": "3fc4351e1398cd6c4de32c217102227afe7aaccc693a108b22ccf03da7510dbc",
+  "authorship": "Assistant-reconstructed explanations from the frozen example definitions; not EFSA-authored explanations or expert-validated annotations.",
+  "paid_api_calls": 0
+}

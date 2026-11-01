@@ -1,0 +1,302 @@
+[
+  {
+    "case_id": "F01.original",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F01.preserved",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F01.substantive",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F02.original",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F02.preserved",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F02.substantive",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F03.original",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F03.preserved",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F03.substantive",
+    "year": 2023,
+    "actual": "No"
+  },
+  {
+    "case_id": "F04.original",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F04.preserved",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F04.substantive",
+    "year": 2023,
+    "actual": "No"
+  },
+  {
+    "case_id": "F05.original",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F05.preserved",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F05.substantive",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F06.original",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F06.preserved",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F06.substantive",
+    "year": 2023,
+    "actual": "No"
+  },
+  {
+    "case_id": "F07.original",
+    "year": 2024,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F07.preserved",
+    "year": 2024,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F07.substantive",
+    "year": 2024,
+    "actual": "No"
+  },
+  {
+    "case_id": "F08.original",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F08.preserved",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F08.substantive",
+    "year": 2023,
+    "actual": "No"
+  },
+  {
+    "case_id": "F09.original",
+    "year": 2024,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F09.preserved",
+    "year": 2024,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F09.substantive",
+    "year": 2024,
+    "actual": "No"
+  },
+  {
+    "case_id": "F10.original",
+    "year": 2024,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F10.preserved",
+    "year": 2024,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F10.substantive",
+    "year": 2024,
+    "actual": "No"
+  },
+  {
+    "case_id": "F11.original",
+    "year": 2018,
+    "actual": "No"
+  },
+  {
+    "case_id": "F11.preserved",
+    "year": 2018,
+    "actual": "No"
+  },
+  {
+    "case_id": "F11.substantive",
+    "year": 2018,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F12.original",
+    "year": 2018,
+    "actual": "No"
+  },
+  {
+    "case_id": "F12.preserved",
+    "year": 2018,
+    "actual": "No"
+  },
+  {
+    "case_id": "F12.substantive",
+    "year": 2018,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F13.original",
+    "year": 2018,
+    "actual": "No"
+  },
+  {
+    "case_id": "F13.preserved",
+    "year": 2018,
+    "actual": "No"
+  },
+  {
+    "case_id": "F13.substantive",
+    "year": 2018,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F14.original",
+    "year": 2021,
+    "actual": "No"
+  },
+  {
+    "case_id": "F14.preserved",
+    "year": 2021,
+    "actual": "No"
+  },
+  {
+    "case_id": "F14.substantive",
+    "year": 2021,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F15.original",
+    "year": 2021,
+    "actual": "No"
+  },
+  {
+    "case_id": "F15.preserved",
+    "year": 2021,
+    "actual": "No"
+  },
+  {
+    "case_id": "F15.substantive",
+    "year": 2021,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F16.original",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F16.preserved",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F16.substantive",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F17.original",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F17.preserved",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F17.substantive",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F18.original",
+    "year": 2023,
+    "actual": "No"
+  },
+  {
+    "case_id": "F18.preserved",
+    "year": 2023,
+    "actual": "No"
+  },
+  {
+    "case_id": "F18.substantive",
+    "year": 2023,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F19.original",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F19.preserved",
+    "year": 2022,
+    "actual": "No"
+  },
+  {
+    "case_id": "F19.substantive",
+    "year": 2022,
+    "actual": "Yes"
+  },
+  {
+    "case_id": "F20.original",
+    "year": 2021,
+    "actual": "No"
+  },
+  {
+    "case_id": "F20.preserved",
+    "year": 2021,
+    "actual": "No"
+  },
+  {
+    "case_id": "F20.substantive",
+    "year": 2021,
+    "actual": "Yes"
+  }
+]

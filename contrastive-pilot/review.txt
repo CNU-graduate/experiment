@@ -1,0 +1,226 @@
+Controlled contrastive pilot / 20 source cases × 3 variants × 3 repetitions
+All edited definitions are synthetic, NOT real EFSA/JMPR regulatory definitions.
+Synthetic gold labels are rule-derived by the assistant and need independent expert review before confirmatory research use.
+Preservation changes only field order/JSON formatting; decoded fields are identical.
+
+F01 / 2022-01-01 / Ethion
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: add_metabolite / field: EU
+BEFORE:
+Reg. 396/2005: Ethion No EFSA peer review and no EFSA MRL review
+AFTER (HYPOTHETICAL):
+Reg. 396/2005: Sum of Ethion and hypothetical metabolite HYP-M01, expressed as Ethion No EFSA peer review and no EFSA MRL review
+RULE BASIS:
+A hypothetical additional metabolite expands every displayed EU residue definition; JMPR is unchanged.
+
+F02 / 2022-12-03 / Methoxyfenozide
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: add_metabolite / field: EU
+BEFORE:
+Peer review (EFSA, 2017f) and MRL review (EFSA, 2014b): Methoxyfenozide
+AFTER (HYPOTHETICAL):
+Peer review (EFSA, 2017f) and MRL review (EFSA, 2014b): Sum of Methoxyfenozide and hypothetical metabolite HYP-M02, expressed as Methoxyfenozide
+RULE BASIS:
+A hypothetical additional metabolite expands every displayed EU residue definition; JMPR is unchanged.
+
+F03 / 2023-13-01 / Azoxystrobin
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: add_metabolite / field: EU
+BEFORE:
+Reg. 396/2005 (implementing MRL review): Azoxystrobin
+Peer review (EFSA, 2010c): Azoxystrobin
+AFTER (HYPOTHETICAL):
+Reg. 396/2005 (implementing MRL review): Sum of Azoxystrobin and hypothetical metabolite HYP-M03, expressed as Azoxystrobin
+Peer review (EFSA, 2010c): Sum of Azoxystrobin and hypothetical metabolite HYP-M03, expressed as Azoxystrobin
+RULE BASIS:
+A hypothetical additional metabolite expands every displayed EU residue definition; JMPR is unchanged.
+
+F04 / 2023-26-01 / Triflumuron
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: add_metabolite / field: EU
+BEFORE:
+Reg. 396/2005 (implementing MRL review): Triflumuron
+Peer review (EFSA, 2011a): Triflumuron
+AFTER (HYPOTHETICAL):
+Reg. 396/2005 (implementing MRL review): Sum of Triflumuron and hypothetical metabolite HYP-M04, expressed as Triflumuron
+Peer review (EFSA, 2011a): Sum of Triflumuron and hypothetical metabolite HYP-M04, expressed as Triflumuron
+RULE BASIS:
+A hypothetical additional metabolite expands every displayed EU residue definition; JMPR is unchanged.
+
+F05 / 2022-04-02 / Methoprene
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: add_conjugates / field: EU
+BEFORE:
+Reg. 396/2005: Methoprene No EU review or EU MRL review The residue is not fat soluble
+AFTER (HYPOTHETICAL):
+Reg. 396/2005: Methoprene (free and conjugated forms) No EU review or EU MRL review The residue is not fat soluble
+RULE BASIS:
+Explicit conjugate inclusion expands the EU definition relative to the unchanged parent/isomer-only JMPR definition.
+
+F06 / 2023-08-03 / Bifenthrin
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: add_conjugates / field: EU
+BEFORE:
+MRL review (EFSA, 2015e) and peer review (EFSA, 2011e): Bifenthrin (sum of isomers)
+AFTER (HYPOTHETICAL):
+MRL review (EFSA, 2015e) and peer review (EFSA, 2011e): Bifenthrin (free and conjugated forms) (sum of isomers)
+RULE BASIS:
+Explicit conjugate inclusion expands the EU definition relative to the unchanged parent/isomer-only JMPR definition.
+
+F07 / 2024-13-03 / Boscalid
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: add_conjugates / field: EU
+BEFORE:
+MRL review (EFSA, 2014d): Boscalid
+AFTER (HYPOTHETICAL):
+MRL review (EFSA, 2014d): Boscalid (free and conjugated forms)
+RULE BASIS:
+Explicit conjugate inclusion expands the EU definition relative to the unchanged parent/isomer-only JMPR definition.
+
+F08 / 2023-18-01 / Sulfoxaflor
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: change_expression / field: EU
+BEFORE:
+Reg. 396/2005: Sulfoxaflor (sum of isomers)
+Peer review (EFSA, 2014d):
+Sulfoxaflor
+AFTER (HYPOTHETICAL):
+Reg. 396/2005: Sulfoxaflor, expressed as hypothetical salt HYP-S08 (1.00 mg of Sulfoxaflor corresponds to 1.25 mg of HYP-S08) (sum of isomers)
+Peer review (EFSA, 2014d):
+Sulfoxaflor, expressed as hypothetical salt HYP-S08 (1.00 mg of Sulfoxaflor corresponds to 1.25 mg of HYP-S08)
+RULE BASIS:
+The chemical analyte remains named, but EU mass reporting is changed to a hypothetical salt basis with a non-unit conversion.
+
+F09 / 2024-25-01 / Tetraniliprole
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: change_expression / field: EU
+BEFORE:
+Reg. 396/2005: Tetraniliprole (default MRLs/RD according to Art. 18(1)(b))
+AFTER (HYPOTHETICAL):
+Reg. 396/2005: Tetraniliprole, expressed as hypothetical salt HYP-S09 (1.00 mg of Tetraniliprole corresponds to 1.25 mg of HYP-S09) (default MRLs/RD according to Art. 18(1)(b))
+RULE BASIS:
+The chemical analyte remains named, but EU mass reporting is changed to a hypothetical salt basis with a non-unit conversion.
+
+F10 / 2024-26-01 / Isoflucypram
+Original EFSA label: Yes / Synthetic expected label: No
+Changed factor: change_expression / field: EU
+BEFORE:
+Reg. 396/2005:
+Isoflucypram (default
+MRLs/RD according to Art.
+18(1)(b))
+Peer review (EFSA, 2022e): Isoflucypram
+AFTER (HYPOTHETICAL):
+Reg. 396/2005:
+Isoflucypram, expressed as hypothetical salt HYP-S10 (1.00 mg of Isoflucypram corresponds to 1.25 mg of HYP-S10) (default
+MRLs/RD according to Art.
+18(1)(b))
+Peer review (EFSA, 2022e): Isoflucypram, expressed as hypothetical salt HYP-S10 (1.00 mg of Isoflucypram corresponds to 1.25 mg of HYP-S10)
+RULE BASIS:
+The chemical analyte remains named, but EU mass reporting is changed to a hypothetical salt basis with a non-unit conversion.
+
+F11 / 2018-03-01 / 2,4‐D
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_additional_forms / field: EU
+BEFORE:
+2,4‐D (sum of 2,4‐D, its salts, its esters and its conjugates,
+expressed as 2,4‐D)
+AFTER (HYPOTHETICAL):
+2,4‐D
+RULE BASIS:
+The EU component set is reduced from parent/salts/esters/conjugates to the parent alone, matching the singleton JMPR sum.
+
+F12 / 2018-17-03 / Fluopyram
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_metabolites / field: EU
+BEFORE:
+Sum fluopyram and fluopyram‐benzamide (M25), expressed
+as fluopyram
+AFTER (HYPOTHETICAL):
+Fluopyram
+RULE BASIS:
+The additional metabolite/form component set is removed from one definition; the retained parent now matches the other definition.
+
+F13 / 2018-21-03 / Saflufenacil
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_metabolites / field: EU
+BEFORE:
+Sum of saflufenacil, M800H11 and M800H35, expressed as saflufenacil
+AFTER (HYPOTHETICAL):
+Saflufenacil
+RULE BASIS:
+The additional metabolite/form component set is removed from one definition; the retained parent now matches the other definition.
+
+F14 / 2021-31-03 / Flonicamid
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_metabolites / field: EU
+BEFORE:
+Sum of flonicamid, TFNA and TFNG, expressed as flonicamid
+AFTER (HYPOTHETICAL):
+Flonicamid
+RULE BASIS:
+The additional metabolite/form component set is removed from one definition; the retained parent now matches the other definition.
+
+F15 / 2021-34-03 / Isofetamid
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_metabolites / field: EU
+BEFORE:
+Peer review (EFSA, 2015w) Art 10 MRL (EFSA, 2018j): Sum isofetamid and N‐{1‐[4‐(β‐D‐glucopyranosyloxy)‐2‐methylphenyl]‐2‐methyl‐1‐oxopropan‐2‐yl}‐3‐methylthiophene‐2‐carboxamide (GPTC), expressed as isofetamid
+AFTER (HYPOTHETICAL):
+Peer review (EFSA, 2015w) Art 10 MRL (EFSA, 2018j): Isofetamid
+RULE BASIS:
+The additional metabolite/form component set is removed from one definition; the retained parent now matches the other definition.
+
+F16 / 2022-02-02 / Imazalil
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_metabolites / field: EU
+BEFORE:
+Reg. 396/2005 (implementing MRL review): Sum of imazalil and metabolite FK-772 (any ratio of constituent isomers), expressed as imazalil The residue is not fat soluble
+AFTER (HYPOTHETICAL):
+Reg. 396/2005 (implementing MRL review): Imazalil The residue is not fat soluble
+RULE BASIS:
+The additional metabolite/form component set is removed from one definition; the retained parent now matches the other definition.
+
+F17 / 2022-36-01 / Pyrasulfotole
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_metabolites / field: JMPR
+BEFORE:
+Sum of pyrasulfotole and desmethyl-pyrasulfotole and its conjugates, expressed as pyrasulfotole.
+AFTER (HYPOTHETICAL):
+Pyrasulfotole
+RULE BASIS:
+The additional metabolite/form component set is removed from one definition; the retained parent now matches the other definition.
+
+F18 / 2023-21-02 / Quinclorac
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_conjugates / field: JMPR
+BEFORE:
+Quinclorac plus quinclorac conjugates
+The residue is fat soluble
+AFTER (HYPOTHETICAL):
+Quinclorac
+The residue is fat soluble
+RULE BASIS:
+Conjugate inclusion is removed from the broader definition while the parent/metabolite identity is retained.
+
+F19 / 2022-25-04 / Bixafen
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: remove_conjugates / field: EU
+BEFORE:
+MRL review (EFSA, 2020c) and peer review (EFSA, 2012j): Sum of bixafen and desmethyl-bixafen (M21), free and conjugated expressed as bixafen equivalents
+AFTER (HYPOTHETICAL):
+MRL review (EFSA, 2020c) and peer review (EFSA, 2012j): Sum of bixafen and desmethyl-bixafen (M21), free expressed as bixafen equivalents
+RULE BASIS:
+Conjugate inclusion is removed from the broader definition while the parent/metabolite identity is retained.
+
+F20 / 2021-38-01 / Fosetyl‐Al
+Original EFSA label: No / Synthetic expected label: Yes
+Changed factor: align_expression / field: EU
+BEFORE:
+Reg. 396/2005: Fosetyl‐Al (sum of fosetyl, phosphonic acid and their salts, expressed as fosetyl)
+Peer review (EFSA, 2018m): sum of fosetyl, phosphonic acid and their salts expressed as phosphonic acid
+AFTER (HYPOTHETICAL):
+Reg. 396/2005: Fosetyl‐Al (sum of fosetyl, phosphonic acid and their salts, expressed as phosphonic acid)
+Peer review (EFSA, 2018m): sum of fosetyl, phosphonic acid and their salts expressed as phosphonic acid
+RULE BASIS:
+Only the Regulation expression basis is changed to phosphonic acid; the listed components and other source definition are unchanged.

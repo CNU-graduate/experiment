@@ -1,0 +1,15 @@
+{
+  "version": "6.9",
+  "hitCount": 0,
+  "request": {
+    "queryString": "DOI:10.2903/j.efsa.2022.7521",
+    "resultType": "lite",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": []
+  }
+}

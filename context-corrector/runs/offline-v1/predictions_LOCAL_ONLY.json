@@ -1,0 +1,902 @@
+[
+  {
+    "id": "2022-24-01",
+    "substance": "Sulfoxaflor",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-14-02",
+    "substance": "Azoxystrobin",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-30-03",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 85,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-16-04",
+    "substance": "Spinetoram",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-03-02",
+    "substance": "2,4‐D",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2021-18-04",
+    "substance": "Azoxystrobin",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-09-01",
+    "substance": "Fenbuconazole",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-07-04",
+    "substance": "Fenpropimorph",
+    "actual": "Yes",
+    "GPT_score": 20,
+    "GPT_score_50": "No",
+    "context_corrector": "Yes",
+    "changed": true
+  },
+  {
+    "id": "2022-24-02",
+    "substance": "Sulfoxaflor",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-01-01",
+    "substance": "Diquat",
+    "actual": "Yes",
+    "GPT_score": 95,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-26-01",
+    "substance": "Ethiprole",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-26-02",
+    "substance": "Ethiprole",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2022-05-04",
+    "substance": "Clofentezine",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2019-18-01",
+    "substance": "Chlorfenapyr",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-03-03",
+    "substance": "2,4‐D",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2019-17-02",
+    "substance": "Sulfoxaflor",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-18-03",
+    "substance": "Azoxystrobin",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-10-03",
+    "substance": "Imidacloprid",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-01-02",
+    "substance": "Captan",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-16-03",
+    "substance": "Spinetoram",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-33-02",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 25,
+    "GPT_score_50": "No",
+    "context_corrector": "Yes",
+    "changed": true
+  },
+  {
+    "id": "2018-35-02",
+    "substance": "Phosphonic acid",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-13-01",
+    "substance": "Difenoconazole",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-30-03",
+    "substance": "Acetochlor",
+    "actual": "Yes",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-14-01",
+    "substance": "Azoxystrobin",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-30-04",
+    "substance": "Pydiflumetofen",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-24-03",
+    "substance": "Imazapyr",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-40-01",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-12-01",
+    "substance": "Methoxyfenozide",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-01-03",
+    "substance": "Captan",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-10-02",
+    "substance": "Imidacloprid",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-28-02",
+    "substance": "Quinclorac",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-14-03",
+    "substance": "Azoxystrobin",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-22-01",
+    "substance": "Cyazofamid",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-16-04",
+    "substance": "Difenoconazole",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2019-22-02",
+    "substance": "Cyazofamid",
+    "actual": "Yes",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2019-22-04",
+    "substance": "Cyazofamid",
+    "actual": "Yes",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2022-24-03",
+    "substance": "Sulfoxaflor",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2021-47-01",
+    "substance": "Triflumuron",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-47-02",
+    "substance": "Triflumuron",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-29-04",
+    "substance": "Mesotrione",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-04-02",
+    "substance": "Oxamyl",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-40-03",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 25,
+    "GPT_score_50": "No",
+    "context_corrector": "Yes",
+    "changed": true
+  },
+  {
+    "id": "2018-07-03",
+    "substance": "Fenpropimorph",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-10-04",
+    "substance": "Imidacloprid",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-07-01",
+    "substance": "Fenpropimorph",
+    "actual": "Yes",
+    "GPT_score": 90,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-12-02",
+    "substance": "Methoxyfenozide",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-22-03",
+    "substance": "Thiamethoxam",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-22-02",
+    "substance": "Thiamethoxam",
+    "actual": "Yes",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2021-20-02",
+    "substance": "Spirotetramat",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-06-02",
+    "substance": "Profenofos",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-19-01",
+    "substance": "Spinetoram",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-03-01",
+    "substance": "2,4‐D",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2019-06-01",
+    "substance": "Profenofos",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-33-01",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 95,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-40-04",
+    "substance": "Pydiflumetofen",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-16-02",
+    "substance": "Spinetoram",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-12-03",
+    "substance": "Methoxyfenozide",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-40-02",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-35-04",
+    "substance": "Phosphonic acid",
+    "actual": "Yes",
+    "GPT_score": 50,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-06-03",
+    "substance": "Profenofos",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-35-01",
+    "substance": "Phosphonic acid",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2021-19-03",
+    "substance": "Chlorantraniliprole",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-28-02",
+    "substance": "Tolfenpyrad",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-24-02",
+    "substance": "Imazapyr",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-30-01",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-30-02",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-19-02",
+    "substance": "Chlorantraniliprole",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-17-03",
+    "substance": "Sulfoxaflor",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2019-17-01",
+    "substance": "Sulfoxaflor",
+    "actual": "Yes",
+    "GPT_score": 95,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-19-03",
+    "substance": "Isopyrazam",
+    "actual": "No",
+    "GPT_score": 8,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2022-12-04",
+    "substance": "Methoxyfenozide",
+    "actual": "No",
+    "GPT_score": 50,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-07-02",
+    "substance": "Fenpropimorph",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-35-03",
+    "substance": "Phosphonic acid",
+    "actual": "Yes",
+    "GPT_score": 50,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-14-04",
+    "substance": "Azoxystrobin",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-01-02",
+    "substance": "Ethion",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-19-04",
+    "substance": "Spinetoram",
+    "actual": "Yes",
+    "GPT_score": 25,
+    "GPT_score_50": "No",
+    "context_corrector": "Yes",
+    "changed": true
+  },
+  {
+    "id": "2018-01-04",
+    "substance": "Captan",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2022-33-04",
+    "substance": "Pydiflumetofen",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2022-09-02",
+    "substance": "Fenbuconazole",
+    "actual": "Yes",
+    "GPT_score": 98,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-01-01",
+    "substance": "Ethion",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-20-03",
+    "substance": "Spirotetramat",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-19-02",
+    "substance": "Isopyrazam",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-26-03",
+    "substance": "Ethiprole",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-16-01",
+    "substance": "Spinetoram",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-06-04",
+    "substance": "Profenofos",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2019-18-02",
+    "substance": "Chlorfenapyr",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-05-03",
+    "substance": "Clofentezine",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2022-24-04",
+    "substance": "Sulfoxaflor",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2019-17-04",
+    "substance": "Sulfoxaflor",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2021-02-01",
+    "substance": "Thiabendazole",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-16-03",
+    "substance": "Difenoconazole",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2021-30-04",
+    "substance": "Acetochlor",
+    "actual": "Yes",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2022-33-03",
+    "substance": "Pydiflumetofen",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-24-04",
+    "substance": "Imazapyr",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2022-19-02",
+    "substance": "Spinetoram",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2021-20-04",
+    "substance": "Spirotetramat",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-01-01",
+    "substance": "Captan",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  },
+  {
+    "id": "2018-19-01",
+    "substance": "Isopyrazam",
+    "actual": "Yes",
+    "GPT_score": 100,
+    "GPT_score_50": "Yes",
+    "context_corrector": "Yes",
+    "changed": false
+  },
+  {
+    "id": "2018-03-04",
+    "substance": "2,4‐D",
+    "actual": "No",
+    "GPT_score": 0,
+    "GPT_score_50": "No",
+    "context_corrector": "No",
+    "changed": false
+  }
+]

@@ -1,0 +1,1082 @@
+[
+  {
+    "case_id": "F01.original",
+    "family_id": "F01",
+    "source_id": "2022-01-01",
+    "year": 2022,
+    "condition": "original",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Ethion",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Ethion",
+      "EU": "Reg. 396/2005: Ethion No EFSA peer review and no EFSA MRL review"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0003"
+  },
+  {
+    "case_id": "F01.preserved",
+    "family_id": "F01",
+    "source_id": "2022-01-01",
+    "year": 2022,
+    "condition": "preserved",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Ethion",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Ethion",
+      "EU": "Reg. 396/2005: Ethion No EFSA peer review and no EFSA MRL review"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0003"
+  },
+  {
+    "case_id": "F01.substantive",
+    "family_id": "F01",
+    "source_id": "2022-01-01",
+    "year": 2022,
+    "condition": "substantive",
+    "operation": "add_metabolite",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Ethion",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Ethion",
+      "EU": "Reg. 396/2005: Sum of Ethion and hypothetical metabolite HYP-M01, expressed as Ethion No EFSA peer review and no EFSA MRL review"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0003"
+  },
+  {
+    "case_id": "F02.original",
+    "family_id": "F02",
+    "source_id": "2022-12-03",
+    "year": 2022,
+    "condition": "original",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Methoxyfenozide",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Methoxyfenozide",
+      "EU": "Peer review (EFSA, 2017f) and MRL review (EFSA, 2014b): Methoxyfenozide"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0065"
+  },
+  {
+    "case_id": "F02.preserved",
+    "family_id": "F02",
+    "source_id": "2022-12-03",
+    "year": 2022,
+    "condition": "preserved",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Methoxyfenozide",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Methoxyfenozide",
+      "EU": "Peer review (EFSA, 2017f) and MRL review (EFSA, 2014b): Methoxyfenozide"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0065"
+  },
+  {
+    "case_id": "F02.substantive",
+    "family_id": "F02",
+    "source_id": "2022-12-03",
+    "year": 2022,
+    "condition": "substantive",
+    "operation": "add_metabolite",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Methoxyfenozide",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Methoxyfenozide",
+      "EU": "Peer review (EFSA, 2017f) and MRL review (EFSA, 2014b): Sum of Methoxyfenozide and hypothetical metabolite HYP-M02, expressed as Methoxyfenozide"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0065"
+  },
+  {
+    "case_id": "F03.original",
+    "family_id": "F03",
+    "source_id": "2023-13-01",
+    "year": 2023,
+    "condition": "original",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Azoxystrobin",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Azoxystrobin",
+      "EU": "Reg. 396/2005 (implementing MRL review): Azoxystrobin\r\nPeer review (EFSA, 2010c): Azoxystrobin"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0084"
+  },
+  {
+    "case_id": "F03.preserved",
+    "family_id": "F03",
+    "source_id": "2023-13-01",
+    "year": 2023,
+    "condition": "preserved",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Azoxystrobin",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Azoxystrobin",
+      "EU": "Reg. 396/2005 (implementing MRL review): Azoxystrobin\r\nPeer review (EFSA, 2010c): Azoxystrobin"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0084"
+  },
+  {
+    "case_id": "F03.substantive",
+    "family_id": "F03",
+    "source_id": "2023-13-01",
+    "year": 2023,
+    "condition": "substantive",
+    "operation": "add_metabolite",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Azoxystrobin",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Azoxystrobin",
+      "EU": "Reg. 396/2005 (implementing MRL review): Sum of Azoxystrobin and hypothetical metabolite HYP-M03, expressed as Azoxystrobin\r\nPeer review (EFSA, 2010c): Sum of Azoxystrobin and hypothetical metabolite HYP-M03, expressed as Azoxystrobin"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0084"
+  },
+  {
+    "case_id": "F04.original",
+    "family_id": "F04",
+    "source_id": "2023-26-01",
+    "year": 2023,
+    "condition": "original",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Triflumuron",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Triflumuron",
+      "EU": "Reg. 396/2005 (implementing MRL review): Triflumuron\r\nPeer review (EFSA, 2011a): Triflumuron"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0173"
+  },
+  {
+    "case_id": "F04.preserved",
+    "family_id": "F04",
+    "source_id": "2023-26-01",
+    "year": 2023,
+    "condition": "preserved",
+    "operation": "add_metabolite",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Triflumuron",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Triflumuron",
+      "EU": "Reg. 396/2005 (implementing MRL review): Triflumuron\r\nPeer review (EFSA, 2011a): Triflumuron"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0173"
+  },
+  {
+    "case_id": "F04.substantive",
+    "family_id": "F04",
+    "source_id": "2023-26-01",
+    "year": 2023,
+    "condition": "substantive",
+    "operation": "add_metabolite",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Triflumuron",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Triflumuron",
+      "EU": "Reg. 396/2005 (implementing MRL review): Sum of Triflumuron and hypothetical metabolite HYP-M04, expressed as Triflumuron\r\nPeer review (EFSA, 2011a): Sum of Triflumuron and hypothetical metabolite HYP-M04, expressed as Triflumuron"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0173"
+  },
+  {
+    "case_id": "F05.original",
+    "family_id": "F05",
+    "source_id": "2022-04-02",
+    "year": 2022,
+    "condition": "original",
+    "operation": "add_conjugates",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Methoprene",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Methoprene The residue is fat soluble",
+      "EU": "Reg. 396/2005: Methoprene No EU review or EU MRL review The residue is not fat soluble"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0019"
+  },
+  {
+    "case_id": "F05.preserved",
+    "family_id": "F05",
+    "source_id": "2022-04-02",
+    "year": 2022,
+    "condition": "preserved",
+    "operation": "add_conjugates",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Methoprene",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Methoprene The residue is fat soluble",
+      "EU": "Reg. 396/2005: Methoprene No EU review or EU MRL review The residue is not fat soluble"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0019"
+  },
+  {
+    "case_id": "F05.substantive",
+    "family_id": "F05",
+    "source_id": "2022-04-02",
+    "year": 2022,
+    "condition": "substantive",
+    "operation": "add_conjugates",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Methoprene",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Methoprene The residue is fat soluble",
+      "EU": "Reg. 396/2005: Methoprene (free and conjugated forms) No EU review or EU MRL review The residue is not fat soluble"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0019"
+  },
+  {
+    "case_id": "F06.original",
+    "family_id": "F06",
+    "source_id": "2023-08-03",
+    "year": 2023,
+    "condition": "original",
+    "operation": "add_conjugates",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Bifenthrin",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Bifenthrin (sum of isomers)",
+      "EU": "MRL review (EFSA, 2015e) and peer review (EFSA, 2011e): Bifenthrin (sum of isomers)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0049"
+  },
+  {
+    "case_id": "F06.preserved",
+    "family_id": "F06",
+    "source_id": "2023-08-03",
+    "year": 2023,
+    "condition": "preserved",
+    "operation": "add_conjugates",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Bifenthrin",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Bifenthrin (sum of isomers)",
+      "EU": "MRL review (EFSA, 2015e) and peer review (EFSA, 2011e): Bifenthrin (sum of isomers)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0049"
+  },
+  {
+    "case_id": "F06.substantive",
+    "family_id": "F06",
+    "source_id": "2023-08-03",
+    "year": 2023,
+    "condition": "substantive",
+    "operation": "add_conjugates",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Bifenthrin",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Bifenthrin (sum of isomers)",
+      "EU": "MRL review (EFSA, 2015e) and peer review (EFSA, 2011e): Bifenthrin (free and conjugated forms) (sum of isomers)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0049"
+  },
+  {
+    "case_id": "F07.original",
+    "family_id": "F07",
+    "source_id": "2024-13-03",
+    "year": 2024,
+    "condition": "original",
+    "operation": "add_conjugates",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Boscalid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Boscalid",
+      "EU": "MRL review (EFSA, 2014d): Boscalid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0077"
+  },
+  {
+    "case_id": "F07.preserved",
+    "family_id": "F07",
+    "source_id": "2024-13-03",
+    "year": 2024,
+    "condition": "preserved",
+    "operation": "add_conjugates",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Boscalid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Boscalid",
+      "EU": "MRL review (EFSA, 2014d): Boscalid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0077"
+  },
+  {
+    "case_id": "F07.substantive",
+    "family_id": "F07",
+    "source_id": "2024-13-03",
+    "year": 2024,
+    "condition": "substantive",
+    "operation": "add_conjugates",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Boscalid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Boscalid",
+      "EU": "MRL review (EFSA, 2014d): Boscalid (free and conjugated forms)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0077"
+  },
+  {
+    "case_id": "F08.original",
+    "family_id": "F08",
+    "source_id": "2023-18-01",
+    "year": 2023,
+    "condition": "original",
+    "operation": "change_expression",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Sulfoxaflor",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sulfoxaflor",
+      "EU": "Reg. 396/2005: Sulfoxaflor (sum of isomers)\r\nPeer review (EFSA, 2014d):\r\nSulfoxaflor"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0119"
+  },
+  {
+    "case_id": "F08.preserved",
+    "family_id": "F08",
+    "source_id": "2023-18-01",
+    "year": 2023,
+    "condition": "preserved",
+    "operation": "change_expression",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Sulfoxaflor",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sulfoxaflor",
+      "EU": "Reg. 396/2005: Sulfoxaflor (sum of isomers)\r\nPeer review (EFSA, 2014d):\r\nSulfoxaflor"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0119"
+  },
+  {
+    "case_id": "F08.substantive",
+    "family_id": "F08",
+    "source_id": "2023-18-01",
+    "year": 2023,
+    "condition": "substantive",
+    "operation": "change_expression",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Sulfoxaflor",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sulfoxaflor",
+      "EU": "Reg. 396/2005: Sulfoxaflor, expressed as hypothetical salt HYP-S08 (1.00 mg of Sulfoxaflor corresponds to 1.25 mg of HYP-S08) (sum of isomers)\r\nPeer review (EFSA, 2014d):\r\nSulfoxaflor, expressed as hypothetical salt HYP-S08 (1.00 mg of Sulfoxaflor corresponds to 1.25 mg of HYP-S08)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0119"
+  },
+  {
+    "case_id": "F09.original",
+    "family_id": "F09",
+    "source_id": "2024-25-01",
+    "year": 2024,
+    "condition": "original",
+    "operation": "change_expression",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Tetraniliprole",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Tetraniliprole",
+      "EU": "Reg. 396/2005: Tetraniliprole (default MRLs/RD according to Art. 18(1)(b))"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0158"
+  },
+  {
+    "case_id": "F09.preserved",
+    "family_id": "F09",
+    "source_id": "2024-25-01",
+    "year": 2024,
+    "condition": "preserved",
+    "operation": "change_expression",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Tetraniliprole",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Tetraniliprole",
+      "EU": "Reg. 396/2005: Tetraniliprole (default MRLs/RD according to Art. 18(1)(b))"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0158"
+  },
+  {
+    "case_id": "F09.substantive",
+    "family_id": "F09",
+    "source_id": "2024-25-01",
+    "year": 2024,
+    "condition": "substantive",
+    "operation": "change_expression",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Tetraniliprole",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Tetraniliprole",
+      "EU": "Reg. 396/2005: Tetraniliprole, expressed as hypothetical salt HYP-S09 (1.00 mg of Tetraniliprole corresponds to 1.25 mg of HYP-S09) (default MRLs/RD according to Art. 18(1)(b))"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0158"
+  },
+  {
+    "case_id": "F10.original",
+    "family_id": "F10",
+    "source_id": "2024-26-01",
+    "year": 2024,
+    "condition": "original",
+    "operation": "change_expression",
+    "gold": "Yes",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Isoflucypram",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Isoflucypram",
+      "EU": "Reg. 396/2005:\r\nIsoflucypram (default\r\nMRLs/RD according to Art.\r\n18(1)(b))\r\nPeer review (EFSA, 2022e): Isoflucypram"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0163"
+  },
+  {
+    "case_id": "F10.preserved",
+    "family_id": "F10",
+    "source_id": "2024-26-01",
+    "year": 2024,
+    "condition": "preserved",
+    "operation": "change_expression",
+    "gold": "Yes",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Isoflucypram",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Isoflucypram",
+      "EU": "Reg. 396/2005:\r\nIsoflucypram (default\r\nMRLs/RD according to Art.\r\n18(1)(b))\r\nPeer review (EFSA, 2022e): Isoflucypram"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0163"
+  },
+  {
+    "case_id": "F10.substantive",
+    "family_id": "F10",
+    "source_id": "2024-26-01",
+    "year": 2024,
+    "condition": "substantive",
+    "operation": "change_expression",
+    "gold": "No",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Isoflucypram",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Isoflucypram",
+      "EU": "Reg. 396/2005:\r\nIsoflucypram, expressed as hypothetical salt HYP-S10 (1.00 mg of Isoflucypram corresponds to 1.25 mg of HYP-S10) (default\r\nMRLs/RD according to Art.\r\n18(1)(b))\r\nPeer review (EFSA, 2022e): Isoflucypram, expressed as hypothetical salt HYP-S10 (1.00 mg of Isoflucypram corresponds to 1.25 mg of HYP-S10)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0163"
+  },
+  {
+    "case_id": "F11.original",
+    "family_id": "F11",
+    "source_id": "2018-03-01",
+    "year": 2018,
+    "condition": "original",
+    "operation": "remove_additional_forms",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "2,4‐D",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of 2,4‐D",
+      "EU": "2,4‐D (sum of 2,4‐D, its salts, its esters and its conjugates,\r\nexpressed as 2,4‐D)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0013"
+  },
+  {
+    "case_id": "F11.preserved",
+    "family_id": "F11",
+    "source_id": "2018-03-01",
+    "year": 2018,
+    "condition": "preserved",
+    "operation": "remove_additional_forms",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "2,4‐D",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of 2,4‐D",
+      "EU": "2,4‐D (sum of 2,4‐D, its salts, its esters and its conjugates,\r\nexpressed as 2,4‐D)"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0013"
+  },
+  {
+    "case_id": "F11.substantive",
+    "family_id": "F11",
+    "source_id": "2018-03-01",
+    "year": 2018,
+    "condition": "substantive",
+    "operation": "remove_additional_forms",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "2,4‐D",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of 2,4‐D",
+      "EU": "2,4‐D"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0013"
+  },
+  {
+    "case_id": "F12.original",
+    "family_id": "F12",
+    "source_id": "2018-17-03",
+    "year": 2018,
+    "condition": "original",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Fluopyram",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Fluopyram",
+      "EU": "Sum fluopyram and fluopyram‐benzamide (M25), expressed\r\nas fluopyram"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0082"
+  },
+  {
+    "case_id": "F12.preserved",
+    "family_id": "F12",
+    "source_id": "2018-17-03",
+    "year": 2018,
+    "condition": "preserved",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Fluopyram",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Fluopyram",
+      "EU": "Sum fluopyram and fluopyram‐benzamide (M25), expressed\r\nas fluopyram"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0082"
+  },
+  {
+    "case_id": "F12.substantive",
+    "family_id": "F12",
+    "source_id": "2018-17-03",
+    "year": 2018,
+    "condition": "substantive",
+    "operation": "remove_metabolites",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Fluopyram",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Fluopyram",
+      "EU": "Fluopyram"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0082"
+  },
+  {
+    "case_id": "F13.original",
+    "family_id": "F13",
+    "source_id": "2018-21-03",
+    "year": 2018,
+    "condition": "original",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Saflufenacil",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Saflufenacil",
+      "EU": "Sum of saflufenacil, M800H11 and M800H35, expressed as saflufenacil"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0101"
+  },
+  {
+    "case_id": "F13.preserved",
+    "family_id": "F13",
+    "source_id": "2018-21-03",
+    "year": 2018,
+    "condition": "preserved",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Saflufenacil",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Saflufenacil",
+      "EU": "Sum of saflufenacil, M800H11 and M800H35, expressed as saflufenacil"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0101"
+  },
+  {
+    "case_id": "F13.substantive",
+    "family_id": "F13",
+    "source_id": "2018-21-03",
+    "year": 2018,
+    "condition": "substantive",
+    "operation": "remove_metabolites",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Saflufenacil",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Saflufenacil",
+      "EU": "Saflufenacil"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0101"
+  },
+  {
+    "case_id": "F14.original",
+    "family_id": "F14",
+    "source_id": "2021-31-03",
+    "year": 2021,
+    "condition": "original",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Flonicamid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Flonicamid",
+      "EU": "Sum of flonicamid, TFNA and TFNG, expressed as flonicamid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0154"
+  },
+  {
+    "case_id": "F14.preserved",
+    "family_id": "F14",
+    "source_id": "2021-31-03",
+    "year": 2021,
+    "condition": "preserved",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Flonicamid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Flonicamid",
+      "EU": "Sum of flonicamid, TFNA and TFNG, expressed as flonicamid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0154"
+  },
+  {
+    "case_id": "F14.substantive",
+    "family_id": "F14",
+    "source_id": "2021-31-03",
+    "year": 2021,
+    "condition": "substantive",
+    "operation": "remove_metabolites",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Flonicamid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Flonicamid",
+      "EU": "Flonicamid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0154"
+  },
+  {
+    "case_id": "F15.original",
+    "family_id": "F15",
+    "source_id": "2021-34-03",
+    "year": 2021,
+    "condition": "original",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Isofetamid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Isofetamid",
+      "EU": "Peer review (EFSA, 2015w) Art 10 MRL (EFSA, 2018j): Sum isofetamid and N‐{1‐[4‐(β‐D‐glucopyranosyloxy)‐2‐methylphenyl]‐2‐methyl‐1‐oxopropan‐2‐yl}‐3‐methylthiophene‐2‐carboxamide (GPTC), expressed as isofetamid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0169"
+  },
+  {
+    "case_id": "F15.preserved",
+    "family_id": "F15",
+    "source_id": "2021-34-03",
+    "year": 2021,
+    "condition": "preserved",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Isofetamid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Isofetamid",
+      "EU": "Peer review (EFSA, 2015w) Art 10 MRL (EFSA, 2018j): Sum isofetamid and N‐{1‐[4‐(β‐D‐glucopyranosyloxy)‐2‐methylphenyl]‐2‐methyl‐1‐oxopropan‐2‐yl}‐3‐methylthiophene‐2‐carboxamide (GPTC), expressed as isofetamid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0169"
+  },
+  {
+    "case_id": "F15.substantive",
+    "family_id": "F15",
+    "source_id": "2021-34-03",
+    "year": 2021,
+    "condition": "substantive",
+    "operation": "remove_metabolites",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Isofetamid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Isofetamid",
+      "EU": "Peer review (EFSA, 2015w) Art 10 MRL (EFSA, 2018j): Isofetamid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0169"
+  },
+  {
+    "case_id": "F16.original",
+    "family_id": "F16",
+    "source_id": "2022-02-02",
+    "year": 2022,
+    "condition": "original",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Imazalil",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Imazalil The residue is not fat soluble",
+      "EU": "Reg. 396/2005 (implementing MRL review): Sum of imazalil and metabolite FK-772 (any ratio of constituent isomers), expressed as imazalil The residue is not fat soluble"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0007"
+  },
+  {
+    "case_id": "F16.preserved",
+    "family_id": "F16",
+    "source_id": "2022-02-02",
+    "year": 2022,
+    "condition": "preserved",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Imazalil",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Imazalil The residue is not fat soluble",
+      "EU": "Reg. 396/2005 (implementing MRL review): Sum of imazalil and metabolite FK-772 (any ratio of constituent isomers), expressed as imazalil The residue is not fat soluble"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0007"
+  },
+  {
+    "case_id": "F16.substantive",
+    "family_id": "F16",
+    "source_id": "2022-02-02",
+    "year": 2022,
+    "condition": "substantive",
+    "operation": "remove_metabolites",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Imazalil",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Imazalil The residue is not fat soluble",
+      "EU": "Reg. 396/2005 (implementing MRL review): Imazalil The residue is not fat soluble"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0007"
+  },
+  {
+    "case_id": "F17.original",
+    "family_id": "F17",
+    "source_id": "2022-36-01",
+    "year": 2022,
+    "condition": "original",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Pyrasulfotole",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of pyrasulfotole and desmethyl-pyrasulfotole and its conjugates, expressed as pyrasulfotole.",
+      "EU": "Reg. 396/2005: Pyrasulfotole"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0214"
+  },
+  {
+    "case_id": "F17.preserved",
+    "family_id": "F17",
+    "source_id": "2022-36-01",
+    "year": 2022,
+    "condition": "preserved",
+    "operation": "remove_metabolites",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Pyrasulfotole",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of pyrasulfotole and desmethyl-pyrasulfotole and its conjugates, expressed as pyrasulfotole.",
+      "EU": "Reg. 396/2005: Pyrasulfotole"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0214"
+  },
+  {
+    "case_id": "F17.substantive",
+    "family_id": "F17",
+    "source_id": "2022-36-01",
+    "year": 2022,
+    "condition": "substantive",
+    "operation": "remove_metabolites",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Pyrasulfotole",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Pyrasulfotole",
+      "EU": "Reg. 396/2005: Pyrasulfotole"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0214"
+  },
+  {
+    "case_id": "F18.original",
+    "family_id": "F18",
+    "source_id": "2023-21-02",
+    "year": 2023,
+    "condition": "original",
+    "operation": "remove_conjugates",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Quinclorac",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Quinclorac plus quinclorac conjugates\r\nThe residue is fat soluble",
+      "EU": "Reg. 396/2005: Quinclorac\r\nFat solubility not specified"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0140"
+  },
+  {
+    "case_id": "F18.preserved",
+    "family_id": "F18",
+    "source_id": "2023-21-02",
+    "year": 2023,
+    "condition": "preserved",
+    "operation": "remove_conjugates",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Quinclorac",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Quinclorac plus quinclorac conjugates\r\nThe residue is fat soluble",
+      "EU": "Reg. 396/2005: Quinclorac\r\nFat solubility not specified"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0140"
+  },
+  {
+    "case_id": "F18.substantive",
+    "family_id": "F18",
+    "source_id": "2023-21-02",
+    "year": 2023,
+    "condition": "substantive",
+    "operation": "remove_conjugates",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Quinclorac",
+      "purpose": "Enforcement",
+      "commodity": "Animal products",
+      "JMPR": "Quinclorac\r\nThe residue is fat soluble",
+      "EU": "Reg. 396/2005: Quinclorac\r\nFat solubility not specified"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0140"
+  },
+  {
+    "case_id": "F19.original",
+    "family_id": "F19",
+    "source_id": "2022-25-04",
+    "year": 2022,
+    "condition": "original",
+    "operation": "remove_conjugates",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Bixafen",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Sum of bixafen and N-(3′,4′-dichloro-5-fluorobiphenyl-2-yl)-3-(difluoromethyl)-1H-pyrazole-4-carboxamide (bixafen-desmethyl) (M21), expressed as bixafen",
+      "EU": "MRL review (EFSA, 2020c) and peer review (EFSA, 2012j): Sum of bixafen and desmethyl-bixafen (M21), free and conjugated expressed as bixafen equivalents"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0146"
+  },
+  {
+    "case_id": "F19.preserved",
+    "family_id": "F19",
+    "source_id": "2022-25-04",
+    "year": 2022,
+    "condition": "preserved",
+    "operation": "remove_conjugates",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Bixafen",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Sum of bixafen and N-(3′,4′-dichloro-5-fluorobiphenyl-2-yl)-3-(difluoromethyl)-1H-pyrazole-4-carboxamide (bixafen-desmethyl) (M21), expressed as bixafen",
+      "EU": "MRL review (EFSA, 2020c) and peer review (EFSA, 2012j): Sum of bixafen and desmethyl-bixafen (M21), free and conjugated expressed as bixafen equivalents"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0146"
+  },
+  {
+    "case_id": "F19.substantive",
+    "family_id": "F19",
+    "source_id": "2022-25-04",
+    "year": 2022,
+    "condition": "substantive",
+    "operation": "remove_conjugates",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Bixafen",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Sum of bixafen and N-(3′,4′-dichloro-5-fluorobiphenyl-2-yl)-3-(difluoromethyl)-1H-pyrazole-4-carboxamide (bixafen-desmethyl) (M21), expressed as bixafen",
+      "EU": "MRL review (EFSA, 2020c) and peer review (EFSA, 2012j): Sum of bixafen and desmethyl-bixafen (M21), free expressed as bixafen equivalents"
+    },
+    "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0146"
+  },
+  {
+    "case_id": "F20.original",
+    "family_id": "F20",
+    "source_id": "2021-38-01",
+    "year": 2021,
+    "condition": "original",
+    "operation": "align_expression",
+    "gold": "No",
+    "label_origin": "EFSA source label",
+    "input": {
+      "substance": "Fosetyl‐Al",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of fosetyl, phosphonic acid and their salts, expressed as phosphonic acid\r\nThe residue is not fat soluble",
+      "EU": "Reg. 396/2005: Fosetyl‐Al (sum of fosetyl, phosphonic acid and their salts, expressed as fosetyl)\r\nPeer review (EFSA, 2018m): sum of fosetyl, phosphonic acid and their salts expressed as phosphonic acid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0189"
+  },
+  {
+    "case_id": "F20.preserved",
+    "family_id": "F20",
+    "source_id": "2021-38-01",
+    "year": 2021,
+    "condition": "preserved",
+    "operation": "align_expression",
+    "gold": "No",
+    "label_origin": "Inherited from EFSA; decoded input values identical",
+    "input": {
+      "substance": "Fosetyl‐Al",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of fosetyl, phosphonic acid and their salts, expressed as phosphonic acid\r\nThe residue is not fat soluble",
+      "EU": "Reg. 396/2005: Fosetyl‐Al (sum of fosetyl, phosphonic acid and their salts, expressed as fosetyl)\r\nPeer review (EFSA, 2018m): sum of fosetyl, phosphonic acid and their salts expressed as phosphonic acid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0189"
+  },
+  {
+    "case_id": "F20.substantive",
+    "family_id": "F20",
+    "source_id": "2021-38-01",
+    "year": 2021,
+    "condition": "substantive",
+    "operation": "align_expression",
+    "gold": "Yes",
+    "label_origin": "Pre-specified rule-derived synthetic label; not an EFSA ruling or independently expert-validated label",
+    "input": {
+      "substance": "Fosetyl‐Al",
+      "purpose": "Enforcement",
+      "commodity": "Plant products",
+      "JMPR": "Sum of fosetyl, phosphonic acid and their salts, expressed as phosphonic acid\r\nThe residue is not fat soluble",
+      "EU": "Reg. 396/2005: Fosetyl‐Al (sum of fosetyl, phosphonic acid and their salts, expressed as phosphonic acid)\r\nPeer review (EFSA, 2018m): sum of fosetyl, phosphonic acid and their salts expressed as phosphonic acid"
+    },
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0189"
+  }
+]

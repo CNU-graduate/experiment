@@ -1,0 +1,18 @@
+{
+  "requests": 60,
+  "unique_source_cases": 20,
+  "planned_repeats": 3,
+  "planned_api_calls": 180,
+  "labels": {
+    "Yes": 30,
+    "No": 30
+  },
+  "conditions": [
+    "original",
+    "preserved",
+    "substantive"
+  ],
+  "requests_sha256": "1975959068058b9d72be16727ffa5c71cc69e448522f71149c40525940b3fc33",
+  "design_sha256": "ffee6ce676a37bc3270314fbc030e8e20a785b8deec65a31ef0c652ebe5f0d2c",
+  "paid_api_calls": 0
+}

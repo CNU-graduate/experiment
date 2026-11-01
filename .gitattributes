@@ -1,0 +1,6 @@
+# Preserve bytes used by frozen experiment SHA-256 checks across platforms.
+context-corrector/** -text
+contrastive-pilot/** -text
+e6-efsa-comment-experiment/** -text
+e6-rationale-experiment/** -text
+threshold-pilot/** -text

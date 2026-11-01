@@ -1,0 +1,66 @@
+{
+  "version": "e6-efsa-comment-v1",
+  "source_commit": "391ea081a7707a60eeeba25e46d88bab8f0581aa",
+  "requests": 420,
+  "unique_test_cases": 210,
+  "examples": 12,
+  "augmented_examples": 6,
+  "annotation_coverage_by_evaluation_year": {
+    "2023": 3,
+    "2024": 2,
+    "2025": 1
+  },
+  "statuses": {
+    "direct_support": 4,
+    "scope_mismatch": 4,
+    "comment_absent": 1,
+    "direct_support_with_qualification": 1,
+    "partial_support_with_qualification": 1,
+    "target_label_not_explained": 1
+  },
+  "example_order": {
+    "2023": [
+      "2022-11-04",
+      "2022-07-01",
+      "2022-22-02",
+      "2022-10-03"
+    ],
+    "2024": [
+      "2023-12-04",
+      "2023-08-03",
+      "2023-23-01",
+      "2023-16-02"
+    ],
+    "2025": [
+      "2024-08-03",
+      "2024-25-02",
+      "2024-23-04",
+      "2024-29-01"
+    ]
+  },
+  "requests_sha256": "d8865b19ca7b7961417d2d521ffd6458dff996c50a1fb01a4587e8f3746e8a6a",
+  "rationales_sha256": "faa3558d07339bf3130bb70500ce013ba303b2e88f66b2077a04d0f24fbfc111",
+  "data_files_sha256": {
+    "ESFA_2022_remain.csv": "8dbac1eebc428697483240eec09da4a478e19ca38c65a05817dfcbcd14978ddc",
+    "ESFA_2023_remain.csv": "664ef326e0526fe7f7fcaa38fb75e9f6b4163c430daea52c66e5b0a9a7825d98",
+    "ESFA_2024_remain.csv": "fa2aa5004d3c37184f213c2309fbd513627e3fdb68265f2a36e7c611e67f821f"
+  },
+  "primary_xml_sha256": {
+    "2023": "a1431659292897bbb0c5e23862db2da7a3ee185090455df20466094c7fba41cb",
+    "2024": "76f80cb1b24df958d88f4107c0168363dd0229a873ff1ab9fd05c24f4fbc3baf"
+  },
+  "paid_api_calls": 0,
+  "verified": [
+    "All original E6 example inputs and labels match repository data",
+    "All 210 control prompts unchanged",
+    "Removing rationale restores every original payload",
+    "No target answers or comments in inference test fields",
+    "Missing or scope-mismatched comments do not receive invented rationales"
+  ],
+  "limitations": [
+    "Only 6/12 examples have usable summaries; this is partial comment augmentation",
+    "2022 comments are repository transcriptions, not independently full-text verified",
+    "2023/2024 table comments may be narrower than the CSV concatenation",
+    "Evaluation cases were inspected in previous work"
+  ]
+}

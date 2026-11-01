@@ -1,0 +1,14 @@
+Threshold pilot result
+Mode: live
+Successful API/model records: 200
+Frozen threshold: 71
+Validation gate passed: False
+validation_B_threshold_50: accuracy 90.00%, macro-F1 0.89149
+validation_C_frozen_threshold: accuracy 89.00%, macro-F1 0.88267
+Evaluation stopped: the selected threshold did not pass the pre-specified validation gate.
+
+One retrospective pilot; no claim of untouched evaluation data
+Development/validation split by normalized substance name; chemical aliases are not fully resolved
+Evaluation can contain substances seen in historical data
+B/C share exactly the same evaluation model scores; only decision threshold changes
+Mock results are arbitrary infrastructure checks, never model-performance evidence

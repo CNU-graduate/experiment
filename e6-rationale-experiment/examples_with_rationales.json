@@ -1,0 +1,285 @@
+{
+  "authorship": "Assistant-reconstructed explanations from the frozen example definitions; not EFSA-authored explanations or expert-validated annotations.",
+  "years": {
+    "2023": [
+      {
+        "id": "2022-11-04",
+        "rank": 1,
+        "EFSA": "No",
+        "EU": "MRL review (EFSA, 2013k): Milk: Sum of cyprodinil and CGA 304075 (free and conjugated) expressed as cyprodinil Other animal products: Sum of cyprodinil and CGA 304075 (free) expressed as cyprodinil Peer review (EFSA, 2006a): sum of cyprodinil and CGA 304075 (free and conjugated) expressed as cyprodinil",
+        "JMPR": "Cyprodinil",
+        "commodity": "Animal products",
+        "purpose": "Risk assessment",
+        "substance": "Cyprodinil",
+        "expected_label": "No",
+        "rationale": "JMPR includes only cyprodinil, whereas the EU animal-product definitions also include CGA 304075. The MRL review includes its free and conjugated forms in milk and its free form in other animal products, so the included residue scope differs.",
+        "rationale_ko": "JMPR은 cyprodinil만 포함하지만 EU는 CGA 304075도 포함한다. MRL review에서 우유는 유리형과 포합형, 다른 동물성 품목은 유리형을 포함하므로 성분 범위가 다르다.",
+        "jmpr_quotes": [
+          "Cyprodinil"
+        ],
+        "eu_quotes": [
+          "Milk: Sum of cyprodinil and CGA 304075 (free and conjugated)",
+          "Other animal products: Sum of cyprodinil and CGA 304075 (free)"
+        ],
+        "conditional": false,
+        "review_note": "출처별 포합체 조건을 구분한다. 모든 동물성 품목이 포합체를 포함한다고 일반화하지 않는다."
+      },
+      {
+        "id": "2022-07-01",
+        "rank": 2,
+        "EFSA": "Yes",
+        "EU": "Reg. 396/2005 (implementing MRL review): Tebuconazole Peer review (EFSA, 2014a): Sum of enantiomers contained in tebuconazole (provisional)",
+        "JMPR": "Tebuconazole",
+        "commodity": "Plant products",
+        "purpose": "Enforcement",
+        "substance": "Tebuconazole",
+        "expected_label": "Yes",
+        "rationale": "JMPR and the EU Regulation enforcement definition both specify tebuconazole. The peer-review wording describes the enantiomers contained in tebuconazole and does not list an additional metabolite; its provisional qualifier alone does not establish non-comparability.",
+        "rationale_ko": "JMPR과 EU 법적 집행용 정의는 모두 tebuconazole이다. Peer review는 tebuconazole에 포함된 거울상 이성질체를 기술하며 추가 대사산물을 열거하지 않는다. 잠정 표기만으로 불일치를 정하지 않는다.",
+        "jmpr_quotes": [
+          "Tebuconazole"
+        ],
+        "eu_quotes": [
+          "Reg. 396/2005 (implementing MRL review): Tebuconazole",
+          "Sum of enantiomers contained in tebuconazole (provisional)"
+        ],
+        "conditional": false,
+        "review_note": "집행용 식물 정의에 대한 설명이다. 위해평가용 TDM 정의로 확대하지 않는다."
+      },
+      {
+        "id": "2022-22-02",
+        "rank": 3,
+        "EFSA": "Yes",
+        "EU": "Reg. 396/2005: Thiamethoxam MRL review (EFSA, 2014r): Ruminants and pigs: Thiamethoxam and clothianidin (considered separately) No residue definition is proposed for poultry products Fat solubility not specified",
+        "JMPR": "Thiamethoxam The residue is not fat soluble",
+        "commodity": "Animal products",
+        "purpose": "Enforcement",
+        "substance": "Thiamethoxam",
+        "expected_label": "Yes",
+        "rationale": "JMPR and the EU Regulation both specify thiamethoxam. The MRL review explicitly treats thiamethoxam and clothianidin separately rather than as a combined sum; the poultry statement supplies no alternative component definition, and fat-solubility notation alone does not change the label.",
+        "rationale_ko": "JMPR과 EU 법적 정의는 thiamethoxam으로 대응한다. MRL review는 thiamethoxam과 clothianidin을 합산하지 않고 별도로 취급한다. 가금류 정의 미제안 문구는 다른 성분 정의를 제공하지 않으며 지용성 표기만의 차이는 분류를 바꾸지 않는다.",
+        "jmpr_quotes": [
+          "Thiamethoxam",
+          "The residue is not fat soluble"
+        ],
+        "eu_quotes": [
+          "Reg. 396/2005: Thiamethoxam",
+          "Thiamethoxam and clothianidin (considered separately)",
+          "No residue definition is proposed for poultry products"
+        ],
+        "conditional": true,
+        "review_note": "법적 정의의 대응과 considered separately에 근거한 기존 Yes의 재구성이다. 모든 출처와 가금류 적용 범위가 동일하다는 주장이 아니다. CSV의 EFSA 코멘트에만 있는 JMPR clothianidin 별도 평가 정보는 모델 근거에 추가하지 않았다."
+      },
+      {
+        "id": "2022-10-03",
+        "rank": 4,
+        "EFSA": "No",
+        "EU": "MRL review (EFSA, 2012e) and peer review (EFSA, 2006c): Sum of fipronil and sulfone metabolite (MB 46136) expressed as fipronil",
+        "JMPR": "Sum of fipronil and 5-amino-3-cyano-1-(2,6-dichloro-4-trifluoromethylphenyl)-4-trifluoromethyl sulfonylpyrazole (MB46136), 5-amino-3-cyano-1-(2,6-dichloro-4-trifluoromethyl phenyl)-4-trifluoro methylthiopyrazole (MB45950) and 5-amino-3-cyano-1-(2,6-dichloro-4-trifluoro methylphenyl)-4-trifluoromethylpyrazole (MB46513) expressed in terms of fipronil",
+        "commodity": "Plant products",
+        "purpose": "Risk assessment",
+        "substance": "Fipronil",
+        "expected_label": "No",
+        "rationale": "JMPR includes fipronil and MB46136, MB45950 and MB46513, whereas the EU definition includes only fipronil and MB 46136. Both use fipronil as the expression basis, but the additional JMPR metabolites make the chemical scope different.",
+        "rationale_ko": "JMPR은 fipronil과 MB46136, MB45950, MB46513을 포함하지만 EU는 fipronil과 MB 46136만 포함한다. 표현 기준은 같아도 JMPR에 추가 대사산물이 포함되어 범위가 다르다.",
+        "jmpr_quotes": [
+          "MB46136",
+          "MB45950",
+          "MB46513",
+          "expressed in terms of fipronil"
+        ],
+        "eu_quotes": [
+          "Sum of fipronil and sulfone metabolite (MB 46136) expressed as fipronil"
+        ],
+        "conditional": false,
+        "review_note": "장문의 화학명 전체를 동의어로 추정하지 않고 원문에 명시된 대사산물 코드를 대조한다."
+      }
+    ],
+    "2024": [
+      {
+        "id": "2023-12-04",
+        "rank": 1,
+        "EFSA": "No",
+        "EU": "Peer review (EFSA, 2011b):\n1) Difenoconazole alcohol (CGA‐205375) expressed as difenoconazole\n2) TA and TLA, TAA and 1,2,4‐triazole (based on conclusion confirmatory data on TDMs (EFSA, 2018f)",
+        "JMPR": "Sum of difenoconazole and 1‐[2‐chloro‐4‐(4‐chloro‐phenoxy)‐phenyl]‐2‐(1,2,4‐triazol)‐1‐yl‐ethanol), expressed as difenoconazole.",
+        "commodity": "Animal products",
+        "purpose": "Risk assessment",
+        "substance": "Difenoconazole",
+        "expected_label": "No",
+        "rationale": "JMPR specifies a sum containing difenoconazole and the named alcohol metabolite, expressed as difenoconazole. The EU text separately lists difenoconazole alcohol and additional triazole-related entries (TA, TLA, TAA and 1,2,4-triazole), so the applicable definitions do not have the same component scope or structure.",
+        "rationale_ko": "JMPR은 difenoconazole과 명시된 알코올 대사산물의 합을 규정한다. EU는 difenoconazole alcohol과 TA, TLA, TAA, 1,2,4-triazole 관련 항목을 별도로 열거하므로 성분 범위와 정의 구조가 같지 않다.",
+        "jmpr_quotes": [
+          "Sum of difenoconazole",
+          "expressed as difenoconazole"
+        ],
+        "eu_quotes": [
+          "Difenoconazole alcohol (CGA‐205375)",
+          "TA and TLA, TAA and 1,2,4‐triazole"
+        ],
+        "conditional": false,
+        "review_note": "EU의 별도 TDM 관련 항목을 하나의 합산식으로 바꾸지 않는다. 장문 화학명과 CGA 코드의 동일성을 외부 지식으로 보충할 필요 없이 범위 차이가 드러난다."
+      },
+      {
+        "id": "2023-08-03",
+        "rank": 2,
+        "EFSA": "Yes",
+        "EU": "MRL review (EFSA, 2015e) and peer review (EFSA, 2011e): Bifenthrin (sum of isomers)",
+        "JMPR": "Bifenthrin (sum of isomers)",
+        "commodity": "Plant products",
+        "purpose": "Risk assessment",
+        "substance": "Bifenthrin",
+        "expected_label": "Yes",
+        "rationale": "Both definitions specify bifenthrin as the sum of isomers for plant-product risk assessment. The EU source citations do not change the stated component scope.",
+        "rationale_ko": "양쪽 모두 식물 위해평가용 정의를 bifenthrin의 이성질체 합으로 규정한다. EU의 출처 표기는 명시된 성분 범위를 바꾸지 않는다.",
+        "jmpr_quotes": [
+          "Bifenthrin (sum of isomers)"
+        ],
+        "eu_quotes": [
+          "Bifenthrin (sum of isomers)"
+        ],
+        "conditional": false,
+        "review_note": "동일한 명시적 정의의 대응 사례다."
+      },
+      {
+        "id": "2023-23-01",
+        "rank": 3,
+        "EFSA": "Yes",
+        "EU": "Reg. 396/2005: Fenazaquin\nMRL review (EFSA, 2020b):\nFruits crops:\nFenazaquin\nLeafy vegetables (tentative):\nFenazaquin\nPeer review (EFSA, 2013d): Fenazaquin (applicable to fruit crops)",
+        "JMPR": "Fenazaquin",
+        "commodity": "Plant products",
+        "purpose": "Enforcement",
+        "substance": "Fenazaquin",
+        "expected_label": "Yes",
+        "rationale": "JMPR and the EU Regulation enforcement definition both specify fenazaquin alone. The crop-qualified MRL-review and peer-review entries also name fenazaquin; their fruit-crop and tentative leafy-vegetable qualifications must remain attached to those entries rather than be treated as additional chemical components.",
+        "rationale_ko": "JMPR과 EU 법적 집행용 정의는 모두 fenazaquin 단독이다. 작물 조건이 붙은 다른 EU 항목도 fenazaquin을 명시한다. 과실류 및 잠정 잎채소 조건은 해당 출처에 유지하며 추가 성분으로 해석하지 않는다.",
+        "jmpr_quotes": [
+          "Fenazaquin"
+        ],
+        "eu_quotes": [
+          "Reg. 396/2005: Fenazaquin",
+          "Leafy vegetables (tentative):",
+          "Fenazaquin (applicable to fruit crops)"
+        ],
+        "conditional": true,
+        "review_note": "기존 Yes는 법적 집행용 정의의 대응에 근거해 설명했다. 모든 작물에 대한 적용 범위가 같다는 뜻이 아니다. EFSA 코멘트의 갱신평가 등 모델 미제공 내용은 근거에 포함하지 않았다."
+      },
+      {
+        "id": "2023-16-02",
+        "rank": 4,
+        "EFSA": "No",
+        "EU": "Reg. 396/2005: Emamectin B1a and its salts, expressed as emamectin B1a (free base)\nMRL review (EFSA, 2019g):\nRuminants and swine:\nEmamectin B1a and its salts, expressed as emamectin B1a (free base)\nPeer review: not required\nThe residue is fat soluble",
+        "JMPR": "Emamectin B1a benzoate\nThe residue is not fat soluble",
+        "commodity": "Animal products",
+        "purpose": "Enforcement",
+        "substance": "Emamectin benzoate",
+        "expected_label": "No",
+        "rationale": "JMPR specifies emamectin B1a benzoate, whereas the EU definition explicitly expresses emamectin B1a and its salts as emamectin B1a free base. The expression basis therefore differs; the separate difference in fat-solubility notation is not the reason for No.",
+        "rationale_ko": "JMPR은 emamectin B1a benzoate를 규정하지만 EU는 emamectin B1a와 그 염을 유리염기 기준으로 표현한다. 표현 기준의 차이가 No의 근거이며 지용성 표기의 차이는 그 근거가 아니다.",
+        "jmpr_quotes": [
+          "Emamectin B1a benzoate"
+        ],
+        "eu_quotes": [
+          "Emamectin B1a and its salts, expressed as emamectin B1a (free base)"
+        ],
+        "conditional": false,
+        "review_note": "입력에 없는 환산계수 0.89를 설명에 추가하지 않는다."
+      }
+    ],
+    "2025": [
+      {
+        "id": "2024-08-03",
+        "rank": 1,
+        "EFSA": "No",
+        "EU": "Peer review (EFSA, 2015e):\nFruit crops (foliar application):\n(1) Diflubenzuron\n(2) PCA",
+        "JMPR": "Diflubenzuron",
+        "commodity": "Plant products",
+        "purpose": "Risk assessment",
+        "substance": "Diflubenzuron",
+        "expected_label": "No",
+        "rationale": "JMPR specifies only diflubenzuron, while the EU fruit-crop foliar-use definition also lists PCA as an additional numbered entry. This additional residue-definition component makes the scopes different; the fruit-crop foliar-use qualification applies only to the EU entry shown.",
+        "rationale_ko": "JMPR은 diflubenzuron만 규정하지만 EU의 과실류 경엽처리 정의는 PCA 항목도 포함한다. 이 추가 항목 때문에 범위가 다르며 과실류 경엽처리 조건은 제시된 EU 항목에만 적용한다.",
+        "jmpr_quotes": [
+          "Diflubenzuron"
+        ],
+        "eu_quotes": [
+          "Fruit crops (foliar application):",
+          "(1) Diflubenzuron",
+          "(2) PCA"
+        ],
+        "conditional": false,
+        "review_note": "PCA의 독성이나 차 품목 관련 EFSA 코멘트는 모델 입력에 없으므로 근거에 추가하지 않는다. 번호만으로 합산 정의라고 주장하지 않는다."
+      },
+      {
+        "id": "2024-25-02",
+        "rank": 2,
+        "EFSA": "Yes",
+        "EU": "Reg. 396/2005: Tetraniliprole (default MRLs/RD according to Art. 18(1)(b))",
+        "JMPR": "Tetraniliprole\nThe residue is not fat soluble",
+        "commodity": "Animal products",
+        "purpose": "Enforcement",
+        "substance": "Tetraniliprole",
+        "expected_label": "Yes",
+        "rationale": "Both the JMPR enforcement definition and the EU default residue definition name tetraniliprole alone. The reference to default MRLs does not add a residue component, and the JMPR fat-solubility notation alone does not make the definitions non-comparable.",
+        "rationale_ko": "JMPR 집행용 정의와 EU 기본 잔류정의는 모두 tetraniliprole 단독이다. 기본 MRL 조항 표기는 추가 성분을 뜻하지 않으며 JMPR의 지용성 표기만으로 불일치를 판정하지 않는다.",
+        "jmpr_quotes": [
+          "Tetraniliprole",
+          "The residue is not fat soluble"
+        ],
+        "eu_quotes": [
+          "Tetraniliprole (default MRLs/RD according to Art. 18(1)(b))"
+        ],
+        "conditional": false,
+        "review_note": "기본 법적 잔류정의와의 비교다. 동물 위해평가 또는 MRL 수치의 적합성을 판정하는 설명이 아니다."
+      },
+      {
+        "id": "2024-23-04",
+        "rank": 3,
+        "EFSA": "Yes",
+        "EU": "MRL review (EFSA, 2021f): Sum of cyflumetofen (sum of isomers) and 2‐(trifluoromethyl) benzoic acid (metabolite B‐1), expressed as cyflumetofen\nPeer review (EFSA, 2012a):\nnot applicable",
+        "JMPR": "Sum of cyflumetofen and 2 trifluoromethylbenzoic acid (metabolite B‐1), expressed as cyflumetofen",
+        "commodity": "Animal products",
+        "purpose": "Risk assessment",
+        "substance": "Cyflumetofen",
+        "expected_label": "Yes",
+        "rationale": "JMPR and the EU MRL-review definition both specify cyflumetofen plus metabolite B-1, expressed as cyflumetofen. The EU wording explicitly describes the parent as a sum of isomers; the older peer-review entry is marked not applicable rather than supplying a conflicting animal-product definition.",
+        "rationale_ko": "JMPR과 EU MRL review는 cyflumetofen과 B-1의 합을 cyflumetofen 기준으로 표현한다. EU는 모화합물의 이성질체 합을 명시하며 이전 peer review의 비적용 문구는 상충하는 동물성 정의를 제시하지 않는다.",
+        "jmpr_quotes": [
+          "Sum of cyflumetofen",
+          "metabolite B‐1",
+          "expressed as cyflumetofen"
+        ],
+        "eu_quotes": [
+          "Sum of cyflumetofen (sum of isomers)",
+          "metabolite B‐1",
+          "expressed as cyflumetofen",
+          "not applicable"
+        ],
+        "conditional": true,
+        "review_note": "기존 Yes에 맞춰 명시적 모화합물·B-1·표현 기준 대응을 기술했다. JMPR의 암묵적 이성질체 범위를 외부 화학 지식으로 증명한 것은 아니므로 전문가 검토 시 이 점을 확인한다."
+      },
+      {
+        "id": "2024-29-01",
+        "rank": 4,
+        "EFSA": "Yes",
+        "EU": "Reg. 396/2005 (implementing Peer review and MRL review): Fluazinam\nMRL review (EFSA, 2015g):\nRaw commodities: fluazinam\nProcessed commodities: sum of fluazinam, AMPA‐fluazinam and AMGT, expressed as fluazinam (tentative)\nPeer review (EFSA, 2008a):\nFluazinam",
+        "JMPR": "Fluazinam",
+        "commodity": "Plant products",
+        "purpose": "Enforcement",
+        "substance": "Fluazinam",
+        "expected_label": "Yes",
+        "rationale": "The EU Regulation and peer-review enforcement definitions specify fluazinam alone, matching JMPR; the MRL review also specifies fluazinam for raw commodities. The additional metabolites belong to a separately qualified tentative processed-commodity definition rather than to every plant-product definition.",
+        "rationale_ko": "EU 법적 정의와 peer review는 JMPR처럼 fluazinam 단독이며 MRL review의 원물 정의도 같다. 추가 대사산물은 별도로 한정된 잠정 가공품 정의에 속하므로 모든 식물성 품목 정의에 확대하지 않는다.",
+        "jmpr_quotes": [
+          "Fluazinam"
+        ],
+        "eu_quotes": [
+          "Reg. 396/2005 (implementing Peer review and MRL review): Fluazinam",
+          "Raw commodities: fluazinam",
+          "Processed commodities: sum of fluazinam, AMPA‐fluazinam and AMGT, expressed as fluazinam (tentative)"
+        ],
+        "conditional": true,
+        "review_note": "기존 Yes의 적용 정의 해석을 드러낸 설명이다. 평가 입력의 Plant products가 원물로 명시된 것은 아니므로 모든 가공품까지 동등하다고 일반화할 수 없다. 이 조건부 성격을 별도 보고한다."
+      }
+    ]
+  }
+}

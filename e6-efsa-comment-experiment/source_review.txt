@@ -1,0 +1,168 @@
+E6 실제 EFSA 코멘트와 요약
+원문 코멘트와 연구용 요약을 구별한다. null인 근거는 모델 예시에 추가하지 않는다.
+2022년: 저장소 전사본 기반. 2023·2024년: 원문 XML 비교표 대조.
+
+평가 2023 / 순서 1 / 2022-11-04 / Cyprodinil
+목적·대상: Risk assessment / Animal products / 원래 판정: No
+출처: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0059
+원문 검증: Repository transcription; full 2022 article retrieval was unsuccessful. Primary web index also exposes the Thiamethoxam comment.
+EFSA 원문 코멘트:
+Plant products: The residue definitions for enforcement and risk assessment derived by JMPR and at EU levels are identical. In the framework of the renewal of the approval for cyprodinil, a new residue definition for risk assessment for fruit crops is under discussion (Cyprodinil and CGA232449 (free and conjugated)). In addition, a residue definition for rotational crops is under discussion (NOA422054 (free and conjugate)).
+Animal products: In contrast to the JMPR, the EU residue definitions for enforcement and risk assessment include metabolite CGA304075 in either free (animal tissues) or in free and conjugated form (milk). However, as Codex MRLs are not proposed for commodities of animal origin, these differences in residue definitions are of low importance.
+모델에 추가할 영어 요약:
+EFSA explains that, unlike JMPR, the EU animal-product definitions include CGA304075: its free form in tissues and its free and conjugated forms in milk.
+한국어 설명:
+EFSA는 JMPR과 달리 EU 동물성 정의가 CGA304075를 포함하며, 조직에서는 유리형, 우유에서는 유리형과 포합형을 포함한다고 설명한다.
+주의:
+동물성 품목의 차이를 직접 설명한다. 차이의 실무적 중요성이 낮다는 후속 문구가 정의의 동일성을 뜻하지는 않는다.
+
+평가 2023 / 순서 2 / 2022-07-01 / Tebuconazole
+목적·대상: Enforcement / Plant products / 원래 판정: Yes
+출처: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0035
+원문 검증: Repository transcription; full 2022 article retrieval was unsuccessful. Primary web index also exposes the Thiamethoxam comment.
+EFSA 원문 코멘트:
+JMPR did not establish residue definitions for risk assessment covering the TDMs.
+모델에 추가할 영어 요약:
+(추가하지 않음)
+한국어 설명:
+코멘트는 TDM을 포함한 위해평가 정의가 JMPR에서 설정되지 않았다는 내용이다. 현재 예시의 식물 집행용 Yes를 설명하는 근거로 사용하지 않는다.
+주의:
+이전의 이성질체 대응 설명을 EFSA 코멘트 요약으로 재사용하지 않는다.
+
+평가 2023 / 순서 3 / 2022-22-02 / Thiamethoxam
+목적·대상: Enforcement / Animal products / 원래 판정: Yes
+출처: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0128
+원문 검증: Repository transcription; full 2022 article retrieval was unsuccessful. Primary web index also exposes the Thiamethoxam comment.
+EFSA 원문 코멘트:
+Considering that clothianidin and thiamethoxam have different toxicological reference values, at EU level the residue definitions for plant products and products from ruminants and pigs were derived as clothianidin and thiamethoxam separately. Since also JMPR derived separated Codex MRL proposals for clothianidin and thiamethoxam, these residue definitions can be considered comparable with the definitions derived by the JMPR.
+No residue definition was derived for poultry products during the MRL review since poultry were not expected to be exposed to significant residues of clothianidin or thiamethoxam. Nevertheless, in the reasoned opinion on the MRL review, EFSA considered the residue definitions proposed by JMPR consistent with the findings of the metabolism studies available (EFSA, 2014r). This conclusion is still considered valid.
+모델에 추가할 영어 요약:
+EFSA regards the definitions as comparable because EU and JMPR address clothianidin and thiamethoxam separately. For poultry, EFSA also considers the JMPR definitions consistent with available metabolism studies despite no EU definition being proposed during the MRL review.
+한국어 설명:
+EFSA는 EU와 JMPR이 clothianidin과 thiamethoxam을 별도로 다루므로 비교 가능하다고 설명한다. 가금류도 EU MRL review에서 정의가 제안되지 않았지만 JMPR 정의는 이용 가능한 대사시험과 일관된다고 본다.
+주의:
+JMPR의 별도 제안과 가금류 평가 내용은 이번에는 실제 EFSA 코멘트에서 가져온 정보다.
+
+평가 2023 / 순서 4 / 2022-10-03 / Fipronil
+목적·대상: Risk assessment / Plant products / 원래 판정: No
+출처: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0053
+원문 검증: Repository transcription; full 2022 article retrieval was unsuccessful. Primary web index also exposes the Thiamethoxam comment.
+EFSA 원문 코멘트:
+Fipronil sulfone metabolite (MB46136) Fipronil desulfinyl metabolite (MB46513) Fipronil sulfide metabolite (MB45950) The enforcement residue definitions derived by the JMPR and the EU peer review/MRL review are comparable. The risk assessment residue definition derived by the JMPR is wider than the EU risk assessment residue definition. It includes the sum of fipronil, the desulfinyl metabolite (MB46513), the sulfone metabolite (MB46136) and the sulfide metabolite (MB45950).
+New metabolism studies, investigating the metabolic pathway of fipronil following foliar treatments were evaluated by the JMPR 2021 (cabbage potato, rice, cotton, sunflower) which have not been available for the EU assessments. These studies, however, were not the reason to amend the residue definition for risk assessment as derived by the JMPR in 2002. The studies confirmed the presence of photometabolite of fipronil (desulfinyl metabolite (MB46513)) following foliar treatment.
+The sulfide metabolite (MB45950), also included in the risk assessment residue definitions, was present in rice straw (9.3–16.8%) following seed/foliar treatment, but generally not detected or present at low levels in other commodities. The sulfide metabolite (MB45950) was present also in goat matrices (up to 12% TRR).
+Overall, the JMPR concluded that metabolites MB46513 and MB45950 could make a significant contribution to the overall consumer exposure when compared with estimates for the sum of fipronil and fipronil-sulfone and therefore included these compounds in the risk assessment residue definition. The EU pesticides peer review derived the risk assessment and enforcement residue definitions for the representative use, i.e.
+seed treatment; the photodegradation product of fipronil-desulfinyl metabolite (MB46513) was not included in the residue definitions as unlikely to occur in seed treatments or soil incorporation. However, because of concern that the desulfinyl metabolite forms as a result of photodegradation, it was proposed that treated seed must be kept in the dark prior to use. The MRL review confirmed the residue definitions derived by the EU pesticides peer review.
+The risk assessment residue definition derived by the JMPR is adequate to account for the potential metabolites of fipronil in plant commodities (from seed/soil and foliar applications) and in animal matrices. The exposure assessment performed according to this residue definition is expected to be protective for consumers. The JMPR also evaluated hydrolysis studies submitted to investigate the effect of processing on the nature of fipronil, MB46136 and MB46153.
+Fipronil under sterilisation conditions slightly degraded for 5.5% AR to fipronil-amide (toxicity covered by fipronil). Fipronil sulfone (MB46136) also degraded under sterilisation conditions only and for 8.4% AR to RPA105320 (fipronil-sulfone-amide). Fipronil-desulfinyl was the most unstable and under sterilisation conditions formed two major degradation products: MB46400 (10.5% AR) and fipronil-carboxamide (25.9% AR; RPA105048).
+For the estimation of consumer exposure to these degradation products the JMPR proposed to apply the TTC (Cramer Class III threshold of 1.5 μg/kg bw per day).
+모델에 추가할 영어 요약:
+EFSA states that the JMPR risk-assessment definition is broader than the EU definition. It additionally accounts for MB46513 and MB45950, which can contribute to exposure beyond fipronil and its sulfone metabolite.
+한국어 설명:
+EFSA는 JMPR 위해평가 정의가 EU보다 넓고, fipronil과 sulfone 이외의 노출에 기여할 수 있는 MB46513과 MB45950도 반영한다고 설명한다.
+주의:
+집행용은 비교 가능하다는 같은 코멘트의 별도 문장과 혼동하지 않는다.
+
+평가 2024 / 순서 1 / 2023-12-04 / Difenoconazole
+목적·대상: Risk assessment / Animal products / 원래 판정: No
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0077
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+For the plant commodities, for which Codex MRL proposals are under discussion, the residue definitions established by JMPR and at EU level are comparable, except the fact that the EU also set residue definitions for risk assessment comprising the TDMs.
+모델에 추가할 영어 요약:
+(추가하지 않음)
+한국어 설명:
+코멘트는 식물성 품목의 대응과 EU의 추가 TDM 위해평가 정의를 다룬다. 동물성 위해평가인 현재 행의 No에 대한 직접 설명으로 사용하지 않는다.
+주의:
+식물 코멘트를 동물 행으로 확대하지 않는다. 표의 동물 정의 자체를 비교한 기존 설명도 EFSA 코멘트로 둔갑시키지 않는다.
+
+평가 2024 / 순서 2 / 2023-08-03 / Bifenthrin
+목적·대상: Risk assessment / Plant products / 원래 판정: Yes
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0049
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+–
+모델에 추가할 영어 요약:
+(추가하지 않음)
+한국어 설명:
+해당 비교표의 Conclusion, comments는 대시(–)다. 코멘트 기반 판정 근거를 추가하지 않는다.
+주의:
+다른 연도·다른 EFSA 보고서의 설명으로 빈칸을 보충하지 않는다.
+
+평가 2024 / 순서 3 / 2023-23-01 / Fenazaquin
+목적·대상: Enforcement / Plant products / 원래 판정: Yes
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0154
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+The EU and JMPR enforcement residue definitions for plants are nearly identical, covering only parent fenazaquin. In the EU, for risk assessment, a second residue definition was established for metabolite TBPE. Overall, EU residue definitions for both enforcement and risk assessment for plants are restricted to fruit crops while JMPR derived a global enforcement residue definition. Furthermore, the risk assessment RD for plants derived by JMPR was not used for the risk assessment of pulses and leafy vegetables, as it was derived from metabolism studies in two crop groups (cereals and fruit). Hence requests for setting CXLs for pulses and mint were rejected. For animals there is a slight difference in the residue definition for enforcement and RA, since EFSA is proposing fenazaquin only (for ruminants), while JMPR proposes a wider RD which includes also metabolites, i.e. tautomeric forms of 4‐hydroxyquinazoline (only for risk assessment) and 2‐hydroxy‐fenazaquin acid (for enforcement and risk assessment). The RMS informed EFSA that during the renewal of the approval, the residue definitions for plant products (enforcement and risk assessment) are confirmed (still restricted to fruits). The previous tentative residue definition for leafy vegetables is no longer supported by the RMS. The residue definitions for ruminants are also confirmed during the renewal, but the RMS highlighted that the representative uses do not include feed items and therefore they are not required.
+모델에 추가할 영어 요약:
+EFSA describes the plant enforcement definitions as nearly identical because both cover parent fenazaquin alone. It nevertheless notes that EU plant definitions are restricted to fruit crops while JMPR has a global enforcement definition, so comparability does not establish equal crop coverage.
+한국어 설명:
+EFSA는 식물 집행용 정의가 모화합물 fenazaquin만 포함해 거의 같다고 설명한다. 동시에 EU는 과실류로 제한되고 JMPR은 전반적 집행 정의이므로 작물 적용 범위까지 같다는 뜻은 아니다.
+주의:
+원문이 명시한 적용 범위 차이를 요약에서 삭제하지 않는다.
+
+평가 2024 / 순서 4 / 2023-16-02 / Emamectin benzoate
+목적·대상: Enforcement / Animal products / 원래 판정: No
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC10466198/#efs28111-tbl-0105
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+The residue definitions derived by JMPR refer to the main component of emamectin, i.e. emamectin B1a. The RD is expressed as benzoate while the EU residue definition is expressed as free base. The EU considered the residue fat soluble. For re‐calculation of the CXLs to match with the EU RD the CXL needs to be multiplied with a factor of 0.89. The EU definition for risk assessment includes additional components of the a.s. (which is a mixture of B1a and B1b) and metabolites. In the MRL review, conversion factors for risk assessment could be derived for each metabolism group of commodities.
+모델에 추가할 영어 요약:
+EFSA identifies a reporting-basis difference: JMPR uses emamectin B1a benzoate, whereas the EU uses the free base. EFSA specifies a 0.89 conversion factor when recalculating CXLs to the EU definition.
+한국어 설명:
+EFSA는 JMPR의 benzoate와 EU의 유리염기 표현 기준 차이를 설명하고, EU 정의에 맞춰 CXL을 다시 계산할 때 환산계수 0.89를 제시한다.
+주의:
+0.89는 이전 재구성 설명과 달리 실제 EFSA 코멘트에서 확인되는 값이다.
+
+평가 2025 / 순서 1 / 2024-08-03 / Diflubenzuron
+목적·대상: Risk assessment / Plant products / 원래 판정: No
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0045
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+At EU level, metabolism studies were available for fruits and mushrooms; JMPR had studies available for maize, soybean, apple, cabbage, cotton, orange, mushrooms, rice, wheat and beans, which were assessed in its previous assessments (JMPR 2002, 2011). For the current assessment, no new metabolism studies were reported It would be desirable that JMPR in its assessment discusses the relevance of the metabolism studies and the appropriateness of the current residue definitions for the new uses assessed For the commodity under discussion in this CCPR meeting (i.e. tea), the EU and Codex enforcement and risk assessment residue definitions are identical. However, in the EU, an additional residue definition was established, encompassing 4‐chloroaniline (PCA) a genotoxic carcinogen metabolite (EFSA). At EU level no metabolism studies are available for leafy crops to cover the Codex MRL proposal for tea
+모델에 추가할 영어 요약:
+EFSA notes an additional EU definition for PCA and missing leafy-crop metabolism data. The same comment describes the tea definitions as identical, so it is qualified context for the broader difference, not an unqualified statement that every plant definition differs.
+한국어 설명:
+EFSA는 EU의 추가 PCA 정의와 잎채소 대사자료 부족을 언급한다. 같은 코멘트는 차의 정의가 동일하다고도 하므로 모든 식물 정의가 다르다는 단정으로 요약하지 않는다.
+주의:
+No와 단순 일치하는 문장만 골라 쓰지 않는다. 차(tea)에 대한 동일성 진술과 추가 PCA 정의를 함께 보존한다.
+
+평가 2025 / 순서 2 / 2024-25-02 / Tetraniliprole
+목적·대상: Enforcement / Animal products / 원래 판정: Yes
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0158
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+The JMPR evaluated tetraniliprole for residue definitions and dietary risk assessment. In plant metabolism studies, tetraniliprole was the predominant component across the investigated crops. Although other metabolites were identified, tetraniliprole was considered the marker compound for the enforcement residue definition. Notably, tetraniliprole‐N‐methyl‐quinazolinone was detected in plant matrices and processed commodities and therefore included in the RA‐RD alongside with tetraniliprole (see CCPR 2023 for detailed assessment) For livestock assessment (which is not relevant for the current CXL proposal), EFSA disagreed with JMPR proposal for the residue definition in animal commodities (EFSA, 2023f)
+모델에 추가할 영어 요약:
+(추가하지 않음)
+한국어 설명:
+코멘트는 식물 잔류정의와 동물 평가 제안에 대한 EFSA의 이견을 다룬다. EU 기본 법적 정의와 비교한 현재 동물 집행용 Yes를 직접 설명하지 않는다.
+주의:
+동물 제안에 대한 이견을 기본 법적 정의와의 비교 판정에 그대로 적용하지 않는다. 원래 Yes 라벨은 유지한다.
+
+평가 2025 / 순서 3 / 2024-23-04 / Cyflumetofen
+목적·대상: Risk assessment / Animal products / 원래 판정: Yes
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0144
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+Plant commodities: Metabolism of cyflumetofen was investigated in fruit crops (mandarin, apple and eggplant) at EU and JMPR level (JMPR 2014). Cyflumetofen constituted the major portion of total radioactive residue (TRR), ranging from 67% to 84% TRR initially and 44%–65% TRR after 30 days on fruits, and 77%–87% TRR initially and 44%–81% TRR after 30 days on leaves. Among identified metabolites, only 2‐(trifluoromethyl) benzoic acid (metabolite B‐1) (free and conjugated), exceeded 10% TRR (up to 15% and 16% TRR, free and conjugated, respectively, in eggplant fruits), and AB‐6 at 10% TRR in eggplant leaves The current residue definitions at EU and JMPR levels are similar During EU MRL review, the lack of metabolism studies in leafy crops was considered acceptable only for hops, assuming that the metabolic pattern is similar to eggplant leaves at 14 PHI and field trials on hops. However, it was highlighted that a metabolism study on leafy would be desirable to confirm this assumption Under the current evaluation, JMPR received new GAPs for hops, tea and coffee beans. As JMPR noted that no metabolism studies exist for leafy crops and pulses/oilseeds, essential for hops, tea and coffee beans uses, JMPR re‐evaluated the metabolism studies submitted in 2014. JMPR concluded that the metabolism observed in apple and mandarin tree leaves can be considered representative for tea leaves, as both are permanent woody crops. Metabolism in hops was found to be sufficiently addressed by the metabolism studies in eggplants (leaves), mandarin and apple tree leaves. For coffee beans, JMPR considered the metabolism studies in fruit being sufficiently representative, as coffee berries are categorised as fruits Overall, the previously derived residue definitions were confirmed for the additional commodities under assessment The approach used by JMPR to extrapolate the results of metabolism studies in fruit crops to coffee beans is not fully in line with the EU practices and with the requirements described in the FAO manual. Risk management discussion is therefore recommended to decide whether the approach is acceptable Processed commodities: In standard hydrolysis studies, cyflumetofen was found to degrade to B‐1 (44–75% AR) and AB‐1 (32–49% AR) under boiling/brewing and sterilisation conditions These findings suggest that the setting of a separate residue definition for processed products should be considered, as previously suggested in the MRL review (EFSA, 2021f) Animal commodities: The RDs for enforcement derived by JMPR and at EU level are different: At EU level, it was therefore decided not to include metabolite B‐1 in the enforcement residue definition for animal products, since this metabolite is not specific for cyflumetofen (it can be also formed from flutolanil and fluopyram and any of their metabolites containing the 2‐trifluoromethylbenzyl moiety)
+모델에 추가할 영어 요약:
+(추가하지 않음)
+한국어 설명:
+유사하다는 문장은 식물 코멘트 문맥에 있다. 동물 코멘트는 집행용 정의의 차이를 다루므로 현재 동물 위해평가 Yes의 직접 근거로 사용하지 않는다.
+주의:
+식물 문맥의 유사성 또는 동물 집행용의 차이를 동물 위해평가로 옮기지 않는다.
+
+평가 2025 / 순서 4 / 2024-29-01 / Fluazinam
+목적·대상: Enforcement / Plant products / 원래 판정: Yes
+출처: https://pmc.ncbi.nlm.nih.gov/articles/PMC11255603/#efs28841-tbl-0184
+원문 검증: Compared with primary article XML mirrored by Europe PMC
+EFSA 원문 코멘트:
+Plant products: In 2023, JMPR noted that as the WHO core assessment group could not conclude on Health based guidance values for fluazinam, a decision on the residue definition for risk assessment could not be made Animal products: In 2018, JMPR decided that due to deficiencies of the livestock metabolism studies (lack of stability of residues in muscle samples (hen and goat) and the changes observed in the HPLC profiles for hen liver and egg) residue definitions for animal commodities could not be recommended In 2023, no new information was provided to JMPR
+모델에 추가할 영어 요약:
+(추가하지 않음)
+한국어 설명:
+코멘트는 식물 위해평가 정의의 미결정과 동물성 정의의 자료 부족을 다룬다. 현재 식물 집행용 Yes의 직접 설명은 없다.
+주의:
+이전의 원물·가공품 해석은 정의를 보고 재구성한 것이므로 이번 코멘트 기반 근거에는 넣지 않는다.

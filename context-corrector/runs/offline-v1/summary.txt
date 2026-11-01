@@ -1,0 +1,12 @@
+Offline contextual correction pilot
+Selected C: 0.01
+API calls: 0
+validation_GPT_score_50: 90/100, accuracy 90.00%, macro-F1 0.89149
+validation_context_corrector: 94/100, accuracy 94.00%, macro-F1 0.93316
+Corrected: 4 / New errors: 0
+
+Exploratory reuse of already-inspected validation cases, not a fresh confirmatory test
+Only 100 development cases; 5-fold CV is internal model selection, not independent replication
+A supervised conventional classifier is added; this is no longer a GPT-only system
+No validation-label-driven model selection or threshold retuning; final classifier uses its default decision rule
+No improvement is assumed or guaranteed
