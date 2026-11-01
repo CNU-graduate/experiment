@@ -29,6 +29,13 @@ def error_policy(exc):
 
 def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
     system = SYSTEM if system_prompt is None else system_prompt
+    explained = config.get('response_format', 'label') == 'explanation'
+    if config.get('response_format', 'label') not in ('label', 'explanation'):
+        raise ValueError('Unsupported response_format')
+    if explained:
+        from .explanation import parse_explanation
+        if system_prompt is None:
+            raise ValueError('Explanation output requires an explicit system prompt')
     if not isinstance(system, str) or not system.strip():
         raise ValueError('A nonempty system prompt is required')
     if any(c in ('P1', 'P2') for c in config['conditions']) and system_prompt is None:
@@ -135,7 +142,15 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None):
                             raw, usage, response_id = (mock_call(row['provider'], row['prompt']) if mode == 'mock'
                                 else clients[row['provider']].call(row['prompt']))
                             call.update(response=raw, usage=canonical(usage), response_id=response_id)
-                            row.update(prediction=parse_label(raw), status='success', error='')
+                            if explained:
+                                if mode == 'mock':
+                                    raw = 'Mock explanation; not model evidence.\nFinal label: ' + raw
+                                    call['response'] = raw
+                                label, explanation = parse_explanation(raw)
+                                row.update(prediction=label, explanation=explanation, response=raw,
+                                           status='success', error='')
+                            else:
+                                row.update(prediction=parse_label(raw), status='success', error='')
                             call['status'] = 'success'
                         except Exception as exc:
                             # Do not persist SDK exception messages: they may contain request secrets.

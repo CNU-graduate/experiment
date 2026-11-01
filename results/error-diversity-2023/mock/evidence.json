@@ -1,0 +1,457 @@
+{
+  "examples_per_group": 10,
+  "available_errors": {
+    "No": 68,
+    "Yes": 98
+  },
+  "B": {
+    "target": "actual No, P0 predicted Yes",
+    "pairs": [
+      {
+        "target_error": {
+          "id": "2018-01-04",
+          "substance": "Captan",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Captan",
+          "EU": "EFSA (2014c):\nSum of THPI, 3‐OH THPI and 5‐OH THPI, expressed as captan",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2021-31-04",
+          "substance": "Flonicamid",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Flonicamid and the\nmetabolite TFNA‐AM, expressed as flonicamid",
+          "EU": "Sum of flonicamid and TFNA‐AM, expressed as flonicamid",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-03-01",
+          "substance": "2,4‐D",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Sum of 2,4‐D",
+          "EU": "2,4‐D (sum of 2,4‐D, its salts, its esters and its conjugates,\nexpressed as 2,4‐D)",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2019-04-01",
+          "substance": "Propamocarb",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Propamocarb",
+          "EU": "EU Reg. 2018/832:\nPropamocarb (Sum of propamocarb and its salts, expressed as propamocarb)",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-05-04",
+          "substance": "Propiconazole",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Propiconazole plus all metabolites convertible to 2,4‐dichloro‐benzoic acid, expressed as propiconazole",
+          "EU": "Propiconazole, CGA91305 (free and conjugated) and CGA118244 (The way the residue definition will be expressed is pending upon the requested toxicological profile on CGA91305 and CGA118244)\nCGA71019 (1,2,4‐triazole)",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2021-30-04",
+          "substance": "Acetochlor",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of compounds hydrolysable with base to 2‐ethyl‐6‐methylaniline (EMA) and 2‐(1‐hydroxyethyl)‐6‐methylaniline (HEMA), expressed in terms of acetochlor\nThe residue is not fat soluble",
+          "EU": "Peer review (EFSA, 2011d): All compounds forming EMA and HEMA on hydrolysis plus N‐oxamic acid, expressed as acetochlor (applicable to cereal grains and rotational crops).\nNo residue definition was proposed for animal commodities.",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-06-01",
+          "substance": "Abamectin",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Avermectin B1a",
+          "EU": "Reg. 396/2005:\nAbamectin (sum of avermectin B1a, avermectin B1b and delta‐8,9 isomer of avermectin B1a, expressed as avermectin B1a)\nPeer review:\nSum of avermectin B1a, avermectin B1a 8,9‐Z isomer, and avermectin B1b, expressed as avermectin B1a",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2022-34-01",
+          "substance": "Metconazole",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Metconazole (sum of cis and trans isomer)",
+          "EU": "Reg. 396/2005 (implementing MRL review): Metconazole (sum of isomers) Peer review (EFSA, 2006b): Metconazole (sum of isomers)",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-06-03",
+          "substance": "Abamectin",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Avermectin B1a",
+          "EU": "Sum of avermectin B1a, avermectin B1a 8,9‐Z isomer, and avermectin B1b, expressed as avermectin B1a",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2021-21-03",
+          "substance": "Metaflumizone",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Metaflumizone, sum of metaflumizone E‐isomer and metaflumizone Z‐isomer.",
+          "EU": "Peer review (EFSA, 2013m): Sum of metaflumizone E‐isomer and metaflumizone Z‐isomer",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-07-02",
+          "substance": "Fenpropimorph",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fenpropimorph and fenpropimorph carboxylic acid (BF 421‐2), expressed as fenpropimorph (p. 161 of JMPR report)\nor\n2‐methyl‐2‐{4‐[2‐methyl‐3‐(cis‐2,6‐dimethylmorpholin‐4‐yl)propyl]phenyl} propionic acid (p. 431 of JMPR report)\nThe residue is not fat soluble",
+          "EU": "Reg. 396/2005:\nFenpropimorph carboxylic acid (BF 421‐2) expressed as fenpropimorph\nMRL review: Sum of fenpropimorph and fenpropimorph carboxylic acid (BF 421‐2), expressed as fenpropimorph (sum of isomers)\nThe residue is fat soluble",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2022-28-02",
+          "substance": "Trinexapac-ethyl",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Trinexapac-acid The residue is not fat soluble",
+          "EU": "Reg. 396/2005 (implementing MRL review): Trinexapac (sum of trinexapac (acid) and its salts, expressed as trinexapac) The residue is not fat soluble",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-08-05",
+          "substance": "Tebuconazole",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Tebuconazole",
+          "EU": "1. Tebuconazole + hydroxy‐tebuconazole and their conjugates (sum of enantiomers) expressed as tebuconazole (provisional)\n2. TDMs\n(harmonised for all active substances of the triazole chemical class, provisional)",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2018-18-04",
+          "substance": "Acetamiprid",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of acetamiprid and metabolite IM‐2‐1 (N‐desmethyl‐acetamiprid), expressed as acetamiprid",
+          "EU": "Sum of acetamiprid and metabolite IM‐2‐1 (N‐desmethyl‐acetamiprid), expressed as acetamiprid",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-09-04",
+          "substance": "Fenpyroximate",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fenpyroximate, 2‐hydroxymethyl‐2‐propyl (E)‐4‐[(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐yl)‐methylenaminooxymethyl]benzoate(Fen‐OH), (E)‐4‐[(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐yl)methyleneaminooxymethyl]benzoic acid(M‐3), and (E)‐4‐{[(1,3‐dimethyl‐5‐(4‐hydroxyphenoxy)pyrazol‐4‐yl]methyleneaminooxymethyl}benzoic acid (M‐5, free and its conjugates), expressed as fenpyroximate",
+          "EU": "Sum of fenpyroximate, Fen‐OH, M‐3 and their Z‐isomers (M‐1), expressed as fenpyroximate",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2018-07-04",
+          "substance": "Fenpropimorph",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fenpropimorph and fenpropimorph carboxylic acid (BF 421‐2), expressed as fenpropimorph (p. 161 of JMPR report)\nor\n2‐methyl‐2‐{4‐[2‐methyl‐3‐(cis‐2,6‐dimethylmorpholin‐4‐yl)propyl]phenyl} propionic acid (p. 461 of JMPR report, Annex 1)",
+          "EU": "Sum of fenpropimorph and fenpropimorph carboxylic acid (BF 421‐2), expressed as fenpropimorph (sum of isomers)",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-10-01",
+          "substance": "Imidacloprid",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Sum of imidacloprid and its metabolites containing the 6‐chloropyridinyl moiety, expressed as imidacloprid.\nThe residue is not fat soluble",
+          "EU": "EU Reg. 396/2005: imidacloprid\nPeer review: No definitive decision on the residue definition for enforcement was taken.\nSCFCAH October 2009: Sum of imidacloprid, imidacloprid‐5‐ hydroxy and imidacloprid‐olefin, expressed as imidacloprid",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2019-01-01",
+          "substance": "Diquat",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Diquat cation",
+          "EU": "EU Reg. 2016/1002: Diquat\nMRL Review (EFSA, 2015a):\nSum of diquat and its salts, expressed as diquat\nPeer‐review (EFSA, 2015r): Diquat",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-11-02",
+          "substance": "Cyprodinil",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Cyprodinil\nThe residue is fat soluble",
+          "EU": "Milk: Cyprodinil (sum of cyprodinil and CGA 304075 (free and conjugated), expressed as cyprodinil)\nOther animal products:\nCyprodinil (sum of cyprodinil and CGA 304075 (free), expressed as cyprodinil)\nThe residue is fat soluble",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2018-26-02",
+          "substance": "Flonicamid",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Flonicamid and the metabolite TFNA‐AM, expressed as flonicamid.\nThe residue is not fat soluble",
+          "EU": "Sum of flonicamid and TFNA‐AM, expressed as flonicamid\nThe residue is not fat soluble",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      }
+    ]
+  },
+  "C": {
+    "target": "actual Yes, P0 predicted No",
+    "pairs": [
+      {
+        "target_error": {
+          "id": "2018-06-02",
+          "substance": "Abamectin",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Avermectin B1a\nThe residue is fat soluble",
+          "EU": "EU Reg. 396/2005: Abamectin B1a\nPeer review: Not necessary – covered by legal provisions in force for abamectin from veterinary uses\nThe residue is fat soluble",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2018-18-02",
+          "substance": "Acetamiprid",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Sum of acetamiprid and metabolite IM‐2‐1 (N‐desmethyl‐acetamiprid), expressed as acetamiprid.\nThe residue is not fat soluble",
+          "EU": "Reg. 396/2005: Acetamiprid\nPeer review: Metabolite IM‐2‐1 (N‐desmethyl‐acetamiprid), expressed as acetamiprid\nThe residue is not fat soluble",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-09-03",
+          "substance": "Fenpyroximate",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Sum of parent fenpyroximate and its tert‐butyl (Z)‐α‐(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐ylmethyleneamino‐oxy)‐p‐toluate (its Z‐isomer, M‐1), expressed as fenpyroximate",
+          "EU": "Sum of fenpyroximate and its Z‐isomer, expressed as fenpyroximate (fruit crops, pulses and oilseeds, only)",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2019-19-03",
+          "substance": "Fluxapyroxad",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Plants:\nSum of fluxapyroxad and 3‐difluoromethyl)‐ N‐(3’,4’,5’‐trifluoro[1,1’‐biphenyl]‐2‐yl)‐1H‐pyrazole‐4‐carboxamide (M700F008) and 3‐(difluoromethyl)‐1‐(ß‐D‐glucopyranosyl)‐N‐(3’,4’,5’‐triflurobipheny‐2‐yl)‐1H‐pyrzaole‐4‐\ncarboxamide (M700F048) and expressed as parent equivalents",
+          "EU": "Plants: Fluxapyroxad",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-10-03",
+          "substance": "Imidacloprid",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Sum of imidacloprid and its metabolites containing the 6‐chloropyridinyl moiety, expressed as imidacloprid",
+          "EU": "Peer review: Sum of imidacloprid and its metabolites containing the 6‐chloropyridinyl moiety, all expressed as imidacloprid",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2022-02-03",
+          "substance": "Imazalil",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Imazalil (free and conjugated)",
+          "EU": "MRL review (EFSA, 2017e): Sum of imazalil and R014821, expressed as imazalil (tentative) Peer review (EFSA, 2010b): Sum of imazalil and R014821, expressed as imazalil",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-14-02",
+          "substance": "Azoxystrobin",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Azoxystrobin\nThe residue is fat soluble",
+          "EU": "Azoxystrobin\nPo/w lower than 3:\nThe residue is not fat soluble",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2018-33-02",
+          "substance": "Isoprothiolane",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Sum of isoprothiolane and 2‐(1,3‐dithiolan‐2‐ylidene)‐3‐oxo‐3‐(propan‐2‐yloxy)propanoic acid (M‐2), expressed as isoprothiolane\nThe residue is not fat soluble",
+          "EU": "Reg. 396/2005: Isoprothiolane\nThe residue is not fat soluble",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-14-03",
+          "substance": "Azoxystrobin",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Azoxystrobin",
+          "EU": "Azoxystrobin",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2018-12-03",
+          "substance": "Trifloxystrobin",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Sum of trifloxystrobin and [(E,E)‐methoxyimino‐{2‐[1‐(3‐ trifluoromethylphenyl)ethylideneaminooxymethyl]phenyl}acetic acid] (CGA 321113), expressed as trifloxystrobin",
+          "EU": "Primary Crops: Sum of trifloxystrobin, its 3 isomers (CGA 357262, CGA 357261 and CGA 331409) and CGA 321113 (M5), expressed as trifloxystrobin.\nProcessed commodities: Sum of trifloxystrobin and CGA 321113 (M5), expressed as trifloxystrobin.\nThe RD RA was amended with EFSA (2017i).",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-15-01",
+          "substance": "Prothioconazole",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Prothioconazole‐desthio",
+          "EU": "Prothioconazole‐desthio (sum of isomers)",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2018-01-01",
+          "substance": "Captan",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Captan",
+          "EU": "Reg. 396/2005:\nSum of captan and THPI, expressed as captan\nWine grapes: captan",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-17-01",
+          "substance": "Fluopyram",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Fluopyram",
+          "EU": "Fluopyram",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2018-28-01",
+          "substance": "Quinclorac",
+          "purpose": "Enforcement",
+          "commodity": "Plant products",
+          "JMPR": "Quinclorac plus quinclorac conjugates",
+          "EU": "Quinclorac",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-17-02",
+          "substance": "Fluopyram",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fluopyram and 2‐(trifluoromethyl) benzamide (M25), expressed as fluopyram\nThe residue is not fat soluble",
+          "EU": "Sum fluopyram, fluopyram‐benzamide (M25), expressed\nas fluopyram\nThe residue is not fat soluble",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2021-17-02",
+          "substance": "Boscalid",
+          "purpose": "Enforcement",
+          "commodity": "Animal products",
+          "JMPR": "Boscalid\nThe residue is fat soluble",
+          "EU": "Reg. 396/2005: Sum of boscalid and M 510F01, including its conjugates expressed as boscalid\nThe residue is fat soluble",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-17-04",
+          "substance": "Fluopyram",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fluopyram, 2‐(trifluoromethyl)benzamide (M25) and the combined residues of N‐{(E)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide (M02) and N‐{(Z)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide (M03), all expressed as fluopyram.",
+          "EU": "Sum fluopyram, fluopyram‐benzamide (M25), fluopyram‐E/Z‐olefine (M02/M03), expressed as fluopyram",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2019-09-04",
+          "substance": "Fenpyroximate",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fenpyroximate, 2‐hydroxymethyl‐2‐propyl (E)‐4‐[(1,3‐dimethyl‐5‐ phenoxypyrazol‐4‐yl)‐methylenaminooxymethyl]benzoate (Fen‐OH), and (E)‐4‐[(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐yl)methyleneaminooxymethyl]benzoic acid (M‐3), expressed as fenpyroximate",
+          "EU": "(EFSA, 2015c) Sum of fenpyroximate, Fen‐OH, M‐3 and their Z‐isomers (M‐1), expressed as fenpyroximate",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-18-03",
+          "substance": "Acetamiprid",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Acetamiprid",
+          "EU": "Acetamiprid",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2018-17-03",
+          "substance": "Fluopyram",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Fluopyram",
+          "EU": "Sum fluopyram and fluopyram‐benzamide (M25), expressed\nas fluopyram",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      }
+    ]
+  }
+}

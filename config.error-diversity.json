@@ -1,0 +1,8 @@
+{
+  "examples_per_direction": 10,
+  "model": "openai/gpt-6-sol",
+  "api_backend": "openrouter",
+  "timeout_seconds": 120,
+  "prediction_tokens": 1000,
+  "optimizer_tokens": 6000
+}
