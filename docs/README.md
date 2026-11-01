@@ -1,5 +1,7 @@
 # 실행 안내
 
+- [GPT E6 예시 고정 + 판정 보완 지침 3회 실험](RUN_E6_GUIDED.md)
+
 - [추가 zero-shot 2회 실행·재개·집계](RUN_ZERO_SHOT_REPEATS.txt)
 - [전체 실험 설정 및 실행 방법](../README.md)
 - [전문가 검토 웹사이트](../website/README.md): 실험 실행과 별도 도구

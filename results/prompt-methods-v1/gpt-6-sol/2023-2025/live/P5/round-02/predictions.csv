@@ -1,0 +1,631 @@
+﻿actual,condition,error,id,mode,model,prediction,prompt_sha256,provider,response,seed,status,year
+Yes,P5,,2023-02-01,live,openai/gpt-6-sol,Yes,cd1414d9037d18b80394a9b59f27123c39bd2fbdf099598b832acac114ae02fe,openai,"For enforcement in plant products, both the JMPR and EU residue definitions specify diazinon. They are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-03-01,live,openai/gpt-6-sol,Yes,9e4ba7307bb18fd75fa682bcd3af59549aa7be17b950fcca5965905c2468fa25,openai,"For enforcement in plant products, both definitions cover dimethoate and omethoate as separate residues rather than a combined sum. They are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-03-02,live,openai/gpt-6-sol,Yes,6a92219d739222c55e045df5b502a9d26c9b0c3c1c23855b2bc8a4a280585349,openai,"For enforcement in animal products, both definitions cover dimethoate and omethoate and require them to be considered separately. Both also state that the residue is not fat soluble. The definitions are comparable.
+
+Final label: Yes",,success,2023
+No,P5,,2023-03-03,live,openai/gpt-6-sol,No,5766792788093aa0026e7c9817e91cfc2cbd1f0396407f10668e2c452c0c9902,openai,"For risk assessment in plant products, the EU definition includes dimethoate and omethoate, while the JMPR definitions apply different multipliers to omethoate for long-term and acute exposure. The definitions are therefore not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-04-01,live,openai/gpt-6-sol,Yes,80a7f87aab22c740326a87f9a9da1ad8964fde843eda61739e19bb30d037386a,openai,"For enforcement in plant products, both definitions measure dithiocarbamate residues and express them as CS2. The EU definition includes mancozeb, and the JMPR definition covers total dithiocarbamates.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-04-02,live,openai/gpt-6-sol,Yes,b8b3afe0e767ab0a30fe75411a95c610b4bfad192c92b00daf320d31d2268970,openai,"For enforcement of mancozeb residues in animal products, both definitions measure dithiocarbamates and express the result as CS₂. Both also state that the residue is not fat soluble. They are comparable for the stated purpose.
+
+Final label: Yes",,success,2023
+No,P5,,2023-04-03,live,openai/gpt-6-sol,No,a77af3af6ec301f71d01431d06d9f0b457316ca2efe66dc2c93c2eaa866464a4,openai,"For plant-product risk assessment, both definitions include mancozeb and ETU. However, the EU lists them as separate residues, while the JMPR defines a combined residue (“mancozeb plus ETU”). They are therefore not comparable as stated.
+
+Final label: No",,success,2023
+No,P5,,2023-04-04,live,openai/gpt-6-sol,Yes,b30bf398ee35db0494229585b9685f847812998925298c334b7ff71a41a3f936,openai,"For risk assessment in animal products, both definitions include mancozeb and ethylenethiourea (ETU). The EU lists them separately, while JMPR joins them with “plus”; the components are the same.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-05-01,live,openai/gpt-6-sol,Yes,541ab06ba21ac5eaa090421b2ce369826187e85ea4756b999334b1b1ae4c8b8b,openai,"For enforcement in plant products, both supplied residue definitions name Methidathion. The note about EU reviews does not specify a different residue definition.
+
+Final label: Yes",,success,2023
+No,P5,,2023-06-01,live,openai/gpt-6-sol,No,084c46f17652bac265545e2e5ace622530af809f14eb077ebaf018dc5faa4d62,openai,"For enforcement in plant products, the JMPR definition covers quintozene only, while the EU definition also includes pentachloro-aniline, expressed as quintozene. The definitions are therefore not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-07-01,live,openai/gpt-6-sol,Yes,9381b61ab1ecd0db95d4c918aefaf49fa48c7685daa59ed2c4fe54ddea3af01a,openai,"JMPR covers metalaxyl as the sum of enantiomers. The EU definition also covers metalaxyl and metalaxyl-M as a sum of isomers. For enforcement in plant products, both definitions cover the same isomers.
+
+Final label: Yes",,success,2023
+No,P5,,2023-07-02,live,openai/gpt-6-sol,No,e5095eb0391a1afb603fb19eb66991e412bb49712114ca52706c59a9bcfd7e2e,openai,"Both definitions include metalaxyl isomers, but they define the metabolites differently. JMPR specifically includes M8, whose stated structure does not contain the 2,6-dimethylaniline moiety required by the EU definition. They are therefore not comparable for enforcement in animal products.
+
+Final label: No",,success,2023
+No,P5,,2023-07-03,live,openai/gpt-6-sol,No,29d9dc66f7aaa3d742df70e180500388c1c1084d04dd30efddb4e1b1f1b3799c,openai,"For risk assessment in plant products, both definitions include metalaxyl isomers, but the JMPR definition also includes the metabolite M8 (free and conjugated). The EU definition does not include M8, so the definitions are not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-07-04,live,openai/gpt-6-sol,No,c795bbdd0940eabecd3ebfdfd49480d1e3d3a50d896745b2110d752c7856d1eb,openai,"The definitions both include metalaxyl and express the residue as metalaxyl, but they cover different metabolites. The EU definition includes metabolites containing the 2,6-dimethylaniline moiety, while the JMPR definition lists specific metabolites, including M8, which has a hydroxymethyl group in place of one methyl group. They are therefore not comparable for risk assessment in animal products.
+
+Final label: No",,success,2023
+Yes,P5,,2023-09-01,live,openai/gpt-6-sol,Yes,755b8df20c8341de228b340482e9477632bf1187132b24afed1f1e0c3bf1f082,openai,"For plant products, both the JMPR and EU enforcement residue definitions specify famoxadone. They are comparable for the stated purpose.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-09-03,live,openai/gpt-6-sol,Yes,9fe0c95ad3374717ef73fc742ab2811fe013be117b805ed4916a6c747fa3ca2e,openai,"Both definitions identify famoxadone for plant products. The supplied information shows no difference relevant to risk assessment.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-09-04,live,openai/gpt-6-sol,Yes,51e060d1ad3c5566a91cb00f0eb947ea8dee8ffe7b1b14655aab21273ea2bdac,openai,"Both definitions identify famoxadone for animal products. The EU peer review did not propose a poultry definition, but its MRL review lists famoxadone; no different residue components are supplied.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-10-01,live,openai/gpt-6-sol,Yes,5747e79e1170106d75fef261ed7b0d7028798ea6570aaa53739eba61f0d3b9e2,openai,"For enforcement in plant products, both the supplied JMPR and EU residue definitions are fludioxonil. They are comparable.
+
+Final label: Yes",,success,2023
+No,P5,,2023-10-03,live,openai/gpt-6-sol,No,761b469237200703574a64b782d190a41b769358b25b4dc2d54c662de5b2a20a,openai,"For plant-product risk assessment, the EU definition includes fludioxonil and metabolites oxidised to the specified acid, while the JMPR definition includes only fludioxonil. They are not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-10-04,live,openai/gpt-6-sol,Yes,8936d7efffb4e1dc5b3c836b0d6d2907d32dfc79c3931fd8c79f090a2bcc630a,openai,"Both definitions include fludioxonil and its metabolites, use the same 2,2-difluoro-benzo[1,3]dioxole-4-carboxylic component, and express residues as fludioxonil. For risk assessment in animal products, they are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-11-01,live,openai/gpt-6-sol,Yes,42b8b88e2d9f1fc60cd6abfb133d5fa2a942c68854cac53b505eb4134574d832,openai,"For enforcement in plant products, both the JMPR and EU definitions cover the sum of indoxacarb and its R-enantiomer. They are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-11-02,live,openai/gpt-6-sol,Yes,fc0df600c245b0ca5553c4f76c1a3adee1939c54557780eefe55deef9673135a,openai,"For enforcement in animal products, the EU regulatory definition and JMPR both specify the sum of indoxacarb and its R-enantiomer. The broader EU peer-review definition does not change that match.
+
+Final label: Yes",,success,2023
+No,P5,,2023-11-04,live,openai/gpt-6-sol,No,b75dbaca44c0933b10702f6cee23629ffb3fdd9ce080ad55f19a2da90338a3c4,openai,"For risk assessment of animal products, the definitions differ. JMPR includes indoxacarb, its R-enantiomer and IN-JT333. The EU peer-review definition includes additional metabolites for poultry and milk, while its ruminant definition does not include IN-JT333. They are therefore not comparable for the stated commodity.
+
+Final label: No",,success,2023
+Yes,P5,,2023-12-01,live,openai/gpt-6-sol,Yes,cc18b924c9d59dc964a19802c301b12254a1322d3fe8c52d72a4e36c525c1016,openai,"For enforcement in plant products, both the JMPR and EU residue definitions are difenoconazole. They are comparable.
+
+Final label: Yes",,success,2023
+No,P5,,2023-12-02,live,openai/gpt-6-sol,No,c03222af9bc47ad25dac084ca111e45c86ddc7565f32953eb11ca8cb6f1ffb56,openai,"For enforcement in animal products, the EU regulation lists difenoconazole, while the JMPR definition includes both difenoconazole and its alcohol metabolite. The supplied definitions also differ on fat solubility. They are not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-12-03,live,openai/gpt-6-sol,No,6b629b8c4b361597f0949dfdb0e57ca856762f25ca88a0c14ad615f781ab636a,openai,"For risk assessment in plant products, JMPR includes only difenoconazole, while the EU definition also includes TA, TLA, TAA, and 1,2,4-triazole. The definitions are therefore not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-13-02,live,openai/gpt-6-sol,No,a0af575277a5b658dfdbeaabde80b1b05d9d9fd8618558e6bec97ccfb367d5e4,openai,"Both definitions name azoxystrobin for enforcement, but they conflict on whether the residue is fat soluble. That distinction matters for animal products, so they are not comparable for the stated commodity.
+
+Final label: No",,success,2023
+Yes,P5,,2023-13-03,live,openai/gpt-6-sol,Yes,8af4e0ace9762113135c8c41f6fd25a3a8fbef4e7cd53dcccd9fc4584628fab1,openai,"For risk assessment of plant products, both supplied definitions identify the residue as azoxystrobin. The EU references do not indicate a different residue definition.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-13-04,live,openai/gpt-6-sol,Yes,3fe2213e1604d6d835ee2c2930be5499fc58aec6d3779cc9834a6800512b2d3f,openai,"For risk assessment of animal products, both supplied definitions name azoxystrobin. The EU’s “provisional” qualifier does not identify a different residue component.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-14-01,live,openai/gpt-6-sol,Yes,af36cbee5c2ec7fc7dcec1436d5f51069bcd823b1eb2c0ed6221312abd177797,openai,"For enforcement in plant products, both the JMPR and EU residue definitions specify chlorantraniliprole. They are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-14-02,live,openai/gpt-6-sol,Yes,4a10dbaaaa13e242b0b33b09e958df12037a5ee8bf636219f91e4fa0ed69bfdd,openai,"For enforcement in animal products, both definitions identify chlorantraniliprole as the residue and state that it is fat soluble. They are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-14-03,live,openai/gpt-6-sol,Yes,34216703a21ab5b4ca94323df580e1e26615df264c27d5f31215ed91c83f2ac2,openai,"The JMPR definition is chlorantraniliprole. The EU entry also identifies chlorantraniliprole; the review references do not change the stated residue. They are therefore comparable for risk assessment in plant products.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-15-01,live,openai/gpt-6-sol,Yes,e10786577c9bad6eef4ea2031b62b274d10bb53c9d64e5b7b89819471554fb36,openai,"For enforcement in plant products, both definitions cover mandipropamid. The EU wording clarifies that it includes its constituent isomers in any ratio; the supplied JMPR definition does not specify a different scope.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-15-04,live,openai/gpt-6-sol,Yes,20af21c2671a47c8c173e9e0063cb2d715a7fff04fe12a325e13634b2d2dcbc3,openai,"For risk assessment in animal products, both the JMPR and the supplied EU peer-review residue definitions are mandipropamid. They are comparable.
+
+Final label: Yes",,success,2023
+No,P5,,2023-16-01,live,openai/gpt-6-sol,No,14299c2bbcefbe13d440ce68a4852ecab3bbdd596acb0f74e5f5e98938170e5b,openai,"For enforcement in plant products, the JMPR definition covers emamectin B1a benzoate. The EU definition covers emamectin B1a and its salts and expresses residues as the free base. Although benzoate is included among the EU salts, the definitions differ in scope and reporting basis.
+
+Final label: No",,success,2023
+No,P5,,2023-16-03,live,openai/gpt-6-sol,No,848be842de5208bb459867baf07eee9bee2c7792c20a276915df5831ac48eb65,openai,"For risk assessment of plant products, JMPR defines the residue as emamectin B1a benzoate alone. The EU definition also includes emamectin B1b and several photo-metabolites, some with weighting factors. The definitions are therefore not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-16-04,live,openai/gpt-6-sol,Yes,96e28bf74c96411fb2a5cc6ae1250d7b155502d35b1e4cc47fba51eeaa49d69e,openai,"The EU definition includes emamectin B1a and its salts; JMPR’s emamectin B1a benzoate is one of those salts. The EU expresses residues as the free base, but that difference in expression does not make the definitions incomparable for risk assessment.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-17-01,live,openai/gpt-6-sol,Yes,ff9d7e09eed8f016b4f325f6c6d76daffc6f5474348d0816952f3a66303db15b,openai,"For enforcement in plant products, both definitions identify the residue as flutriafol. They are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-17-02,live,openai/gpt-6-sol,No,f386ed6fc0bd8c13882799414f8761772898170ad8c4644904d9c94baad236d9,openai,"Both identify flutriafol, but the EU definition for animal products is tentative or still open, and the two sources give conflicting fat-solubility classifications. They are therefore not comparable for enforcement of animal products.
+
+Final label: No",,success,2023
+No,P5,,2023-17-03,live,openai/gpt-6-sol,No,66d66a0683fd3d19e035a370cd73d7fd895e48f927da44db7a04b9d4a1874502,openai,"For plant products, the supplied EU peer-review definition for risk assessment includes flutriafol and TDMs, while the JMPR definition includes only flutriafol. They are therefore not comparable for the stated purpose.
+
+Final label: No",,success,2023
+Yes,P5,,2023-18-02,live,openai/gpt-6-sol,Yes,2d0f5661be0585704aa4434dee89ce3a517d41d7dc768820a48780cf4c6fd476,openai,"For enforcement in animal products, both definitions cover sulfoxaflor. The EU specifies the sum of its isomers, while JMPR names sulfoxaflor without a narrower qualification. Both also state that the residue is not fat soluble. The definitions are comparable.
+
+Final label: Yes",,success,2023
+No,P5,,2023-18-03,live,openai/gpt-6-sol,No,d3696fa8ed2ed253c65a31dfc309b4ce470b496534b084f2c6eefbcf9da3f8bd,openai,"For risk assessment in plant products, the supplied EU definition includes sulfoxaflor and metabolite X11719474, while the JMPR definition includes only sulfoxaflor. The EU’s narrower definition is conditional, so the supplied definitions are not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-18-04,live,openai/gpt-6-sol,No,802df14898219710373bb827f7a9e18a21ce498f532222a395238c12ef5c0e11,openai,"For risk assessment in animal products, the JMPR definition is sulfoxaflor alone. The supplied EU definition includes sulfoxaflor and metabolite X11719474; its possible change to parent-only is conditional, not established here. The definitions are therefore not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-19-01,live,openai/gpt-6-sol,Yes,f4f4894c25a40659ce6a34899100dcb2418ae81f33ed66fd6c1fef2568b2ddd0,openai,"For enforcement in plant products, both the JMPR and EU residue definitions specify benzovindiflupyr. They are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-19-02,live,openai/gpt-6-sol,No,e11efe1800ab763ee6f85cdf2addacc1533f969770bf5453c2033b8fa48c9302,openai,"Both definitions identify benzovindiflupyr, but JMPR classifies the residue as fat soluble while the EU classifies it as not fat soluble. That difference matters for enforcement in animal products, so the definitions are not comparable for the stated purpose.
+
+Final label: No",,success,2023
+Yes,P5,,2023-19-03,live,openai/gpt-6-sol,Yes,ead72dd6a9eabd839ae070f68e57f1062a058a58cbd6a65013939d17be7b353a,openai,"For risk assessment in plant products, both supplied entries identify benzovindiflupyr. The EU entry adds a peer-review citation but does not name a different residue component.
+
+Final label: Yes",,success,2023
+No,P5,,2023-19-04,live,openai/gpt-6-sol,No,13b719fc1fa42257c917f005e28f73802ddbab3757a6f8f334e8b108469f2429,openai,"For risk assessment in animal products, the EU definition includes benzovindiflupyr and a mono-hydroxylated metabolite (free and conjugated), while the JMPR definition includes only benzovindiflupyr. They are therefore not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-20-01,live,openai/gpt-6-sol,No,e5390bcb3ac00e48e761eba5c0a839314b99309c2c451344dded4070a0dd4f35,openai,"For enforcement in plant products, JMPR defines the residue as flupyradifurone only. The supplied EU definition also lists difluoroacetic acid (DFA), so the definitions do not cover the same residues.
+
+Final label: No",,success,2023
+No,P5,,2023-20-03,live,openai/gpt-6-sol,No,6344134878e9985e29b644813d1875242b693734626da140a9615d24d8e1f4fa,openai,"For risk assessment in plant products, the EU definition includes flupyradifurone and DFA, while the JMPR definition also includes 6-CNA. The residue definitions therefore differ.
+
+Final label: No",,success,2023
+Yes,P5,,2023-20-04,live,openai/gpt-6-sol,Yes,a9814739ea10152b1218b5346737c4b8aac5e30fe721d820ea3dd22ce59afe4b,openai,"Both definitions include flupyradifurone and difluoroacetic acid (DFA), with the sum expressed as the parent compound. They are comparable for risk assessment of animal products.
+
+Final label: Yes",,success,2023
+No,P5,,2023-21-01,live,openai/gpt-6-sol,No,f29148ee6f1e5417164ec6badb6c44b7c06ce35aca3904125c1cdae2d21211fa,openai,"The EU definition covers quinclorac alone, while the JMPR definition also includes quinclorac conjugates. For enforcement in plant products, the definitions therefore measure different residue scopes.
+
+Final label: No",,success,2023
+No,P5,,2023-22-02,live,openai/gpt-6-sol,No,09f39e3e2ca630ce0709da962023d279d8194841ec0ea249442084e3cc9c899e,openai,"For animal products, JMPR defines the enforcement residue as the sum of spiromesifen and spiromesifen-enol. The supplied EU information says no residue definition was proposed for this context, so the definitions are not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-22-03,live,openai/gpt-6-sol,No,db1e0bc1d0499ff433dfd8bb27d787d86cb2491ddfda079fba47af1ddae65a7e,openai,"For risk assessment of plant products, the JMPR definition includes the hydroxymethyl residue in free and conjugated forms. The EU definition for primary crops other than leafy crops, as well as the cited peer-review definition, includes only spiromesifen and spiromesifen-enol. The definitions therefore do not cover the same residues across the stated commodity.
+
+Final label: No",,success,2023
+No,P5,,2023-23-02,live,openai/gpt-6-sol,No,633fbe98d902b7dfde1881a88ebddf48f91c27ccaccb96b989639c7a7130bb14,openai,"For enforcement in animal products, the EU definition lists fenazaquin for ruminants, while the JMPR definition includes both fenazaquin and 2-hydroxy-fenazaquin acid. The residue definitions therefore differ.
+
+Final label: No",,success,2023
+No,P5,,2023-23-03,live,openai/gpt-6-sol,No,5c4e82715c7370b9d2feeac1ce9f182b4a106fde229f205fbc07b8ab1a66f328,openai,"For risk assessment, the EU definition includes fenazaquin and TBPE for the listed plant crops. The supplied JMPR definition names fenazaquin alone and says it was not used for leafy crops. The definitions are therefore not comparable for plant products.
+
+Final label: No",,success,2023
+Yes,P5,,2023-24-01,live,openai/gpt-6-sol,Yes,33caad4e76ab7cd528f193e12734d35d8c828aa1644bbe8f44e038e414d4cf0a,openai,"For plant products and enforcement, both supplied definitions identify afidopyropen. The EU’s default MRL status and lack of review do not indicate a different residue definition, so they are comparable on the supplied information.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-24-02,live,openai/gpt-6-sol,Yes,32e74b1a0b806aa92a47386977bd1e795f0329c6099467478160905878747adc,openai,"For enforcement in animal products, both supplied residue definitions identify afidopyropen. The EU’s default MRL status and unspecified fat solubility do not indicate a different residue definition.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-25-01,live,openai/gpt-6-sol,Yes,5dec8f5eb36937bd2f511a7e87e485ba02b8d351d4df729bf998317576bf8190,openai,"Both enforcement definitions cover pyridate and its hydrolysis product (CL 9673, also called pyridafol), including its conjugates, with the sum expressed as pyridate. They are comparable for plant products.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-25-02,live,openai/gpt-6-sol,Yes,749154aeb92edb014362809b685ade948e9c83c6ac22fdd36a70c6d84ec7c6c2,openai,"For enforcement, the EU regulatory definition and JMPR both cover pyridate and pyridafol (CL 9673), including its conjugates, expressed as pyridate. The separate EU peer-review definition is narrower, but it is not the stated regulatory enforcement definition.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-26-02,live,openai/gpt-6-sol,Yes,77db1bad3c09770b082c36f83980d8c674c4bacbec41d20c00fcb8526ac8119f,openai,"For enforcement in animal products, both definitions identify triflumuron and state that the residue is fat soluble. They are comparable.
+
+Final label: Yes",,success,2023
+No,P5,,2023-26-03,live,openai/gpt-6-sol,No,186151319a2a998c99256900d710dd3723011f6270fc5b9be42a4b20fb43257d,openai,"For risk assessment in plant products, the definitions differ. The EU uses triflumuron alone for fruit crops and a sum including M07 and M08 for certain other crops. JMPR uses a sum including M02 and assesses M07 separately. They are therefore not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-27-01,live,openai/gpt-6-sol,Yes,9e92de4f32b8deaca10b6380b13036b0942b2fdb05472d7858fd89c7d87a7ba8,openai,"For enforcement in plant products, both definitions identify mefentrifluconazole. The EU peer-review entry also gives its code name, BAS 750 F, but does not indicate a different residue definition.
+
+Final label: Yes",,success,2023
+No,P5,,2023-27-02,live,openai/gpt-6-sol,No,b2ab72bb2c58a2352cacea7848372b7a30ba82f3c175576d0067018b8198f1b0,openai,"For enforcement in animal products, the JMPR definition includes free and conjugated mefentrifluconazole, while the EU definition lists mefentrifluconazole without conjugates. They also differ on whether the residue is fat soluble. The definitions are therefore not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-27-03,live,openai/gpt-6-sol,No,ee0a1a9dbcaa6bc8a0757ef05856effd4b7b010398445d0750c3d172163d161e,openai,"For risk assessment in plant products, JMPR includes only mefentrifluconazole. The EU definition also calls for separate assessment of triazole derivative metabolites (TDMs), so the definitions are not comparable.
+
+Final label: No",,success,2023
+No,P5,,2023-27-04,live,openai/gpt-6-sol,No,b48c6a5159ec1ce3097e152e5828130bb252914a0e686e574e47e3217d9490e1,openai,"For risk assessment of animal products, the definitions differ. JMPR combines mefentrifluconazole and M750F022, including their conjugates, into one residue. The EU lists mefentrifluconazole alone for ruminants and assesses TDMs separately for both ruminants and poultry. They are therefore not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-28-01,live,openai/gpt-6-sol,Yes,c15cce0468c51785afee8d652d25af5aea6da1c89698653f3fbe5aa15e0420f8,openai,"For enforcement in plant products, both supplied definitions name tetraniliprole. The EU entry refers to default MRLs and a residue definition but lists no different residue components, so the definitions are comparable on the supplied information.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-33-01,live,openai/gpt-6-sol,Yes,57865195cf72047476f0ebfb6e66816a7de97eb76d72e30d1cb5855f01e6c318,openai,"For enforcement in plant products, both supplied definitions identify inpyrfluxam. The EU entry also gives its code, S-2399; the default-MRL note does not specify a different residue definition. They are comparable.
+
+Final label: Yes",,success,2023
+No,P5,,2023-33-02,live,openai/gpt-6-sol,No,bf7f22c530bde54a209be8800f76172b1e234d76cb301c09cf687e4b00fdc502,openai,"For enforcement in animal products, the EU definition names inpyrfluxam, while the JMPR definition also includes free or conjugated 1′‐CH2OH‐S‐2840, expressed as inpyrfluxam. They therefore cover different residues and are not comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2023-34-01,live,openai/gpt-6-sol,Yes,b503e4f04f2e6c95bee0a472a0395e8d719a6b160e1f1c18a3c4fe5a2981666b,openai,"For enforcement in plant products, the JMPR definition is isoflucypram. The supplied EU definition also identifies isoflucypram, so the definitions are comparable.
+
+Final label: Yes",,success,2023
+Yes,P5,,2023-34-02,live,openai/gpt-6-sol,No,e58e014b11fa975025d0e9289db80730751303bb1ebd68743398e4be72d84445,openai,"Both definitions name isoflucypram, but JMPR specifies that the residue is fat-soluble while the EU information does not. For enforcement in animal products, that difference prevents confirming that the definitions are comparable.
+
+Final label: No",,success,2023
+Yes,P5,,2024-01-01,live,openai/gpt-6-sol,Yes,6f3ab4c22c68c45abcfeea4a3cbb5133db67f8b05971b8136ed44c2d3e5181e0,openai,"For enforcement in plant products, both definitions cover the sum of pyrethrins 1 and 2, cinerins 1 and 2, and jasmolins 1 and 2. The JMPR calibration requirement does not change which residues are included, so the definitions are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-01-02,live,openai/gpt-6-sol,No,6cee19aec9707c7ad4a1864ee66f0fdcf97565aaf540dd0bd2d5d739475852ed,openai,"Both definitions identify the same six pyrethrin components, but they disagree on whether the residue is fat soluble. That distinction matters for enforcement in animal products, so the definitions are not comparable for the stated purpose and commodity.
+
+Final label: No",,success,2024
+Yes,P5,,2024-01-03,live,openai/gpt-6-sol,Yes,0dcfc897e8a63d87377cd556fc50b3981afdc88c4cbe20420dd5a58ad57b2ebb,openai,"Both definitions sum the same six compounds: pyrethrins 1 and 2, cinerins 1 and 2, and jasmolins 1 and 2. The JMPR calibration detail does not change the components included, so the definitions are comparable for risk assessment of plant products.
+
+Final label: Yes",,success,2024
+No,P5,,2024-03-01,live,openai/gpt-6-sol,No,52cf4ca495ee7f014dfe0f64ae980da42ddf26c1545e3e9b85e6c0f3c11389a2,openai,"For enforcement in plant products, JMPR defines one residue as the sum of thiophanate-methyl and carbendazim, expressed as thiophanate-methyl. The EU lists separate residue definitions; its current carbendazim definition also includes benomyl. They are therefore not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-03-02,live,openai/gpt-6-sol,No,9d0914a05c7a7da63bf62991c5106aeba92aa65aaf21c7301a87635cce49a97d,openai,"For enforcement in animal products, the JMPR definition includes thiophanate-methyl, carbendazim, and free and conjugated 5-OH-MBC, expressed as thiophanate-methyl. The EU definition in Reg. 396/2005 includes only carbendazim and thiophanate-methyl, expressed as carbendazim. The components and expression differ, so the definitions are not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-03-03,live,openai/gpt-6-sol,No,7f3992c42660effff956abdc06f56e1837a3049b973cdaea769eab3e8431613b,openai,"For plant-product risk assessment, the JMPR definition is thiophanate-methyl alone. The supplied EU Art. 43 assessment also lists carbendazim and several metabolites, with the final residue definition pending their toxicological assessment. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-05-03,live,openai/gpt-6-sol,No,10c93f138ba171903e1d0db103f2f6f37bf86c84941dce7f39b325d41bf3d62b,openai,"For risk assessment in plant products, JMPR defines the residue as iprodione alone. The supplied EU peer-review definition also includes RP 30228, RP 32490, and a separate sum of 3,5-dichloroaniline and its conjugates. The definitions are therefore not comparable for this purpose.
+
+Final label: No",,success,2024
+Yes,P5,,2024-06-01,live,openai/gpt-6-sol,Yes,7753ffc15af7e9036ae81ed15134010e5c3982048885fce7a4251e0dff9d36c8,openai,"For enforcement in plant products, both definitions cover cypermethrin as a sum of isomers, including isomer mixtures such as zeta-cypermethrin. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-06-02,live,openai/gpt-6-sol,Yes,0abd32878923404dc687cb7f859aec87796df34f5b72b81d8bb9852af80db641,openai,"Both enforcement definitions cover cypermethrin as the sum of its isomers, including mixtures of those isomers. Both also identify the residue as fat soluble, so they are comparable for animal products.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-06-03,live,openai/gpt-6-sol,Yes,ef64f4380e180ab30f5757dc8b0f7f150d41840001b7b5671ed073e58f9306e8,openai,"For risk assessment in plant products, both definitions cover cypermethrin and its constituent isomers as a sum. The pending EU decision on common metabolites does not establish a different residue definition in the supplied information.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-07-01,live,openai/gpt-6-sol,Yes,4e2a4afe1d431a03e02b1a0ac47779a96c723bfadab9cda7bec3715e3731c2e5,openai,"For enforcement in plant products, both definitions cover permethrin as a sum of isomers. JMPR specifies the cis- and trans-isomers, which is consistent with the EU wording. The absence of an EU peer or MRL review does not change the stated residue definition.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-07-02,live,openai/gpt-6-sol,Yes,64888f7316b2cffe7d770516b3b9663c4cf249014d34008b14fc33f6e464f5a1,openai,"Both enforcement definitions cover permethrin isomers: JMPR specifies the cis- and trans-isomers, while the EU says “sum of isomers.” The differing fat-solubility notes do not change the stated residue components.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-08-01,live,openai/gpt-6-sol,Yes,b3cf89706d03254178b6d2bbe3ccd51ad58c9c58a25309ba3b7f4c1b4c27950f,openai,"For enforcement of residues in plant products, both the JMPR definition and the EU regulatory definition name diflubenzuron. The EU peer-review note specifies fruit crops after foliar application, but does not indicate a different residue definition.
+
+Final label: Yes",,success,2024
+No,P5,,2024-08-02,live,openai/gpt-6-sol,No,735e7c2c8db346b8e3bbe7e97c1cd41fb4c403dd6b9bc02bdb694c1b7aef8192,openai,"For enforcement in animal products, JMPR includes diflubenzuron only, while the EU definition also includes 4-chlorophenylurea, expressed as diflubenzuron. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-08-04,live,openai/gpt-6-sol,No,bafb32579e98073715b3d6b1aafb0660f505a0a047aca714b6a490895f61e231,openai,"For risk assessment in animal products, the EU definition includes diflubenzuron plus CPU, PCA, and provisionally PCAA. The JMPR definition includes only diflubenzuron, so the definitions are not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-09-01,live,openai/gpt-6-sol,No,af5dcb2f12183ce3fc64bedd2e1012052ea1a4c3b95dd24cae449d4da1fbda9c,openai,"For enforcement in plant products, the EU definition specifies cis-deltamethrin, while the JMPR definition also includes its trans- and alpha-R-isomers. They therefore cover different residues.
+
+Final label: No",,success,2024
+No,P5,,2024-09-02,live,openai/gpt-6-sol,No,c92561a0ce9220653d0ec340ff7aad34dd7f0b50ea80cb3cbef34fc7002ff213,openai,"For enforcement in animal products, the EU definition covers cis-deltamethrin, while the JMPR definition also includes its trans- and alpha-R-isomers. Both are fat-soluble, but the different compounds covered make the definitions not comparable.
+
+Final label: No",,success,2024
+Yes,P5,,2024-09-03,live,openai/gpt-6-sol,Yes,80d2c51a9f279336a5aff1647234dbaf47baecd7b8d3fd07b2fe3f8130fda856,openai,"Both definitions cover the sum of deltamethrin and its trans- and alpha-R-isomers for plant products. The EU definition is marked tentative, but its components match the JMPR definition.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-09-04,live,openai/gpt-6-sol,Yes,6e95e27f8afdf5e13e46d5b6e39e5cc8c02fbb54aed6096d73383c71cbbeab93,openai,"Both definitions include deltamethrin and its trans- and alpha-R isomers. The EU’s “tentative” designation does not change which residues are included, so the definitions are comparable for risk assessment in animal products.
+
+Final label: Yes",,success,2024
+No,P5,,2024-11-01,live,openai/gpt-6-sol,No,5cbe4a21d12f7ff4234698ff348615d7bb65c00cb894a4d93571f5f52ee06dc2,openai,"For enforcement in plant products, the definitions cover different residues: JMPR includes carbosulfan and carbofuran, while the EU includes carbofuran and 3-OH carbofuran. They also express the sums as different substances. They are therefore not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-11-03,live,openai/gpt-6-sol,No,c374af8c3a1f6d4471a7d814de1b30c0f13732d10b88360ea90f375ca11eeed2,openai,"For risk assessment in plant products, the definitions are not comparable. JMPR includes carbosulfan and two phenol metabolites, applies different factors for long-term and acute exposure, and expresses the result as carbosulfan. The EU definition instead includes 3-keto carbofuran and its conjugates and expresses the result as carbofuran.
+
+Final label: No",,success,2024
+Yes,P5,,2024-12-01,live,openai/gpt-6-sol,Yes,2d91296232a0e8d9f28411e7507a50b1dd4c23835f6402b668cd304f823fabc1,openai,"For enforcement in plant products, both definitions cover propiconazole. The EU explicitly specifies the sum of its isomers, while the JMPR definition names propiconazole without a different residue component. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-12-02,live,openai/gpt-6-sol,No,f863e8c9b8590c181992b33dec66600b727e5bccbbec908d7808360226a10968,openai,"For animal products, the supplied EU information includes an enforcement definition of CGA91305 (free and conjugated), whereas JMPR defines the residue as propiconazole. Those are different residues, even though the EU also lists propiconazole (sum of isomers) under Reg. 396/2005.
+
+Final label: No",,success,2024
+No,P5,,2024-12-03,live,openai/gpt-6-sol,No,72d388d0d79ebc43ee7c9aeeaf455de88cdcc583561f0d1040c3b20251de8c5e,openai,"For risk assessment in plant products, JMPR includes propiconazole and all metabolites convertible to 2,4-dichlorobenzoic acid. The EU definition lists propiconazole, CGA 118244 and TDMs as distinct components, with the treatment of CGA 118244 conditional on toxicological data. The supplied definitions therefore do not describe the same residue scope.
+
+Final label: No",,success,2024
+No,P5,,2024-12-04,live,openai/gpt-6-sol,No,8dabedd96fa58c288e6e544dff55589e59ec1bebbba0d1d9a79a0771c08c7c71,openai,"For risk assessment in animal products, the JMPR definition covers propiconazole and all metabolites convertible to 2,4-dichlorobenzoic acid. The EU definition instead lists specific metabolites and CGA71019, with part of its expression pending toxicological information. The supplied definitions therefore do not cover the same residues.
+
+Final label: No",,success,2024
+Yes,P5,,2024-13-01,live,openai/gpt-6-sol,Yes,dda408f8764237037a9ba56a15b9a0769fe871f84524e2eb28333d28aec66b4c,openai,"For enforcement in plant products, both supplied residue definitions identify Boscalid. They are comparable for the stated purpose and commodity.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-14-01,live,openai/gpt-6-sol,Yes,df647881926bd5ec5b3d881d37b806d52c5bff877708636d05559e3114986493,openai,"For enforcement in plant products, both the JMPR and EU definitions specify difenoconazole. They are comparable.
+
+Final label: Yes",,success,2024
+No,P5,,2024-14-02,live,openai/gpt-6-sol,No,0c7eb3b4be85fb7db4995a85da99fadb38b284dfa186b52f02fb50f95420a8a7,openai,"For enforcement in animal products, the EU regulation defines the residue as difenoconazole, while JMPR includes both difenoconazole and CGA205375. The EU peer-review definition mentions CGA205375, but it is not the stated regulatory definition. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-14-04,live,openai/gpt-6-sol,No,c7505bf06354bcbc287c40d73ebe4463a74b99d1699cc52226e4a0ebbe9451bb,openai,"For animal products and risk assessment, JMPR includes difenoconazole and its alcohol metabolite (CGA205375). The supplied EU definition includes the alcohol metabolite and triazole-derived metabolites, but does not list difenoconazole itself. The definitions therefore cover different residues.
+
+Final label: No",,success,2024
+Yes,P5,,2024-15-01,live,openai/gpt-6-sol,Yes,018de6d5b1bd279c520df7b9862fb6bdd6c9d3ace5b8db6860239f8a5e613dac,openai,"For enforcement in plant products, the EU definition is clothianidin. The MRL review considers clothianidin separately from thiamethoxam, so it matches the JMPR definition.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-15-02,live,openai/gpt-6-sol,Yes,3ba788289a15270ab32cbc42a59187f4837ea0d173def837afe6d0aa19969ffc,openai,"For enforcement, the supplied EU definition under Reg. 396/2005 and the JMPR definition both identify clothianidin. The additional EU review notes and the difference in fat-solubility information do not change that match.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-15-03,live,openai/gpt-6-sol,Yes,912d707538c1ba5e6c88ff882014c9c0b68d15ac75bab74d8a4bfca9fc227cb9,openai,"For risk assessment in plant products, the EU definition considers clothianidin separately from thiamethoxam. Its clothianidin component therefore matches the JMPR definition.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-16-02,live,openai/gpt-6-sol,Yes,e284e6ca66b44161271964ef23c0a758978ccb72a5dca04964e22c70e9094789,openai,"For enforcement in animal products, both definitions include fluopyram and its M25 metabolite, expressed as fluopyram. They also agree that the residue is not fat soluble. The definitions are comparable.
+
+Final label: Yes",,success,2024
+No,P5,,2024-16-03,live,openai/gpt-6-sol,No,ed81229409632e817f6699123d27d657c1b5fe593c6303069600330102745830,openai,"For risk assessment in plant products, JMPR defines the residue as fluopyram alone. The EU definition also includes fluopyram-benzamide (M25), so the definitions are not comparable.
+
+Final label: No",,success,2024
+Yes,P5,,2024-16-04,live,openai/gpt-6-sol,Yes,3461d96801546bb7894eac0709e0397de95ee03168f498a994b87389b9e4bef8,openai,"For risk assessment in animal products, both definitions include fluopyram, its benzamide metabolite (M25), and the E/Z olefin metabolites (M02/M03), with the sum expressed as fluopyram. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-17-01,live,openai/gpt-6-sol,Yes,a29827cef1cd7b49f95b1e72cc81284bbdcfd1e24b28346f1969f8441bf9cad1,openai,"For enforcement in plant products, the JMPR definition is thiamethoxam. The EU information also identifies thiamethoxam and states that clothianidin is considered separately, so the definitions are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-17-02,live,openai/gpt-6-sol,No,8e735b8be9558622209bc4365be5f5755c1e17446df7a674923a8c8450785ee3,openai,"For enforcement in animal products, the EU regulation lists thiamethoxam alone, while the JMPR definition covers thiamethoxam and clothianidin separately. The EU review proposes that broader definition for ruminants and pigs, but not for poultry. They are therefore not comparable across animal products.
+
+Final label: No",,success,2024
+Yes,P5,,2024-17-03,live,openai/gpt-6-sol,Yes,260a97328318c66a06c9898877454ec8dbeb1ab33346be7e712c2eef3bfd1d6e,openai,"For risk assessment in plant products, the JMPR definition is thiamethoxam. The EU definition includes thiamethoxam and clothianidin but considers them separately, so its thiamethoxam component is comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-18-01,live,openai/gpt-6-sol,Yes,84f0bc8a43f465176bea5c282e819f0f39c59d9bf81eb5d690c2e918be2195c1,openai,"For enforcement in plant products, both the JMPR and EU residue definitions specify acetamiprid. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-18-02,live,openai/gpt-6-sol,Yes,1e5074823b7161bf22cc263d16008bc5f2fb15a8aac11f27580c3d5b8b299049,openai,"For enforcement in animal products, the EU Regulation and JMPR both define the residue as the sum of acetamiprid and N-desmethyl-acetamiprid, expressed as acetamiprid. The different peer-review definition does not change the stated EU regulatory definition.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-18-03,live,openai/gpt-6-sol,Yes,14fcb6978f56f5f5a8cd41499012fa8a8cf860e931d9900a81cb23bab94cdc83,openai,"For plant products and risk assessment, the supplied JMPR and EU definitions both specify acetamiprid. They are therefore comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-18-04,live,openai/gpt-6-sol,Yes,2f677f1e8a46c4e9b2a451dc9664d43f4c479f7a9505bab574c1f99642919772,openai,"Both definitions include acetamiprid and N-desmethyl-acetamiprid (IM-2-1), expressed as acetamiprid. They are therefore comparable for risk assessment of animal products.
+
+Final label: Yes",,success,2024
+No,P5,,2024-19-01,live,openai/gpt-6-sol,No,a66b34723f2f6900118b0496998da1bee447174133c0cccff3f172e651f9e3f0,openai,"For enforcement of plant products, the EU definition covers emamectin B1a and its salts, expressed as the free base. The JMPR definition specifies emamectin B1a benzoate. The supplied definitions therefore differ in both scope and expression.
+
+Final label: No",,success,2024
+No,P5,,2024-19-02,live,openai/gpt-6-sol,No,689a06d3958c97ea195e0546caf7f72d30c408668edab5c3c21a06ccdd9b9201,openai,"For enforcement in animal products, the EU definition covers emamectin B1a and its salts, expressed as the free base; the JMPR definition specifies emamectin B1a benzoate. They also give opposite fat-solubility classifications. On the supplied information, the definitions are not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-19-03,live,openai/gpt-6-sol,No,0471b78d2b82a0e40e7f002b683e6303f2933a271ed0b13fa6b7782a0cc392c2,openai,"For risk assessment in plant products, the EU definition includes emamectin B1a, B1b, and several photo-metabolites, with weighting factors for some metabolites. The JMPR definition includes only emamectin B1a benzoate. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-19-04,live,openai/gpt-6-sol,No,255f925d29f85608477234306be756382d71f9f3f253ee114b4f730250a8df58,openai,"The JMPR definition specifies emamectin B1a benzoate, while the EU definition covers emamectin B1a and its salts and expresses residues as the free base. Their scope and expression differ, so they are not comparable as stated for risk assessment.
+
+Final label: No",,success,2024
+Yes,P5,,2024-20-01,live,openai/gpt-6-sol,Yes,1561ce71b3c1d4cffbfd9e50e4756ec939b0bc3738651ee8cdc7bdf1759e91f2,openai,"For enforcement in plant products, both supplied residue definitions name dinotefuran. The absence of an EU peer review or MRL review does not change the stated definition.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-21-01,live,openai/gpt-6-sol,Yes,a9063c0008d4b3d70b04d4a3893588e0aa2213684c03461589e11d367c3152bf,openai,"For enforcement in plant products, both the JMPR and EU residue definitions are cyantraniliprole. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-21-02,live,openai/gpt-6-sol,Yes,68c3f1cc92e4bb86fd9b4495d685aedc9b2011f549e8faa8761d5fedada8d540,openai,"For enforcement in animal products, both definitions identify the residue as cyantraniliprole, and both state that it is not fat soluble. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-21-03,live,openai/gpt-6-sol,Yes,503a5bbb60ed9f7028d4f5c13ede6fd5227cc817ac15f0d91c63ddbba03c4cd8,openai,"Both definitions specify the sum of cyantraniliprole and IN‐J9Z38, expressed as cyantraniliprole, for processed commodities. They are comparable for the stated purpose.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-22-02,live,openai/gpt-6-sol,Yes,9fa0dce82076e3e0e92207cb5e3526358f9da60f61a5b448308356891bcf3070,openai,"For enforcement in animal products, both definitions cover imazapyr and state that the residue is not fat soluble. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-22-03,live,openai/gpt-6-sol,Yes,6755d5a031f36c1d076dce9ff5fd724913e722a736ea42870e6070aafefc1ec9,openai,"Both supplied residue definitions are imazapyr. The EU entry names specific crops, but it does not specify a different residue for risk assessment.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-22-04,live,openai/gpt-6-sol,No,82637680681ff32decd2c4a18e140fa8f228554d8e0e05eef5726dd9ed070d2a,openai,"Both entries name imazapyr, but neither supplies a residue definition for animal products. Matching substance names alone does not establish that the risk-assessment definitions are comparable.
+
+Final label: No",,success,2024
+Yes,P5,,2024-23-01,live,openai/gpt-6-sol,Yes,ba4cf1240c35c76c7bafec88e1bb20a6c7f540bb8451aa402ac1fe775711d187,openai,"For enforcement in plant products, both definitions refer to cyflumetofen. The EU explicitly includes its isomers, while the supplied JMPR definition does not specify a different residue component. They are comparable.
+
+Final label: Yes",,success,2024
+No,P5,,2024-23-02,live,openai/gpt-6-sol,No,6e1892d5b59f8c46e2648a6be54e71b5934f1cc02128336d297919046e5bab7a,openai,"For enforcement in animal products, the supplied EU definition under Regulation 396/2005 covers cyflumetofen isomers, while the JMPR definition also includes metabolite B-1. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+Yes,P5,,2024-23-03,live,openai/gpt-6-sol,Yes,b61232216da9d703f7989d07367b59076ac5dd9e0d97c7724563104719ac9219,openai,"Both definitions cover cyflumetofen and metabolite B-1, with the sum expressed as cyflumetofen. The EU explicitly specifies the sum of cyflumetofen isomers, but this does not indicate a substantive difference for the stated comparison.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-24-01,live,openai/gpt-6-sol,Yes,955d53dae7b71be4a2f28c3f34e411e49c2360709d9fab5a91b00c45108458d5,openai,"For enforcement in plant products, both the JMPR and EU residue definitions specify oxathiapiprolin. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-24-02,live,openai/gpt-6-sol,Yes,3f272978650e18dfa6cf6b2585d35be2e369aece93f6d462b3ba78bd45bc19c1,openai,"For enforcement in animal products, both JMPR and EU define the residue as oxathiapiprolin. Both also state that it is not fat soluble, so the definitions are comparable.
+
+Final label: Yes",,success,2024
+No,P5,,2024-24-03,live,openai/gpt-6-sol,No,d49181aa29d6f5e8c51c6357deb1ff31ff001315533a656c9ebd9540d2c987e6,openai,"For risk assessment in plant products, the EU definition lists oxathiapiprolin alone. The JMPR definition also includes two metabolites, expressed as parent equivalents. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-24-04,live,openai/gpt-6-sol,No,edd2dca7e59c50623cdbfaa751fc7dbb3496a5969d58781535fae74def217497,openai,"For risk assessment in animal products, the EU definition lists oxathiapiprolin alone. The JMPR definition also includes two metabolites, expressed as parent equivalents. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+Yes,P5,,2024-26-02,live,openai/gpt-6-sol,Yes,6fa122c9154169876be520de5312803da0b69f02b535d72f1d9d64f1192adc15,openai,"For enforcement in animal products, both definitions identify the residue as isoflucypram. JMPR’s note that it is fat soluble does not change the residue definition, so they are comparable.
+
+Final label: Yes",,success,2024
+No,P5,,2024-26-03,live,openai/gpt-6-sol,No,ccb9af8be828a3190c6a710550232305d728246773fb955abeb25d74fe952b3b,openai,"For risk assessment, the definitions are not comparable: the EU definition includes M06 and its conjugates, while the JMPR definition does not. The EU definition also applies only to cereals after foliar application, not plant products generally.
+
+Final label: No",,success,2024
+No,P5,,2024-26-04,live,openai/gpt-6-sol,No,e7ba0b7e707a93fa4cac03b6b8975c1b634624a101ed84577f732a7b3a2faa13,openai,"For animal-product risk assessment, both definitions include isoflucypram, M01, M02, and M11, with conjugates of M01 and M02. JMPR also includes M12, which is not in the supplied EU definition. The definitions are therefore not comparable.
+
+Final label: No",,success,2024
+Yes,P5,,2024-27-01,live,openai/gpt-6-sol,Yes,4a65265b71bbd0010a6682d187127c3b5f366e232cf55df31fdae6253e6ffd73,openai,"For enforcement in plant products, both the JMPR and EU definitions specify 1,4-dimethylnaphthalene. They are comparable.
+
+Final label: Yes",,success,2024
+No,P5,,2024-27-04,live,openai/gpt-6-sol,No,0cb28a5af9ea1cc216cdfcc43aee8eb8a62497f9fb48259293f8e300223609f5,openai,"Both definitions include 1,4-dimethylnaphthalene and free M23. For animal products and risk assessment, however, the EU definition includes conjugated M23 generally, while the JMPR definition specifies its glycine conjugate. The supplied information does not establish that these cover the same residues.
+
+Final label: No",,success,2024
+No,P5,,2024-31-02,live,openai/gpt-6-sol,No,35a937f37ac4519b147ce17a09beddcc7a6614f6bd800ceea19c771af7b851fa,openai,"For enforcement in animal products, the EU definition lists isotianil, while the JMPR definition includes isotianil and DCIT-acid, expressed as isotianil. Because they cover different residues, they are not comparable.
+
+Final label: No",,success,2024
+No,P5,,2024-32-03,live,openai/gpt-6-sol,Yes,34bc7efa04b0370b647509f07bdb774de505d3dc7dfc2c8dd79f8c53bc80cea5,openai,"Both definitions cover the mepiquat moiety in plant products. The EU expresses the residue as mepiquat chloride, while JMPR expresses it as the mepiquat cation; this is a difference in how the amount is reported, not in the residue covered. They are comparable for risk assessment.
+
+Final label: Yes",,success,2024
+No,P5,,2024-32-04,live,openai/gpt-6-sol,No,ec781bdb0e70ecc3ab9810ad4708c40af97f35d1910477560f0098f7601c11d9,openai,"Both definitions include mepiquat and 4-hydroxymepiquat, and their different expression bases could be converted. However, for animal products, JMPR explicitly includes conjugated 4-hydroxymepiquat, while the EU definition does not. They are therefore not comparable for risk assessment.
+
+Final label: No",,success,2024
+Yes,P5,,2024-33-01,live,openai/gpt-6-sol,Yes,1562bf921c4c186fd5d52d5a0fbf606eaaa8094de40ac787e4570164357aebe4,openai,"For enforcement in plant products, both the JMPR and EU definitions specify tricyclazole. They are comparable.
+
+Final label: Yes",,success,2024
+Yes,P5,,2024-33-02,live,openai/gpt-6-sol,Yes,87e7992cf15281767fbc7fc4c350f9faddc952bf3a2153a607d6e7c0c55e1063,openai,"For enforcement in animal products, both the JMPR and EU Regulation 396/2005 definitions identify the residue as tricyclazole. Both also state that it is not fat soluble. The EU peer review’s lack of a proposed definition does not change the supplied regulatory definition.
+
+Final label: Yes",,success,2024
+Yes,P5,,2025-03-01,live,openai/gpt-6-sol,Yes,925f8922855e887edc1ea8f6e1ab775ff11e9c372b1fea33d9f74ca90fcbeeb7,openai,"For enforcement in plant products, the JMPR definition is ethoxyquin, and the supplied EU default definition covers the parent compound, ethoxyquin. They are therefore comparable for the stated purpose and commodity. The note about the EU reviews does not change the stated default definition.
+
+Final label: Yes",,success,2025
+No,P5,,2025-04-02,live,openai/gpt-6-sol,No,25612c5652f680c5a9afe9dc98dede83dbce73d6673fbb2a3695341da786801c,openai,"For enforcement in animal products, JMPR defines the residue as folpet, while the EU defines it as phthalimide expressed as folpet. Expressing phthalimide as folpet does not make the measured residues the same, so the definitions are not comparable.
+
+Final label: No",,success,2025
+No,P5,,2025-04-04,live,openai/gpt-6-sol,No,c389dff6453c87f48fefe90d7aa106dec775bf91f191ef0a452f42de2c186667,openai,"For risk assessment in animal products, the EU definition covers phthalimide expressed as folpet. The JMPR definition instead lists folpet and phthalamic acid expressed as folpet, plus phthalic acid. The covered residues differ, so the definitions are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-05-01,live,openai/gpt-6-sol,Yes,2b11174ddfc12bc7c95cbe775ae78f7e2f59771ad0ba70b88a2795cec3c82ef7,openai,"For enforcement in plant products, both definitions identify maleic hydrazide. The EU definition does not specify additional forms, so the JMPR qualifier “free” does not create a stated difference.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-06-01,live,openai/gpt-6-sol,Yes,04f05e7e084a8255b236b3e6a0681bc882091c451f1672baa2e1bcee74c1689d,openai,"For enforcement in plant products, both the JMPR and EU residue definitions are phosmet, so they are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-06-02,live,openai/gpt-6-sol,Yes,65f0fa20e486f5177fcd78b88b88cae6b99535ec1cbd622892c0a0053f7a5305,openai,"For enforcement in animal products, both definitions identify the residue as phosmet and state that it is not fat soluble. The additional EU review notes do not change the residue definition, so they are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-06-03,live,openai/gpt-6-sol,No,b16ea82e554240844aed56078ba50e81cca238c47180e1db59cd0641717b48be,openai,"For plant-product risk assessment, both definitions include phosmet, phosmet-oxon, and phthalic acid. However, JMPR applies different weighting factors to phosmet-oxon for long-term and acute assessment and also includes phthalamic acid. The supplied EU definition does not match those provisions.
+
+Final label: No",,success,2025
+No,P5,,2025-06-04,live,openai/gpt-6-sol,No,10aa26b4f8f3e8d13b26e78bb48f97953d6a532f6fe6174325b575668ec54985,openai,"For risk assessment in animal products, JMPR specifies residue definitions, while the supplied EU information says the peer review is pending and gives no residue definition. The definitions therefore cannot be established as comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-08-01,live,openai/gpt-6-sol,Yes,7ec316bb7805c12cfaa05d50c0beedae97964c3a1db7b4aeaab955ebe2802228,openai,"For enforcement in plant products, both definitions sum prochloraz, BTS 44595, and BTS 44596, expressed as prochloraz. The JMPR definition gives chemical names for the same two metabolites identified by code in the EU definition. They are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-08-03,live,openai/gpt-6-sol,No,c80d86bd01c83d26e97eb1da349cb9b029f64fc24efdf8e88dc4723ecc135f71,openai,"The JMPR definition includes prochloraz and one named metabolite, BTS 44596. The EU definition includes prochloraz and all metabolites containing the specified 2,4,6-trichlorophenol moiety. Because the EU definition covers more metabolites, the definitions are not comparable for risk assessment of plant products.
+
+Final label: No",,success,2025
+No,P5,,2025-08-04,live,openai/gpt-6-sol,No,9a3675be7c21fd4624efaeb6bdab540b418415b3493ca558002514c36c4d24ee,openai,"The EU definition covers prochloraz and all metabolites containing the 2,4,6-trichlorophenol moiety. The JMPR definition names only two metabolites in addition to prochloraz. For risk assessment of animal products, the supplied definitions therefore do not cover the same residues.
+
+Final label: No",,success,2025
+Yes,P5,,2025-10-01,live,openai/gpt-6-sol,Yes,8c1228dad7982fe054c71363afe4aa722fb6cb41f3284162241778d577d99112,openai,"Both definitions name methoprene for enforcement in plant products. The EU review-status note does not state a different residue definition, so they are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-11-01,live,openai/gpt-6-sol,Yes,c05dfe0bcc253d1ea1b2ac1b60f25449ffc2a66a40805980d41d908e6909e380,openai,"For enforcement in plant products, both definitions cover propiconazole. The EU definition explicitly includes its isomers, while the JMPR definition names the same substance without distinguishing them. They are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-11-02,live,openai/gpt-6-sol,Yes,9a0c92ab3f59a0fb3310254b517359623e759213abda7b913f29c6f237d20376,openai,"For enforcement, the supplied EU regulatory definition is propiconazole (sum of isomers), which is comparable to the JMPR definition of propiconazole. The EU peer-review definition names a different compound, but it is not the stated regulatory definition.
+
+Final label: Yes",,success,2025
+No,P5,,2025-11-03,live,openai/gpt-6-sol,No,d4d4ec4caf9e7163955eff030f5b11791a4b3915ac5e7de57551260c18aba812,openai,"For risk assessment in plant products, JMPR includes propiconazole and all metabolites convertible to 2,4-DCBA. The EU information lists different components and reaches no final conclusion for primary crops, so the definitions cannot be treated as comparable.
+
+Final label: No",,success,2025
+No,P5,,2025-11-04,live,openai/gpt-6-sol,No,b208c91ca036ce52900291f3b3319c3b7f4dea4d97613d7135aad6c5b3c1cd4e,openai,"For risk assessment in animal products, JMPR defines the residue as propiconazole plus all metabolites convertible to 2,4-DCBA. The EU information gives no final residue definition; its proposed expression is pending toxicological information. The definitions therefore cannot be treated as comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-12-01,live,openai/gpt-6-sol,Yes,9c1598bcca3a52c301784b410195619c9b7e0daeaa6a64677c56cd381abd2104,openai,"For enforcement in plant products, both the JMPR and EU residue definitions specify buprofezin. They are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-12-02,live,openai/gpt-6-sol,No,1a2bd3b6a5d8359908032b59fd86b29f336e72580bf4d6e5d3475f05a9b0ffb6,openai,"Both definitions name buprofezin, but they disagree on whether the residue is fat soluble. That difference matters for enforcement in animal products, so they are not comparable for the stated purpose.
+
+Final label: No",,success,2025
+No,P5,,2025-12-03,live,openai/gpt-6-sol,No,7c4018a70109c29f2df8f4cf96c46186fad2d7eea18049d2fbf6551f4890d895,openai,"For plant products, JMPR defines the risk-assessment residue as buprofezin, except for paddy rice, where it reaches no conclusion. The supplied EU definition includes buprofezin and BF4 conjugates. Because the definitions cover different residues, they are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-13-01,live,openai/gpt-6-sol,Yes,1a4c9f7fddde8dcc84cffe9e1380eaecdb69287e87804014461a484c0f1f7b92,openai,"Both definitions identify hexythiazox. The EU wording clarifies that any ratio of its constituent isomers is included; the supplied JMPR definition gives no conflicting restriction. They are comparable for enforcement in plant products.
+
+Final label: Yes",,success,2025
+No,P5,,2025-13-03,live,openai/gpt-6-sol,No,7f1e215d40cb941cfa18c6d6a005bd39cfadb3ab428a9d935347c5e273a00749,openai,"For risk assessment in plant products, the JMPR definition includes hexythiazox and specified metabolites, while the supplied EU definition covers hexythiazox isomers only and is stated for fruits and leafy crops. The definitions are not comparable for the stated commodity and purpose.
+
+Final label: No",,success,2025
+No,P5,,2025-13-04,live,openai/gpt-6-sol,No,8d853fa0871b6cbd1331b7c8823db618371757fb0871e3bf42deb4cc71847918,openai,"For risk assessment in animal products, the EU definition covers hexythiazox regardless of isomer ratio. The JMPR definition also includes metabolites containing the specified moiety, so the definitions are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-14-02,live,openai/gpt-6-sol,Yes,a4fe0582c283ed216e80db1d04500f801ffb9769192dc41cecc725ddb17ca947,openai,"Both definitions specify etofenprox and state that the residue is fat soluble. For enforcement in animal products, they are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-14-03,live,openai/gpt-6-sol,No,2a63a1162521c6d1dd06886904b09a4c165ffd02cabab9cde961c891e17040a5,openai,"For plant products, the JMPR definition covers etofenprox alone, while the EU risk-assessment definition also includes alpha-CO. The definitions are therefore not comparable for the stated purpose.
+
+Final label: No",,success,2025
+Yes,P5,,2025-14-04,live,openai/gpt-6-sol,Yes,26b276e0e4ac0ba085caa5dfec5b2fc955b96bb7d7cd8e0f6886e055d817dbf3,openai,"Both definitions name etofenprox for animal products and risk assessment. “Tentative” qualifies the EU definition but does not identify a different residue.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-15-01,live,openai/gpt-6-sol,Yes,6e8c6547a9e40278cb7f0265536ef4b05b1af3f485446118bb61077a05899258,openai,"For enforcement in plant products, both supplied residue definitions are “Tebuconazole.” They are therefore comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-15-02,live,openai/gpt-6-sol,No,4de04a68b5531b38b89223ed26b0b96c6cae062764af9d5b478c77288476d452,openai,"For enforcement in animal products, JMPR defines the residue as tebuconazole alone. The EU definition also includes hydroxy-tebuconazole and their conjugates, so the definitions are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-15-03,live,openai/gpt-6-sol,No,79380b19cadfb0757cf53bbc0afbf2a8c5027077906b849f6a9211b83d3460bd,openai,"For plant products and risk assessment, both definitions include tebuconazole. The EU definition also calls for a separate residue definition covering triazole derivative metabolites (TDMs), which the supplied JMPR definition does not include. They are therefore not comparable.
+
+Final label: No",,success,2025
+No,P5,,2025-15-04,live,openai/gpt-6-sol,No,fe2d860b46bee16d207ffcee100da7d06effefbbf8ef2e02e11e1082ff14644b,openai,"For risk assessment in animal products, the JMPR definition covers tebuconazole only. The EU definition also includes hydroxy-tebuconazole and its conjugates, and notes that a separate definition is needed for TDMs. The definitions are therefore not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-16-01,live,openai/gpt-6-sol,Yes,486380596afae7c59ec3f865d444ca5a8b8e4043381f4f71d89f290b4dae0273,openai,"Both definitions specify fenpyroximate, with no difference supplied for enforcement in plant products. They are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-16-04,live,openai/gpt-6-sol,No,f8e8853bc9d8db24d84ce8c21d8e3f9a7372498919dd111f63590aa2374bdf81,openai,"For risk assessment of animal products, the definitions cover different residues: JMPR includes R-UL-1, while the EU definition includes the Z-isomers of fenpyroximate, Fen-OH and M-3. They are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-17-01,live,openai/gpt-6-sol,Yes,3bbdef6ff5e4e25f67d4dde46e92f3bf1c2424ab5a34bde1833de39a431ec349,openai,"For enforcement of plant products, both the JMPR and EU definitions specify tebufenozide. The EU peer-review entry is limited to fruits and cereals, but its regulation entry is not, so the supplied definitions are comparable for the stated purpose and commodity.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-17-02,live,openai/gpt-6-sol,Yes,96d563f07dfb43eb4661fe2a8ff0b554201b497527e05e462c3c48672e84923c,openai,"For enforcement in animal products, both definitions specify tebufenozide and identify the residue as fat soluble. They are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-17-03,live,openai/gpt-6-sol,No,99dccfb41489ca2ca6ba1116883992f3ac4470973dce962f4bf124c58841a2ec,openai,"The JMPR definition covers tebufenozide alone, while the EU definition also includes metabolites for risk assessment of plant products. They are not comparable.
+
+Final label: No",,success,2025
+No,P5,,2025-17-04,live,openai/gpt-6-sol,No,25ab8b7164d27397986e968ea4e38951a322ec0152889f514c9c62816ff2b782,openai,"For risk assessment in animal products, the JMPR definition covers tebufenozide only. The EU definition also includes its metabolites, so the definitions are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-18-01,live,openai/gpt-6-sol,Yes,df4bd01be9e22c5aeecf0d169292204ab8d97e3b94fa69dde10c7bf9139c4822,openai,"Both definitions include fipronil and its sulfone metabolite MB46136, with the sum expressed as fipronil. They are comparable for enforcement in plant products.
+
+Final label: Yes",,success,2025
+No,P5,,2025-18-04,live,openai/gpt-6-sol,No,09b0d81332f7aaaed45004b58ed75b22d86e39cee391e307ee3207bd9d320220,openai,"For risk assessment in animal products, the EU definition includes fipronil and its sulfone metabolite. The JMPR definition also includes MB45950 and MB46513, so the definitions are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-19-01,live,openai/gpt-6-sol,Yes,bfbe244f60747a26981a17a8864895c01651778147048d5e7332312ce1b13626,openai,"For enforcement in plant products, both definitions cover the sum of spinosyn A and spinosyn D. They are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-19-02,live,openai/gpt-6-sol,Yes,5d85568d3f446d0b488d234a8f60213d3ebafddfb52466fb5ec67d4c8768c126,openai,"For enforcement in animal products, both definitions cover the sum of spinosyn A and spinosyn D, and both identify the residue as fat soluble. They are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-19-03,live,openai/gpt-6-sol,No,852415a39a4008289a8441d23934d36aa3de72e945ec81616aa4e6d8e8af66b6,openai,"The JMPR definition includes spinosyn A and D. Although the EU’s 2012 review used that same definition, the supplied EU peer-review definition for plant products also includes spinosyn B and K. The definitions therefore differ for risk assessment.
+
+Final label: No",,success,2025
+Yes,P5,,2025-20-01,live,openai/gpt-6-sol,Yes,002bcb98c7c73b07f4cc44ca19df2c6de9152ae43e44a12e303510d12cd49c06,openai,"For enforcement in plant products, the JMPR definition is “Novaluron.” The EU definition names Novaluron as the sum of its constituent isomers, and the supplied EU MRL review also names Novaluron. These are comparable on the supplied information.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-20-02,live,openai/gpt-6-sol,Yes,f90ac0e6fb68e39e9093132055b473537c57f97a526e24f2b128f97559de9963,openai,"For enforcement in animal products, both definitions identify novaluron and state that the residue is fat soluble. The EU’s “sum of constituent isomers” specifies how novaluron is expressed, with no conflicting definition supplied by JMPR.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-20-03,live,openai/gpt-6-sol,Yes,9ab2fbe04a7f274dc0d22b293ef41d087308e5abdc10ca8fb22758c48500fac2,openai,"Both entries identify novaluron for plant products. The EU entry adds a review citation but does not indicate a different residue definition, so they are comparable for risk assessment.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-21-01,live,openai/gpt-6-sol,Yes,4717230b7027f8b4fe69c6f130d93b9f21df278d70ce6cc1380a2c5be30b32e5,openai,"The JMPR and EU definitions both identify azoxystrobin. For enforcement in plant products, the supplied information shows no difference between them.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-21-02,live,openai/gpt-6-sol,No,d1e681deff7f77e193d98db2d70e68a627737be7e0bd3c4b178a5b2cbbffbc2b,openai,"Both definitions name azoxystrobin, but they disagree on whether the residue is fat soluble. That distinction matters for enforcement in animal products, so the supplied definitions are not comparable for this purpose.
+
+Final label: No",,success,2025
+Yes,P5,,2025-21-03,live,openai/gpt-6-sol,Yes,61f783fdc775b3a88561b2beec24f5658f30d739dfab4239933e5ae5718fe16d,openai,"Both definitions identify azoxystrobin for risk assessment in plant products. The supplied information shows no difference between them.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-21-04,live,openai/gpt-6-sol,Yes,85b596e5dadc709b1f8f68dbd155edebbfb9219ca45751d589697b1e1b17b6bf,openai,"Both definitions name azoxystrobin for animal products and risk assessment. The EU’s “provisional” qualifier does not indicate a different residue definition in the supplied information, so they are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-22-01,live,openai/gpt-6-sol,Yes,581c9e53f8bcca0b1823263a5a3587eff834da7a7c4f89139d11e4c73cd95aec,openai,"For enforcement in plant products, the applicable EU definition is “Cyproconazole,” matching the JMPR definition. The EU wording “sum of isomers” is listed under a measure that is not yet applicable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-22-03,live,openai/gpt-6-sol,No,1b6f475f831a5510b762b78d0b91eaf94f01e35f1027bcf0b62b2f5921429107,openai,"For risk assessment in plant products, the JMPR definition lists cyproconazole only. The EU definition also includes specified triazole metabolites, so the definitions are not comparable.
+
+Final label: No",,success,2025
+No,P5,,2025-22-04,live,openai/gpt-6-sol,No,6eae58c8c5935061c4f0a840ce56e15817e4a51b3502e3b1c5010875606325d9,openai,"For risk assessment in animal products, the JMPR definition covers free and conjugated cyproconazole. The EU definition also includes specified cyproconazole metabolites and triazole metabolites. The definitions therefore cover different residues.
+
+Final label: No",,success,2025
+Yes,P5,,2025-23-02,live,openai/gpt-6-sol,Yes,46200ebba3830d72e5bc6a807d02fde8d85e2b68f120d80453ae3eb1347878fe,openai,"Both definitions specify flubendiamide and state that the residue is fat soluble. They are comparable for enforcement in animal products.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-23-03,live,openai/gpt-6-sol,Yes,ea5ab64d39e6436422989b8b358cab9b1c78afe47444199053fc54890c89e325,openai,"For plant products and risk assessment, both supplied definitions identify flubendiamide. The EU review references do not indicate a different residue definition, so they are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-23-04,live,openai/gpt-6-sol,No,389bd184e2feb9819e84455cabf85fad95977bb5e2240c0c7e168aa2b088ba71,openai,"For risk assessment in animal products, the EU definition sums flubendiamide and its iodo-phthalimide metabolite, expressed as flubendiamide. JMPR lists them as separate residue definitions. They are therefore not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-24-01,live,openai/gpt-6-sol,Yes,50567d35d68ad3936e9d2cf67ac414c732054a1f4d5a06903a3b5eaf7fed3dde,openai,"For enforcement in plant products, both the JMPR and EU residue definitions specify acetamiprid. They are therefore comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-24-02,live,openai/gpt-6-sol,Yes,ab72f9fd9e87e6c272f0fd8d4f04cd9c11b6943e6b14747ce19179dd306b803a,openai,"For enforcement in animal products, both the JMPR and EU regulatory definitions cover acetamiprid and N-desmethyl-acetamiprid, expressed as acetamiprid. They are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-24-04,live,openai/gpt-6-sol,Yes,1dcb5e5221da429763a5718bba958ec444bbdfc0dfb5efaf85aa4607c38ac1b8,openai,"The EU definition identifies IM-2-1 as N-desmethyl-acetamiprid, corresponding to the desmethyl-acetamiprid in the JMPR definition. Both sum it with acetamiprid and express the result as acetamiprid, so they are comparable for risk assessment of animal products.
+
+Final label: Yes",,success,2025
+No,P5,,2025-25-01,live,openai/gpt-6-sol,No,8e8f23df6d86a3a743577fb6db123f2c401086ea9782ca12d1adc27f9870b23c,openai,"For enforcement in plant products, JMPR lists flupyradifurone only, while the EU lists both flupyradifurone and DFA. The definitions are therefore not comparable.
+
+Final label: No",,success,2025
+No,P5,,2025-25-02,live,openai/gpt-6-sol,No,5cb5c19c8d02cd5e5b1ca2353ef8511c386ae84fbe7062fc2d8cd819ff2723ed,openai,"For enforcement of flupyradifurone in animal products, the JMPR definition combines flupyradifurone and DFA as parent equivalents. The EU lists them separately and expresses DFA as DFA. The definitions are therefore not comparable.
+
+Final label: No",,success,2025
+No,P5,,2025-25-03,live,openai/gpt-6-sol,No,09f8ee1a2c4945fcac96cc00e3b794ff1f9260d3218beabd4ee33c8c393e88c1,openai,"For risk assessment in plant products, both definitions include flupyradifurone and difluoroacetic acid (DFA), but the JMPR definition also includes 6-chloronicotinic acid. They are therefore not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-25-04,live,openai/gpt-6-sol,Yes,3092fffa395f9bec58e962cd5150805f939f046d441bf11e20207104fa9e2dfd,openai,"For risk assessment in animal products, both definitions sum flupyradifurone and difluoroacetic acid (DFA). “Expressed as flupyradifurone” and “expressed as parent equivalents” describe the same basis.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-26-01,live,openai/gpt-6-sol,Yes,9769d832a1d572c098bc4cd020edea5d248b14dc2b40a0906ae9216d87f98bb4,openai,"Both definitions include acibenzolar-S-methyl and acibenzolar acid, free and conjugated, and express the sum as acibenzolar-S-methyl. They are comparable for enforcement in plant products.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-26-02,live,openai/gpt-6-sol,Yes,96142fe3a7ff95999b30567da59128f6aa485f1db7017093b3bb1665dd42f3e8,openai,"Both definitions include acibenzolar-S-methyl and acibenzolar acid (free and conjugated), expressed as acibenzolar-S-methyl. Both also state that the residue is not fat soluble. They are comparable for enforcement in animal products.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-27-02,live,openai/gpt-6-sol,Yes,7f61bba1177e4f1828fd12a25b85f6d733ce6d383f13d0dd97a8a5d1d56d6b49,openai,"For enforcement in animal products, both definitions specify phosphonic acid and state that the residue is not fat soluble. They are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-27-04,live,openai/gpt-6-sol,Yes,60211a2bc0a6ca84f2fbf60a57e4c39ec406cdec6f4aee8356e363831be289de,openai,"For risk assessment of fosetyl-Al in animal products, both supplied definitions identify phosphonic acid as the residue. They are therefore comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-29-01,live,openai/gpt-6-sol,Yes,17cc36a0823c0467c6714273b79a0c3796bc0a4e265787c04c99969f56f0e25c,openai,"For enforcement in plant products, both supplied definitions identify pydiflumetofen. The EU peer-review citation does not name an additional residue component, so the definitions are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-29-02,live,openai/gpt-6-sol,Yes,5b393972293c0903216f25d8260eb534e2fd3fbcc956f3234053d0e75c7194c0,openai,"Both entries identify pydiflumetofen and state that the residue is fat soluble. No difference relevant to enforcement in animal products is supplied, so they are comparable.
+
+Final label: Yes",,success,2025
+Yes,P5,,2025-29-03,live,openai/gpt-6-sol,Yes,653db6b4f1e23a9e2bb5eb7f32ec48a7575d53dac297a6b33726c63d67578d53,openai,"For risk assessment in plant products, both supplied entries identify pydiflumetofen. The EU entry adds a peer-review citation but does not indicate a different residue definition. They are comparable.
+
+Final label: Yes",,success,2025
+No,P5,,2025-34-04,live,openai/gpt-6-sol,No,241297ae60defdc6f3b580c80b9414d56a8a8e632c59da941af94698ccd19f64,openai,"For risk assessment in animal products, both definitions include fenpropidin, CGA 289267 and SYN 515213, including conjugates. The EU definition additionally includes fenpropidin salts and CGA 289268, so the definitions are not comparable.
+
+Final label: No",,success,2025
+Yes,P5,,2025-35-01,live,openai/gpt-6-sol,Yes,578b42de7080b236f4760931140115966b899048f1bcb62996e92b87714dad7d,openai,"For enforcement of plant products, the EU Regulation and JMPR both define the residue as florpyrauxifen-benzyl. The cereals-only qualifier applies to the EU peer-review entry, not the Regulation entry.
+
+Final label: Yes",,success,2025
+No,P5,,2025-35-02,live,openai/gpt-6-sol,No,35524b46e1c790d4612f05f95ec2174aea55bfbbc415e16420f12001e11e4348,openai,"For enforcement in animal products, the EU definition covers florpyrauxifen-benzyl alone, while the JMPR definition also includes X11966341 and X11438848. Both are fat soluble, but their included residues differ.
+
+Final label: No",,success,2025

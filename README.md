@@ -1,5 +1,17 @@
 # EFSA–JMPR 잔류물 정의 Few-shot 실험
 
+## GPT 전용 P3·P4·P5 독립 프롬프트 실험
+
+P3 통합 지침, P4 최소 과제＋역할 부여, P5 최소 과제＋CoT를 각각 3회 실행합니다.
+P4/P5에는 P3나 기존 P1/P2를 붙이지 않습니다. 모델은 GPT 하나이며 총 1,890건입니다.
+
+```bash
+python -m residue_experiment.prompt_method_repeats --mode dry-run
+```
+
+[설계·사전 확인·실행·재개·결과 안내](docs/RUN_P3_P4_P5.md)
+
+
 ## 추가 실험: P1/P2 지침을 각각 3회 (P0 호출 없음)
 
 예시 없이 P1(공통 절차), P2(공통 절차＋모델별 보완 지침)를 각각3회 실행합니다.

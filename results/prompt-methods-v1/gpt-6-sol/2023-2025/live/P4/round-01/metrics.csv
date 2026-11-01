@@ -1,0 +1,4 @@
+﻿mode,provider,model,year,condition,seed,n_total,n_evaluated,coverage,complete,accuracy,precision,recall,macro_f1,tn,fp,fn,tp
+live,openai,openai/gpt-6-sol,2023,P4,,70,70,1.0,True,0.9285714285714286,0.9487179487179487,0.925,0.9273708238223698,28,2,3,37
+live,openai,openai/gpt-6-sol,2024,P4,,70,70,1.0,True,0.9285714285714286,0.9512195121951219,0.9285714285714286,0.9260198689494821,26,2,3,39
+live,openai,openai/gpt-6-sol,2025,P4,,70,70,1.0,True,0.9571428571428572,1.0,0.9302325581395349,0.9556119213696892,27,0,3,40

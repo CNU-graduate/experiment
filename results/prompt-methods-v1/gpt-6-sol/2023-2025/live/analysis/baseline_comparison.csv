@@ -1,0 +1,4 @@
+﻿condition,n_total,n_complete,p2_new_error_total,p2_core_fix_total,common_stable_total,p2_new_error_recovered,p2_fix_retained,p2_fix_lost,additional_new_error,p0_stable_damaged,p0_core_fixed
+P3,210,210,8,6,183,2,5,1,2,8,7
+P4,210,210,8,6,183,6,4,2,10,12,6
+P5,210,210,8,6,183,7,5,1,11,12,7
