@@ -1,0 +1,105 @@
+{
+  "examples_per_group": 2,
+  "available_errors": {
+    "No": 2,
+    "Yes": 35
+  },
+  "B": {
+    "target": "actual No, P0 predicted Yes",
+    "pairs": [
+      {
+        "target_error": {
+          "id": "2019-01-04",
+          "substance": "Diquat",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Diquat cation\nSum of diquat, its salts and TOPPS expressed as diquat (tentative)",
+          "EU": "MRL Review (EFSA, 2015a): Sum of diquat, its salts and TOPPS expressed as diquat (tentative)\nPeer‐review (EFSA, 2015r): Diquat, diquat monopyridone and diquat dipyridone\nWhether residues of the two metabolites can be expressed as diquat is pending a conclusion on the toxicological properties of diquat monopyridone and diquat dipyridone",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2019-05-04",
+          "substance": "Propiconazole",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Propiconazole plus all metabolites convertible to 2,4‐dichloro‐benzoic acid, expressed as propiconazole",
+          "EU": "MRL review (EFSA,\n2015b\n):\nParent propiconazole and all the metabolites convertible to the 2,4‐dichlorobenzoic acid, expressed as propiconazole (sum of isomers)\nPeer review (EFSA,\n2017e\n):\n1) Propiconazole, CGA91305 (free and conjugated) and CGA118244\n(The way the residue definition will be expressed is pending upon the requested toxicological profile on CGA91305 and CGA118244)\n2) TDMs (EFSA, 2018m)",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2022-34-03",
+          "substance": "Metconazole",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Metconazole (sum of cis and trans isomer)",
+          "EU": "MRL review (EFSA, 2011e): Metconazole (sum of isomers) Peer review (EFSA, 2006b): Metconazole (sum of isomers) (cereals and oilseed crops only) Separate RDs for TDMs",
+          "actual": "No",
+          "p0_prediction": "Yes"
+        },
+        "correct_counterexample": {
+          "id": "2021-43-03",
+          "substance": "Metconazole",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Metconazole (sum of cis and trans isomer)",
+          "EU": "MRL review Art. 12 (EFSA, 2011n):\nMetconazole (sum of isomers)\nPeer review (EFSA, 2006c):\nMetconazole (sum of isomers) (cereals and oilseed crops only)\nSeparate RDs for TDMs",
+          "actual": "Yes",
+          "p0_prediction": "Yes"
+        }
+      }
+    ]
+  },
+  "C": {
+    "target": "actual Yes, P0 predicted No",
+    "pairs": [
+      {
+        "target_error": {
+          "id": "2018-07-04",
+          "substance": "Fenpropimorph",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fenpropimorph and fenpropimorph carboxylic acid (BF 421‐2), expressed as fenpropimorph (p. 161 of JMPR report)\nor\n2‐methyl‐2‐{4‐[2‐methyl‐3‐(cis‐2,6‐dimethylmorpholin‐4‐yl)propyl]phenyl} propionic acid (p. 461 of JMPR report, Annex 1)",
+          "EU": "Sum of fenpropimorph and fenpropimorph carboxylic acid (BF 421‐2), expressed as fenpropimorph (sum of isomers)",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2019-09-04",
+          "substance": "Fenpyroximate",
+          "purpose": "Risk assessment",
+          "commodity": "Animal products",
+          "JMPR": "Sum of fenpyroximate, 2‐hydroxymethyl‐2‐propyl (E)‐4‐[(1,3‐dimethyl‐5‐ phenoxypyrazol‐4‐yl)‐methylenaminooxymethyl]benzoate (Fen‐OH), and (E)‐4‐[(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐yl)methyleneaminooxymethyl]benzoic acid (M‐3), expressed as fenpyroximate",
+          "EU": "(EFSA, 2015c) Sum of fenpyroximate, Fen‐OH, M‐3 and their Z‐isomers (M‐1), expressed as fenpyroximate",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      },
+      {
+        "target_error": {
+          "id": "2018-09-03",
+          "substance": "Fenpyroximate",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Sum of parent fenpyroximate and its tert‐butyl (Z)‐α‐(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐ylmethyleneamino‐oxy)‐p‐toluate (its Z‐isomer, M‐1), expressed as fenpyroximate",
+          "EU": "Sum of fenpyroximate and its Z‐isomer, expressed as fenpyroximate (fruit crops, pulses and oilseeds, only)",
+          "actual": "Yes",
+          "p0_prediction": "No"
+        },
+        "correct_counterexample": {
+          "id": "2021-32-03",
+          "substance": "Fluazifop‐p‐butyl",
+          "purpose": "Risk assessment",
+          "commodity": "Plant products",
+          "JMPR": "Sum of fluazifop‐P‐butyl, fluazifop‐P‐acid (II), 2‐[4‐(3‐hydroxy‐5‐trifluoromethyl‐2‐phenoxy)pyridyloxy] propionic acid (XL),5‐trifluoromethyl‐2‐pyridone (X) and their conjugates, expressed as fluazifop‐P‐acid",
+          "EU": "Sum of all the constituent isomers of fluazifop, its esters and its conjugates, expressed as fluazifop",
+          "actual": "No",
+          "p0_prediction": "No"
+        }
+      }
+    ]
+  }
+}
