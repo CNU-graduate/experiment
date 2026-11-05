@@ -1,0 +1,4 @@
+﻿condition,n_total,n_complete,historical_repeats,new_repeats,recovered_repeat_errors,damaged_stable_correct
+G1,210,210,3,2,4,7
+G2,210,210,3,2,1,3
+G3,210,210,3,2,0,7
