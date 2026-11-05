@@ -7,3 +7,5 @@ __pycache__/
 .pytest_cache/
 archive/
 *.sqlite*ch
+*.sqlite*
+results/e6-guided-ablation-v1/**/*.lock

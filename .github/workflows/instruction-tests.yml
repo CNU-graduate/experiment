@@ -30,5 +30,7 @@ jobs:
         run: python -m residue_experiment.prompt_method_repeats --mode dry-run --output "$RUNNER_TEMP/gpt-prompt-methods-check"
       - name: Validate E6 guided with archived examples and no API calls
         run: python -m residue_experiment.e6_guided --mode dry-run --output "$RUNNER_TEMP/e6-guided-check"
+      - name: Validate G1 G2 G3 two-round plans without API calls
+        run: python -m residue_experiment.e6_ablation --mode dry-run --output "$RUNNER_TEMP/e6-ablation-check"
       - name: Tests without real model API calls
         run: python -m pytest -q tests

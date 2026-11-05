@@ -1,5 +1,7 @@
 # 실행 안내
 
+- [E6 보완 문단 제거 G1/G2/G3: 조건별 2회 실험](RUN_E6_ABLATION.md)
+
 - [GPT E6 예시 고정 + 판정 보완 지침 3회 실험](RUN_E6_GUIDED.md)
 
 - [추가 zero-shot 2회 실행·재개·집계](RUN_ZERO_SHOT_REPEATS.txt)
