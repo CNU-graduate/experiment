@@ -32,5 +32,7 @@ jobs:
         run: python -m residue_experiment.e6_guided --mode dry-run --output "$RUNNER_TEMP/e6-guided-check"
       - name: Validate G1 G2 G3 two-round plans without API calls
         run: python -m residue_experiment.e6_ablation --mode dry-run --output "$RUNNER_TEMP/e6-ablation-check"
+      - name: Validate C0 H1 three-round plans without API calls
+        run: python -m residue_experiment.e6_h1 --mode dry-run --output "$RUNNER_TEMP/e6-h1-check"
       - name: Tests without real model API calls
         run: python -m pytest -q tests
