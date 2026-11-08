@@ -80,3 +80,30 @@ def test_fake_live_resume_analysis_and_drift(tmp_path, monkeypatch):
     with pytest.raises(ValueError, match='changed'):
         control.execute(out, 'live', True)
     assert len(calls) == 1890 and not (out/'.run.lock').exists()
+
+
+def test_selected_conditions_only_and_invalid_selection(tmp_path, monkeypatch):
+    calls = []
+    class FakeProvider:
+        def __init__(self, provider, model, config, *, system_prompt):
+            self.condition = config['purpose_control_condition']
+            assert self.condition in ('K2', 'K3')
+        def call(self, prompt):
+            calls.append(self.condition)
+            return 'Yes', {}, 'fake'
+    monkeypatch.setattr('residue_experiment.runner.Provider', FakeProvider)
+    out = tmp_path/'selected'
+    info = control.execute(out, 'live', True, conditions=['K2', 'K3'])
+    assert info['cases'] == 1260 and info['full_evaluations'] == 6
+    assert info['purpose_subruns'] == 12
+    assert Counter(calls) == {'K2': 630, 'K3': 630}
+    assert not (out/'K1/live/J1-E').exists()
+    rows = read_csv(out/'live/analysis/condition_summary.csv')
+    assert all(r['repeats_complete'] == '0' for r in rows if r['condition'] == 'K1')
+    comparison = read_csv(out/'live/analysis/comparison.csv')
+    assert next(r for r in comparison if r['reference'] == 'K2')['n_complete'] == '210'
+    control.execute(out, 'live', True, conditions=['K2', 'K3'])
+    assert len(calls) == 1260
+    for invalid in ([], ['K4'], ['K2', 'K2']):
+        with pytest.raises(ValueError, match='distinct conditions'):
+            control.execute(tmp_path/'invalid', conditions=invalid)

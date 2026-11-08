@@ -69,3 +69,15 @@ git push origin feat/e6-purpose-controlled-comparison
 ```
 
 현재 브랜치가 `feat/e6-purpose-controlled-comparison`인지 확인하고 실행한다. main에는 올리지 않는다.
+
+## K2·K3만 실행
+
+```bash
+python -m residue_experiment.e6_purpose_control --mode dry-run --conditions K2 K3
+python -m residue_experiment.e6_purpose_control --mode live --conditions K2 K3 --approve-paid-api
+```
+
+두 조건 각 3회, 전체 평가 6회, 정상 요청 1,260건(재시도 별도)이다.
+K1은 호출하지 않으며 통합 분석에서는 미실행으로 표시한다. K2↔K3 행을 비교한다.
+재개할 때도 반드시 `--conditions K2 K3`을 유지한다. 옵션을 생략하면 K1까지 실행한다.
+이 선택은 실행할 조건만 제한하며 고정된 전체 실험 계획·지침은 바꾸지 않는다.

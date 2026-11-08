@@ -101,11 +101,14 @@ def aggregate(output, mode, config, historical, expected):
     return merged['condition_summary']
 
 
-def execute(output=DEFAULT_OUTPUT, mode='dry-run', approved=False, only_round=None):
+def execute(output=DEFAULT_OUTPUT, mode='dry-run', approved=False, only_round=None, conditions=None):
     if mode not in ('dry-run', 'mock', 'live', 'analyze') or only_round not in (None, 1, 2, 3):
         raise ValueError('Invalid mode/round')
     if mode == 'live' and not approved:
         raise ValueError('Live requires --approve-paid-api')
+    selected = tuple(CONDITIONS if conditions is None else conditions)
+    if not selected or len(set(selected)) != len(selected) or any(c not in CONDITIONS for c in selected):
+        raise ValueError('Choose distinct conditions from K1 K2 K3')
     output = Path(output).resolve()
     allowed = DEFAULT_OUTPUT.resolve()
     if (output == ROOT or ROOT in output.parents) and output != allowed and allowed not in output.parents:
@@ -131,6 +134,8 @@ def execute(output=DEFAULT_OUTPUT, mode='dry-run', approved=False, only_round=No
         results = []
         try:
             for c, r, n in SCHEDULE:
+                if c not in selected:
+                    continue
                 if only_round is not None and n != only_round:
                     continue
                 print(f'{c} round {n}/3 {j1.ROUTES[r]}: {len(expected[c][r])} cases; {mode}', flush=True)
@@ -149,12 +154,14 @@ def main():
     parser.add_argument('--mode', choices=['dry-run', 'mock', 'live', 'analyze'], default='dry-run')
     parser.add_argument('--round', type=int, choices=[1, 2, 3], dest='only_round')
     parser.add_argument('--output', type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument('--conditions', nargs='+', choices=CONDITIONS, default=None,
+                        help='Run only selected conditions, e.g. --conditions K2 K3')
     parser.add_argument('--approve-paid-api', action='store_true')
     args = parser.parse_args()
     try:
         if args.mode == 'live':
             load_dotenv(ROOT/'.env', override=False)
-        print(json.dumps(execute(args.output, args.mode, args.approve_paid_api, args.only_round), ensure_ascii=False))
+        print(json.dumps(execute(args.output, args.mode, args.approve_paid_api, args.only_round, args.conditions), ensure_ascii=False))
     except (ValueError, KeyError, ImportError, OSError) as exc:
         parser.exit(2, f'{type(exc).__name__}: {exc}\n')
 
