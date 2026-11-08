@@ -1,4 +1,4 @@
-"""Evaluate a frozen search winner on later years, without further optimization."""
+"""Evaluate a frozen search winner on 2023-2025, without further optimization."""
 import argparse
 from pathlib import Path
 from statistics import mean
@@ -12,8 +12,8 @@ VERSION = 'prompt-transfer-v1'
 
 def prepare(source, output, years=(2024, 2025), repeats=3):
     years = sorted(set(years))
-    if not years or any(y not in (2024, 2025) for y in years) or repeats < 1:
-        raise ValueError('Use years 2024/2025 and positive repeats')
+    if not years or any(y not in (2023, 2024, 2025) for y in years) or repeats < 1:
+        raise ValueError('Use years 2023/2024/2025 and positive repeats')
     search = load_search(source)
     live = Path(source) / 'live'
     best = read(live / 'final_prompt.json')

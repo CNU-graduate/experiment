@@ -1,0 +1,12 @@
+{
+  "ids": [
+    "2021-08-02",
+    "2022-22-03"
+  ],
+  "added_ids": [],
+  "target_ids": [
+    "2021-08-02",
+    "2022-22-03"
+  ],
+  "selection_method": "errors first, then label-balanced correct safeguards"
+}

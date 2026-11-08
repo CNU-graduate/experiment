@@ -77,8 +77,8 @@ def development_feedback(number, parent, name, prompt, edit, memory, before, aft
             'interpretation': 'Observed response changes only; no clause-level causality established.'}
 
 
-def search_guarded(plan, output, mode, max_calls=None, through_round=None):
-    calls = Calls(plan, output, mode, max_calls)
+def search_guarded(plan, output, mode, max_calls=None, through_round=None, *, calls_override=None, resume_state=None):
+    calls = calls_override or Calls(plan, output, mode, max_calls)
     final_path = calls.folder / 'final_prompt.json'
     if final_path.exists():
         result = read(final_path)
@@ -86,6 +86,10 @@ def search_guarded(plan, output, mode, max_calls=None, through_round=None):
             raise ValueError('Final prompt plan mismatch')
         return result
     cfg = plan['config']
+    if cfg.get('manual_round_approval') and (
+            resume_state is None or calls_override is None or
+            through_round != resume_state['completed_rounds'] + 1):
+        raise ValueError('Continuation requires one explicitly approved round via prompt_search_continue')
     if through_round is not None and not 1 <= through_round <= cfg['rounds']:
         raise ValueError('through-round must be within configured rounds')
     stop = through_round or cfg['rounds']
@@ -101,23 +105,31 @@ def search_guarded(plan, output, mode, max_calls=None, through_round=None):
                 memo[ph, p['id']] = p
         return [memo[ph, r['id']] for r in rows]
 
-    baseline, metrics = calls.evaluate(plan['p0'], plan['selection'], 'selection/P0')
-    write_csv(calls.folder / 'P0_selection_predictions.csv', baseline)
-    best = {'name': 'P0', 'prompt': plan['p0'], 'metrics': metrics}
-    memory, stale, history = [], 0, []
+    if resume_state is None:
+        baseline, metrics = calls.evaluate(plan['p0'], plan['selection'], 'selection/P0')
+        write_csv(calls.folder / 'P0_selection_predictions.csv', baseline)
+        best = {'name': 'P0', 'prompt': plan['p0'], 'metrics': metrics}
+        memory, stale, history, start = [], 0, [], 1
+    else:
+        best = resume_state['winner']
+        by_id = {r['id']: r for r in plan['development']}
+        memory = [by_id[i] for i in resume_state['memory_ids']]
+        stale, history, start = resume_state['stale'], [], resume_state['completed_rounds'] + 1
     feedback_enabled = cfg.get('development_feedback', False)
     require_gate = cfg.get('require_memory_gate', True)
-    for number in range(1, stop + 1):
+    for number in range(start, stop + 1):
         folder = calls.folder / f'round-{number:02d}'
         folder.mkdir(exist_ok=True)
         batch = plan['batches'][number - 1]
         current = development_eval(best['prompt'], batch)
         write_csv(folder / 'development_predictions.csv', current)
-        additions = choose_memory(batch, current, cfg['memory_per_round'])
+        chosen = choose_memory(batch, current, cfg['memory_per_round'])
+        existing_ids = {r['id'] for r in memory}
+        additions = [r for r in chosen if r['id'] not in existing_ids]
         memory.extend(additions)
         incumbent_predictions = development_eval(best['prompt'], memory)
         write_csv(folder / 'incumbent_memory_predictions.csv', incumbent_predictions)
-        target_ids = [p['id'] for p in current if not p['correct'] and p['id'] in {r['id'] for r in additions}]
+        target_ids = [p['id'] for p in current if not p['correct'] and p['id'] in {r['id'] for r in chosen}]
         save(folder / 'memory.json', {'ids': [r['id'] for r in memory],
                                      'added_ids': [r['id'] for r in additions], 'target_ids': target_ids,
                                      'selection_method': 'errors first, then label-balanced correct safeguards'})
@@ -177,10 +189,13 @@ def search_guarded(plan, output, mode, max_calls=None, through_round=None):
             save(folder / 'development_feedback.json', round_feedback)
             history.extend(round_feedback)
         stale = 0 if accepted else stale + 1
-        reason = 'patience' if stale >= cfg['patience'] else ('max_rounds' if number == cfg['rounds'] else None)
+        reason = ('patience' if stale >= cfg['patience'] and
+                  (not cfg.get('manual_round_approval') or cfg.get('continuation_early_stop'))
+                  else ('max_rounds' if number == cfg['rounds'] else None))
         save(folder / 'selection.json', {'candidates': scored, 'winner': best, 'accepted': accepted,
              'no_improvement_streak': stale, 'stop_reason': reason,
              'memory_gate_applied': require_gate,
+             'stagnation_warning': stale >= cfg['patience'],
              'skipped': None if target_ids else 'No current development errors'})
         print(f'Round {number}: winner={best["name"]}; memory={len(memory)}; no-improvement={stale}', flush=True)
         if reason:

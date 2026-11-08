@@ -1,0 +1,14 @@
+{
+  "mode": "mock",
+  "metrics": {
+    "P0": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    "final": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    }
+  },
+  "note": "2023 was inspected in earlier experiments; not an untouched prospective test."
+}

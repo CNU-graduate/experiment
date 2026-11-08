@@ -1,0 +1,37 @@
+{
+  "mode": "mock",
+  "final_name": "R4C2",
+  "repeats": 3,
+  "metrics": {
+    "2024": {
+      "P0": {
+        "accuracy_mean": 0.5,
+        "macro_f1_mean": 0.3333333333333333,
+        "fp_total": 0,
+        "fn_total": 3
+      },
+      "final": {
+        "accuracy_mean": 0.5,
+        "macro_f1_mean": 0.3333333333333333,
+        "fp_total": 0,
+        "fn_total": 3
+      }
+    },
+    "2025": {
+      "P0": {
+        "accuracy_mean": 0.5,
+        "macro_f1_mean": 0.3333333333333333,
+        "fp_total": 3,
+        "fn_total": 0
+      },
+      "final": {
+        "accuracy_mean": 1.0,
+        "macro_f1_mean": 1.0,
+        "fp_total": 0,
+        "fn_total": 0
+      }
+    }
+  },
+  "calls": 24,
+  "note": "Frozen prompt transfer; no optimization. Prior use of these years in other experiments must be disclosed."
+}

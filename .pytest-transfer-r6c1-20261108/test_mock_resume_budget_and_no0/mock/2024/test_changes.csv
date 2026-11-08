@@ -1,0 +1,3 @@
+﻿id,actual,P0_wrong,final_wrong,fully_corrected,new_error
+2024-01-01,Yes,3,0,True,False
+2024-01-02,Yes,0,3,False,True
