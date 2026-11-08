@@ -1,0 +1,7 @@
+﻿condition,round,api_attempts,failed_attempts,unfinished_attempts
+C0,1,0,0,0
+C0,2,0,0,0
+C0,3,0,0,0
+H1,1,210,0,0
+H1,2,210,0,0
+H1,3,210,0,0
