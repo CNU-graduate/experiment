@@ -1,0 +1,7 @@
+﻿id,year,actual,prediction,correct,condition,repeat
+2025-03-01,2025,Yes,Yes,True,final,1
+2025-04-02,2025,No,No,True,final,1
+2025-03-01,2025,Yes,Yes,True,final,2
+2025-04-02,2025,No,No,True,final,2
+2025-03-01,2025,Yes,Yes,True,final,3
+2025-04-02,2025,No,No,True,final,3

@@ -52,3 +52,23 @@ def test_continuation_winner_three_years(tmp_path, monkeypatch):
     assert result['calls'] == 36
     assert set(result['metrics']) == {'2023', '2024', '2025'}
     assert run(plan, tmp_path, 'mock', max_calls=36) == result
+
+
+def test_final_only_reuses_final_and_ignores_unfinished_p0(tmp_path, monkeypatch):
+    plan = prepare('results/prompt-search-2023-v2', tmp_path)
+    plan['tests'] = {y: rows[:2] for y, rows in plan['tests'].items()}
+    monkeypatch.setattr('residue_experiment.prompt_search.Provider', lambda *a, **kw: pytest.fail('Paid call'))
+    with pytest.raises(RuntimeError, match='Total call cap'):
+        run(plan, tmp_path, 'mock', max_calls=4)
+    files = list((tmp_path / 'mock/calls').glob('*.json'))
+    for f in files:
+        record = read(f)
+        if '/P0/' in record['request']['key']:
+            record['status'] = 'started'
+            save(f, record)
+    result = run(plan, tmp_path, 'mock', max_calls=14, final_only=True)
+    assert result['conditions'] == ['final']
+    assert result['calls'] == 14  # 2 old P0 + 12 final; 2 final reused
+    assert all(set(v) == {'final'} for v in result['metrics'].values())
+    assert not (tmp_path / 'mock/final_only/2024/test_changes.csv').exists()
+    assert run(plan, tmp_path, 'mock', max_calls=14, final_only=True) == result

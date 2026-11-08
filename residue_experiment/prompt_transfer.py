@@ -52,41 +52,45 @@ def load_plan(output):
     return plan
 
 
-def run(plan, output, mode, max_calls=None):
+def run(plan, output, mode, max_calls=None, final_only=False):
     calls = Calls(plan, output, mode, max_calls)
+    conditions = [('final', plan['final_prompt'])] if final_only else [('P0', plan['p0']), ('final', plan['final_prompt'])]
+    result_folder = calls.folder / 'final_only' if final_only else calls.folder
+    result_folder.mkdir(exist_ok=True)
     summaries = {}
     for year in plan['years']:
         rows = plan['tests'][str(year)]
-        folder = calls.folder / str(year)
+        folder = result_folder / str(year)
         folder.mkdir(exist_ok=True)
         predictions, metrics = [], []
         for repeat in range(1, plan['repeats'] + 1):
-            for condition, prompt in [('P0', plan['p0']), ('final', plan['final_prompt'])]:
+            for condition, prompt in conditions:
                 ps, ms = calls.evaluate(prompt, rows, f'test/{year}/{condition}/{repeat}')
                 predictions.extend(dict(p, condition=condition, repeat=repeat) for p in ps)
                 metrics.append(dict(condition=condition, repeat=repeat, **ms))
         write_csv(folder / 'test_predictions.csv', predictions)
         write_csv(folder / 'test_metrics.csv', metrics)
-        changes = []
-        for row in rows:
-            wrong = {c: sum(not p['correct'] for p in predictions
-                            if p['id'] == row['id'] and p['condition'] == c) for c in ('P0', 'final')}
-            changes.append({'id': row['id'], 'actual': row['EFSA'], 'P0_wrong': wrong['P0'],
-                            'final_wrong': wrong['final'],
-                            'fully_corrected': wrong['P0'] == plan['repeats'] and wrong['final'] == 0,
-                            'new_error': wrong['P0'] == 0 and wrong['final'] > 0})
-        write_csv(folder / 'test_changes.csv', changes)
+        if not final_only:
+            changes = []
+            for row in rows:
+                wrong = {c: sum(not p['correct'] for p in predictions
+                                if p['id'] == row['id'] and p['condition'] == c) for c in ('P0', 'final')}
+                changes.append({'id': row['id'], 'actual': row['EFSA'], 'P0_wrong': wrong['P0'],
+                                'final_wrong': wrong['final'],
+                                'fully_corrected': wrong['P0'] == plan['repeats'] and wrong['final'] == 0,
+                                'new_error': wrong['P0'] == 0 and wrong['final'] > 0})
+            write_csv(folder / 'test_changes.csv', changes)
         summaries[str(year)] = {c: {
             'accuracy_mean': mean(m['accuracy'] for m in metrics if m['condition'] == c),
             'macro_f1_mean': mean(m['macro_f1'] for m in metrics if m['condition'] == c),
             'fp_total': sum(m['fp'] for m in metrics if m['condition'] == c),
-            'fn_total': sum(m['fn'] for m in metrics if m['condition'] == c)} for c in ('P0', 'final')}
+            'fn_total': sum(m['fn'] for m in metrics if m['condition'] == c)} for c, _ in conditions}
         save(folder / 'test_summary.json', summaries[str(year)])
-        print(f'{year}: completed {len(rows)} cases x 2 prompts x {plan["repeats"]} repeats')
+        print(f'{year}: completed {len(rows)} cases x {len(conditions)} prompts x {plan["repeats"]} repeats')
     result = {'mode': mode, 'final_name': plan['final_name'], 'repeats': plan['repeats'],
-              'metrics': summaries, 'calls': calls.count,
+              'metrics': summaries, 'calls': calls.count, 'conditions': [c for c, _ in conditions],
               'note': 'Frozen prompt transfer; no optimization. Prior use of these years in other experiments must be disclosed.'}
-    save(calls.folder / 'summary.json', result)
+    save(result_folder / 'summary.json', result)
     return result
 
 
@@ -100,6 +104,7 @@ def main():
     parser.add_argument('--repeats', type=int, default=3)
     parser.add_argument('--mode', choices=['mock', 'live'], default='mock')
     parser.add_argument('--max-calls', type=int)
+    parser.add_argument('--final-only', action='store_true', help='Evaluate only the frozen winner; reuse existing final responses')
     args = parser.parse_args()
     if args.stage == 'prepare':
         plan = prepare(args.source, args.output, args.years, args.repeats)
@@ -115,7 +120,7 @@ def main():
     with lock.open('x'):
         pass
     try:
-        print(json.dumps(run(plan, args.output, args.mode, args.max_calls), ensure_ascii=True))
+        print(json.dumps(run(plan, args.output, args.mode, args.max_calls, final_only=args.final_only), ensure_ascii=True))
     finally:
         lock.unlink()
 

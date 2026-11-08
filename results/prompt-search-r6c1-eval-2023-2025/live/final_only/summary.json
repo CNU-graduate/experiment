@@ -1,0 +1,36 @@
+{
+  "mode": "live",
+  "final_name": "R6C1",
+  "repeats": 3,
+  "metrics": {
+    "2023": {
+      "final": {
+        "accuracy_mean": 0.9523809523809524,
+        "macro_f1_mean": 0.9512607240008369,
+        "fp_total": 6,
+        "fn_total": 4
+      }
+    },
+    "2024": {
+      "final": {
+        "accuracy_mean": 0.9428571428571428,
+        "macro_f1_mean": 0.9414957801492642,
+        "fp_total": 1,
+        "fn_total": 11
+      }
+    },
+    "2025": {
+      "final": {
+        "accuracy_mean": 0.9857142857142858,
+        "macro_f1_mean": 0.9850267379679145,
+        "fp_total": 0,
+        "fn_total": 3
+      }
+    }
+  },
+  "calls": 756,
+  "conditions": [
+    "final"
+  ],
+  "note": "Frozen prompt transfer; no optimization. Prior use of these years in other experiments must be disclosed."
+}

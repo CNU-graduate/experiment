@@ -1,0 +1,13 @@
+﻿id,year,actual,prediction,correct,condition,repeat
+2024-01-01,2024,Yes,No,False,P0,1
+2024-01-02,2024,Yes,Yes,True,P0,1
+2024-01-01,2024,Yes,Yes,True,final,1
+2024-01-02,2024,Yes,No,False,final,1
+2024-01-01,2024,Yes,No,False,P0,2
+2024-01-02,2024,Yes,Yes,True,P0,2
+2024-01-01,2024,Yes,Yes,True,final,2
+2024-01-02,2024,Yes,No,False,final,2
+2024-01-01,2024,Yes,No,False,P0,3
+2024-01-02,2024,Yes,Yes,True,P0,3
+2024-01-01,2024,Yes,Yes,True,final,3
+2024-01-02,2024,Yes,No,False,final,3
