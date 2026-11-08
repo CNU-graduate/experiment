@@ -11,3 +11,4 @@ archive/
 results/e6-guided-ablation-v1/**/*.lock
 results/e6-h1-v1/**/*.lock
 results/e6-j1-purpose-v1/**/*.lock
+results/e6-purpose-control-v1/**/*.lock

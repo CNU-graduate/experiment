@@ -36,5 +36,7 @@ jobs:
         run: python -m residue_experiment.e6_h1 --mode dry-run --output "$RUNNER_TEMP/e6-h1-check"
       - name: Validate J1 purpose routing without API calls
         run: python -m residue_experiment.e6_j1 --mode dry-run --output "$RUNNER_TEMP/e6-j1-check"
+      - name: Validate controlled purpose comparison without API calls
+        run: python -m residue_experiment.e6_purpose_control --mode dry-run --output "$RUNNER_TEMP/e6-purpose-control-check"
       - name: Tests without real model API calls
         run: python -m pytest -q tests

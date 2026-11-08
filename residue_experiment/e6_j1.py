@@ -147,7 +147,10 @@ def prepare():
     return config, historical, plan, expected
 
 
-def aggregate(output, mode, config, historical, expected):
+def aggregate(output, mode, config, historical, expected, *, system_prompts=None,
+              config_for_run=None, result_label="J1"):
+    systems = PROMPTS if system_prompts is None else system_prompts
+    config_for_run = child_config if config_for_run is None else config_for_run
     dest = output/mode/'analysis'
     dest.mkdir(parents=True, exist_ok=True)
     metrics, summaries, resources, frequencies = [], [], [], []
@@ -161,7 +164,7 @@ def aggregate(output, mode, config, historical, expected):
             calls = read_csv(folder/'api_calls.csv') if (folder/'api_calls.csv').exists() else []
             if rows:
                 m = json.loads((folder/'manifest.json').read_text(encoding='utf-8-sig'))
-                if m['mode'] != mode or m['system_prompt'] != PROMPTS[c] or m['config'] != child_config(config, c, n):
+                if m['mode'] != mode or m['system_prompt'] != systems[c] or m['config'] != config_for_run(config, c, n):
                     raise ValueError('J1 route manifest mismatch')
             successful = {json.loads(r['case_key'])[3]: r for r in calls if r['status'] == 'success'}
             for r in rows:
@@ -177,7 +180,7 @@ def aggregate(output, mode, config, historical, expected):
             resources.append(dict(route=c, purpose=ROUTES[c], round=n, api_attempts=len(calls),
                                   failed_attempts=sum(r['status'] == 'error' for r in calls),
                                   unfinished_attempts=sum(r['status'] not in ('success', 'error') for r in calls)))
-    for label, repeats in [('E6-guided-historical', [{r['id']: r for r in rs} for rs in historical]), ('J1', rounds)]:
+    for label, repeats in [('E6-guided-historical', [{r['id']: r for r in rs} for rs in historical]), (result_label, rounds)]:
         for n, rs in enumerate(repeats, 1):
             for year in (2023, 2024, 2025, 'all'):
                 for purpose in ('all', *ROUTES.values()):
@@ -186,7 +189,7 @@ def aggregate(output, mode, config, historical, expected):
                     valid = [rs[i] for i in ids if i in rs and rs[i]['status'] == 'success']
                     values = score([r['actual'] for r in valid], [r['prediction'] for r in valid]) if valid else {
                         k: '' for k in ('accuracy', 'precision', 'recall', 'macro_f1', 'tn', 'fp', 'fn', 'tp')}
-                    metrics.append(dict(condition=label, historical=label != 'J1', round=n, year=year,
+                    metrics.append(dict(condition=label, historical=label != result_label, round=n, year=year,
                                         purpose=purpose, n_total=len(ids), n_evaluated=len(valid),
                                         complete=len(valid) == len(ids), coverage=len(valid)/len(ids), **values))
         for year in (2023, 2024, 2025, 'all'):

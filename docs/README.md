@@ -19,3 +19,5 @@
 실제 분석 산출물은 [analysis/](../analysis/README.md)에서 확인하세요.
 
 - [E7 고정 4-shot 3회 반복 실험](RUN_E7.md)
+
+- [K1·K2·K3 목적별 지침 통제 비교](RUN_E6_PURPOSE_CONTROL.md)
