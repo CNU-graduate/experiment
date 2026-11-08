@@ -45,6 +45,9 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None, r
         raise ValueError('Instruction variants require an explicit system prompt')
     if mode == 'live' and not approved:
         raise ValueError('Live calls require separate user approval and --approve-paid-api')
+    case_purpose = config.get('case_purpose')
+    if case_purpose is not None and case_purpose not in ('Enforcement', 'Risk assessment'):
+        raise ValueError('case_purpose must be Enforcement or Risk assessment')
     data = Dataset(config['data_dir'])
     annotations = {}
     annotation_files = []
@@ -94,6 +97,8 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None, r
                 seeds = config['seeds'] if condition in RANDOM else [None]
                 for seed in seeds:
                     for test in data.tests[year]:
+                        if case_purpose is not None and test['purpose'] != case_purpose:
+                            continue
                         examples, error = [], ''
                         try:
                             examples = ([] if condition in ('P1', 'P2', 'P3', 'P4', 'P5') else
