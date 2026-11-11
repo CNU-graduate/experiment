@@ -62,14 +62,14 @@ def prepare():
     return config, plan, expected
 
 
-def aggregate(output, mode, expected, config):
+def aggregate(output, mode, expected, config, *, system_prompt=guided.GUIDED_SYSTEM):
     metrics, errors = [], {i: dict(id=i, actual=r['actual'], valid_runs=0, wrong_count=0) for i,r in expected.items()}
     for n in (1, 2, 3):
         folder = output/mode/f'round-{n:02d}'
         rows = read_csv(folder/'predictions.csv') if (folder/'predictions.csv').exists() else []
         if rows:
             manifest = json.loads((folder/'manifest.json').read_text(encoding='utf-8-sig'))
-            if manifest['config'] != config or manifest['system_prompt'] != guided.GUIDED_SYSTEM or manifest['mode'] != mode:
+            if manifest['config'] != config or manifest['system_prompt'] != system_prompt or manifest['mode'] != mode:
                 raise ValueError('Mixed final-test manifest')
             if len({r['id'] for r in rows}) != len(rows):
                 raise ValueError('Duplicate final-test result')

@@ -23,3 +23,5 @@
 - [K1·K2·K3 목적별 지침 통제 비교](RUN_E6_PURPOSE_CONTROL.md)
 
 - [2026년 86문제 E6＋보완 지침 최종 평가](RUN_E6_FINAL_2026.md)
+
+- [기본 E6·P3의 2026년 비교](RUN_E6_P3_FINAL_2026.md)
