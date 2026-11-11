@@ -6,7 +6,7 @@ from pathlib import Path
 
 FIELDS = ('substance', 'purpose', 'commodity', 'JMPR', 'EU')
 LABELS = ('No', 'Yes')
-PATTERN = re.compile(r'ESFA_(\d{4})(70answerkey|70|_remain)\.csv$')
+PATTERN = re.compile(r'ESFA_(\d{4})(70answerkey|70|86answerkey|86|_remain)\.csv$')
 
 
 def inputs(row):
@@ -18,16 +18,25 @@ def signature(row):
 
 
 class Dataset:
-    def __init__(self, directory):
+    def __init__(self, directory, *, include_2026=False):
         self.files, self.tables, self.tests, self.pools = [], {}, {}, {}
         self.issues = []
+        test_counts = {}
         for path in sorted(Path(directory).rglob('*.csv')):
             match = PATTERN.fullmatch(path.name)
             if not match:
                 continue
             year, kind = int(match[1]), match[2]
+            if kind.startswith('86') and not include_2026:
+                continue
+            expected_count = 86 if kind.startswith('86') else 70
+            if kind.startswith('86') and year != 2026:
+                raise ValueError('86-case format is reserved for supplied 2026 dataset')
+            kind = kind.replace('86', '70')
             if (year, kind) in self.tables:
                 raise ValueError(f'Duplicate dataset file: {path.name}')
+            if kind == '70':
+                test_counts[year] = expected_count
             with path.open(encoding='utf-8-sig', newline='') as handle:
                 reader = csv.DictReader(handle)
                 columns = reader.fieldnames or []
@@ -70,8 +79,8 @@ class Dataset:
                 answers = {r['id']: r for r in key}
                 if {r['id'] for r in test} != set(answers):
                     raise ValueError(f'{year}: test/answerkey id mismatch')
-                if len(test) != 70:
-                    raise ValueError(f'{year}: expected 70 test rows, found {len(test)}')
+                if len(test) != test_counts[year]:
+                    raise ValueError(f'{year}: expected {test_counts[year]} test rows, found {len(test)}')
                 for row in test:
                     if signature(row) != signature(answers[row['id']]):
                         raise ValueError(f'{year}:{row["id"]}: test/answerkey input mismatch')

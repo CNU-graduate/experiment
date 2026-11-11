@@ -1,0 +1,161 @@
+{
+  "note": "Annotated from 2025 input definitions only; no 2026 labels used. Frozen before live evaluation.",
+  "annotations": {
+    "2025-05-02": {
+      "tags": [
+        "compound",
+        "expression"
+      ],
+      "features": [
+        "compound:parent_match",
+        "expression:free_form",
+        "expression:fat_notation"
+      ],
+      "complexity": 1,
+      "reason": "Parent/free-form wording and fat-solubility notation."
+    },
+    "2025-08-02": {
+      "tags": [
+        "compound",
+        "expression"
+      ],
+      "features": [
+        "compound:metabolite_alias",
+        "expression:sum_parent_basis"
+      ],
+      "complexity": 2,
+      "reason": "Corresponding BTS/metabolite aliases and parent-based expression."
+    },
+    "2025-10-02": {
+      "tags": [
+        "compound",
+        "expression",
+        "status"
+      ],
+      "features": [
+        "compound:parent_match",
+        "expression:fat_notation",
+        "status:no_eu_review"
+      ],
+      "complexity": 1,
+      "reason": "Parent-only definitions; no EU review and differing fat notation."
+    },
+    "2025-13-02": {
+      "tags": [
+        "compound",
+        "scope",
+        "expression"
+      ],
+      "features": [
+        "compound:common_moiety",
+        "compound:isomers",
+        "scope:metabolite_coverage",
+        "expression:parent_basis"
+      ],
+      "complexity": 2,
+      "reason": "Common-moiety metabolite scope versus parent isomer definition."
+    },
+    "2025-14-01": {
+      "tags": [
+        "compound"
+      ],
+      "features": [
+        "compound:parent_match"
+      ],
+      "complexity": 0,
+      "reason": "Same parent stated with a Regulation source qualifier."
+    },
+    "2025-16-02": {
+      "tags": [
+        "compound",
+        "scope",
+        "expression",
+        "application"
+      ],
+      "features": [
+        "compound:metabolite",
+        "scope:tissue_species",
+        "expression:sum_parent_basis",
+        "application:conditional_definition"
+      ],
+      "complexity": 3,
+      "reason": "Sum definition versus tissue/species-dependent parent or metabolite definitions."
+    },
+    "2025-18-02": {
+      "tags": [
+        "compound",
+        "expression"
+      ],
+      "features": [
+        "compound:metabolite_alias",
+        "expression:sum_parent_basis",
+        "expression:fat_notation"
+      ],
+      "complexity": 2,
+      "reason": "Chemical and sulfone aliases, sum and expression basis."
+    },
+    "2025-18-03": {
+      "tags": [
+        "compound",
+        "scope",
+        "expression"
+      ],
+      "features": [
+        "compound:metabolite",
+        "scope:metabolite_coverage",
+        "expression:sum_parent_basis"
+      ],
+      "complexity": 2,
+      "reason": "Different named metabolite coverage in sum definitions."
+    },
+    "2025-20-04": {
+      "tags": [
+        "compound"
+      ],
+      "features": [
+        "compound:parent_match"
+      ],
+      "complexity": 0,
+      "reason": "Parent-only definitions under a review source."
+    },
+    "2025-22-02": {
+      "tags": [
+        "compound",
+        "expression",
+        "status",
+        "application"
+      ],
+      "features": [
+        "compound:isomers",
+        "expression:fat_notation",
+        "status:not_yet_applicable",
+        "application:multiple_sources"
+      ],
+      "complexity": 2,
+      "reason": "Pending Regulation and existing Regulation distinguished; isomer wording."
+    },
+    "2025-23-01": {
+      "tags": [
+        "compound"
+      ],
+      "features": [
+        "compound:parent_match"
+      ],
+      "complexity": 0,
+      "reason": "Same parent-only enforcement definition."
+    },
+    "2025-27-03": {
+      "tags": [
+        "compound",
+        "expression"
+      ],
+      "features": [
+        "compound:salts",
+        "compound:metabolite",
+        "expression:sum_metabolite_basis"
+      ],
+      "complexity": 2,
+      "reason": "Sum of parent, phosphonic acid and salts with phosphonic-acid expression."
+    }
+  }
+}

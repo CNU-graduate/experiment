@@ -21,3 +21,5 @@
 - [E7 고정 4-shot 3회 반복 실험](RUN_E7.md)
 
 - [K1·K2·K3 목적별 지침 통제 비교](RUN_E6_PURPOSE_CONTROL.md)
+
+- [2026년 86문제 E6＋보완 지침 최종 평가](RUN_E6_FINAL_2026.md)

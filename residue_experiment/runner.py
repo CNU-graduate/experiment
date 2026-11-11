@@ -48,7 +48,7 @@ def run(config, output, mode='dry-run', approved=False, *, system_prompt=None, r
     case_purpose = config.get('case_purpose')
     if case_purpose is not None and case_purpose not in ('Enforcement', 'Risk assessment'):
         raise ValueError('case_purpose must be Enforcement or Risk assessment')
-    data = Dataset(config['data_dir'])
+    data = Dataset(config['data_dir'], include_2026=config.get('include_2026', False))
     annotations = {}
     annotation_files = []
     if 'E6' in config['conditions'] and config.get('priority_annotations'):
