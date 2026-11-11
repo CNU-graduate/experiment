@@ -1,0 +1,87 @@
+﻿id,substance,purpose,commodity,actual,wrong_count
+2026-02-01,Malathion,Enforcement,Plant products,No,0
+2026-03-01,2‐Phenylphenol and its sodium salts,Enforcement,Plant products,Yes,3
+2026-04-01,Guazatine,Enforcement,Plant products,Yes,0
+2026-04-03,Guazatine,Risk assessment,Plant products,Yes,0
+2026-06-01,Cyfluthrin and Beta‐Cyfluthrin,Enforcement,Plant products,Yes,0
+2026-06-02,Cyfluthrin and Beta‐Cyfluthrin,Enforcement,Animal products,Yes,0
+2026-06-03,Cyfluthrin and Beta‐Cyfluthrin,Risk assessment,Plant products,Yes,0
+2026-06-04,Cyfluthrin and Beta‐Cyfluthrin,Risk assessment,Animal products,Yes,0
+2026-07-01,Bifenthrin,Enforcement,Plant products,Yes,0
+2026-07-02,Bifenthrin,Enforcement,Animal products,Yes,0
+2026-07-03,Bifenthrin,Risk assessment,Plant products,Yes,0
+2026-08-01,Pyriproxyfen,Enforcement,Plant products,Yes,0
+2026-08-02,Pyriproxyfen,Enforcement,Animal products,Yes,0
+2026-08-04,Pyriproxyfen,Risk assessment,Animal products,Yes,0
+2026-09-01,Cyprodinil,Enforcement,Plant products,Yes,0
+2026-09-02,Cyprodinil,Enforcement,Animal products,No,0
+2026-09-03,Cyprodinil,Risk assessment,Plant products,Yes,3
+2026-09-04,Cyprodinil,Risk assessment,Animal products,No,0
+2026-10-01,Pyraclostrobin,Enforcement,Plant products,Yes,0
+2026-10-02,Pyraclostrobin,Enforcement,Animal products,Yes,0
+2026-10-03,Pyraclostrobin,Risk assessment,Plant products,No,0
+2026-10-04,Pyraclostrobin,Risk assessment,Animal products,No,0
+2026-11-01,Fludioxonil,Enforcement,Plant products,Yes,0
+2026-11-02,Fludioxonil,Enforcement,Animal products,Yes,1
+2026-11-03,Fludioxonil,Risk assessment,Plant products,No,0
+2026-11-04,Fludioxonil,Risk assessment,Animal products,Yes,0
+2026-12-01,Trifloxystrobin,Enforcement,Plant products,Yes,0
+2026-12-02,Trifloxystrobin,Enforcement,Animal products,Yes,0
+2026-12-03,Trifloxystrobin,Risk assessment,Plant products,No,0
+2026-12-04,Trifloxystrobin,Risk assessment,Animal products,No,0
+2026-13-01,Indoxacarb,Enforcement,Plant products,Yes,0
+2026-13-02,Indoxacarb,Enforcement,Animal products,No,3
+2026-13-04,Indoxacarb,Risk assessment,Animal products,No,0
+2026-14-01,Boscalid,Enforcement,Plant products,Yes,0
+2026-14-03,Boscalid,Risk assessment,Plant products,Yes,0
+2026-15-01,Difenoconazole,Enforcement,Plant products,Yes,0
+2026-15-02,Difenoconazole,Enforcement,Animal products,No,0
+2026-15-03,Difenoconazole,Risk assessment,Plant products,Yes,3
+2026-15-04,Difenoconazole,Risk assessment,Animal products,No,0
+2026-16-01,Azoxystrobin,Enforcement,Plant products,Yes,0
+2026-16-02,Azoxystrobin,Enforcement,Animal products,Yes,0
+2026-16-03,Azoxystrobin,Risk assessment,Plant products,Yes,0
+2026-16-04,Azoxystrobin,Risk assessment,Animal products,Yes,0
+2026-17-01,Spinetoram,Enforcement,Plant products,Yes,0
+2026-17-02,Spinetoram,Enforcement,Animal products,Yes,0
+2026-17-03,Spinetoram,Risk assessment,Plant products,Yes,0
+2026-17-04,Spinetoram,Risk assessment,Animal products,Yes,0
+2026-18-02,Metaflumizone,Enforcement,Animal products,Yes,0
+2026-18-04,Metaflumizone,Risk assessment,Animal products,Yes,0
+2026-19-01,Clothianidin,Enforcement,Plant products,Yes,0
+2026-19-02,Clothianidin,Enforcement,Animal products,Yes,0
+2026-19-03,Clothianidin,Risk assessment,Plant products,Yes,3
+2026-20-01,Etoxazole,Enforcement,Plant products,Yes,0
+2026-20-02,Etoxazole,Enforcement,Animal products,Yes,0
+2026-20-04,Etoxazole,Risk assessment,Animal products,Yes,0
+2026-21-01,Flubendiamide,Enforcement,Plant products,Yes,0
+2026-21-02,Flubendiamide,Enforcement,Animal products,Yes,0
+2026-21-03,Flubendiamide,Risk assessment,Plant products,Yes,0
+2026-21-04,Flubendiamide,Risk assessment,Animal products,Yes,0
+2026-22-01,Fluopyram,Enforcement,Plant products,Yes,0
+2026-22-02,Fluopyram,Enforcement,Animal products,Yes,0
+2026-22-03,Fluopyram,Risk assessment,Plant products,No,0
+2026-22-04,Fluopyram,Risk assessment,Animal products,Yes,0
+2026-25-01,Cyantraniliprole,Enforcement,Plant products,Yes,0
+2026-25-02,Cyantraniliprole,Enforcement,Animal products,Yes,0
+2026-25-03,Cyantraniliprole,Risk assessment,Plant products,Yes,0
+2026-25-04,Cyantraniliprole,Risk assessment,Animal products,No,0
+2026-26-01,Pyriofenone,Enforcement,Plant products,Yes,0
+2026-26-02,Pyriofenone,Enforcement,Animal products,Yes,0
+2026-26-03,Pyriofenone,Risk assessment,Plant products,Yes,0
+2026-27-01,Metconazole,Enforcement,Plant products,Yes,0
+2026-27-02,Metconazole,Enforcement,Animal products,Yes,0
+2026-27-03,Metconazole,Risk assessment,Plant products,No,0
+2026-27-04,Metconazole,Risk assessment,Animal products,No,0
+2026-28-01,Mefentrifluconazole,Enforcement,Plant products,Yes,0
+2026-28-02,Mefentrifluconazole,Enforcement,Animal products,No,0
+2026-28-03,Mefentrifluconazole,Risk assessment,Plant products,No,0
+2026-28-04,Mefentrifluconazole,Risk assessment,Animal products,No,0
+2026-31-03,Mepiquat chloride,Risk assessment,Plant products,No,0
+2026-31-04,Mepiquat chloride,Risk assessment,Animal products,No,0
+2026-32-02,Acequinocyl,Enforcement,Animal products,Yes,0
+2026-32-04,Acequinocyl,Risk assessment,Animal products,Yes,0
+2026-36-01,Proquinazid,Enforcement,Plant products,Yes,0
+2026-36-02,Proquinazid,Enforcement,Animal products,Yes,0
+2026-36-03,Proquinazid,Risk assessment,Plant products,Yes,1
+2026-36-04,Proquinazid,Risk assessment,Animal products,No,0

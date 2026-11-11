@@ -1,0 +1,16 @@
+﻿id,year,actual,prediction,correct
+2021-37-01,2021,Yes,Yes,True
+2022-34-02,2022,Yes,Yes,True
+2018-01-01,2018,No,Yes,False
+2018-26-02,2018,Yes,Yes,True
+2019-19-01,2019,Yes,Yes,True
+2021-26-02,2021,Yes,Yes,True
+2022-28-02,2022,Yes,Yes,True
+2021-33-02,2021,No,Yes,False
+2019-10-01,2019,Yes,Yes,True
+2018-04-01,2018,Yes,Yes,True
+2021-20-02,2021,Yes,Yes,True
+2022-32-01,2022,Yes,Yes,True
+2018-31-02,2018,No,Yes,False
+2019-23-01,2019,Yes,Yes,True
+2021-18-01,2021,Yes,Yes,True

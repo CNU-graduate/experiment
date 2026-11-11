@@ -97,6 +97,7 @@ class ContinuationCalls(Calls):
     def __init__(self, plan, output, mode, max_calls=None):
         super().__init__(plan, output, mode, max_calls)
         self.count += len(list((self.folder / 'empty_response_attempts').glob('*.json')))
+        self.count += len(list((self.folder / 'connection_error_attempts').glob('*.json')))
         seed = read(Path(output) / 'seed_cache.json')
         if hash_value(seed) != plan['continuation']['seed_cache_hash']:
             raise ValueError('Source cache snapshot changed')

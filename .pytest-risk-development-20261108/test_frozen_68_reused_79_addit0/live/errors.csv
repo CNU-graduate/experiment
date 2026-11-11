@@ -1,0 +1,118 @@
+﻿id,year,substance,purpose,commodity,JMPR,EU,actual,prediction,correct,origin,source_path
+2019-10-03,2019,Kresoxim‐methyl,Risk assessment,Plant products,Sum of kresoxim‐methyl and metabolites (2E)‐(methoxyimino){2‐[(2‐methylphenoxy)methyl]phenyl}acetic acid (490M1) and (2E)‐{2‐[(4‐hydroxy‐2‐methylphenoxy)methyl]phenyl}(methoxyimino)acetic acid (490M9) including their conjugates expressed as kresoxim‐methyl,"Art.12 (EFSA, 2014b):
+Sum of kresoxim‐methyl and the metabolites BF 490‐2 (490M2) and BF 490‐9 (490M9), free and conjugated, expressed as parent",No,Yes,False,additional,
+2018-17-03,2018,Fluopyram,Risk assessment,Plant products,Fluopyram,"Sum fluopyram and fluopyram‐benzamide (M25), expressed
+as fluopyram",No,Yes,False,additional,
+2021-39-03,2021,Mandestrobin,Risk assessment,Plant products,Mandestrobin,"Peer review (EFSA, 2015k):
+Sum of mandestrobin, De‐Xy‐S‐2200 (De–XY‐mandestrobin), 4‐OH‐S‐2200 conjugate (4–OH‐mandestrobin conjugate), 2–CH2OH‐S‐2200 conjugate (2–CH2OH‐mandestrobin conjugate), expressed as mandestrobin",No,Yes,False,additional,
+2022-24-03,2022,Sulfoxaflor,Risk assessment,Plant products,Sulfoxaflor,"Peer review (EFSA, 2014j): Sum of sulfoxaflor and metabolite X11719474, expressed as sulfoxaflor (It was agreed that if metabolite X11719474 is shown to be significantly less toxic than sulfoxaflor, then the residue definition for risk assessment will become patent sulfoxaflor only)",No,Yes,False,additional,
+2019-12-04,2019,Cyprodinil,Risk assessment,Animal products,Cyprodinil,"Milk: Cyprodinil (sum of cyprodinil and CGA 304075 (free and conjugated), expressed as cyprodinil)
+Other animal products:
+Cyprodinil (sum of cyprodinil and CGA 304075 (free), expressed as cyprodinil)",No,Yes,False,additional,
+2018-09-04,2018,Fenpyroximate,Risk assessment,Animal products,"Sum of fenpyroximate, 2‐hydroxymethyl‐2‐propyl (E)‐4‐[(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐yl)‐methylenaminooxymethyl]benzoate(Fen‐OH), (E)‐4‐[(1,3‐dimethyl‐5‐phenoxypyrazol‐4‐yl)methyleneaminooxymethyl]benzoic acid(M‐3), and (E)‐4‐{[(1,3‐dimethyl‐5‐(4‐hydroxyphenoxy)pyrazol‐4‐yl]methyleneaminooxymethyl}benzoic acid (M‐5, free and its conjugates), expressed as fenpyroximate","Sum of fenpyroximate, Fen‐OH, M‐3 and their Z‐isomers (M‐1), expressed as fenpyroximate",No,Yes,False,additional,
+2019-16-04,2019,Fluopyram,Risk assessment,Animal products,"Sum of fluopyram, 2‐(trifluoromethyl)benzamide and the combined residues of N‐{(E)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide and N‐{(Z)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide, all expressed as fluopyram","Sum of fluopyram, fluopyram‐benzamide (M25), expressed
+as fluopyram",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\a75c9223b4ae5e363e674da2b4159d7b73a9437d29d4db682e711af6a6fbe195.json
+2018-31-03,2018,Fenazaquin,Risk assessment,Plant products,Fenazaquin,"Peer review: Fenazaquin;
+TBPE
+These RD are applicable to unprocessed and processed fruit.",No,Yes,False,additional,
+2021-32-03,2021,Fluazifop‐p‐butyl,Risk assessment,Plant products,"Sum of fluazifop‐P‐butyl, fluazifop‐P‐acid (II), 2‐[4‐(3‐hydroxy‐5‐trifluoromethyl‐2‐phenoxy)pyridyloxy] propionic acid (XL),5‐trifluoromethyl‐2‐pyridone (X) and their conjugates, expressed as fluazifop‐P‐acid","Sum of all the constituent isomers of fluazifop, its esters and its conjugates, expressed as fluazifop",No,Yes,False,additional,
+2018-21-03,2018,Saflufenacil,Risk assessment,Plant products,Saflufenacil,"Sum of saflufenacil, M800H11 and M800H35, expressed as saflufenacil",No,Yes,False,additional,
+2021-23-03,2021,Penthiopyrad,Risk assessment,Plant products,"Sum of penthiopyrad and 1‐methyl‐3‐trifluoromethyl‐1H‐pyrazole‐4‐carboxamide (PAM), expressed as penthiopyrad","Peer review (EFSA, 2013b): Residue definition 1: Sum of penthiopyrad and metabolite 753‐AOH, expressed as penthiopyrad;
+Residue definition 2: Metabolite PAM",No,Yes,False,additional,
+2018-19-04,2018,Isopyrazam,Risk assessment,Animal products,Isopyrazam (sum of syn‐isomer and anti‐isomer).,Isopyrazam (sum of isomers) plus all its metabolites containing the CSAA798670 moiety [3‐(difluromethyl)‐1‐methyl‐pyrazole‐4‐methanoic acid] expressed as Isopyrazam,No,Yes,False,additional,
+2018-35-04,2018,Phosphonic acid,Risk assessment,Animal products,Phosphonic acid,See fosetyl Al,Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\0960dd4534f0facd36e53d2905654cfef4b759be41b29b54d039d5eefb367632.json
+2019-08-03,2019,Abamectin,Risk assessment,Plant products,Avermectin B1a,"Abamectin (sum of avermectin B1a, avermectin B1b and delta‐8,9 isomer of avermectin B1a, expressed as avermectin B1a)",No,Yes,False,additional,
+2021-13-03,2021,Kresoxim‐methyl,Risk assessment,Plant products,Sum of kresoxim‐methyl and metabolites (2E)‐(methoxyimino){2[(2‐methylphenoxy)methyl]phenyl} acetic acid (490M1) and (2E)‐{2[(4‐hydroxy‐2‐methylphenoxy) methyl]phenyl}(methoxyimino) acetic acid (490M9) including their conjugates expressed as kresoxim‐methyl.,"Art.12 (EFSA, 2014b) and peer‐review (EFSA, 2010k): Sum of kresoxim‐methyl and the metabolites BF 490‐2 (490M2) and BF 490‐9 (490M9), free and conjugated, expressed as parent.",No,Yes,False,additional,
+2019-04-03,2019,Propamocarb,Risk assessment,Plant products,Propamocarb,"MRL review (EFSA, 2013e):
+Sum of propamocarb and its salts, expressed as propamocarb",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\6924e55e9c725ec0b0929733a80d034e69d4df4a5bf93036f8f79f5efd9d5088.json
+2022-12-04,2022,Methoxyfenozide,Risk assessment,Animal products,Methoxyfenozide,"Peer review (EFSA, 2017f): Methoxyfenozide, M24 (free and conjugated M26) and M16, expressed as methoxyfenozide (provisional) MRL review (EFSA, 2014b): Methoxyfenozide (tentative)",No,Yes,False,additional,
+2018-05-04,2018,Propiconazole,Risk assessment,Animal products,"Propiconazole plus all metabolites convertible to 2,4‐dichloro‐benzoic acid, expressed as propiconazole","Propiconazole, CGA91305 (free and conjugated) and CGA118244 (The way the residue definition will be expressed is pending upon the requested toxicological profile on CGA91305 and CGA118244)
+CGA71019 (1,2,4‐triazole)",No,Yes,False,additional,
+2021-43-04,2021,Metconazole,Risk assessment,Animal products,"Sum of metconazole (cis and trans‐isomer) and metabolites (1SR,2SR,5RS)‐5‐(4‐chlorobenzyl)‐2‐(hydroxymethyl)‐2‐methyl‐1‐(1H‐1,2,4‐triazol‐1‐ylmethyl)cyclopentanol (M1) and (1RS,2SR,3RS)‐3‐(4‐chlorobenzyl)‐2‐hydroxy‐1‐methyl‐2‐(1H‐1,2,4‐triazol‐1‐ylmethyl)cyclopentanecarboxylic acid (M12), expressed as metconazole","MRL review Art. 12 (EFSA, 2011n):
+Metconazole (sum of isomers)
+Peer review (EFSA, 2006c):
+Metconazole (sum of isomers)
+Separate RDs for TDMs",No,Yes,False,additional,
+2019-24-03,2019,Isofetamid,Risk assessment,Plant products,Isofetamid,"Peer review (EFSA, 2015q); Art 10 MRL (EFSA, 2018h):
+Sum isofetamid and GPTC, expressed as isofetamid",No,Yes,False,additional,
+2019-25-04,2019,Oxathiapiproline,Risk assessment,Animal products,"Sum of oxathiapiprolin, 5‐(Trifluoromethyl)‐1H‐pyrazole‐3‐carboxylic acid (IN‐E8S72) and 1‐β‐d‐Glucopyranosyl‐3‐(‐(trifluoromethyl)‐1H‐pyrazole‐5‐carboxylic acid (IN‐SXS67), expressed as parent",Oxathiapiprolin,No,Yes,False,additional,
+2022-32-03,2022,Fenpicoxamid,Risk assessment,Plant products,Fenpicoxamid,"Peer review (EFSA, 2018c): Fenpicoxamid Processed commodities: Fenpicoxamid, X12019520, X12314005, X12335723, X12264475 (provisional)",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\0573d346f6a55394e65a1aa00a05e7ea3dc5925292c8269ee131fa0eb840599c.json
+2021-48-03,2021,Valifenalate,Risk assessment,Plant products,"Valifenalate and 3‐(4‐chlorophenyl)‐3‐[[N‐(isopropoxycarbonyl)‐L‐valyl]amino]propionic acid (valifenalate‐acid), (free and conjugated) expressed as valifenalate","Peer review (EFSA, 2013i): Valifenalate",No,Yes,False,additional,
+2022-34-03,2022,Metconazole,Risk assessment,Plant products,Metconazole (sum of cis and trans isomer),"MRL review (EFSA, 2011e): Metconazole (sum of isomers) Peer review (EFSA, 2006b): Metconazole (sum of isomers) (cereals and oilseed crops only) Separate RDs for TDMs",No,Yes,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\1e064ae34f7ffecb2f1f42bdb1881db3ee1e611f3df394107d7c2c96d69612c2.json
+2019-30-04,2019,Pydiflumetofen,Risk assessment,Animal products,"Animal products other than mammalian liver and kidney: Sum of pydiflumetofen and 2,4,6‐trichlorophenol (2,4,6‐TCP) and its conjugates, expressed as pydiflumetofen
+For mammalian liver and kidney: Sum of pydiflumetofen, 2,4,6‐trichlorophenol (2,4,6‐TCP) and its conjugates, and 3‐(difluoromethyl)‐N‐methoxy‐1‐methyl‐N‐[1‐methyl‐2‐(2,4,6‐trichloro‐3‐hydroxy‐ phenyl) ethyl]pyrazole‐4‐carboxamide (SYN547897) and its conjugates, expressed as pydiflumetofen","Peer Review proposal (September 2018):
+Parent and 2,4,6‐TCP for all animal matrices (provisional, pending on toxicological data on 2,4,6‐TCP, including genotoxicity potential) (majority opinion)
+See also comments below",No,Yes,False,additional,
+2018-15-03,2018,Prothioconazole,Risk assessment,Plant products,Prothioconazole‐desthio.,"Sum of prothioconazole‐desthio and all metabolites containing the 2‐(1‐chlorocyclopropyl)‐3‐(2‐chlorophenyl)‐2‐hydroxypropyl‐2H‐1,2,4‐triazole moiety, expressed as prothioconazole‐desthio (sum of isomers)",No,Yes,False,additional,
+2022-03-03,2022,Metalaxyl,Risk assessment,Plant products,"Metalaxyl (sum of enantiomers) and N-(2-hydroxymethyl-6-methylphenyl)-N-(methoxyacetyl) alanine methyl ester (M8; free and conjugated; sum of enantiomers), expressed as metalaxyl","MRL review (EFSA, 2015e): Metalaxyl including other mixtures of constituent isomers including metalaxyl-M (sum of isomers)",No,Yes,False,additional,
+2018-11-04,2018,Cyprodinil,Risk assessment,Animal products,Cyprodinil,"Milk: Cyprodinil (sum of cyprodinil and CGA 304075 (free and conjugated), expressed as cyprodinil)
+Other animal products: Cyprodinil (sum of cyprodinil and CGA 304075 (free), expressed as cyprodinil)",No,Yes,False,additional,
+2021-23-04,2021,Penthiopyrad,Risk assessment,Animal products,"Sum of penthiopyrad and 1‐methyl‐3‐trifluoromethyl‐1H‐pyrazole‐4‐carboxamide (PAM), expressed as penthiopyrad","Peer review (EFSA, 2013b):
+Residue definition 1: Penthiopyrad
+Residue definition 2: PAM",No,Yes,False,additional,
+2019-03-03,2019,Lambda‐cyhalothrin,Risk assessment,Plant products,"Cyhalothrin (sum of all isomers).
+The residue is fat soluble","Art. 43 (EFSA, 2017e):
+Lambda‐cyhalothrin",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\66212021b506ccbe757106e41d8fd1c85bf63e1cfd5b4e8df4e84e613dec410d.json
+2021-30-03,2021,Acetochlor,Risk assessment,Plant products,"Sum of compounds hydrolysable with base to 2‐ethyl‐6‐methylaniline (EMA) and 2‐(1‐hydroxyethyl)‐6‐methylaniline (HEMA), expressed in terms of acetochlor
+The residue is not fat soluble","Peer review (EFSA, 2011d): All compounds forming EMA and HEMA on hydrolysis plus N‐oxamic acid, expressed as acetochlor (applicable to cereal grains and rotational crops).
+No residue definition was proposed for animal commodities.",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\510f35869a780ab3e0c2c060c3995fa6ad323d52ed2c6180d61d7dfad5fa8677.json
+2021-30-04,2021,Acetochlor,Risk assessment,Animal products,"Sum of compounds hydrolysable with base to 2‐ethyl‐6‐methylaniline (EMA) and 2‐(1‐hydroxyethyl)‐6‐methylaniline (HEMA), expressed in terms of acetochlor
+The residue is not fat soluble","Peer review (EFSA, 2011d): All compounds forming EMA and HEMA on hydrolysis plus N‐oxamic acid, expressed as acetochlor (applicable to cereal grains and rotational crops).
+No residue definition was proposed for animal commodities.",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\61c52ae17f95e62c2368d0f7344596163ae15154b54120c171b494bee38baa30.json
+2022-35-03,2022,Flutianil,Risk assessment,Plant products,"Sum of flutianil and 2-fluoro-5-(trifluoromethyl)benzenesulfonic acid (OC 56635), expressed as flutianil","Peer review (EFSA, 2014n): Flutianil (fruits and leafy crops only)",No,Yes,False,additional,
+2021-11-03,2021,Tebuconazole,Risk assessment,Plant products,Tebuconazole,"MRL review Art. 12 (EFSA, 2011k): Tebuconazole (provisional)
+Peer review (EFSA, 2014a): 1) Sum of enantiomers contained in tebuconazole
+2) Specific TDM residue definitions applicable to all active substances of the triazole chemical class (TA, TLA, TAA, 1,2,4‐T) (EFSA, 2018p)",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\06e6897e5cb288c45544512ba2999ca7945b399dfd13b72df5953515b768edab.json
+2018-15-04,2018,Prothioconazole,Risk assessment,Animal products,"Sum of prothioconazole‐desthio, prothioconazole‐desthio‐3‐hydroxy, prothioconazole‐desthio‐4‐hydroxy and their conjugates expressed as prothioconazole‐desthio.","MRL review: Sum of prothioconazole‐desthio and all metabolites containing the 2‐(1‐chlorocyclopropyl)‐3‐(2‐chlorophenyl)‐2‐hydroxypropyl‐2H‐1,2,4‐triazole moiety, expressed as prothioconazole‐desthio (sum of isomers) (tentative)",No,Yes,False,additional,
+2019-14-03,2019,Fludioxonil,Risk assessment,Plant products,Fludioxonil,"EFSA (2007, 2011d):
+Sum of fludioxonil and its metabolites oxidised to metabolite 2,2‐difluoro‐benzo[1,3]dioxole‐4 carboxylic acid (CGA 192155), expressed as fludioxonil",No,Yes,False,additional,
+2022-24-04,2022,Sulfoxaflor,Risk assessment,Animal products,Sulfoxaflor,"Peer review (EFSA, 2014j): Sum of parent sulfoxaflor and metabolite X11719474, expressed as sulfoxaflor. If metabolite X11719474 is shown to be significantly less toxic than sulfoxaflor, the residue definition for risk assessment will become parent sulfoxaflor only",No,Yes,False,additional,
+2018-19-03,2018,Isopyrazam,Risk assessment,Plant products,"Sum of isopyrazam and 3‐difluoromethyl‐1‐methyl‐1H‐pyrazole‐4‐carboxylic acid [9‐(1‐hydroxyl‐1‐methylethyl)‐(1RS, 4RS, 9RS)‐1,2,3,4‐tetrahydro‐1,4‐methanonaphthalen‐5‐yl] amide (CSCD459488),
+expressed as isopyrazam","Isopyrazam (sum of isomers) plus its metabolite
+CSCD459488 [syn‐ hydroxyl isopyrazam] (free and conjugated), expressed as isopyrazam",No,Yes,False,additional,
+2021-10-03,2021,Clethodim,Risk assessment,Plant products,A conclusion could not be reached,"MRL review Art. 12 (EFSA, 2019e): Residue definition for risk assessment one (tentative): Sum of clethodim, clethodim sulfoxide, clethodim sulfone and metabolites M14R/M15R, M16R/M17R and M18R/M19R, expressed as clethodim is tentatively proposed
+Residue definition for risk assessment two (tentative): M14A/M15A
+For processed commodities: inconclusive
+Peer review (EFSA, 2011m): Root/tuber vegetables and Oilseeds/Pulses groups: Sum of clethodim, clethodim sulfone, clethodim sulfoxide and metabolites M15R, M17R and M18R expressed as clethodim",No,Yes,False,additional,
+2022-06-04,2022,Propiconazole,Risk assessment,Animal products,"Propiconazole plus all metabolites convertible to 2,4-dichlorobenzoic acid, expressed as propiconazole","Peer review (EFSA, 2017c): 1) Propiconazole, CGA91305 (free and conjugated) and CGA118244 (The way the residue definition will be expressed is pending upon the requested toxicological profile on CGA 91305 and CGA 118244) 2) TDMs (EFSA, 2018n)",No,Yes,False,additional,
+2021-16-04,2021,Pyraclostrobin,Risk assessment,Animal products,Pyraclostrobin,"MRL review Art. 12 (EFSA, 2011l): Sum of pyraclostrobin and its metabolites containing the 1‐(4‐chlorophenyl)‐1H‐pyrazole moiety or the 1‐(4‐chloro‐2‐hydroxyphenyl)‐1H‐pyrazole",No,Yes,False,additional,
+2022-10-04,2022,Fipronil,Risk assessment,Animal products,"Sum of fipronil and 5-amino-3-cyano-1-(2,6-dichloro-4-trifluoromethylphenyl)-4-trifluoromethyl sulfonylpyrazole (MB46136), 5-amino-3-cyano-1-(2,6-dichloro-4-trifluoromethyl phenyl)-4-trifluoromethyl thiopyrazole (MB45950) and 5-amino-3-cyano-1-(2,6-dichloro-4-trifluoromethylphenyl)-4-trifluoromethyl pyrazole (MB46513) expressed in terms of fipronil","MRL review (EFSA, 2012e) and peer review (EFSA, 2006c): Sum of fipronil and sulfone metabolite (MB 46136) expressed as fipronil",No,Yes,False,additional,
+2021-15-04,2021,Cyprodinil,Risk assessment,Animal products,"Cyprodinil
+The residue is fat soluble","MRL review Art. 12 (EFSA, 2013n): Animal products (except milk and honey): Cyprodinil (sum of cyprodinil and CGA 304075 (free), expressed as cyprodinil)
+Milk: Cyprodinil (sum of cyprodinil and CGA 304075 (free and conjugated), expressed as cyprodinil).
+Honey: Cyprodinil
+The residue is fat soluble",No,Yes,False,additional,
+2018-25-04,2018,Imazamox,Risk assessment,Animal products,"Sum of imazamox and 5‐(hydroxymethyl)‐2‐(4‐isopropyl‐4‐methyl‐5‐oxo‐2‐imazazolin‐2‐yl) nicotinic acid (CL 263284), expressed as imazamox",Imazamox,No,Yes,False,additional,
+2019-17-04,2019,Sulfoxaflor,Risk assessment,Animal products,Sulfoxaflor,"Sum of parent sulfoxaflor and metabolite X11719474, expressed as sulfoxaflor",No,Yes,False,additional,
+2018-06-04,2018,Abamectin,Risk assessment,Animal products,Avermectin B1a,Not necessary – covered by legal provisions in force for abamectin from veterinary uses,No,Yes,False,additional,
+2021-29-04,2021,Mesotrione,Risk assessment,Animal products,Mesotrione,"Peer review (EFSA, 2016e):
+Not required for the representative use (provisional)
+MRL review Art. 12 (EFSA, 2015b): AMBA (free and conjugated) (ruminants)",No,Yes,False,additional,
+2018-27-03,2018,Flupyradifurone,Risk assessment,Plant products,"Sum of flupyradifurone, difluoroacetic acid (DFA) and 6‐chloropyridine‐3‐carboxylic acid (6‐CNA), expressed as parent equivalents","EFSA (
+2015d
+):
+Sum flupyradifurone and DFA, expressed as flupyradifurone",No,Yes,False,additional,
+2022-06-03,2022,Propiconazole,Risk assessment,Plant products,"Propiconazole plus all metabolites convertible to 2,4-dichlorobenzoic acid, expressed as propiconazole","Peer review (EFSA, 2017c): 1) Propiconazole (sum of isomers); 2) CGA 118244 (3,5-dideoxy-1,2-O-[(1RS)-1-(2,4-dichlorophenyl)-2-(1H-1,2,4-triazol-1-yl)ethylidene]-d,l-pentitol) free and glucoside conjugated.
+Whether the parent compound and CGA 118244 have to be considered together or separately is pending upon the submission of toxicological data to address the toxicity profile on CGA 118244 3) TDMs (EFSA, 2018n)",No,Yes,False,additional,
+2019-17-03,2019,Sulfoxaflor,Risk assessment,Plant products,Sulfoxaflor,"Sum of parent sulfoxaflor and metabolite X11719474, expressed as sulfoxaflor",No,Yes,False,additional,
+2022-34-04,2022,Metconazole,Risk assessment,Animal products,"Sum of metconazole (cis and trans-isomer) and metabolites (1SR,2SR,5RS)-5-(4-chlorobenzyl)-2-(hydroxymethyl)-2-methyl-1-(1H-1,2,4-triazol-1- ylmethyl)cyclopentanol (M1; free and conjugated) and (1RS,2SR,3RS)-3-(4-chlorobenzyl)-2- hydroxy-1-methyl-2-(1H-1,2,4-triazol-1-ylmethyl)cyclopentanecarboxylic acid (M12; free and conjugated), expressed as metconazole","Peer review (EFSA, 2006b) and MRL review (EFSA, 2011e): Metconazole (sum of isomers) Separate RDs for TDMs",No,Yes,False,additional,
+2021-36-04,2021,Cyclaniliprole,Risk assessment,Animal products,Cyclaniliprole,"Peer review (EFSA, 2016i):
+Cyclaniliprole and metabolites NSY‐28 and NK‐1375; provisionally and pending the submission of data to address the metabolism of NK‐1375 in livestock and its toxicological properties.
+For NSY‐28, reference values of parent may be used",No,Yes,False,additional,
+2019-01-04,2019,Diquat,Risk assessment,Animal products,"Diquat cation
+Sum of diquat, its salts and TOPPS expressed as diquat (tentative)","MRL Review (EFSA, 2015a): Sum of diquat, its salts and TOPPS expressed as diquat (tentative)
+Peer‐review (EFSA, 2015r): Diquat, diquat monopyridone and diquat dipyridone
+Whether residues of the two metabolites can be expressed as diquat is pending a conclusion on the toxicological properties of diquat monopyridone and diquat dipyridone",No,Yes,False,additional,
+2022-11-04,2022,Cyprodinil,Risk assessment,Animal products,Cyprodinil,"MRL review (EFSA, 2013k): Milk: Sum of cyprodinil and CGA 304075 (free and conjugated) expressed as cyprodinil Other animal products: Sum of cyprodinil and CGA 304075 (free) expressed as cyprodinil Peer review (EFSA, 2006a): sum of cyprodinil and CGA 304075 (free and conjugated) expressed as cyprodinil",No,Yes,False,additional,
+2019-22-04,2019,Cyazofamid,Risk assessment,Animal products,Not defined,"Peer review (EFSA, 2016e):
+Cyazofamid
+Art. 12 MRL review (EFSA, 2012e): no RD proposed due to expected low dietary burden",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\b257bb8f74addd94864e588b8a96fc608d87ea39781c07fe544571472b631df0.json
+2021-10-04,2021,Clethodim,Risk assessment,Animal products,A conclusion could not be reached,"MRL review Art. 12 (EFSA, 2019e): Sum of clethodim, clethodim sulfoxide and clethodim sulfone, expressed as clethodim (tentative)Peer review (EFSA, 2011m):
+Not proposed and not required for sugar beet use, since residues in food of animal origin were assessed to be insignificant and MRLs were not proposed.",No,Yes,False,additional,
+2019-26-03,2019,Ethiprole,Risk assessment,Plant products,"Sum of ethiprole, 5‐amino‐1‐[2,6‐dichloro‐4‐(trifluoromethyl)phenyl]‐4‐(ethylsulfinyl)‐1H‐pyrazole‐3‐carboxamide (ethiprole‐amide) and 5‐amino‐1‐(2,6‐dichloro‐4‐trifluoromethylphenyl)‐4‐ethylsulfonylpyrazole‐3‐carbonitrile (ethiprole‐sulfone), expressed as parent equivalents","RD proposed in MRL application for rice (assessment ongoing): Sum of ethiprole and RPA097973 (ethiprole sulfone), expressed as ethiprole",No,Yes,False,additional,
+2019-05-03,2019,Propiconazole,Risk assessment,Plant products,"Propiconazole plus all metabolites convertible to 2,4‐dichloro‐benzoic acid, expressed as propiconazole","MRL review(EFSA, 2015b): Propiconazole and all the metabolites convertible to the 2,4‐dichlorobenzoic acid, expressed as propiconazole (sum of isomers)
+Peer review (EFSA, 2017e):
+1) Propiconazole (sum of isomers);
+2) CGA 118244 (3,5‐dideoxy‐1,2‐O‐[(1RS)‐1‐(2,4‐dichlorophenyl)‐2‐(1H‐1,2,4‐triazol‐1‐yl)ethylidene]‐D,L‐pentitol) free and glucoside conjugated
+Whether the parent compound and CGA 118244 have to be considered together or separately is pending upon the submission of toxicological data to address the toxicity profile on CGA118244)
+3) TDMs (EFSA, 2018m)",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\d9510e5849b122e8d71f0665ba42d4bf9c0e1d9a3e9d1e6a645bec68d5e204c3.json

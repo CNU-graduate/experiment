@@ -1,0 +1,11 @@
+﻿id,year,actual,prediction,correct
+dev0,2020,Yes,Yes,True
+dev1,2020,No,Yes,False
+dev2,2020,Yes,Yes,True
+dev3,2020,No,Yes,False
+dev4,2020,Yes,Yes,True
+dev5,2020,No,Yes,False
+dev6,2020,Yes,Yes,True
+dev7,2020,No,Yes,False
+dev8,2020,Yes,Yes,True
+dev9,2020,No,Yes,False

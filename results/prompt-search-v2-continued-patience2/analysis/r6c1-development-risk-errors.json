@@ -1,0 +1,342 @@
+{
+  "prompt_name": "R6C1",
+  "development_risk_assessment_total": 147,
+  "evaluated_unique_cases": 68,
+  "unevaluated_ids": [
+    "2019-10-03",
+    "2021-03-04",
+    "2018-17-03",
+    "2021-39-03",
+    "2021-24-04",
+    "2022-24-03",
+    "2019-12-04",
+    "2018-09-04",
+    "2018-31-03",
+    "2021-32-03",
+    "2018-21-03",
+    "2021-23-03",
+    "2021-41-03",
+    "2018-19-04",
+    "2022-14-04",
+    "2019-08-03",
+    "2021-13-03",
+    "2021-18-03",
+    "2022-12-04",
+    "2019-05-04",
+    "2018-05-04",
+    "2021-43-04",
+    "2018-10-03",
+    "2022-17-04",
+    "2019-24-03",
+    "2021-09-03",
+    "2019-31-03",
+    "2019-25-04",
+    "2021-48-03",
+    "2019-30-04",
+    "2018-15-03",
+    "2018-16-03",
+    "2022-03-03",
+    "2018-11-04",
+    "2021-23-04",
+    "2022-35-03",
+    "2018-15-04",
+    "2021-26-03",
+    "2019-14-03",
+    "2018-14-03",
+    "2022-24-04",
+    "2019-20-03",
+    "2018-19-03",
+    "2021-10-03",
+    "2018-27-04",
+    "2021-35-04",
+    "2022-06-04",
+    "2021-16-04",
+    "2021-14-04",
+    "2022-10-04",
+    "2021-15-04",
+    "2018-14-04",
+    "2018-25-04",
+    "2019-14-04",
+    "2019-17-04",
+    "2018-17-04",
+    "2022-33-03",
+    "2021-17-03",
+    "2018-06-04",
+    "2018-08-03",
+    "2021-29-04",
+    "2018-27-03",
+    "2022-06-03",
+    "2019-19-04",
+    "2019-06-04",
+    "2018-36-04",
+    "2022-20-03",
+    "2022-11-03",
+    "2019-17-03",
+    "2021-43-03",
+    "2022-34-04",
+    "2021-36-04",
+    "2019-11-03",
+    "2019-01-04",
+    "2022-11-04",
+    "2021-10-04",
+    "2021-38-04",
+    "2018-24-03",
+    "2019-26-03"
+  ],
+  "wrong_cases": [
+    {
+      "id": "2019-16-04",
+      "year": "2019",
+      "substance": "Fluopyram",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Sum of fluopyram, 2‐(trifluoromethyl)benzamide and the combined residues of N‐{(E)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide and N‐{(Z)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide, all expressed as fluopyram",
+      "EU": "Sum of fluopyram, fluopyram‐benzamide (M25), expressed\nas fluopyram",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2019.5797",
+      "source_section": "5.16.3",
+      "source_table": "75",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009168/#efs25797-tbl-0075",
+      "efsa_comments": "The residue definitions for enforcement (plant and animal commodities) derived by JMPR and applicable in the EU are identical. Thus, the Codex MRLs are compatible with the EU legal framework\nAs regards the residue definition for risk assessment for plants, the EU residue definition is wider\nIt is noted that metabolite M25 was observed at important proportions in the metabolism study in beans. At EU level, a conversion factor was derived for fruit crops (1.1), peas without pods (1.5), peas/beans with pods, oilseeds, stem vegetables (1.2)\nThe lack of conversion factors introduces an uncertainty in the exposure calculations and the consumer risk assessment should be considered as tentative and may underestimate the actual exposure for plant products for which JMPR derived MRL proposals that are higher than the existing EU MRLs\nRotational crop studies in cereals, leafy vegetables and roots were assessed in the peer review (EFSA, 2013b). Fluopyram and the metabolites resulting from the cleavage of the parent (fluopyram‐benzamide (M25) and fluopyram‐PCA (M43)) major components of the residues in rotational crops. 7‐hydroxy metabolites observed in higher proportions than in primary crops.\nResidues in rotational crops cannot be excluded. (Default MRL proposals have been made for root/tuber and leafy crops (0.1 mg/kg), cereals, oilseeds and perennial crops (0.01*))",
+      "source_file": "ESFA_201970answerkey.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\a75c9223b4ae5e363e674da2b4159d7b73a9437d29d4db682e711af6a6fbe195.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2019-16-04",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2018-35-04",
+      "year": "2018",
+      "substance": "Phosphonic acid",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Phosphonic acid",
+      "EU": "See fosetyl Al",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2018.5306",
+      "source_section": "4.36.3",
+      "source_table": "171",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009687/#efs25306-tbl-0171",
+      "efsa_comments": "",
+      "source_file": "ESFA_201870answerkey.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\0960dd4534f0facd36e53d2905654cfef4b759be41b29b54d039d5eefb367632.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2018-35-04",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2019-04-03",
+      "year": "2019",
+      "substance": "Propamocarb",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Propamocarb",
+      "EU": "MRL review (EFSA, 2013e):\nSum of propamocarb and its salts, expressed as propamocarb",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2019.5797",
+      "source_section": "5.4.3",
+      "source_table": "16",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009168/#efs25797-tbl-0016",
+      "efsa_comments": "Plant commodities: The residue definition set for enforcement and risk assessment by JMPR and at EU level are substantially the same\nAnimal commodities: The residue definition set for enforcement and risk assessment by JMPR and at EU level EU are quite different\nEFSA proposed to limit the residue definition for enforcement to the best marker compound, identified as N‐oxide propamocarb in tissues of ruminants (and pigs) and in milks and as N‐desmethyl propamocarb in poultry tissues and eggs (details are reported below as background information)\nFor risk assessment, the EU residue definition is more comprehensive and includes the major plant and animal metabolites. Based on metabolism studies, tentative conversion factors for risk assessment were proposed during the MRL review (4.25 for milk; 2.2 for ruminant kidney, 1.7 for ruminant liver and muscle; 1 for ruminant fat; 1.3 for all poultry tissues and eggs)\nOverall, the residue definitions for animal products derived at EU level and by JMPR are not compatible\nBoth assessments concluded residues in products of animal origin are not fat soluble\nAccording to the MRL review, in ruminants, metabolite N‐oxide propamocarb was the predominant metabolite of the total residues found in kidney (41% TRR – 0.044 mg/kg), liver (49% TRR – 0.203 mg/kg), muscle (40.5% TRR – 0.008 mg/kg) and also in milk (21% TRR – 0.012 mg/kg). Oxazolidine‐2‐one propamocarb occurred in significant amounts in kidney, liver and milk (14–23% TRR; 0.014–0.09 mg/kg). 2‐hydroxy propamocarb was the major metabolite of the total residues in milk (37.5% TRR – 0.022 mg/kg) but was also identified at a lower level in liver (5% TRR) and kidney (13% TRR). Parent propamocarb accounted for 24.6% TRR in muscle (0.005 mg/kg), 23.5% TRR in kidney (0.025 mg/kg), 6.2% TRR in liver (0.026 mg/kg) and 6.0% TRR in milk (0.003 mg/kg)\nIn poultry, the predominant compound of the total residues was the N‐desmethyl propamocarb in eggs (45% TRR), liver (22% TRR), muscle (29% TRR) and to a minor extend in fat (6% TRR) while the parent compound occurred at a lower level in all matrices (2–12% TRR). Bis desmethyl propamocarb and N‐oxide propamocarb accounted for less than 10% TRR. It is noted that a significant fraction of the radioactive residues remained uncharacterised in liver and muscle (32% and 41% TRR, respectively)",
+      "source_file": "ESFA_2019_remain.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\6924e55e9c725ec0b0929733a80d034e69d4df4a5bf93036f8f79f5efd9d5088.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2019-04-03",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2022-32-03",
+      "year": "2022",
+      "substance": "Fenpicoxamid",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Fenpicoxamid",
+      "EU": "Peer review (EFSA, 2018c): Fenpicoxamid Processed commodities: Fenpicoxamid, X12019520, X12314005, X12335723, X12264475 (provisional)",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521",
+      "source_section": "5.33.3",
+      "source_table": "187",
+      "source_table_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0187",
+      "efsa_comments": "JMPR did not recommend a residue definition for poultry products. If future uses of fenpicoxamid result in an increase in the exposure to the animal metabolite X12326349 and the hydrolysis products X12314005, X12019520, X12335723 and X12264475 in poultry, reconsideration of the residue definitions may become necessary. In the EU, the residue definition is labelled as being fat soluble.\r\nBased on the available livestock metabolism and feeding studies, the labelling should be re-considered.",
+      "source_file": "ESFA_202270answerkey.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\0573d346f6a55394e65a1aa00a05e7ea3dc5925292c8269ee131fa0eb840599c.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2022-32-03",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2022-34-03",
+      "year": "2022",
+      "substance": "Metconazole",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Metconazole (sum of cis and trans isomer)",
+      "EU": "MRL review (EFSA, 2011e): Metconazole (sum of isomers) Peer review (EFSA, 2006b): Metconazole (sum of isomers) (cereals and oilseed crops only) Separate RDs for TDMs",
+      "EFSA": "No",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521",
+      "source_section": "5.35.3",
+      "source_table": "199",
+      "source_table_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2022.7521#efs27521-tbl-0199",
+      "efsa_comments": "",
+      "source_file": "ESFA_202270answerkey.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\1e064ae34f7ffecb2f1f42bdb1881db3ee1e611f3df394107d7c2c96d69612c2.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2022-34-03",
+          "prediction": "Yes"
+        }
+      ]
+    },
+    {
+      "id": "2019-03-03",
+      "year": "2019",
+      "substance": "Lambda‐cyhalothrin",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Cyhalothrin (sum of all isomers).\nThe residue is fat soluble",
+      "EU": "Art. 43 (EFSA, 2017e):\nLambda‐cyhalothrin",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2019.5797",
+      "source_section": "5.3.3",
+      "source_table": "13",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009168/#efs25797-tbl-0013",
+      "efsa_comments": "The residue definitions derived by JMPR cover all isomers of cyhalothrin, while in the EU only lambda‐cyhalothrin was included. However, the Codex MRLs refer to the use of lambda‐cyhalothrin. Therefore, the JMPR residue definition has been considered in the past as equivalent to the EU residue definitions",
+      "source_file": "ESFA_2019_remain.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\66212021b506ccbe757106e41d8fd1c85bf63e1cfd5b4e8df4e84e613dec410d.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2019-03-03",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2021-30-03",
+      "year": "2021",
+      "substance": "Acetochlor",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Sum of compounds hydrolysable with base to 2‐ethyl‐6‐methylaniline (EMA) and 2‐(1‐hydroxyethyl)‐6‐methylaniline (HEMA), expressed in terms of acetochlor\nThe residue is not fat soluble",
+      "EU": "Peer review (EFSA, 2011d): All compounds forming EMA and HEMA on hydrolysis plus N‐oxamic acid, expressed as acetochlor (applicable to cereal grains and rotational crops).\nNo residue definition was proposed for animal commodities.",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2021.6766",
+      "source_section": "5.31.3",
+      "source_table": "149",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0149",
+      "efsa_comments": "The residue definitions for enforcement for plants and animal products established by JMPR and in the EU MRL legislation are not compatible.\nIt is noted that the existing residue definition is acetochlor, which is unlikely to be present due to rapid and extensive degradation. Therefore, at EU level the revision of the residue definition should be considered as recommended in the EFSA MRL review (EFSA, 2013j).",
+      "source_file": "ESFA_2021_remain.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\510f35869a780ab3e0c2c060c3995fa6ad323d52ed2c6180d61d7dfad5fa8677.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2021-30-03",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2021-30-04",
+      "year": "2021",
+      "substance": "Acetochlor",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Sum of compounds hydrolysable with base to 2‐ethyl‐6‐methylaniline (EMA) and 2‐(1‐hydroxyethyl)‐6‐methylaniline (HEMA), expressed in terms of acetochlor\nThe residue is not fat soluble",
+      "EU": "Peer review (EFSA, 2011d): All compounds forming EMA and HEMA on hydrolysis plus N‐oxamic acid, expressed as acetochlor (applicable to cereal grains and rotational crops).\nNo residue definition was proposed for animal commodities.",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2021.6766",
+      "source_section": "5.31.3",
+      "source_table": "149",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0149",
+      "efsa_comments": "The residue definitions for enforcement for plants and animal products established by JMPR and in the EU MRL legislation are not compatible.\nIt is noted that the existing residue definition is acetochlor, which is unlikely to be present due to rapid and extensive degradation. Therefore, at EU level the revision of the residue definition should be considered as recommended in the EFSA MRL review (EFSA, 2013j).",
+      "source_file": "ESFA_2021_remain.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\61c52ae17f95e62c2368d0f7344596163ae15154b54120c171b494bee38baa30.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2021-30-04",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2021-11-03",
+      "year": "2021",
+      "substance": "Tebuconazole",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Tebuconazole",
+      "EU": "MRL review Art. 12 (EFSA, 2011k): Tebuconazole (provisional)\nPeer review (EFSA, 2014a): 1) Sum of enantiomers contained in tebuconazole\n2) Specific TDM residue definitions applicable to all active substances of the triazole chemical class (TA, TLA, TAA, 1,2,4‐T) (EFSA, 2018p)",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2021.6766",
+      "source_section": "5.12.3",
+      "source_table": "55",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370139/#efs26766-tbl-0055",
+      "efsa_comments": "For plant commodities, the JMPR residue definition for enforcement is identical with the EU residue definition. For risk assessment, in addition to the parent compound, residue definitions for the triazole derivative metabolites (TDMs) were established in the EU (EFSA, 2018p).\nIt is noted that for post‐harvest uses in fruits, no metabolism studies are available (neither in the EU nor at Codex level). In the EU MRL review a study on grapes with foliar application was considered sufficiently representative for post‐harvest uses in citrus because it was carried out with short PHIs and parent tebuconazole was the only compound identified.\nFor animal commodities, the residue definitions derived by JMPR and at EU level differ, but since Codex MRLs are proposed only for plant products, the discrepancy is not relevant for the current assessment.\nSince the TDMs are relevant for risk assessment (and not for enforcement purposes) this should not have any impact on the MRLs derived for tebuconazole. In addition, TDMs are not expected to occur in citrus fruits following post‐harvest treatment.",
+      "source_file": "ESFA_202170answerkey.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\06e6897e5cb288c45544512ba2999ca7945b399dfd13b72df5953515b768edab.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2021-11-03",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2019-22-04",
+      "year": "2019",
+      "substance": "Cyazofamid",
+      "purpose": "Risk assessment",
+      "commodity": "Animal products",
+      "JMPR": "Not defined",
+      "EU": "Peer review (EFSA, 2016e):\nCyazofamid\nArt. 12 MRL review (EFSA, 2012e): no RD proposed due to expected low dietary burden",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2019.5797",
+      "source_section": "5.22.3",
+      "source_table": "105",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009168/#efs25797-tbl-0105",
+      "efsa_comments": "Primary crops:\nThe JMPR and EU evaluations resulted in the same residue definitions for enforcement (cyazofamid) but different residue definitions for risk assessment were proposed\nProcessed commodities:\nPeer review proposal: Cyazofamid and CCIM. Due to data gaps regarding the genotoxic potential and a repeated dose toxicity study to conclude on the toxicological relevance of CCIM, a final decision whether the residue definition should cover the sum or the two compounds separately has not been taken yet\nAnimal matrices:\nAs the metabolism studies in poultry and ruminants clearly showed that residues are not expected in animal matrices considering the dietary burden calculation based on the representative uses, EFSA proposes for monitoring and risk assessment to set the residue definition by default as cyazofamid only and no MRLs are required. Also, in the framework of Art.12 MRL review, the livestock exposure assessment was not triggered based on the EU authorised uses and no RD for monitoring and risk assessment was derived for products of animal origin",
+      "source_file": "ESFA_201970answerkey.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\b257bb8f74addd94864e588b8a96fc608d87ea39781c07fe544571472b631df0.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2019-22-04",
+          "prediction": "No"
+        }
+      ]
+    },
+    {
+      "id": "2019-05-03",
+      "year": "2019",
+      "substance": "Propiconazole",
+      "purpose": "Risk assessment",
+      "commodity": "Plant products",
+      "JMPR": "Propiconazole plus all metabolites convertible to 2,4‐dichloro‐benzoic acid, expressed as propiconazole",
+      "EU": "MRL review(EFSA, 2015b): Propiconazole and all the metabolites convertible to the 2,4‐dichlorobenzoic acid, expressed as propiconazole (sum of isomers)\nPeer review (EFSA, 2017e):\n1) Propiconazole (sum of isomers);\n2) CGA 118244 (3,5‐dideoxy‐1,2‐O‐[(1RS)‐1‐(2,4‐dichlorophenyl)‐2‐(1H‐1,2,4‐triazol‐1‐yl)ethylidene]‐D,L‐pentitol) free and glucoside conjugated\nWhether the parent compound and CGA 118244 have to be considered together or separately is pending upon the submission of toxicological data to address the toxicity profile on CGA118244)\n3) TDMs (EFSA, 2018m)",
+      "EFSA": "Yes",
+      "source_url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2019.5797",
+      "source_section": "5.5.3",
+      "source_table": "20",
+      "source_table_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7009168/#efs25797-tbl-0020",
+      "efsa_comments": "The enforcement RD for plants established in Reg. 2017/626 is comparable with the RD of JMPR. For the risk assessment residue definitions, JMPR covers the common moiety (2,4‐dichlorobenzoic acid); in the MRL review, the same risk assessment residue definitions were derived\nIn the framework of the peer review, data gaps on the genotoxicity potential and toxicological profile of metabolite CGA118244 and CGA91305 were identified\nJMPR did not set specific residue definitions for the TDMs (TAA and TA).\nDue to the different risk assessment residue definitions for plant commodities and the open questions as regards the toxicological properties of some of the metabolites, only a tentative risk assessment can be performed",
+      "source_file": "ESFA_201970answerkey.csv",
+      "evidence": [
+        {
+          "path": "results\\prompt-search-v2-continued-patience2\\live\\calls\\d9510e5849b122e8d71f0665ba42d4bf9c0e1d9a3e9d1e6a645bec68d5e204c3.json",
+          "key": "development-cache/3a3fd0ae130e30fd7ff83efd1f0e8e2febe31458224cb2c706e8385ecd6a6566/2019-05-03",
+          "prediction": "No"
+        }
+      ]
+    }
+  ],
+  "note": "Existing exact-prompt valid responses only; selected development subset, not a full or independent evaluation. Error causes require analysis, not inferred model reasoning."
+}

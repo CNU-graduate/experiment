@@ -1,0 +1,160 @@
+{
+  "status": "proposal_not_executed",
+  "theme": "Separate applicable residue definitions from definitions restricted to other scopes; preserve actual component differences.",
+  "source": "R6C1 development audit, 147 risk-assessment cases",
+  "composition": {
+    "target_errors": 2,
+    "correct_cases": 8,
+    "Yes": 5,
+    "No": 5
+  },
+  "constraints": [
+    "No substance-specific answer rules",
+    "Do not infer missing facts from labels",
+    "Rationales are hypotheses, not observed model reasoning",
+    "Do not automatically ignore separate TDMs or provisional definitions",
+    "No selection/test examples or labels included"
+  ],
+  "cases": [
+    {
+      "id": "2022-20-03",
+      "role": "target_error",
+      "selection_rationale": "considered separately를 하나의 합산 정의로 취급하는지 검증",
+      "input": {
+        "substance": "Clothianidin",
+        "purpose": "Risk assessment",
+        "commodity": "Plant products",
+        "JMPR": "Clothianidin",
+        "EU": "MRL review (EFSA, 2014r): Thiamethoxam and clothianidin (considered separately)"
+      },
+      "gold_label": "Yes",
+      "r6c1_prediction": "No"
+    },
+    {
+      "id": "2022-32-03",
+      "role": "target_error",
+      "selection_rationale": "가공품 한정 정의를 일반 식물성 정의에 적용하는지 검증",
+      "input": {
+        "substance": "Fenpicoxamid",
+        "purpose": "Risk assessment",
+        "commodity": "Plant products",
+        "JMPR": "Fenpicoxamid",
+        "EU": "Peer review (EFSA, 2018c): Fenpicoxamid Processed commodities: Fenpicoxamid, X12019520, X12314005, X12335723, X12264475 (provisional)"
+      },
+      "gold_label": "Yes",
+      "r6c1_prediction": "No"
+    },
+    {
+      "id": "2022-22-03",
+      "role": "preserve_correct_yes",
+      "selection_rationale": "양쪽 모두 별도 평가로 명시된 정의의 일치 유지",
+      "input": {
+        "substance": "Thiamethoxam",
+        "purpose": "Risk assessment",
+        "commodity": "Plant products",
+        "JMPR": "Thiamethoxam and clothianidin (considered separately)",
+        "EU": "MRL review (EFSA, 2014r): Thiamethoxam and clothianidin (considered separately)"
+      },
+      "gold_label": "Yes",
+      "r6c1_prediction": "Yes"
+    },
+    {
+      "id": "2022-20-04",
+      "role": "preserve_correct_yes",
+      "selection_rationale": "동일 물질의 동물성 적용 범위와 별도 정의 처리 유지",
+      "input": {
+        "substance": "Clothianidin",
+        "purpose": "Risk assessment",
+        "commodity": "Animal products",
+        "JMPR": "Clothianidin",
+        "EU": "MRL review (EFSA, 2014r): Ruminants and pigs: Thiamethoxam and clothianidin (considered separately) No residue definition is proposed for poultry products"
+      },
+      "gold_label": "Yes",
+      "r6c1_prediction": "Yes"
+    },
+    {
+      "id": "2021-38-04",
+      "role": "preserve_correct_yes",
+      "selection_rationale": "비교 대상의 정의와 별도 정의 설정 논의를 구분",
+      "input": {
+        "substance": "Fosetyl‐Al",
+        "purpose": "Risk assessment",
+        "commodity": "Animal products",
+        "JMPR": "Phosphonic acid",
+        "EU": "Peer review (EFSA, 2018m): phosphonic acid\nMRL review Art. 12 (EFSA, 2012k): Phosphonic acid; risk managers to decide whether a separate residue definition for fosetyl should be established"
+      },
+      "gold_label": "Yes",
+      "r6c1_prediction": "Yes"
+    },
+    {
+      "id": "2018-31-03",
+      "role": "counterexample_no",
+      "selection_rationale": "추가 성분이 비가공품에도 적용된다고 명시된 차이를 보존",
+      "input": {
+        "substance": "Fenazaquin",
+        "purpose": "Risk assessment",
+        "commodity": "Plant products",
+        "JMPR": "Fenazaquin",
+        "EU": "Peer review: Fenazaquin;\nTBPE\nThese RD are applicable to unprocessed and processed fruit."
+      },
+      "gold_label": "No",
+      "r6c1_prediction": "No"
+    },
+    {
+      "id": "2018-12-03",
+      "role": "counterexample_no",
+      "selection_rationale": "가공품 정의만 일치한다고 일반 정의 차이를 무시하지 않음",
+      "input": {
+        "substance": "Trifloxystrobin",
+        "purpose": "Risk assessment",
+        "commodity": "Plant products",
+        "JMPR": "Sum of trifloxystrobin and [(E,E)‐methoxyimino‐{2‐[1‐(3‐ trifluoromethylphenyl)ethylideneaminooxymethyl]phenyl}acetic acid] (CGA 321113), expressed as trifloxystrobin",
+        "EU": "Primary Crops: Sum of trifloxystrobin, its 3 isomers (CGA 357262, CGA 357261 and CGA 331409) and CGA 321113 (M5), expressed as trifloxystrobin.\nProcessed commodities: Sum of trifloxystrobin and CGA 321113 (M5), expressed as trifloxystrobin.\nThe RD RA was amended with EFSA (2017i)."
+      },
+      "gold_label": "No",
+      "r6c1_prediction": "No"
+    },
+    {
+      "id": "2022-05-03",
+      "role": "counterexample_no",
+      "selection_rationale": "일부 범위 미확정과 별개로 적용 범위 안의 추가 성분 차이를 보존",
+      "input": {
+        "substance": "Clofentezine",
+        "purpose": "Risk assessment",
+        "commodity": "Plant products",
+        "JMPR": "Clofentezine",
+        "EU": "Peer review (EFSA, 2021e): Clofentezine and 2-CBN. Applicable only to fruit crops following foliar treatment. The residue definition for risk assessment for other crop groups and for processed commodities remains open."
+      },
+      "gold_label": "No",
+      "r6c1_prediction": "No"
+    },
+    {
+      "id": "2022-12-04",
+      "role": "counterexample_no",
+      "selection_rationale": "일치하는 출처 하나 또는 provisional만으로 다른 출처를 무시하지 않음",
+      "input": {
+        "substance": "Methoxyfenozide",
+        "purpose": "Risk assessment",
+        "commodity": "Animal products",
+        "JMPR": "Methoxyfenozide",
+        "EU": "Peer review (EFSA, 2017f): Methoxyfenozide, M24 (free and conjugated M26) and M16, expressed as methoxyfenozide (provisional) MRL review (EFSA, 2014b): Methoxyfenozide (tentative)"
+      },
+      "gold_label": "No",
+      "r6c1_prediction": "No"
+    },
+    {
+      "id": "2021-03-03",
+      "role": "counterexample_no",
+      "selection_rationale": "정의를 분리해도 일반 정의의 포합체 차이는 보존",
+      "input": {
+        "substance": "Chlorothalonil",
+        "purpose": "Risk assessment",
+        "commodity": "Plant products",
+        "JMPR": "1) Chlorothalonil\n2) SDS 3701 (2,5,6‐trichloro‐4‐hydroxyisophthalonitrile)",
+        "EU": "Peer review (EFSA, 2018a): 1) Chlorothalonil and its conjugates\n2) R182281 (SDS‐3701) and its conjugates\n3) R613636 (SDS‐19221) for processed commodities\n4) R611965 (SDS‐46851)/R417888 and conjugates of metabolites R613636, R613800 (C15) and R611968 (for rotational crops)\nResidue definitions provisional\nMRL review:\n1) Chlorothalonil\n2) R182281(SDS‐3701)"
+      },
+      "gold_label": "No",
+      "r6c1_prediction": "No"
+    }
+  ]
+}

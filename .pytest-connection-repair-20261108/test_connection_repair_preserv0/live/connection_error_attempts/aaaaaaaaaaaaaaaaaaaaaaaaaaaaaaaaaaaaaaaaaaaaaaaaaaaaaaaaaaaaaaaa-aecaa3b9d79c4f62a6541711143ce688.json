@@ -1,0 +1,8 @@
+{
+  "status": "error",
+  "request": {
+    "plan_hash": "4f823b51f136d4a43de2ac8b0a67a1ea55903cb612845d7a4facd4b2896bf04a",
+    "key": "selection/test"
+  },
+  "error_type": "APIConnectionError"
+}

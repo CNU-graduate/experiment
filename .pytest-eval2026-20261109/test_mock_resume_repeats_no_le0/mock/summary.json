@@ -1,0 +1,59 @@
+{
+  "mode": "mock",
+  "name": "R6C1",
+  "cases": 86,
+  "repeats": 3,
+  "calls": 258,
+  "excluded_overlap_ids": [
+    "2026-14-01",
+    "2026-22-01"
+  ],
+  "metrics": {
+    "all_86": {
+      "Enforcement": {
+        "cases_per_repeat": 46,
+        "accuracy_mean": 0.8913043478260869,
+        "macro_f1_mean": 0.47126436781609193,
+        "fp_total": 15,
+        "fn_total": 0
+      },
+      "Risk assessment": {
+        "cases_per_repeat": 40,
+        "accuracy_mean": 0.575,
+        "macro_f1_mean": 0.36507936507936506,
+        "fp_total": 51,
+        "fn_total": 0
+      },
+      "all": {
+        "cases_per_repeat": 86,
+        "accuracy_mean": 0.7441860465116279,
+        "macro_f1_mean": 0.4266666666666667,
+        "fp_total": 66,
+        "fn_total": 0
+      }
+    },
+    "without_prior_overlap": {
+      "Enforcement": {
+        "cases_per_repeat": 44,
+        "accuracy_mean": 0.8863636363636364,
+        "macro_f1_mean": 0.46987951807228917,
+        "fp_total": 15,
+        "fn_total": 0
+      },
+      "Risk assessment": {
+        "cases_per_repeat": 40,
+        "accuracy_mean": 0.575,
+        "macro_f1_mean": 0.36507936507936506,
+        "fp_total": 51,
+        "fn_total": 0
+      },
+      "all": {
+        "cases_per_repeat": 84,
+        "accuracy_mean": 0.7380952380952381,
+        "macro_f1_mean": 0.4246575342465753,
+        "fp_total": 66,
+        "fn_total": 0
+      }
+    }
+  }
+}

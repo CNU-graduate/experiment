@@ -1,0 +1,3 @@
+﻿id,year,actual,prediction,correct
+heldout1,2020,Yes,Yes,True
+heldout2,2020,No,Yes,False

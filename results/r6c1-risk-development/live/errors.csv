@@ -1,0 +1,40 @@
+﻿id,year,substance,purpose,commodity,JMPR,EU,actual,prediction,correct,origin,source_path
+2019-16-04,2019,Fluopyram,Risk assessment,Animal products,"Sum of fluopyram, 2‐(trifluoromethyl)benzamide and the combined residues of N‐{(E)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide and N‐{(Z)‐2‐[3‐chloro‐5‐(trifluoromethyl)pyridin‐2‐yl]ethenyl}‐2‐trifluoromethyl) benzamide, all expressed as fluopyram","Sum of fluopyram, fluopyram‐benzamide (M25), expressed
+as fluopyram",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\a75c9223b4ae5e363e674da2b4159d7b73a9437d29d4db682e711af6a6fbe195.json
+2018-35-04,2018,Phosphonic acid,Risk assessment,Animal products,Phosphonic acid,See fosetyl Al,Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\0960dd4534f0facd36e53d2905654cfef4b759be41b29b54d039d5eefb367632.json
+2019-04-03,2019,Propamocarb,Risk assessment,Plant products,Propamocarb,"MRL review (EFSA, 2013e):
+Sum of propamocarb and its salts, expressed as propamocarb",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\6924e55e9c725ec0b0929733a80d034e69d4df4a5bf93036f8f79f5efd9d5088.json
+2019-05-04,2019,Propiconazole,Risk assessment,Animal products,"Propiconazole plus all metabolites convertible to 2,4‐dichloro‐benzoic acid, expressed as propiconazole","MRL review (EFSA,
+2015b
+):
+Parent propiconazole and all the metabolites convertible to the 2,4‐dichlorobenzoic acid, expressed as propiconazole (sum of isomers)
+Peer review (EFSA,
+2017e
+):
+1) Propiconazole, CGA91305 (free and conjugated) and CGA118244
+(The way the residue definition will be expressed is pending upon the requested toxicological profile on CGA91305 and CGA118244)
+2) TDMs (EFSA, 2018m)",Yes,No,False,additional,
+2022-32-03,2022,Fenpicoxamid,Risk assessment,Plant products,Fenpicoxamid,"Peer review (EFSA, 2018c): Fenpicoxamid Processed commodities: Fenpicoxamid, X12019520, X12314005, X12335723, X12264475 (provisional)",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\0573d346f6a55394e65a1aa00a05e7ea3dc5925292c8269ee131fa0eb840599c.json
+2022-34-03,2022,Metconazole,Risk assessment,Plant products,Metconazole (sum of cis and trans isomer),"MRL review (EFSA, 2011e): Metconazole (sum of isomers) Peer review (EFSA, 2006b): Metconazole (sum of isomers) (cereals and oilseed crops only) Separate RDs for TDMs",No,Yes,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\1e064ae34f7ffecb2f1f42bdb1881db3ee1e611f3df394107d7c2c96d69612c2.json
+2019-03-03,2019,Lambda‐cyhalothrin,Risk assessment,Plant products,"Cyhalothrin (sum of all isomers).
+The residue is fat soluble","Art. 43 (EFSA, 2017e):
+Lambda‐cyhalothrin",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\66212021b506ccbe757106e41d8fd1c85bf63e1cfd5b4e8df4e84e613dec410d.json
+2021-30-03,2021,Acetochlor,Risk assessment,Plant products,"Sum of compounds hydrolysable with base to 2‐ethyl‐6‐methylaniline (EMA) and 2‐(1‐hydroxyethyl)‐6‐methylaniline (HEMA), expressed in terms of acetochlor
+The residue is not fat soluble","Peer review (EFSA, 2011d): All compounds forming EMA and HEMA on hydrolysis plus N‐oxamic acid, expressed as acetochlor (applicable to cereal grains and rotational crops).
+No residue definition was proposed for animal commodities.",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\510f35869a780ab3e0c2c060c3995fa6ad323d52ed2c6180d61d7dfad5fa8677.json
+2021-30-04,2021,Acetochlor,Risk assessment,Animal products,"Sum of compounds hydrolysable with base to 2‐ethyl‐6‐methylaniline (EMA) and 2‐(1‐hydroxyethyl)‐6‐methylaniline (HEMA), expressed in terms of acetochlor
+The residue is not fat soluble","Peer review (EFSA, 2011d): All compounds forming EMA and HEMA on hydrolysis plus N‐oxamic acid, expressed as acetochlor (applicable to cereal grains and rotational crops).
+No residue definition was proposed for animal commodities.",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\61c52ae17f95e62c2368d0f7344596163ae15154b54120c171b494bee38baa30.json
+2021-11-03,2021,Tebuconazole,Risk assessment,Plant products,Tebuconazole,"MRL review Art. 12 (EFSA, 2011k): Tebuconazole (provisional)
+Peer review (EFSA, 2014a): 1) Sum of enantiomers contained in tebuconazole
+2) Specific TDM residue definitions applicable to all active substances of the triazole chemical class (TA, TLA, TAA, 1,2,4‐T) (EFSA, 2018p)",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\06e6897e5cb288c45544512ba2999ca7945b399dfd13b72df5953515b768edab.json
+2022-20-03,2022,Clothianidin,Risk assessment,Plant products,Clothianidin,"MRL review (EFSA, 2014r): Thiamethoxam and clothianidin (considered separately)",Yes,No,False,additional,
+2019-22-04,2019,Cyazofamid,Risk assessment,Animal products,Not defined,"Peer review (EFSA, 2016e):
+Cyazofamid
+Art. 12 MRL review (EFSA, 2012e): no RD proposed due to expected low dietary burden",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\b257bb8f74addd94864e588b8a96fc608d87ea39781c07fe544571472b631df0.json
+2019-05-03,2019,Propiconazole,Risk assessment,Plant products,"Propiconazole plus all metabolites convertible to 2,4‐dichloro‐benzoic acid, expressed as propiconazole","MRL review(EFSA, 2015b): Propiconazole and all the metabolites convertible to the 2,4‐dichlorobenzoic acid, expressed as propiconazole (sum of isomers)
+Peer review (EFSA, 2017e):
+1) Propiconazole (sum of isomers);
+2) CGA 118244 (3,5‐dideoxy‐1,2‐O‐[(1RS)‐1‐(2,4‐dichlorophenyl)‐2‐(1H‐1,2,4‐triazol‐1‐yl)ethylidene]‐D,L‐pentitol) free and glucoside conjugated
+Whether the parent compound and CGA 118244 have to be considered together or separately is pending upon the submission of toxicological data to address the toxicity profile on CGA118244)
+3) TDMs (EFSA, 2018m)",Yes,No,False,reused,C:\Users\hhj48\Projects\experiment\results\prompt-search-v2-continued-patience2\live\calls\d9510e5849b122e8d71f0665ba42d4bf9c0e1d9a3e9d1e6a645bec68d5e204c3.json

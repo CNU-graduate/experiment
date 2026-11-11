@@ -166,6 +166,10 @@ class Calls:
                         {'prompt': SYSTEM + f'\nReview scope carefully. Variant {key}-{i}.',
                          'change': 'MOCK ONLY', 'risk': 'MOCK ONLY'}
                         for i in range(cfg['candidates'])]})
+                    if self.plan.get('constrained_candidate_one'):
+                        mock_candidates = json.loads(text)
+                        mock_candidates['candidates'][0]['risk_assessment_rule'] = f'MOCK ONLY: Review risk-assessment scope. Variant {key}.'
+                        text = json.dumps(mock_candidates)
                     usage, ident = {}, 'mock'
                 else:
                     text, usage, ident = mock_call(cfg['model'], system + user)
