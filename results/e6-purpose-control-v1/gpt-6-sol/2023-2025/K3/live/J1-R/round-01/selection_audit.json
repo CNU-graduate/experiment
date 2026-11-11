@@ -1,0 +1,256 @@
+{
+  "2023:E6:42": {
+    "candidate_year": 2022,
+    "objective": [
+      5,
+      13,
+      4,
+      -1,
+      -9,
+      -1195
+    ],
+    "tied_sets": 1,
+    "objective_order": [
+      "tag_coverage",
+      "feature_coverage",
+      "distinct_substances",
+      "negative_repeated_features",
+      "negative_complexity",
+      "negative_text_length"
+    ],
+    "selected": [
+      {
+        "id": "2022-07-01",
+        "tags": [
+          "compound",
+          "scope",
+          "status"
+        ],
+        "features": [
+          "compound:common_name_isomers",
+          "scope:isomers",
+          "status:provisional"
+        ],
+        "complexity": 1,
+        "reason": "일반명과 이성질체 표기의 대응; 이성질체 포함 범위; 잠정 정의 상태을 확인하는 사례."
+      },
+      {
+        "id": "2022-22-02",
+        "tags": [
+          "application",
+          "expression",
+          "status"
+        ],
+        "features": [
+          "expression:separate_definitions",
+          "application:animal_exception",
+          "status:not_required",
+          "expression:fat_notation"
+        ],
+        "complexity": 3,
+        "reason": "합산 정의와 별도 정의의 구별; 동물종별 적용 예외; 정의 불필요·비적용 기재; 지방 용해성 표기 차이을 확인하는 사례."
+      },
+      {
+        "id": "2022-10-03",
+        "tags": [
+          "compound",
+          "expression",
+          "scope"
+        ],
+        "features": [
+          "compound:chemical_name_code",
+          "scope:additional_metabolites",
+          "expression:parent_equivalent"
+        ],
+        "complexity": 2,
+        "reason": "화학명과 대사체 코드의 대응; 추가 대사체 포함 범위; expressed as 모화합물 환산 기준을 확인하는 사례."
+      },
+      {
+        "id": "2022-11-04",
+        "tags": [
+          "application",
+          "scope",
+          "status"
+        ],
+        "features": [
+          "scope:additional_metabolites",
+          "scope:conjugates",
+          "application:tissue_exception",
+          "status:multiple_sources"
+        ],
+        "complexity": 3,
+        "reason": "추가 대사체 포함 범위; free/conjugated 포함 범위; 우유·조직별 적용 예외; 법적 정의와 여러 평가 출처 구별을 확인하는 사례."
+      }
+    ]
+  },
+  "2024:E6:42": {
+    "candidate_year": 2023,
+    "objective": [
+      5,
+      11,
+      4,
+      -1,
+      -9,
+      -926
+    ],
+    "tied_sets": 1,
+    "objective_order": [
+      "tag_coverage",
+      "feature_coverage",
+      "distinct_substances",
+      "negative_repeated_features",
+      "negative_complexity",
+      "negative_text_length"
+    ],
+    "selected": [
+      {
+        "id": "2023-23-01",
+        "tags": [
+          "application",
+          "compound",
+          "status"
+        ],
+        "features": [
+          "compound:parent_match",
+          "application:crop_exception",
+          "status:provisional",
+          "status:multiple_sources"
+        ],
+        "complexity": 3,
+        "reason": "모화합물 명칭의 일치; 작물·용도별 적용 예외; 잠정 정의 상태; 법적 정의와 여러 평가 출처 구별을 확인하는 사례."
+      },
+      {
+        "id": "2023-16-02",
+        "tags": [
+          "application",
+          "expression",
+          "status"
+        ],
+        "features": [
+          "expression:salt_free_base",
+          "expression:fat_notation",
+          "application:animal_exception",
+          "status:multiple_sources"
+        ],
+        "complexity": 2,
+        "reason": "염과 유리염기의 표현 기준; 지방 용해성 표기 차이; 동물종별 적용 예외; 법적 정의와 여러 평가 출처 구별을 확인하는 사례."
+      },
+      {
+        "id": "2023-08-03",
+        "tags": [
+          "scope"
+        ],
+        "features": [
+          "scope:isomers"
+        ],
+        "complexity": 1,
+        "reason": "이성질체 포함 범위을 확인하는 사례."
+      },
+      {
+        "id": "2023-12-04",
+        "tags": [
+          "compound",
+          "expression",
+          "scope"
+        ],
+        "features": [
+          "compound:chemical_name_code",
+          "scope:additional_metabolites",
+          "expression:separate_definitions"
+        ],
+        "complexity": 3,
+        "reason": "화학명과 대사체 코드의 대응; 추가 대사체 포함 범위; 합산 정의와 별도 정의의 구별을 확인하는 사례."
+      }
+    ]
+  },
+  "2025:E6:42": {
+    "candidate_year": 2024,
+    "objective": [
+      5,
+      14,
+      4,
+      -3,
+      -8,
+      -766
+    ],
+    "tied_sets": 1,
+    "objective_order": [
+      "tag_coverage",
+      "feature_coverage",
+      "distinct_substances",
+      "negative_repeated_features",
+      "negative_complexity",
+      "negative_text_length"
+    ],
+    "selected": [
+      {
+        "id": "2024-29-01",
+        "tags": [
+          "application",
+          "compound",
+          "expression",
+          "scope",
+          "status"
+        ],
+        "features": [
+          "compound:parent_match",
+          "scope:additional_metabolites",
+          "expression:parent_equivalent",
+          "application:processed_exception",
+          "status:provisional",
+          "status:multiple_sources"
+        ],
+        "complexity": 3,
+        "reason": "모화합물 명칭의 일치; 추가 대사체 포함 범위; expressed as 모화합물 환산 기준; 원물·가공품별 적용 예외; 잠정 정의 상태; 법적 정의와 여러 평가 출처 구별을 확인하는 사례."
+      },
+      {
+        "id": "2024-25-02",
+        "tags": [
+          "compound",
+          "expression",
+          "status"
+        ],
+        "features": [
+          "compound:parent_match",
+          "status:default_definition",
+          "expression:fat_notation"
+        ],
+        "complexity": 1,
+        "reason": "모화합물 명칭의 일치; 기본 법적 기준에 따른 정의; 지방 용해성 표기 차이을 확인하는 사례."
+      },
+      {
+        "id": "2024-08-03",
+        "tags": [
+          "application",
+          "expression",
+          "scope"
+        ],
+        "features": [
+          "scope:additional_metabolites",
+          "expression:separate_definitions",
+          "application:crop_exception"
+        ],
+        "complexity": 2,
+        "reason": "추가 대사체 포함 범위; 합산 정의와 별도 정의의 구별; 작물·용도별 적용 예외을 확인하는 사례."
+      },
+      {
+        "id": "2024-23-04",
+        "tags": [
+          "compound",
+          "expression",
+          "scope",
+          "status"
+        ],
+        "features": [
+          "compound:chemical_name_code",
+          "scope:isomers",
+          "expression:parent_equivalent",
+          "status:multiple_versions",
+          "status:not_required"
+        ],
+        "complexity": 2,
+        "reason": "화학명과 대사체 코드의 대응; 이성질체 포함 범위; expressed as 모화합물 환산 기준; 평가 시점별 정의 구별; 정의 불필요·비적용 기재을 확인하는 사례."
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+﻿reference,candidate,n_total,n_complete,recovered_repeat_errors,damaged_stable_correct
+K1,K2,210,0,0,0
+K1,K3,210,0,0,0
+K2,K3,210,0,0,0

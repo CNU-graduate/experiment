@@ -1,0 +1,19 @@
+﻿condition,route,purpose,round,api_attempts,failed_attempts,unfinished_attempts
+K1,J1-E,Enforcement,1,0,0,0
+K1,J1-E,Enforcement,2,0,0,0
+K1,J1-E,Enforcement,3,0,0,0
+K1,J1-R,Risk assessment,1,0,0,0
+K1,J1-R,Risk assessment,2,0,0,0
+K1,J1-R,Risk assessment,3,0,0,0
+K2,J1-E,Enforcement,1,119,0,0
+K2,J1-E,Enforcement,2,119,0,0
+K2,J1-E,Enforcement,3,119,0,0
+K2,J1-R,Risk assessment,1,91,0,0
+K2,J1-R,Risk assessment,2,91,0,0
+K2,J1-R,Risk assessment,3,91,0,0
+K3,J1-E,Enforcement,1,119,0,0
+K3,J1-E,Enforcement,2,120,0,1
+K3,J1-E,Enforcement,3,119,0,0
+K3,J1-R,Risk assessment,1,91,0,0
+K3,J1-R,Risk assessment,2,91,0,0
+K3,J1-R,Risk assessment,3,91,0,0

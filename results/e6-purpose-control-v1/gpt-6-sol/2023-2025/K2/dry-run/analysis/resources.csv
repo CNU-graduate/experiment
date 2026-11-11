@@ -1,0 +1,7 @@
+﻿route,purpose,round,api_attempts,failed_attempts,unfinished_attempts
+J1-E,Enforcement,1,0,0,0
+J1-E,Enforcement,2,0,0,0
+J1-E,Enforcement,3,0,0,0
+J1-R,Risk assessment,1,0,0,0
+J1-R,Risk assessment,2,0,0,0
+J1-R,Risk assessment,3,0,0,0
