@@ -1,0 +1,9 @@
+{
+  "repeats_complete": 3,
+  "repeats_planned": 3,
+  "cases_per_repeat": 86,
+  "accuracy_mean": 0.8604651162790697,
+  "accuracy_std": 0.0,
+  "macro_f1_mean": 0.8380414312617703,
+  "macro_f1_std": 0.0
+}

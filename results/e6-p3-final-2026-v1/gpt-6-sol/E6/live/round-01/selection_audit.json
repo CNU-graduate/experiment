@@ -1,0 +1,78 @@
+{
+  "2026:E6:42": {
+    "candidate_year": 2025,
+    "objective": [
+      5,
+      8,
+      4,
+      -1,
+      -4,
+      -715
+    ],
+    "tied_sets": 1,
+    "objective_order": [
+      "tag_coverage",
+      "feature_coverage",
+      "distinct_substances",
+      "negative_repeated_features",
+      "negative_complexity",
+      "negative_text_length"
+    ],
+    "selected": [
+      {
+        "id": "2025-14-01",
+        "tags": [
+          "compound"
+        ],
+        "features": [
+          "compound:parent_match"
+        ],
+        "complexity": 0,
+        "reason": "Same parent stated with a Regulation source qualifier."
+      },
+      {
+        "id": "2025-22-02",
+        "tags": [
+          "compound",
+          "expression",
+          "status",
+          "application"
+        ],
+        "features": [
+          "compound:isomers",
+          "expression:fat_notation",
+          "status:not_yet_applicable",
+          "application:multiple_sources"
+        ],
+        "complexity": 2,
+        "reason": "Pending Regulation and existing Regulation distinguished; isomer wording."
+      },
+      {
+        "id": "2025-18-03",
+        "tags": [
+          "compound",
+          "scope",
+          "expression"
+        ],
+        "features": [
+          "compound:metabolite",
+          "scope:metabolite_coverage",
+          "expression:sum_parent_basis"
+        ],
+        "complexity": 2,
+        "reason": "Different named metabolite coverage in sum definitions."
+      },
+      {
+        "id": "2025-20-04",
+        "tags": [
+          "compound"
+        ],
+        "features": [
+          "compound:parent_match"
+        ],
+        "complexity": 0,
+        "reason": "Parent-only definitions under a review source."
+      }
+    ]
+  }
+}

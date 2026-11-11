@@ -1,0 +1,3 @@
+﻿condition,repeats_complete,repeats_planned,cases_per_repeat,accuracy_mean,accuracy_std,macro_f1_mean,macro_f1_std
+E6,3,3,86,0.8604651162790697,0.0,0.8380414312617703,0.0
+P3,3,3,86,0.9302325581395349,0.011627906976744207,0.9155037179450577,0.013103981929306042
